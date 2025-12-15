@@ -1,0 +1,109 @@
+{
+  "component-definition": {
+    "uuid": "f7172875-b571-4041-9e39-c6fdca428d08",
+    "metadata": {
+      "title": "Amazon Braket",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "0c9117c7-4427-47f5-8371-35f688b6716c",
+        "type": "service",
+        "title": "Braket",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "Braket",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2019-09-01"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Braket",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Braket",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "braket",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "braket",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "braket",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#4e7d173c-7563-4abc-9608-307f0f0089b6",
+            "resource-fragment": "5c65ae23-d283-47b2-8999-371e4a4388a6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4e7d173c-7563-4abc-9608-307f0f0089b6",
+            "resource-fragment": "f80c3764-4775-4a1e-906b-aceb485fd9c9",
+            "text": "Europe (London)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4e7d173c-7563-4abc-9608-307f0f0089b6",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4e7d173c-7563-4abc-9608-307f0f0089b6",
+            "resource-fragment": "529b5c93-4ad1-4231-975f-418dc8cad7d8",
+            "text": "US West (N. California)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4e7d173c-7563-4abc-9608-307f0f0089b6",
+            "resource-fragment": "33be3e8b-fef1-4628-a729-60822266755a",
+            "text": "US West (Oregon)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "4e7d173c-7563-4abc-9608-307f0f0089b6",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

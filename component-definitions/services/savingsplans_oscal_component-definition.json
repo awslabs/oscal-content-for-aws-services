@@ -1,0 +1,91 @@
+{
+  "component-definition": {
+    "uuid": "41145656-c4ba-4f5a-9686-31e3248f0ba0",
+    "metadata": {
+      "title": "AWS Savings Plans",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "dcae2126-3aac-4e6d-a98e-8313452f34df",
+        "type": "service",
+        "title": "savingsplans",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "savingsplans",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2019-06-28"
+          },
+          {
+            "name": "availability",
+            "value": "GLOBAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "AWS Savings Plans",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "savingsplans",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "savingsplans",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "savingsplans",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#842924e9-efff-4263-9be2-c950e5386d68",
+            "resource-fragment": "c334b9ec-fafc-4294-9ee4-666cdffaaea2",
+            "text": "China (Beijing)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#842924e9-efff-4263-9be2-c950e5386d68",
+            "resource-fragment": "9a0e373e-8208-49f7-8363-71ee2a77754d",
+            "text": "China (Ningxia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#842924e9-efff-4263-9be2-c950e5386d68",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "842924e9-efff-4263-9be2-c950e5386d68",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "component-definition": {
+    "uuid": "a0a92b73-44fc-44a3-82ec-b9d39349f51c",
+    "metadata": {
+      "title": "AWS IoT Analytics",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "382b99a4-f6eb-4485-852c-e5bf4643e167",
+        "type": "service",
+        "title": "IoTAnalytics",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "IoTAnalytics",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2017-11-27"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Analytics",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Analytics",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "iotanalytics",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "iotanalytics",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "iotanalytics",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "95255835-b2f5-446a-b3da-cc92305ba214",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "2c55f499-ec10-4da9-8889-1791669d394a",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "b61bdd26-1b09-4fc9-a067-3ac9429acd81",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "c334b9ec-fafc-4294-9ee4-666cdffaaea2",
+            "text": "China (Beijing)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "bc644e9d-5488-4811-80bc-3dd634744ac9",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "31e959c6-95fb-4ba7-8464-e83d5a04bef5",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "0eb891eb-122c-4f41-99af-621cbfa33f5f",
+            "text": "US East (Ohio)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#eab77fde-a009-4534-9258-470aee6d8cc5",
+            "resource-fragment": "33be3e8b-fef1-4628-a729-60822266755a",
+            "text": "US West (Oregon)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "eab77fde-a009-4534-9258-470aee6d8cc5",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "component-definition": {
+    "uuid": "1ff05236-2c52-4391-bf76-1be9d7e2141d",
+    "metadata": {
+      "title": "Amazon Lex Model Building Service V2",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "921001e1-9cb7-4354-991f-9f1ff00dc115",
+        "type": "service",
+        "title": "Lex Models V2",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "Lex Models V2",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2020-08-07"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "availability",
+            "value": "ZONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Lex Model Building Service V2",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "models-v2-lex",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "lex",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ]
+      }
+    ]
+  }
+}

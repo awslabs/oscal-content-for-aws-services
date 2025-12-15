@@ -1,0 +1,3073 @@
+{
+  "component-definition": {
+    "uuid": "beb87bf8-52ce-4316-8c67-c741274b978c",
+    "metadata": {
+      "title": "AWS Regions and Services",
+      "last-modified": "2025-12-14T21:10:14Z",
+      "oscal-version": "1.1.3",
+      "version": "EXPERIMENTAL",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "import-component-definitions": [
+      {
+        "href": "#82c6aefd-e58b-450d-ba0b-5c31798fbf29"
+      },
+      {
+        "href": "#b3a263db-8e26-4d15-9421-2139664cd0a0"
+      },
+      {
+        "href": "#909d0130-b14e-47e1-af3b-ed005a2c9eab"
+      },
+      {
+        "href": "#eedc8fea-ad79-4a14-92ad-307d0ced8a83"
+      },
+      {
+        "href": "#9da139d5-fb9b-4030-bceb-a63e266b2b84"
+      },
+      {
+        "href": "#751488b5-8c26-419e-b6ee-e4ee57f5bd0a"
+      },
+      {
+        "href": "#763236c4-8c18-440f-8af0-703d1725ea85"
+      },
+      {
+        "href": "#9a58a11d-76c8-4c4a-bf76-77e57d999d8c"
+      },
+      {
+        "href": "#ab087d25-cf53-422a-a1b0-26a84489dc20"
+      },
+      {
+        "href": "#9d2b29aa-a309-47a3-b556-e0c4d7b94adb"
+      },
+      {
+        "href": "#b713e34a-c088-49a0-83c6-1a0beb0f6442"
+      },
+      {
+        "href": "#64699672-30be-45c6-90af-39055acfb5b9"
+      },
+      {
+        "href": "#0d30fedc-465f-47a8-b37c-f2d847650c7d"
+      },
+      {
+        "href": "#4c689567-e147-496c-9006-86ded6972eb5"
+      },
+      {
+        "href": "#0c6913ad-55a2-4479-a5e2-b966b0886696"
+      },
+      {
+        "href": "#cc83e874-0c1f-44e8-8020-0a9865e009c0"
+      },
+      {
+        "href": "#e987fa88-3c1a-47bc-8f34-50801d1d68cf"
+      },
+      {
+        "href": "#35a8cf4f-f8a1-4236-8b10-5d81f64c6c4d"
+      },
+      {
+        "href": "#9c7e460c-a3f2-4698-8728-842d4a0cec57"
+      },
+      {
+        "href": "#026c3285-1f8f-4075-8982-abc8c41f80a4"
+      },
+      {
+        "href": "#386f1470-8351-4d38-987e-f05c9607d899"
+      },
+      {
+        "href": "#cc022cde-bdf6-439d-862f-6d84652597aa"
+      },
+      {
+        "href": "#54d05a5d-f164-44b6-bce3-d9f0fcf006fb"
+      },
+      {
+        "href": "#bde889d4-5071-44e5-a9c3-ffaeebf6914c"
+      },
+      {
+        "href": "#080cebaf-14e9-41c1-82f9-48c6ad217f9e"
+      },
+      {
+        "href": "#3a232f89-f3ed-4eb7-b3ec-634c3fddf873"
+      },
+      {
+        "href": "#26b13137-342a-42e5-86a5-b10d037f020e"
+      },
+      {
+        "href": "#cc7b722a-614e-4923-b65b-d6a20c1f8d1f"
+      },
+      {
+        "href": "#4409ee7d-3432-4f67-b479-6440f2e8547d"
+      },
+      {
+        "href": "#af393cc1-6ebb-40ba-9b67-78920536515b"
+      },
+      {
+        "href": "#d227fd37-977a-4815-8d1e-059a9edd7770"
+      },
+      {
+        "href": "#e13b79ce-c5b6-4972-ae6d-fcde7746874d"
+      },
+      {
+        "href": "#81e993cd-09bd-4e9a-b3ad-a1e5297f03d6"
+      },
+      {
+        "href": "#2388f731-5758-4418-809a-488bd1695e8f"
+      },
+      {
+        "href": "#cd82b34e-383b-4a76-9664-41e1b847151c"
+      },
+      {
+        "href": "#dd027271-663e-4125-9718-20ef0f734708"
+      },
+      {
+        "href": "#f9067fb0-465b-4171-9c2c-1ddb501b44e3"
+      },
+      {
+        "href": "#f447e436-3fa0-4140-9b74-3976d0c5f083"
+      },
+      {
+        "href": "#fc4a0fab-24a9-423f-a5e2-0c4ca46e0a95"
+      },
+      {
+        "href": "#2eb8eb97-5162-4f29-858d-ecb99aa2f06c"
+      },
+      {
+        "href": "#7c2ff1e8-66ef-435b-9c50-3eb894ec7574"
+      },
+      {
+        "href": "#c94be9e1-fb52-4ffd-be23-019210c4e0ef"
+      },
+      {
+        "href": "#24b4740e-e3dd-4aa9-955e-7a082af94890"
+      },
+      {
+        "href": "#310ba948-cfc7-49e3-8f1a-a2149de45d2a"
+      },
+      {
+        "href": "#6da096d8-7d1e-448c-9570-f1847afcf465"
+      },
+      {
+        "href": "#c7ae6e1b-3706-4cd0-82b8-70cf18c62238"
+      },
+      {
+        "href": "#d92cb7b0-68e7-43ea-a435-2b686e00bf54"
+      },
+      {
+        "href": "#529b806a-5225-4de7-b00d-04cec8a7bcce"
+      },
+      {
+        "href": "#595b2dce-63a1-401f-a6c9-61c588622373"
+      },
+      {
+        "href": "#cc6562ac-6d7f-4f6a-9dfb-66cd49844c4b"
+      },
+      {
+        "href": "#71fe13b3-a842-476c-8aae-f48fe846f6e9"
+      },
+      {
+        "href": "#5f05ea96-269d-4d1e-b171-168521c0af1e"
+      },
+      {
+        "href": "#c6ee5834-5490-43b4-9d8d-68e7edcc59a0"
+      },
+      {
+        "href": "#cfff041c-a754-4d72-959c-cc8e75c340fa"
+      },
+      {
+        "href": "#1f4cb019-ce80-4b0a-ab9c-eccb3b819b13"
+      },
+      {
+        "href": "#2a357f40-f537-4643-9967-8ed3346e294c"
+      },
+      {
+        "href": "#6b3575b9-f1ee-4112-aa2b-a9f934a952ed"
+      },
+      {
+        "href": "#87cd9488-d1dc-46c3-a154-dfa4046bd54a"
+      },
+      {
+        "href": "#27479a68-0341-4d56-9fdc-cec33ab7977c"
+      },
+      {
+        "href": "#ddf8a4e6-1c71-4e47-9936-35fdb50debb7"
+      },
+      {
+        "href": "#7e62edf4-1962-48e8-8f35-7a5ee51ce50b"
+      },
+      {
+        "href": "#ef4019ba-7233-4000-941d-8a727d343e63"
+      },
+      {
+        "href": "#6376c5a1-1781-4d0e-a363-549ec0773a66"
+      },
+      {
+        "href": "#d0360209-c88b-4164-8a7a-ba3ea622d061"
+      },
+      {
+        "href": "#4cf1132e-76e6-489e-887b-9975ae26a025"
+      },
+      {
+        "href": "#c648e9e8-9b74-478c-a141-782db2532882"
+      },
+      {
+        "href": "#8c8ee379-11b4-46d1-90d0-815ca3ae4e1e"
+      },
+      {
+        "href": "#48f2daf8-c9ec-49f2-b5bb-bf3b63f77312"
+      },
+      {
+        "href": "#459cac31-0742-41fd-aa71-5626c3a896d9"
+      },
+      {
+        "href": "#fe6964fa-59e3-4101-9dfc-afeffa5d2f06"
+      },
+      {
+        "href": "#13a97c86-0f2c-4bf1-9f2d-334c1e6f5f3a"
+      },
+      {
+        "href": "#146f329a-636b-4940-ba27-fc11dbf8c8d3"
+      },
+      {
+        "href": "#64b990ab-6e6c-4553-854a-91eb5584eb40"
+      },
+      {
+        "href": "#7cf4b201-ce91-4d4a-96fe-94bc2ec267c2"
+      },
+      {
+        "href": "#a6a879c7-b27a-43b7-b3fa-87e8fe700516"
+      },
+      {
+        "href": "#1c6c234c-d47e-4b2f-9903-18e7a6f3197c"
+      },
+      {
+        "href": "#c067be92-b67b-4821-8adc-133b3e469863"
+      },
+      {
+        "href": "#2c3f3939-c61a-4597-9593-d470328f84fe"
+      },
+      {
+        "href": "#dfaea74c-fb95-49e6-b8ca-304076b3cbb2"
+      },
+      {
+        "href": "#47da26e6-f4ff-4670-8094-8c7dfa70c64f"
+      },
+      {
+        "href": "#a437a588-b1de-4da8-bbe4-66f2eab508f3"
+      },
+      {
+        "href": "#3b754f9c-e3c5-427e-9fa5-1d06974f4bf1"
+      },
+      {
+        "href": "#eee3a337-53e2-418c-80b4-d569520d77f7"
+      },
+      {
+        "href": "#dafc253b-9e23-4a80-8ff5-5074e5d717db"
+      },
+      {
+        "href": "#2d9b2f08-1eb0-4fed-8f65-3b7f45ffade4"
+      },
+      {
+        "href": "#b909fc63-d5b3-4e2d-8f66-bd5d2c47842d"
+      },
+      {
+        "href": "#5f019570-ad91-49cb-95cd-93505cbfdc73"
+      },
+      {
+        "href": "#4ecbd0f9-0245-494a-9da5-2950b679362d"
+      },
+      {
+        "href": "#14c18aac-c1a1-428a-8ed9-0ae5bcb76357"
+      },
+      {
+        "href": "#dbb65f04-ec58-4f6a-bfe6-95c29c58864e"
+      },
+      {
+        "href": "#dd7f0cac-0aeb-4e0d-a37a-5d675b04c7c5"
+      },
+      {
+        "href": "#8896ce7e-055c-4bcb-8568-0f47d9644127"
+      },
+      {
+        "href": "#0884e34c-751d-4c55-a0e6-d5439b9d4b76"
+      },
+      {
+        "href": "#007d860e-7ef6-49e3-84a0-2d61277f573c"
+      },
+      {
+        "href": "#5e4a82a8-f1d5-43aa-921c-2b6c3d847f24"
+      },
+      {
+        "href": "#a87fa08e-b6e7-41af-b1e8-21600b4d8b94"
+      },
+      {
+        "href": "#3c2a175c-a6e2-4d8c-9fcd-d5fc3456a5d1"
+      },
+      {
+        "href": "#52b3ab19-de88-4ba3-8006-070052df7aed"
+      },
+      {
+        "href": "#2b78d0f1-014f-4146-9d45-2812905fe551"
+      },
+      {
+        "href": "#d2b86c64-367c-40ae-a888-52447984096f"
+      },
+      {
+        "href": "#b9ddb71c-9252-43bd-a6f3-3d116b7b29ae"
+      },
+      {
+        "href": "#b560127b-20e0-4b2d-aea2-1c8d82cc386b"
+      },
+      {
+        "href": "#530db2b6-5557-4130-983a-e67a7ef65360"
+      },
+      {
+        "href": "#dce913b0-e7ca-434a-bd8a-3a7b94460978"
+      },
+      {
+        "href": "#fb699c08-a1f4-4609-8ba6-069602e32802"
+      },
+      {
+        "href": "#1e36b070-7d88-4dce-b85e-c37b0baef95d"
+      },
+      {
+        "href": "#40d7620b-1d50-4ecb-8735-dcbb4a9c10d2"
+      },
+      {
+        "href": "#6b74f702-ee4d-4d83-8441-daeb0c362d2a"
+      },
+      {
+        "href": "#78d62153-04a1-4b1c-90e6-87e4275f0334"
+      },
+      {
+        "href": "#aa14b8d9-b91e-49af-829a-c759928de9a7"
+      },
+      {
+        "href": "#4d95dfec-87f5-4031-a6d1-53473fbe576a"
+      },
+      {
+        "href": "#b85af41e-5346-44eb-80ce-26353d3fdda0"
+      },
+      {
+        "href": "#3968e166-bb09-473e-abc2-3e607534a7f5"
+      },
+      {
+        "href": "#2bbfd914-4976-453a-937f-b5f131774336"
+      },
+      {
+        "href": "#c4bf5960-dc98-47ce-bce3-a881ceb6eaaf"
+      },
+      {
+        "href": "#24821d6a-bef9-4481-9645-b1b0de4f918c"
+      },
+      {
+        "href": "#af1eee50-0e3f-4bc9-af29-a5dddfc80d67"
+      },
+      {
+        "href": "#55710b4f-66d1-436d-bddb-add53aeb82f1"
+      },
+      {
+        "href": "#bb1ca6e9-e571-4689-af1e-b51700900041"
+      },
+      {
+        "href": "#04426287-6e97-425c-9009-3f3d4e5d2ea8"
+      },
+      {
+        "href": "#79666d72-ea31-48ad-a0c1-aafa0191fc6a"
+      },
+      {
+        "href": "#2239e51c-9bb5-4e4f-9e36-4dc639a08720"
+      },
+      {
+        "href": "#80e84af1-d443-4de5-a6fa-975b54ac1120"
+      },
+      {
+        "href": "#6dc80a7c-a5a0-42bd-981b-2ebd5e9900d4"
+      },
+      {
+        "href": "#252d5ea0-de76-4317-bd9b-e03c3c9bfd29"
+      },
+      {
+        "href": "#655b337e-fcf8-40c4-8bf6-8c67a19baa24"
+      },
+      {
+        "href": "#7efe3dbd-0ef8-44fa-9129-2c07e9ee3c83"
+      },
+      {
+        "href": "#1e92f2e9-ce38-472b-8ac5-b768e569dce1"
+      },
+      {
+        "href": "#55263bc2-2b2d-4c4a-aed7-54d58ca42a7c"
+      },
+      {
+        "href": "#6f405625-fdc6-4a1e-af96-134aafd7139c"
+      },
+      {
+        "href": "#b4d25e02-6646-4a80-abb2-13357e2fa70f"
+      },
+      {
+        "href": "#cc7fb733-d545-49a1-b3bc-4d3e214fdb88"
+      },
+      {
+        "href": "#3fb1a357-df5d-4f76-b6eb-cc005ac59bd0"
+      },
+      {
+        "href": "#4969207f-e095-4a99-a3d4-09c192456471"
+      },
+      {
+        "href": "#00a60df2-af08-4e69-841b-1961d268c7c2"
+      },
+      {
+        "href": "#50a90606-2c74-4b02-8c06-73f3614954cf"
+      },
+      {
+        "href": "#95e5e004-f756-4aef-baad-b0b49c43f368"
+      },
+      {
+        "href": "#1bb799ec-931c-4a01-9457-d68fbad9a604"
+      },
+      {
+        "href": "#54a5e096-39c6-4f9c-a04f-48f082006a25"
+      },
+      {
+        "href": "#963b4bf4-8bc7-485f-8010-6e6f88b31601"
+      },
+      {
+        "href": "#2ec8fef6-26fa-4c83-be4f-176268168fcf"
+      },
+      {
+        "href": "#e8c496c3-a50c-4105-b24b-b7efc4e45993"
+      },
+      {
+        "href": "#38f80831-8699-4135-b7db-34e176b8df18"
+      },
+      {
+        "href": "#699a4766-4923-4712-be57-e7d6d4750d55"
+      },
+      {
+        "href": "#2fa0fff2-d10c-4a04-b81e-d9f114d6b83f"
+      },
+      {
+        "href": "#6228783a-bcb0-4182-aaf9-45cfa8deebdd"
+      },
+      {
+        "href": "#92fdacca-2f42-49e9-a819-3d7d5fd56364"
+      },
+      {
+        "href": "#a2d50f51-a1db-4593-b460-714e520b5506"
+      },
+      {
+        "href": "#1d410920-3419-4654-b061-c573d3c5eb26"
+      },
+      {
+        "href": "#c51283d0-8c43-46dd-b493-211794e73049"
+      },
+      {
+        "href": "#1dfb8e92-2a2e-499f-a6d8-365d757384ea"
+      },
+      {
+        "href": "#547348b6-41cd-4e46-b53c-077f9a518b1f"
+      },
+      {
+        "href": "#f7a53239-1eb4-45d9-aca4-1add1f3aec72"
+      },
+      {
+        "href": "#a2c91b70-df14-497b-8261-ab83b688feef"
+      },
+      {
+        "href": "#582fec6e-bd74-4492-bdf6-66250b9fb718"
+      },
+      {
+        "href": "#90ed5982-ab14-4eae-ab6d-8bd4e2ba544d"
+      },
+      {
+        "href": "#364496ca-5f6b-427d-863b-877f30e2912b"
+      },
+      {
+        "href": "#5f50af19-e7c0-415d-89c2-6c76828db3b7"
+      },
+      {
+        "href": "#d0327863-0207-4335-9c71-810e0085684e"
+      },
+      {
+        "href": "#404a838e-d045-4c50-8adc-b4810643c4ce"
+      },
+      {
+        "href": "#4fc60c37-f671-4104-b186-cfaf187a1f57"
+      },
+      {
+        "href": "#40753bcb-c066-46b4-ba16-9d43dd810918"
+      },
+      {
+        "href": "#25a645ec-362c-4bec-b4e3-e1746d6e61a3"
+      },
+      {
+        "href": "#33cfaecc-b5f3-49b4-95f4-a2d5752e8bf1"
+      },
+      {
+        "href": "#1ac91c1e-48bb-4c21-b9ff-4547e427416d"
+      },
+      {
+        "href": "#ded9812e-d59f-48bc-b1d6-f2af539760f3"
+      },
+      {
+        "href": "#4b684b2c-e7f9-4bfc-9591-c35d61609d2e"
+      },
+      {
+        "href": "#5b088187-632e-4379-aedb-dfb37c6b7eb0"
+      },
+      {
+        "href": "#d9eb1de6-5445-4f5a-8c34-4cb5d443068b"
+      },
+      {
+        "href": "#d114ccf4-a08b-4e93-8972-11c5b103608d"
+      },
+      {
+        "href": "#a7a53cbe-544f-41ec-8566-9e41f226cba7"
+      },
+      {
+        "href": "#58745a42-2fe7-41d2-87c7-988c53b3237d"
+      },
+      {
+        "href": "#08990ae4-dc11-4c22-a1d6-dfa6a00bdc83"
+      },
+      {
+        "href": "#30c1ed36-f4b7-4467-9c2c-36b84be128c0"
+      },
+      {
+        "href": "#d9ed76d6-5ba3-49d9-812e-245ac5ef042c"
+      },
+      {
+        "href": "#a8f8b560-4ecd-40ae-9925-163d53f8b3d9"
+      },
+      {
+        "href": "#04732c6d-6f4b-41b0-9d8e-5ee39d7c718b"
+      },
+      {
+        "href": "#2f91d7ca-bd5d-46d5-8fa3-53350e3f65ac"
+      },
+      {
+        "href": "#705e1a96-9d58-47a8-939f-2c79ef9f46a8"
+      },
+      {
+        "href": "#d390f5aa-0c69-4e3b-ab5f-11479a4f387c"
+      },
+      {
+        "href": "#b2125284-f2fa-4d48-8ae7-9dbe854515bf"
+      },
+      {
+        "href": "#130f7cf8-92b7-4d1b-aabf-22a000743bca"
+      },
+      {
+        "href": "#9ffb511a-ebcb-4bf4-9afb-75663c315e8b"
+      },
+      {
+        "href": "#84366f00-09f8-48d9-b621-50a2c2ffbaa1"
+      },
+      {
+        "href": "#3e9f7d0b-5672-4b9d-ae30-61f53edf1e9f"
+      },
+      {
+        "href": "#62aaa8cf-7a37-4023-aa48-1871051e5b08"
+      },
+      {
+        "href": "#d0e4b38a-c778-488a-90f8-05f43eb37abb"
+      },
+      {
+        "href": "#b2f7de81-7c6f-4f76-a66d-139a0783b5f4"
+      },
+      {
+        "href": "#1de78568-31eb-4a84-9616-59f18d6b9f66"
+      },
+      {
+        "href": "#e88c201e-037a-44f2-af97-cd9c538fb09f"
+      },
+      {
+        "href": "#1abc3271-7dde-4f84-97a6-9461080e1c28"
+      },
+      {
+        "href": "#9195831a-e8bc-411a-8459-dd280f628961"
+      },
+      {
+        "href": "#02e21c14-e8f8-4a09-9840-09961443dd1c"
+      },
+      {
+        "href": "#3b13bc3f-56f9-43a9-b9e4-7962ca7387e9"
+      },
+      {
+        "href": "#fc342616-5032-431d-a421-ccd4331ea8fb"
+      },
+      {
+        "href": "#ec0795d9-6dcc-4c2e-98a0-a35bc1c7636e"
+      },
+      {
+        "href": "#1a74753b-4cc6-49fb-aff5-2c7896834c4b"
+      },
+      {
+        "href": "#96fcba81-4b12-497e-9394-5cb538aa374c"
+      },
+      {
+        "href": "#d094bd91-f85d-44de-a14c-17af7d2287ad"
+      },
+      {
+        "href": "#27eb6138-5da7-444a-b94e-ea27039c63fb"
+      },
+      {
+        "href": "#0ad09885-dbcb-48c9-9aab-3fffb45713b4"
+      },
+      {
+        "href": "#a29d7685-9eae-4a01-bcae-1ebc7a2c124d"
+      },
+      {
+        "href": "#76b212c8-1e56-4a0f-8f99-4a7c3a7e5274"
+      },
+      {
+        "href": "#01ac786b-f8fa-47d1-ae58-bb9fe9a7f8cd"
+      },
+      {
+        "href": "#a2abf5f2-0b71-4f12-8338-f41feebab70a"
+      },
+      {
+        "href": "#9b68c37e-b4cd-4397-af87-32b226b23d3c"
+      },
+      {
+        "href": "#f260b692-7041-45cd-afaf-3ec9ea2f2068"
+      },
+      {
+        "href": "#b115e631-02de-4f30-badf-93fe47763c7c"
+      },
+      {
+        "href": "#0893f482-44cc-4205-81a2-d1731dccc5bc"
+      },
+      {
+        "href": "#6b7d1492-9fad-4707-b140-e827507ee08d"
+      },
+      {
+        "href": "#754e9036-f103-40e5-bd3d-62428577be1b"
+      },
+      {
+        "href": "#00fb4f6c-8408-4b0c-9fca-77360bdad538"
+      },
+      {
+        "href": "#1361614c-f7a7-4acd-bf3b-05da6099b152"
+      },
+      {
+        "href": "#aadc156f-68fa-43a2-a639-5c4a2e29fec7"
+      },
+      {
+        "href": "#98a21202-8a0f-44e9-92c0-b2bd5a781b50"
+      },
+      {
+        "href": "#9e5070cc-a36b-431b-ac7d-0b6c1d73a526"
+      },
+      {
+        "href": "#c42ba982-a23e-49e4-81c5-e2e2aabcec85"
+      },
+      {
+        "href": "#e025d379-4acc-4fc9-abf6-ed6fb041d170"
+      },
+      {
+        "href": "#2169f606-976f-4a45-84e3-52a64c7fa0a5"
+      },
+      {
+        "href": "#70baacf9-9742-45bb-b925-12af380f8f38"
+      },
+      {
+        "href": "#a92d9fd6-8b9b-489e-8fc4-2a33c364da6d"
+      },
+      {
+        "href": "#45a9d255-f154-4b8d-bcea-1f3c9ec22469"
+      },
+      {
+        "href": "#4e5b34ad-daf1-4195-b784-ee1b148f9a94"
+      },
+      {
+        "href": "#3ce9dc14-82b8-4215-90cf-30ef086ba7eb"
+      },
+      {
+        "href": "#dca95c1e-f9a4-4e53-8b85-3cec32503238"
+      },
+      {
+        "href": "#e56d971d-c5c0-458a-87a5-b4b5a396006d"
+      },
+      {
+        "href": "#942c7c3f-043e-4bbf-903c-16db9b50fe03"
+      },
+      {
+        "href": "#1bc86494-ca95-47ca-8553-3f25fb6abb64"
+      },
+      {
+        "href": "#f62bf027-e57b-4710-84ff-e63504af021c"
+      },
+      {
+        "href": "#8f0a574c-07e3-4646-a387-e9a40e5b2fb0"
+      },
+      {
+        "href": "#e9ab5e14-31f1-4932-b472-b1b50fadb005"
+      },
+      {
+        "href": "#6f2a5078-4241-44f8-86ea-6430de7ebc48"
+      },
+      {
+        "href": "#1c6e722f-190d-4e42-8e75-f221b68d012f"
+      },
+      {
+        "href": "#8886a37e-7193-4bed-9696-4bb76b1acb4b"
+      },
+      {
+        "href": "#32ab21cb-27d3-4445-9f18-cef1fbf130a2"
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "82c6aefd-e58b-450d-ba0b-5c31798fbf29",
+          "title": "AWS Regions",
+          "rlinks": [
+            {
+              "href": "AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b3a263db-8e26-4d15-9421-2139664cd0a0",
+          "title": "AWS Savings Plans",
+          "rlinks": [
+            {
+              "href": "services/savingsplans_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "909d0130-b14e-47e1-af3b-ed005a2c9eab",
+          "title": "AWS Config",
+          "rlinks": [
+            {
+              "href": "services/config-service_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "eedc8fea-ad79-4a14-92ad-307d0ced8a83",
+          "title": "CloudWatch RUM",
+          "rlinks": [
+            {
+              "href": "services/rum_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9da139d5-fb9b-4030-bceb-a63e266b2b84",
+          "title": "AWS Elemental MediaStore",
+          "rlinks": [
+            {
+              "href": "services/mediastore_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "751488b5-8c26-419e-b6ee-e4ee57f5bd0a",
+          "title": "AWS Amplify Console",
+          "rlinks": [
+            {
+              "href": "services/amplify_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "763236c4-8c18-440f-8af0-703d1725ea85",
+          "title": "AWS Batch",
+          "rlinks": [
+            {
+              "href": "services/batch_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9a58a11d-76c8-4c4a-bf76-77e57d999d8c",
+          "title": "Application Auto Scaling",
+          "rlinks": [
+            {
+              "href": "services/application-auto-scaling_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "ab087d25-cf53-422a-a1b0-26a84489dc20",
+          "title": "Identity & Access Management (IAM)",
+          "rlinks": [
+            {
+              "href": "services/iam_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9d2b29aa-a309-47a3-b556-e0c4d7b94adb",
+          "title": "NetworkManager",
+          "rlinks": [
+            {
+              "href": "services/networkmanager_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b713e34a-c088-49a0-83c6-1a0beb0f6442",
+          "title": "AWS Transfer Family",
+          "rlinks": [
+            {
+              "href": "services/transfer_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "64699672-30be-45c6-90af-39055acfb5b9",
+          "title": "Elastic Compute Cloud (EC2)",
+          "rlinks": [
+            {
+              "href": "services/ec2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "0d30fedc-465f-47a8-b37c-f2d847650c7d",
+          "title": "AWS Marketplace Commerce Analytics",
+          "rlinks": [
+            {
+              "href": "services/marketplace-commerce-analytics_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4c689567-e147-496c-9006-86ded6972eb5",
+          "title": "Global Accelerator",
+          "rlinks": [
+            {
+              "href": "services/global-accelerator_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "0c6913ad-55a2-4479-a5e2-b966b0886696",
+          "title": "Migration Hub Orchestrator",
+          "rlinks": [
+            {
+              "href": "services/migrationhuborchestrator_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "cc83e874-0c1f-44e8-8020-0a9865e009c0",
+          "title": "AWS Health APIs And Notifications",
+          "rlinks": [
+            {
+              "href": "services/health_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "e987fa88-3c1a-47bc-8f34-50801d1d68cf",
+          "title": "AWS RDS Data API",
+          "rlinks": [
+            {
+              "href": "services/rds-data_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "35a8cf4f-f8a1-4236-8b10-5d81f64c6c4d",
+          "title": "AWS Snow Device Management",
+          "rlinks": [
+            {
+              "href": "services/snow-device-management_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9c7e460c-a3f2-4698-8728-842d4a0cec57",
+          "title": "AWS WAF v2",
+          "rlinks": [
+            {
+              "href": "services/wafv2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "026c3285-1f8f-4075-8982-abc8c41f80a4",
+          "title": "Amazon CloudWatch Application Insights",
+          "rlinks": [
+            {
+              "href": "services/application-insights_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "386f1470-8351-4d38-987e-f05c9607d899",
+          "title": "Migration Hub Strategy Recommendations",
+          "rlinks": [
+            {
+              "href": "services/migrationhubstrategy_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "cc022cde-bdf6-439d-862f-6d84652597aa",
+          "title": "Amazon EKS",
+          "rlinks": [
+            {
+              "href": "services/eks_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "54d05a5d-f164-44b6-bce3-d9f0fcf006fb",
+          "title": "AWSSSOOIDCService",
+          "rlinks": [
+            {
+              "href": "services/sso-oidc_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "bde889d4-5071-44e5-a9c3-ffaeebf6914c",
+          "title": "Redshift Serverless",
+          "rlinks": [
+            {
+              "href": "services/redshift-serverless_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "080cebaf-14e9-41c1-82f9-48c6ad217f9e",
+          "title": "AWS Support App in Slack",
+          "rlinks": [
+            {
+              "href": "services/support-app_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3a232f89-f3ed-4eb7-b3ec-634c3fddf873",
+          "title": "Amazon Connect Voice ID",
+          "rlinks": [
+            {
+              "href": "services/voice-id_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "26b13137-342a-42e5-86a5-b10d037f020e",
+          "title": "route53domains",
+          "rlinks": [
+            {
+              "href": "services/route-53-domains_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "cc7b722a-614e-4923-b65b-d6a20c1f8d1f",
+          "title": "AWS Glue",
+          "rlinks": [
+            {
+              "href": "services/glue_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4409ee7d-3432-4f67-b479-6440f2e8547d",
+          "title": "AWSLakeFormation",
+          "rlinks": [
+            {
+              "href": "services/lakeformation_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "af393cc1-6ebb-40ba-9b67-78920536515b",
+          "title": "AWS Well-Architected Tool",
+          "rlinks": [
+            {
+              "href": "services/wellarchitected_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d227fd37-977a-4815-8d1e-059a9edd7770",
+          "title": "AWS License Manager - Linux Subscriptions",
+          "rlinks": [
+            {
+              "href": "services/license-manager-linux-subscriptions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "e13b79ce-c5b6-4972-ae6d-fcde7746874d",
+          "title": "Security Token Service (STS)",
+          "rlinks": [
+            {
+              "href": "services/sts_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "81e993cd-09bd-4e9a-b3ad-a1e5297f03d6",
+          "title": "AWS IoT SiteWise",
+          "rlinks": [
+            {
+              "href": "services/iotsitewise_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2388f731-5758-4418-809a-488bd1695e8f",
+          "title": "Application Discovery Service",
+          "rlinks": [
+            {
+              "href": "services/application-discovery-service_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "cd82b34e-383b-4a76-9664-41e1b847151c",
+          "title": "Machine Learning",
+          "rlinks": [
+            {
+              "href": "services/machine-learning_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "dd027271-663e-4125-9718-20ef0f734708",
+          "title": "Kinesis Streams",
+          "rlinks": [
+            {
+              "href": "services/kinesis_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "f9067fb0-465b-4171-9c2c-1ddb501b44e3",
+          "title": "Amazon Lookout for Equipment",
+          "rlinks": [
+            {
+              "href": "services/lookoutequipment_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "f447e436-3fa0-4140-9b74-3976d0c5f083",
+          "title": "AWS App Runner",
+          "rlinks": [
+            {
+              "href": "services/apprunner_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "fc4a0fab-24a9-423f-a5e2-0c4ca46e0a95",
+          "title": "Comprehend",
+          "rlinks": [
+            {
+              "href": "services/comprehend_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2eb8eb97-5162-4f29-858d-ecb99aa2f06c",
+          "title": "Ground Station",
+          "rlinks": [
+            {
+              "href": "services/groundstation_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "7c2ff1e8-66ef-435b-9c50-3eb894ec7574",
+          "title": "CodePipeline",
+          "rlinks": [
+            {
+              "href": "services/codepipeline_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c94be9e1-fb52-4ffd-be23-019210c4e0ef",
+          "title": "AWS Systems Manager (SSM)",
+          "rlinks": [
+            {
+              "href": "services/ssm_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "24b4740e-e3dd-4aa9-955e-7a082af94890",
+          "title": "CloudWatch Logs",
+          "rlinks": [
+            {
+              "href": "services/cloudwatch-logs_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "310ba948-cfc7-49e3-8f1a-a2149de45d2a",
+          "title": "Simple Notification Service (SNS)",
+          "rlinks": [
+            {
+              "href": "services/sns_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6da096d8-7d1e-448c-9570-f1847afcf465",
+          "title": "AWS Auto Scaling Plans",
+          "rlinks": [
+            {
+              "href": "services/auto-scaling-plans_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c7ae6e1b-3706-4cd0-82b8-70cf18c62238",
+          "title": "Amazon Pinpoint SMS and Voice",
+          "rlinks": [
+            {
+              "href": "services/pinpoint-sms-voice-v2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d92cb7b0-68e7-43ea-a435-2b686e00bf54",
+          "title": "Amazon Omics",
+          "rlinks": [
+            {
+              "href": "services/omics_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "529b806a-5225-4de7-b00d-04cec8a7bcce",
+          "title": "Access Analyzer",
+          "rlinks": [
+            {
+              "href": "services/accessanalyzer_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "595b2dce-63a1-401f-a6c9-61c588622373",
+          "title": "AWS SimSpace Weaver",
+          "rlinks": [
+            {
+              "href": "services/simspaceweaver_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "cc6562ac-6d7f-4f6a-9dfb-66cd49844c4b",
+          "title": "CloudWatch",
+          "rlinks": [
+            {
+              "href": "services/cloudwatch_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "71fe13b3-a842-476c-8aae-f48fe846f6e9",
+          "title": "Elastic MapReduce (EMR)",
+          "rlinks": [
+            {
+              "href": "services/emr_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "5f05ea96-269d-4d1e-b171-168521c0af1e",
+          "title": "GameLift",
+          "rlinks": [
+            {
+              "href": "services/gamelift_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c6ee5834-5490-43b4-9d8d-68e7edcc59a0",
+          "title": "Resource Groups",
+          "rlinks": [
+            {
+              "href": "services/resource-groups_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "cfff041c-a754-4d72-959c-cc8e75c340fa",
+          "title": "Import/Export Snowball",
+          "rlinks": [
+            {
+              "href": "services/snowball_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1f4cb019-ce80-4b0a-ab9c-eccb3b819b13",
+          "title": "Amazon Elastic Container Registry",
+          "rlinks": [
+            {
+              "href": "services/ecr_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2a357f40-f537-4643-9967-8ed3346e294c",
+          "title": "Amazon Macie",
+          "rlinks": [
+            {
+              "href": "services/macie2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6b3575b9-f1ee-4112-aa2b-a9f934a952ed",
+          "title": "AWS Resilience Hub",
+          "rlinks": [
+            {
+              "href": "services/resiliencehub_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "87cd9488-d1dc-46c3-a154-dfa4046bd54a",
+          "title": "Amazon HealthLake",
+          "rlinks": [
+            {
+              "href": "services/healthlake_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "27479a68-0341-4d56-9fdc-cec33ab7977c",
+          "title": "Performance Insights",
+          "rlinks": [
+            {
+              "href": "services/pi_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "ddf8a4e6-1c71-4e47-9936-35fdb50debb7",
+          "title": "AWS License Manager - User Subscriptions",
+          "rlinks": [
+            {
+              "href": "services/license-manager-user-subscriptions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "7e62edf4-1962-48e8-8f35-7a5ee51ce50b",
+          "title": "Amazon Fraud Detector",
+          "rlinks": [
+            {
+              "href": "services/frauddetector_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "ef4019ba-7233-4000-941d-8a727d343e63",
+          "title": "Amazon Budgets",
+          "rlinks": [
+            {
+              "href": "services/budgets_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6376c5a1-1781-4d0e-a363-549ec0773a66",
+          "title": "AWS DataSync",
+          "rlinks": [
+            {
+              "href": "services/datasync_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d0360209-c88b-4164-8a7a-ba3ea622d061",
+          "title": "Compute Optimizer",
+          "rlinks": [
+            {
+              "href": "services/compute-optimizer_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4cf1132e-76e6-489e-887b-9975ae26a025",
+          "title": "Managed Streaming for Kafka Connect",
+          "rlinks": [
+            {
+              "href": "services/kafkaconnect_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c648e9e8-9b74-478c-a141-782db2532882",
+          "title": "AmazonAppIntegrationService",
+          "rlinks": [
+            {
+              "href": "services/appintegrations_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "8c8ee379-11b4-46d1-90d0-815ca3ae4e1e",
+          "title": "Mainframe Modernization",
+          "rlinks": [
+            {
+              "href": "services/m2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "48f2daf8-c9ec-49f2-b5bb-bf3b63f77312",
+          "title": "Amazon Managed Blockchain",
+          "rlinks": [
+            {
+              "href": "services/managedblockchain_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "459cac31-0742-41fd-aa71-5626c3a896d9",
+          "title": "AWS Control Tower",
+          "rlinks": [
+            {
+              "href": "services/controltower_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "fe6964fa-59e3-4101-9dfc-afeffa5d2f06",
+          "title": "SageMaker Geospatial",
+          "rlinks": [
+            {
+              "href": "services/sagemaker-geospatial_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "13a97c86-0f2c-4bf1-9f2d-334c1e6f5f3a",
+          "title": "DynamoDB Accelerator (DAX)",
+          "rlinks": [
+            {
+              "href": "services/dax_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "146f329a-636b-4940-ba27-fc11dbf8c8d3",
+          "title": "Route 53 Application Recovery Controller - Routing Control - Config",
+          "rlinks": [
+            {
+              "href": "services/route53-recovery-control-config_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "64b990ab-6e6c-4553-854a-91eb5584eb40",
+          "title": "IAM Roles Anywhere",
+          "rlinks": [
+            {
+              "href": "services/rolesanywhere_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "7cf4b201-ce91-4d4a-96fe-94bc2ec267c2",
+          "title": "Kinesis Video Streams",
+          "rlinks": [
+            {
+              "href": "services/kinesis-video_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a6a879c7-b27a-43b7-b3fa-87e8fe700516",
+          "title": "AWS Glue DataBrew",
+          "rlinks": [
+            {
+              "href": "services/databrew_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1c6c234c-d47e-4b2f-9903-18e7a6f3197c",
+          "title": "EC2 Auto Scaling",
+          "rlinks": [
+            {
+              "href": "services/auto-scaling_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c067be92-b67b-4821-8adc-133b3e469863",
+          "title": "ElastiCache",
+          "rlinks": [
+            {
+              "href": "services/elasticache_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2c3f3939-c61a-4597-9593-d470328f84fe",
+          "title": "Cloud9",
+          "rlinks": [
+            {
+              "href": "services/cloud9_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "dfaea74c-fb95-49e6-b8ca-304076b3cbb2",
+          "title": "Polly",
+          "rlinks": [
+            {
+              "href": "services/polly_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "47da26e6-f4ff-4670-8094-8c7dfa70c64f",
+          "title": "Amazon EMR Serverless",
+          "rlinks": [
+            {
+              "href": "services/emr-serverless_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a437a588-b1de-4da8-bbe4-66f2eab508f3",
+          "title": "X-Ray",
+          "rlinks": [
+            {
+              "href": "services/xray_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3b754f9c-e3c5-427e-9fa5-1d06974f4bf1",
+          "title": "Amazon Verified Permissions",
+          "rlinks": [
+            {
+              "href": "services/verifiedpermissions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "eee3a337-53e2-418c-80b4-d569520d77f7",
+          "title": "Relational Database Service (RDS) Core Control Plane",
+          "rlinks": [
+            {
+              "href": "services/rds_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "dafc253b-9e23-4a80-8ff5-5074e5d717db",
+          "title": "Proton",
+          "rlinks": [
+            {
+              "href": "services/proton_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2d9b2f08-1eb0-4fed-8f65-3b7f45ffade4",
+          "title": "AWS Data Exchange",
+          "rlinks": [
+            {
+              "href": "services/dataexchange_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b909fc63-d5b3-4e2d-8f66-bd5d2c47842d",
+          "title": "Route 53 Profiles",
+          "rlinks": [
+            {
+              "href": "services/route53profiles_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "5f019570-ad91-49cb-95cd-93505cbfdc73",
+          "title": "CloudSearch",
+          "rlinks": [
+            {
+              "href": "services/cloudsearch_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4ecbd0f9-0245-494a-9da5-2950b679362d",
+          "title": "Device Farm",
+          "rlinks": [
+            {
+              "href": "services/device-farm_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "14c18aac-c1a1-428a-8ed9-0ae5bcb76357",
+          "title": "Network Firewall",
+          "rlinks": [
+            {
+              "href": "services/network-firewall_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "dbb65f04-ec58-4f6a-bfe6-95c29c58864e",
+          "title": "AWS Audit Manager",
+          "rlinks": [
+            {
+              "href": "services/auditmanager_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "dd7f0cac-0aeb-4e0d-a37a-5d675b04c7c5",
+          "title": "Support",
+          "rlinks": [
+            {
+              "href": "services/support_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "8896ce7e-055c-4bcb-8568-0f47d9644127",
+          "title": "Amazon Elastic MapReduce Containers",
+          "rlinks": [
+            {
+              "href": "services/emr-containers_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "0884e34c-751d-4c55-a0e6-d5439b9d4b76",
+          "title": "AWS Cost Explorer Service",
+          "rlinks": [
+            {
+              "href": "services/cost-explorer_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "007d860e-7ef6-49e3-84a0-2d61277f573c",
+          "title": "Amazon FSx",
+          "rlinks": [
+            {
+              "href": "services/fsx_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "5e4a82a8-f1d5-43aa-921c-2b6c3d847f24",
+          "title": "Amazon Lex Model Building Service",
+          "rlinks": [
+            {
+              "href": "services/lex-model-building-service_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a87fa08e-b6e7-41af-b1e8-21600b4d8b94",
+          "title": "CodeCommit",
+          "rlinks": [
+            {
+              "href": "services/codecommit_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3c2a175c-a6e2-4d8c-9fcd-d5fc3456a5d1",
+          "title": "Lambda",
+          "rlinks": [
+            {
+              "href": "services/lambda_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "52b3ab19-de88-4ba3-8006-070052df7aed",
+          "title": "AWS IoT Analytics",
+          "rlinks": [
+            {
+              "href": "services/iotanalytics_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2b78d0f1-014f-4146-9d45-2812905fe551",
+          "title": "AWS Elemental MediaConnect",
+          "rlinks": [
+            {
+              "href": "services/mediaconnect_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d2b86c64-367c-40ae-a888-52447984096f",
+          "title": "Direct Connect",
+          "rlinks": [
+            {
+              "href": "services/direct-connect_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b9ddb71c-9252-43bd-a6f3-3d116b7b29ae",
+          "title": "Directory Service",
+          "rlinks": [
+            {
+              "href": "services/directory-service_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b560127b-20e0-4b2d-aea2-1c8d82cc386b",
+          "title": "Amazon Recycle Bin",
+          "rlinks": [
+            {
+              "href": "services/rbin_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "530db2b6-5557-4130-983a-e67a7ef65360",
+          "title": "AWS Step Functions",
+          "rlinks": [
+            {
+              "href": "services/sfn_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "dce913b0-e7ca-434a-bd8a-3a7b94460978",
+          "title": "Amazon Elastic Container Service",
+          "rlinks": [
+            {
+              "href": "services/ecs_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "fb699c08-a1f4-4609-8ba6-069602e32802",
+          "title": "AWS Systems Manager - Quicksetup",
+          "rlinks": [
+            {
+              "href": "services/ssm-quicksetup_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1e36b070-7d88-4dce-b85e-c37b0baef95d",
+          "title": "IoT",
+          "rlinks": [
+            {
+              "href": "services/iot_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "40d7620b-1d50-4ecb-8735-dcbb4a9c10d2",
+          "title": "WorkDocs",
+          "rlinks": [
+            {
+              "href": "services/workdocs_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6b74f702-ee4d-4d83-8441-daeb0c362d2a",
+          "title": "Amazon Braket",
+          "rlinks": [
+            {
+              "href": "services/braket_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "78d62153-04a1-4b1c-90e6-87e4275f0334",
+          "title": "Amazon OpenSearch Serverless",
+          "rlinks": [
+            {
+              "href": "services/opensearchserverless_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "aa14b8d9-b91e-49af-829a-c759928de9a7",
+          "title": "Amazon EventBridge Scheduler",
+          "rlinks": [
+            {
+              "href": "services/scheduler_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4d95dfec-87f5-4031-a6d1-53473fbe576a",
+          "title": "AWS Systems Manager for SAP",
+          "rlinks": [
+            {
+              "href": "services/ssm-sap_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b85af41e-5346-44eb-80ce-26353d3fdda0",
+          "title": "Route 53 Resolver Endpoints",
+          "rlinks": [
+            {
+              "href": "services/route53resolver_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3968e166-bb09-473e-abc2-3e607534a7f5",
+          "title": "Amazon Mechanical Turk",
+          "rlinks": [
+            {
+              "href": "services/mturk_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2bbfd914-4976-453a-937f-b5f131774336",
+          "title": "Amazon Cognito Sync",
+          "rlinks": [
+            {
+              "href": "services/cognito-sync_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c4bf5960-dc98-47ce-bce3-a881ceb6eaaf",
+          "title": "AWS IoT Wireless",
+          "rlinks": [
+            {
+              "href": "services/iot-wireless_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "24821d6a-bef9-4481-9645-b1b0de4f918c",
+          "title": "AWS Elemental MediaLive",
+          "rlinks": [
+            {
+              "href": "services/medialive_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "af1eee50-0e3f-4bc9-af29-a5dddfc80d67",
+          "title": "CloudFront",
+          "rlinks": [
+            {
+              "href": "services/cloudfront_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "55710b4f-66d1-436d-bddb-add53aeb82f1",
+          "title": "Amazon AppStream 2.0",
+          "rlinks": [
+            {
+              "href": "services/appstream_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "bb1ca6e9-e571-4689-af1e-b51700900041",
+          "title": "AWS Organizations",
+          "rlinks": [
+            {
+              "href": "services/organizations_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "04426287-6e97-425c-9009-3f3d4e5d2ea8",
+          "title": "Elastic Beanstalk",
+          "rlinks": [
+            {
+              "href": "services/elastic-beanstalk_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "79666d72-ea31-48ad-a0c1-aafa0191fc6a",
+          "title": "AWS AppSync",
+          "rlinks": [
+            {
+              "href": "services/appsync_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2239e51c-9bb5-4e4f-9e36-4dc639a08720",
+          "title": "AWS Elemental MediaTailor",
+          "rlinks": [
+            {
+              "href": "services/mediatailor_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "80e84af1-d443-4de5-a6fa-975b54ac1120",
+          "title": "AWS S3 Outposts",
+          "rlinks": [
+            {
+              "href": "services/s3outposts_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6dc80a7c-a5a0-42bd-981b-2ebd5e9900d4",
+          "title": "Amazon CodeGuru Profiler",
+          "rlinks": [
+            {
+              "href": "services/codeguruprofiler_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "252d5ea0-de76-4317-bd9b-e03c3c9bfd29",
+          "title": "Amazon Inspector",
+          "rlinks": [
+            {
+              "href": "services/inspector2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "655b337e-fcf8-40c4-8bf6-8c67a19baa24",
+          "title": "Service Quotas",
+          "rlinks": [
+            {
+              "href": "services/service-quotas_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "7efe3dbd-0ef8-44fa-9129-2c07e9ee3c83",
+          "title": "SSM Incidents",
+          "rlinks": [
+            {
+              "href": "services/ssm-incidents_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1e92f2e9-ce38-472b-8ac5-b768e569dce1",
+          "title": "AWS Outposts",
+          "rlinks": [
+            {
+              "href": "services/outposts_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "55263bc2-2b2d-4c4a-aed7-54d58ca42a7c",
+          "title": "AWS Elemental MediaConvert",
+          "rlinks": [
+            {
+              "href": "services/mediaconvert_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6f405625-fdc6-4a1e-af96-134aafd7139c",
+          "title": "Simple Storage Service (S3)",
+          "rlinks": [
+            {
+              "href": "services/s3_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b4d25e02-6646-4a80-abb2-13357e2fa70f",
+          "title": "Lightsail",
+          "rlinks": [
+            {
+              "href": "services/lightsail_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "cc7fb733-d545-49a1-b3bc-4d3e214fdb88",
+          "title": "CloudWatch Evidently",
+          "rlinks": [
+            {
+              "href": "services/evidently_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3fb1a357-df5d-4f76-b6eb-cc005ac59bd0",
+          "title": "Kinesis Firehose",
+          "rlinks": [
+            {
+              "href": "services/firehose_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4969207f-e095-4a99-a3d4-09c192456471",
+          "title": "Amazon Connect Wisdom (Clover)",
+          "rlinks": [
+            {
+              "href": "services/wisdom_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "00a60df2-af08-4e69-841b-1961d268c7c2",
+          "title": "AWS Account Management",
+          "rlinks": [
+            {
+              "href": "services/account_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "50a90606-2c74-4b02-8c06-73f3614954cf",
+          "title": "Amazon Keyspaces",
+          "rlinks": [
+            {
+              "href": "services/keyspaces_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "95e5e004-f756-4aef-baad-b0b49c43f368",
+          "title": "S3 Glacier service using Vaults ***For new use cases, use S3 storage classes***",
+          "rlinks": [
+            {
+              "href": "services/glacier_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1bb799ec-931c-4a01-9457-d68fbad9a604",
+          "title": "CloudTrail",
+          "rlinks": [
+            {
+              "href": "services/cloudtrail_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "54a5e096-39c6-4f9c-a04f-48f082006a25",
+          "title": "AWS IoT Core Device Advisor",
+          "rlinks": [
+            {
+              "href": "services/iotdeviceadvisor_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "963b4bf4-8bc7-485f-8010-6e6f88b31601",
+          "title": "Amazon Personalize",
+          "rlinks": [
+            {
+              "href": "services/personalize_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2ec8fef6-26fa-4c83-be4f-176268168fcf",
+          "title": "AWS Service Catalog",
+          "rlinks": [
+            {
+              "href": "services/service-catalog_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "e8c496c3-a50c-4105-b24b-b7efc4e45993",
+          "title": "Elastic File System (EFS)",
+          "rlinks": [
+            {
+              "href": "services/efs_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "38f80831-8699-4135-b7db-34e176b8df18",
+          "title": "CodeStar Connections",
+          "rlinks": [
+            {
+              "href": "services/codestar-connections_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "699a4766-4923-4712-be57-e7d6d4750d55",
+          "title": "CodeStar Notifications",
+          "rlinks": [
+            {
+              "href": "services/codestar-notifications_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2fa0fff2-d10c-4a04-b81e-d9f114d6b83f",
+          "title": "Amazon Textract",
+          "rlinks": [
+            {
+              "href": "services/textract_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6228783a-bcb0-4182-aaf9-45cfa8deebdd",
+          "title": "Cost and Usage Report",
+          "rlinks": [
+            {
+              "href": "services/cost-and-usage-report-service_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "92fdacca-2f42-49e9-a819-3d7d5fd56364",
+          "title": "Simple Workflow Service (SWF)",
+          "rlinks": [
+            {
+              "href": "services/swf_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a2d50f51-a1db-4593-b460-714e520b5506",
+          "title": "WorkSpaces",
+          "rlinks": [
+            {
+              "href": "services/workspaces_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1d410920-3419-4654-b061-c573d3c5eb26",
+          "title": "AWS Resource Groups Tagging API",
+          "rlinks": [
+            {
+              "href": "services/resource-groups-tagging-api_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c51283d0-8c43-46dd-b493-211794e73049",
+          "title": "Firewall Management Service (FMS)",
+          "rlinks": [
+            {
+              "href": "services/fms_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1dfb8e92-2a2e-499f-a6d8-365d757384ea",
+          "title": "Amazon GuardDuty",
+          "rlinks": [
+            {
+              "href": "services/guardduty_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "547348b6-41cd-4e46-b53c-077f9a518b1f",
+          "title": "SSM Contacts",
+          "rlinks": [
+            {
+              "href": "services/ssm-contacts_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "f7a53239-1eb4-45d9-aca4-1add1f3aec72",
+          "title": "ECR Public",
+          "rlinks": [
+            {
+              "href": "services/ecr-public_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a2c91b70-df14-497b-8261-ab83b688feef",
+          "title": "Key Management Service (KMS)",
+          "rlinks": [
+            {
+              "href": "services/kms_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "582fec6e-bd74-4492-bdf6-66250b9fb718",
+          "title": "AWS Serverless Application Repository",
+          "rlinks": [
+            {
+              "href": "services/serverlessapplicationrepository_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "90ed5982-ab14-4eae-ab6d-8bd4e2ba544d",
+          "title": "Amazon Managed Service for Apache Flink (MSF)",
+          "rlinks": [
+            {
+              "href": "services/kinesis-analytics_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "364496ca-5f6b-427d-863b-877f30e2912b",
+          "title": "Amazon Interactive Video Service Chat",
+          "rlinks": [
+            {
+              "href": "services/ivschat_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "5f50af19-e7c0-415d-89c2-6c76828db3b7",
+          "title": "Amplify UI Builder",
+          "rlinks": [
+            {
+              "href": "services/amplifyuibuilder_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d0327863-0207-4335-9c71-810e0085684e",
+          "title": "Amazon Data Lifecycle Manager",
+          "rlinks": [
+            {
+              "href": "services/dlm_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "404a838e-d045-4c50-8adc-b4810643c4ce",
+          "title": "Elastic Disaster Recovery",
+          "rlinks": [
+            {
+              "href": "services/drs_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4fc60c37-f671-4104-b186-cfaf187a1f57",
+          "title": "Amazon Detective",
+          "rlinks": [
+            {
+              "href": "services/detective_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "40753bcb-c066-46b4-ba16-9d43dd810918",
+          "title": "Amazon Rekognition",
+          "rlinks": [
+            {
+              "href": "services/rekognition_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "25a645ec-362c-4bec-b4e3-e1746d6e61a3",
+          "title": "Translate",
+          "rlinks": [
+            {
+              "href": "services/translate_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "33cfaecc-b5f3-49b4-95f4-a2d5752e8bf1",
+          "title": "Amazon Forecast",
+          "rlinks": [
+            {
+              "href": "services/forecast_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1ac91c1e-48bb-4c21-b9ff-4547e427416d",
+          "title": "AWS Cloud Map",
+          "rlinks": [
+            {
+              "href": "services/servicediscovery_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "ded9812e-d59f-48bc-b1d6-f2af539760f3",
+          "title": "AWS CodeArtifact",
+          "rlinks": [
+            {
+              "href": "services/codeartifact_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4b684b2c-e7f9-4bfc-9591-c35d61609d2e",
+          "title": "Amazon Cognito Identity User Pools",
+          "rlinks": [
+            {
+              "href": "services/cognito-identity-provider_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "5b088187-632e-4379-aedb-dfb37c6b7eb0",
+          "title": "Amazon Connect Customer Profiles",
+          "rlinks": [
+            {
+              "href": "services/customer-profiles_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d9eb1de6-5445-4f5a-8c34-4cb5d443068b",
+          "title": "Migration Hub",
+          "rlinks": [
+            {
+              "href": "services/migration-hub_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d114ccf4-a08b-4e93-8972-11c5b103608d",
+          "title": "Amazon Lex Model Building Service V2",
+          "rlinks": [
+            {
+              "href": "services/lex-models-v2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a7a53cbe-544f-41ec-8566-9e41f226cba7",
+          "title": "Elastic Load Balancing (ELB)",
+          "rlinks": [
+            {
+              "href": "services/elastic-load-balancing_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "58745a42-2fe7-41d2-87c7-988c53b3237d",
+          "title": "AWS Application Cost Profiler",
+          "rlinks": [
+            {
+              "href": "services/applicationcostprofiler_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "08990ae4-dc11-4c22-a1d6-dfa6a00bdc83",
+          "title": "Amazon CodeGuru Reviewer",
+          "rlinks": [
+            {
+              "href": "services/codeguru-reviewer_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "30c1ed36-f4b7-4467-9c2c-36b84be128c0",
+          "title": "Storage Gateway",
+          "rlinks": [
+            {
+              "href": "services/storage-gateway_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d9ed76d6-5ba3-49d9-812e-245ac5ef042c",
+          "title": "AWS IoT FleetWise",
+          "rlinks": [
+            {
+              "href": "services/iotfleetwise_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a8f8b560-4ecd-40ae-9925-163d53f8b3d9",
+          "title": "Amazon SageMaker",
+          "rlinks": [
+            {
+              "href": "services/sagemaker_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "04732c6d-6f4b-41b0-9d8e-5ee39d7c718b",
+          "title": "AWS License Manager",
+          "rlinks": [
+            {
+              "href": "services/license-manager_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2f91d7ca-bd5d-46d5-8fa3-53350e3f65ac",
+          "title": "Comprehend medical",
+          "rlinks": [
+            {
+              "href": "services/comprehendmedical_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "705e1a96-9d58-47a8-939f-2c79ef9f46a8",
+          "title": "Resource Access Manager (RAM)",
+          "rlinks": [
+            {
+              "href": "services/ram_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d390f5aa-0c69-4e3b-ab5f-11479a4f387c",
+          "title": "AWS Greengrass",
+          "rlinks": [
+            {
+              "href": "services/greengrass_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b2125284-f2fa-4d48-8ae7-9dbe854515bf",
+          "title": "Connect Campaigns",
+          "rlinks": [
+            {
+              "href": "services/connectcampaigns_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "130f7cf8-92b7-4d1b-aabf-22a000743bca",
+          "title": "CloudWatch Synthetics",
+          "rlinks": [
+            {
+              "href": "services/synthetics_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9ffb511a-ebcb-4bf4-9afb-75663c315e8b",
+          "title": "Amazon MQ",
+          "rlinks": [
+            {
+              "href": "services/mq_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "84366f00-09f8-48d9-b621-50a2c2ffbaa1",
+          "title": "AWS Private Certificate Authority",
+          "rlinks": [
+            {
+              "href": "services/acm-pca_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3e9f7d0b-5672-4b9d-ae30-61f53edf1e9f",
+          "title": "Schemas",
+          "rlinks": [
+            {
+              "href": "services/schemas_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "62aaa8cf-7a37-4023-aa48-1871051e5b08",
+          "title": "Elastic Transcoder",
+          "rlinks": [
+            {
+              "href": "services/elastic-transcoder_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d0e4b38a-c778-488a-90f8-05f43eb37abb",
+          "title": "Redshift",
+          "rlinks": [
+            {
+              "href": "services/redshift_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b2f7de81-7c6f-4f76-a66d-139a0783b5f4",
+          "title": "Amazon OpenSearch Service",
+          "rlinks": [
+            {
+              "href": "services/elasticsearch-service_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1de78568-31eb-4a84-9616-59f18d6b9f66",
+          "title": "IoT TwinMaker",
+          "rlinks": [
+            {
+              "href": "services/iottwinmaker_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "e88c201e-037a-44f2-af97-cd9c538fb09f",
+          "title": "Amazon Location Service",
+          "rlinks": [
+            {
+              "href": "services/location_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1abc3271-7dde-4f84-97a6-9461080e1c28",
+          "title": "Transcribe",
+          "rlinks": [
+            {
+              "href": "services/transcribe_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9195831a-e8bc-411a-8459-dd280f628961",
+          "title": "Amazon Pinpoint",
+          "rlinks": [
+            {
+              "href": "services/pinpoint_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "02e21c14-e8f8-4a09-9840-09961443dd1c",
+          "title": "Amazon Managed Workflows for Apache Airflow",
+          "rlinks": [
+            {
+              "href": "services/mwaa_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3b13bc3f-56f9-43a9-b9e4-7962ca7387e9",
+          "title": "Certificate Manager",
+          "rlinks": [
+            {
+              "href": "services/acm_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "fc342616-5032-431d-a421-ccd4331ea8fb",
+          "title": "Amazon Connect Cases",
+          "rlinks": [
+            {
+              "href": "services/connectcases_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "ec0795d9-6dcc-4c2e-98a0-a35bc1c7636e",
+          "title": "Amazon AppFlow",
+          "rlinks": [
+            {
+              "href": "services/appflow_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1a74753b-4cc6-49fb-aff5-2c7896834c4b",
+          "title": "Amazon Managed Service for Prometheus",
+          "rlinks": [
+            {
+              "href": "services/amp_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "96fcba81-4b12-497e-9394-5cb538aa374c",
+          "title": "AWS Security Hub",
+          "rlinks": [
+            {
+              "href": "services/securityhub_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d094bd91-f85d-44de-a14c-17af7d2287ad",
+          "title": "CloudHSM v2",
+          "rlinks": [
+            {
+              "href": "services/cloudhsm-v2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "27eb6138-5da7-444a-b94e-ea27039c63fb",
+          "title": "Athena",
+          "rlinks": [
+            {
+              "href": "services/athena_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "0ad09885-dbcb-48c9-9aab-3fffb45713b4",
+          "title": "Amazon WorkSpaces Web",
+          "rlinks": [
+            {
+              "href": "services/workspaces-web_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a29d7685-9eae-4a01-bcae-1ebc7a2c124d",
+          "title": "AWS Shield Advanced",
+          "rlinks": [
+            {
+              "href": "services/shield_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "76b212c8-1e56-4a0f-8f99-4a7c3a7e5274",
+          "title": "Amazon MemoryDB",
+          "rlinks": [
+            {
+              "href": "services/memorydb_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "01ac786b-f8fa-47d1-ae58-bb9fe9a7f8cd",
+          "title": "AWS Billing Conductor",
+          "rlinks": [
+            {
+              "href": "services/billingconductor_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a2abf5f2-0b71-4f12-8338-f41feebab70a",
+          "title": "Database Migration Service",
+          "rlinks": [
+            {
+              "href": "services/database-migration-service_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9b68c37e-b4cd-4397-af87-32b226b23d3c",
+          "title": "Application Migration Service",
+          "rlinks": [
+            {
+              "href": "services/mgn_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "f260b692-7041-45cd-afaf-3ec9ea2f2068",
+          "title": "AWS IdentityStore Service",
+          "rlinks": [
+            {
+              "href": "services/identitystore_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b115e631-02de-4f30-badf-93fe47763c7c",
+          "title": "AWS CodeBuild",
+          "rlinks": [
+            {
+              "href": "services/codebuild_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "0893f482-44cc-4205-81a2-d1731dccc5bc",
+          "title": "Amazon WorkMail",
+          "rlinks": [
+            {
+              "href": "services/workmail_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6b7d1492-9fad-4707-b140-e827507ee08d",
+          "title": "AWS Elemental MediaPackage",
+          "rlinks": [
+            {
+              "href": "services/mediapackage_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "754e9036-f103-40e5-bd3d-62428577be1b",
+          "title": "CloudFormation",
+          "rlinks": [
+            {
+              "href": "services/cloudformation_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "00fb4f6c-8408-4b0c-9fca-77360bdad538",
+          "title": "DynamoDB",
+          "rlinks": [
+            {
+              "href": "services/dynamodb_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1361614c-f7a7-4acd-bf3b-05da6099b152",
+          "title": "Amazon Inspector Classic",
+          "rlinks": [
+            {
+              "href": "services/inspector_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "aadc156f-68fa-43a2-a639-5c4a2e29fec7",
+          "title": "Simple Queue Service (SQS)",
+          "rlinks": [
+            {
+              "href": "services/sqs_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "98a21202-8a0f-44e9-92c0-b2bd5a781b50",
+          "title": "Amazon FinSpace",
+          "rlinks": [
+            {
+              "href": "services/finspace_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9e5070cc-a36b-431b-ac7d-0b6c1d73a526",
+          "title": "API Gateway",
+          "rlinks": [
+            {
+              "href": "services/api-gateway_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c42ba982-a23e-49e4-81c5-e2e2aabcec85",
+          "title": "Cognito Identity Pools",
+          "rlinks": [
+            {
+              "href": "services/cognito-identity_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "e025d379-4acc-4fc9-abf6-ed6fb041d170",
+          "title": "Amazon Interactive Video Service",
+          "rlinks": [
+            {
+              "href": "services/ivs_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "2169f606-976f-4a45-84e3-52a64c7fa0a5",
+          "title": "AWS Resource Explorer",
+          "rlinks": [
+            {
+              "href": "services/resource-explorer-2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "70baacf9-9742-45bb-b925-12af380f8f38",
+          "title": "AWS Signer",
+          "rlinks": [
+            {
+              "href": "services/signer_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a92d9fd6-8b9b-489e-8fc4-2a33c364da6d",
+          "title": "Amazon Managed Grafana",
+          "rlinks": [
+            {
+              "href": "services/grafana_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "45a9d255-f154-4b8d-bcea-1f3c9ec22469",
+          "title": "Amazon QuickSight",
+          "rlinks": [
+            {
+              "href": "services/quicksight_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "4e5b34ad-daf1-4195-b784-ee1b148f9a94",
+          "title": "Amazon CloudWatch Observability Access Manager",
+          "rlinks": [
+            {
+              "href": "services/oam_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3ce9dc14-82b8-4215-90cf-30ef086ba7eb",
+          "title": "AWS Price List Service",
+          "rlinks": [
+            {
+              "href": "services/pricing_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "dca95c1e-f9a4-4e53-8b85-3cec32503238",
+          "title": "AWS Amplify Admin",
+          "rlinks": [
+            {
+              "href": "services/amplifybackend_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "e56d971d-c5c0-458a-87a5-b4b5a396006d",
+          "title": "API Gateway V2",
+          "rlinks": [
+            {
+              "href": "services/apigatewayv2_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "942c7c3f-043e-4bbf-903c-16db9b50fe03",
+          "title": "Simple Email Service (SES)",
+          "rlinks": [
+            {
+              "href": "services/ses_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1bc86494-ca95-47ca-8553-3f25fb6abb64",
+          "title": "AWS IoT Events",
+          "rlinks": [
+            {
+              "href": "services/iot-events_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "f62bf027-e57b-4710-84ff-e63504af021c",
+          "title": "App Mesh",
+          "rlinks": [
+            {
+              "href": "services/app-mesh_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "8f0a574c-07e3-4646-a387-e9a40e5b2fb0",
+          "title": "AWS AppConfig",
+          "rlinks": [
+            {
+              "href": "services/appconfig_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "e9ab5e14-31f1-4932-b472-b1b50fadb005",
+          "title": "Amazon OpenSearch Ingestion Service",
+          "rlinks": [
+            {
+              "href": "services/osis_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6f2a5078-4241-44f8-86ea-6430de7ebc48",
+          "title": "AWS Secrets Manager",
+          "rlinks": [
+            {
+              "href": "services/secrets-manager_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "1c6e722f-190d-4e42-8e75-f221b68d012f",
+          "title": "Backup Gateway",
+          "rlinks": [
+            {
+              "href": "services/backup-gateway_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "8886a37e-7193-4bed-9696-4bb76b1acb4b",
+          "title": "CodeDeploy",
+          "rlinks": [
+            {
+              "href": "services/codedeploy_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "32ab21cb-27d3-4445-9f18-cef1fbf130a2",
+          "title": "Amazon DevOps Guru",
+          "rlinks": [
+            {
+              "href": "services/devops-guru_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
