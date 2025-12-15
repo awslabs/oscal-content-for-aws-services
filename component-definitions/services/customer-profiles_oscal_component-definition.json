@@ -1,0 +1,133 @@
+{
+  "component-definition": {
+    "uuid": "a48323be-2f58-41d1-a948-4a021188be6a",
+    "metadata": {
+      "title": "Amazon Connect Customer Profiles",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "8397690f-686b-42d3-98c0-5756993f0f3d",
+        "type": "service",
+        "title": "Customer Profiles",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "Customer Profiles",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2020-08-15"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Connect Customer Profiles",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "profile",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "profile",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "profile",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "fd5a9917-b344-43f2-9d8f-df17aea2087b",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "95255835-b2f5-446a-b3da-cc92305ba214",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "74b4bc33-a7cf-4709-b55a-f1c5e7b39fb1",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "2930d749-54b1-4d7f-beaf-ed70d34ac20e",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "b61bdd26-1b09-4fc9-a067-3ac9429acd81",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "a360932b-5632-40d0-b2e9-ecb84d8cd4c5",
+            "text": "Canada (Central)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "bc644e9d-5488-4811-80bc-3dd634744ac9",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "f80c3764-4775-4a1e-906b-aceb485fd9c9",
+            "text": "Europe (London)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+            "resource-fragment": "33be3e8b-fef1-4628-a729-60822266755a",
+            "text": "US West (Oregon)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "1b7464c7-beff-4a15-b6ee-209d6f9f9f9d",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

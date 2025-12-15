@@ -1,0 +1,127 @@
+{
+  "component-definition": {
+    "uuid": "60483fa8-46ff-4c8d-b4d0-fc07d920a323",
+    "metadata": {
+      "title": "Amazon Lex Model Building Service",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "51f14c71-c06f-44cd-aef8-6a53163631eb",
+        "type": "service",
+        "title": "Lex Model Building Service",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "Lex Model Building Service",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2017-04-19"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Lex Model Building Service",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "models.lex",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "lex",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "lex",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "95255835-b2f5-446a-b3da-cc92305ba214",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "2930d749-54b1-4d7f-beaf-ed70d34ac20e",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "b61bdd26-1b09-4fc9-a067-3ac9429acd81",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "bc644e9d-5488-4811-80bc-3dd634744ac9",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "31e959c6-95fb-4ba7-8464-e83d5a04bef5",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "f80c3764-4775-4a1e-906b-aceb485fd9c9",
+            "text": "Europe (London)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "8c313119-24de-4e47-b7dc-0cbd2a8eba1a",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#730dd0f6-271c-432a-adb1-16993e4b8783",
+            "resource-fragment": "33be3e8b-fef1-4628-a729-60822266755a",
+            "text": "US West (Oregon)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "730dd0f6-271c-432a-adb1-16993e4b8783",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

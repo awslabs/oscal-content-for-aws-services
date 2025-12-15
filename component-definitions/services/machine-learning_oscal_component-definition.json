@@ -1,0 +1,85 @@
+{
+  "component-definition": {
+    "uuid": "b317be27-a341-4021-b352-e30989578a5d",
+    "metadata": {
+      "title": "Machine Learning",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "924d259a-3cb6-48e2-8a82-993c16d1e57c",
+        "type": "service",
+        "title": "Machine Learning",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "Machine Learning",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2014-12-12"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "Machine Learning",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "machinelearning",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "machinelearning",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "machinelearning",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#3fadc365-79dd-4fa5-b614-91eca4c9f55c",
+            "resource-fragment": "31e959c6-95fb-4ba7-8464-e83d5a04bef5",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#3fadc365-79dd-4fa5-b614-91eca4c9f55c",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "3fadc365-79dd-4fa5-b614-91eca4c9f55c",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

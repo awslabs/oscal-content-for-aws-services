@@ -1,0 +1,91 @@
+{
+  "component-definition": {
+    "uuid": "a32ea325-eeee-47d9-ad90-2bfb1e110cf3",
+    "metadata": {
+      "title": "Cost and Usage Report",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "4a17faae-2379-44dd-97d0-e05670c23507",
+        "type": "service",
+        "title": "Cost and Usage Report Service",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "Cost and Usage Report Service",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2017-01-06"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "Cost and Usage Report",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "label",
+            "value": "AWS Cost and Usage Report",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "cur",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "cur",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "cur",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#cff600f8-a883-4ab4-b982-aaddd7d8cccd",
+            "resource-fragment": "9a0e373e-8208-49f7-8363-71ee2a77754d",
+            "text": "China (Ningxia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#cff600f8-a883-4ab4-b982-aaddd7d8cccd",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "cff600f8-a883-4ab4-b982-aaddd7d8cccd",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

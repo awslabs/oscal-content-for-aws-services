@@ -1,0 +1,79 @@
+{
+  "component-definition": {
+    "uuid": "435d82b6-f45f-43a0-aa07-c40c593dde24",
+    "metadata": {
+      "title": "AWS Application Cost Profiler",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "8d2a6d4c-a490-40d9-8b44-0971cc3415f2",
+        "type": "service",
+        "title": "ApplicationCostProfiler",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "ApplicationCostProfiler",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2020-09-10"
+          },
+          {
+            "name": "availability",
+            "value": "GLOBAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "AWS Application Cost Profiler",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "application-cost-profiler",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "application-cost-profiler",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "application-cost-profiler",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#c42281e3-30b0-44c1-89d7-6e485277836f",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "c42281e3-30b0-44c1-89d7-6e485277836f",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

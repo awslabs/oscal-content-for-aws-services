@@ -1,0 +1,139 @@
+{
+  "component-definition": {
+    "uuid": "d05ad46c-e301-4197-b26a-d57cf3503445",
+    "metadata": {
+      "title": "Amazon CodeGuru Profiler",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "a930c0cb-bb46-4847-b1f3-bf452895463e",
+        "type": "service",
+        "title": "CodeGuruProfiler",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "CodeGuruProfiler",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2019-07-18"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "Amazon CodeGuru Profiler",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "label",
+            "value": "Amazon CodeGuru",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "codeguru-profiler",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "codeguru-profiler",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "codeguru-profiler",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "95255835-b2f5-446a-b3da-cc92305ba214",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "2930d749-54b1-4d7f-beaf-ed70d34ac20e",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "b61bdd26-1b09-4fc9-a067-3ac9429acd81",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "bc644e9d-5488-4811-80bc-3dd634744ac9",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "5c65ae23-d283-47b2-8999-371e4a4388a6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "31e959c6-95fb-4ba7-8464-e83d5a04bef5",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "f80c3764-4775-4a1e-906b-aceb485fd9c9",
+            "text": "Europe (London)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "0eb891eb-122c-4f41-99af-621cbfa33f5f",
+            "text": "US East (Ohio)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#e5572d39-a8ea-44a4-b066-85f786ac56fc",
+            "resource-fragment": "33be3e8b-fef1-4628-a729-60822266755a",
+            "text": "US West (Oregon)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "e5572d39-a8ea-44a4-b066-85f786ac56fc",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

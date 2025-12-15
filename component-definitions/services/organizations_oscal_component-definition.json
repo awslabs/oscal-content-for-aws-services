@@ -1,0 +1,97 @@
+{
+  "component-definition": {
+    "uuid": "28f4f97a-9055-440e-9615-9f1ca4368019",
+    "metadata": {
+      "title": "AWS Organizations",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "66e953cb-3ade-45bc-a086-ca38c2d2fe84",
+        "type": "service",
+        "title": "Organizations",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "Organizations",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2016-11-28"
+          },
+          {
+            "name": "availability",
+            "value": "GLOBAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "AWS Organizations",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "label",
+            "value": "AWS Organizations",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "organizations",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "organizations",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "organizations",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#67348c4a-17c3-42a3-9f4c-b308ab0ac771",
+            "resource-fragment": "9a0e373e-8208-49f7-8363-71ee2a77754d",
+            "text": "China (Ningxia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#67348c4a-17c3-42a3-9f4c-b308ab0ac771",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#67348c4a-17c3-42a3-9f4c-b308ab0ac771",
+            "resource-fragment": "8c313119-24de-4e47-b7dc-0cbd2a8eba1a",
+            "text": "AWS GovCloud (US-West)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "67348c4a-17c3-42a3-9f4c-b308ab0ac771",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

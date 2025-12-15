@@ -1,0 +1,265 @@
+{
+  "component-definition": {
+    "uuid": "917274f7-97ff-483d-921b-205c6b2f4210",
+    "metadata": {
+      "title": "Security Token Service (STS)",
+      "last-modified": "2025-12-14T19:32:06Z",
+      "oscal-version": "1.1.3",
+      "version": "DRAFT",
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your feedback about the quality and usefulness of this content.\n\n"
+    },
+    "components": [
+      {
+        "uuid": "8848fb64-d26f-477e-89b5-38c1f2897dd5",
+        "type": "service",
+        "title": "STS",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "value": "STS",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "version",
+            "value": "2011-06-15"
+          },
+          {
+            "name": "availability",
+            "value": "REGIONAL",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "label",
+            "value": "Security Token Service (STS)",
+            "class": "serviceFullName",
+            "group": "service"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "value": "sts",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "arnNamespace",
+            "value": "sts",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "value": "sts",
+            "ns": "http://aws.amazon.com/ns/oscal"
+          }
+        ],
+        "links": [
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "fd5a9917-b344-43f2-9d8f-df17aea2087b",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "95255835-b2f5-446a-b3da-cc92305ba214",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "74b4bc33-a7cf-4709-b55a-f1c5e7b39fb1",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "480b0d3a-3bd4-499c-a398-9f150106520c",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "2c55f499-ec10-4da9-8889-1791669d394a",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "58e5accd-8515-4919-b58c-91d02edac223",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "2930d749-54b1-4d7f-beaf-ed70d34ac20e",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "b61bdd26-1b09-4fc9-a067-3ac9429acd81",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "8041109b-0a0b-46cc-bddb-91d703667637",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "08a9725b-482b-4ad3-99ee-e516b03910ab",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "b3302f08-b553-4e39-b71a-887eed9f5f83",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "a360932b-5632-40d0-b2e9-ecb84d8cd4c5",
+            "text": "Canada (Central)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "8644ad7e-5ef4-4e96-971b-729eb4ca23a7",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "c334b9ec-fafc-4294-9ee4-666cdffaaea2",
+            "text": "China (Beijing)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "9a0e373e-8208-49f7-8363-71ee2a77754d",
+            "text": "China (Ningxia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "bc644e9d-5488-4811-80bc-3dd634744ac9",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "a78ccffd-323b-41d6-8553-1691445ad5a0",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "5c65ae23-d283-47b2-8999-371e4a4388a6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "01c9ec8f-f6dc-4a03-a959-073907fe4d17",
+            "text": "Europe (Milan)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "678947c8-d858-4d5b-9906-16121cc7c86e",
+            "text": "Europe (Spain)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "31e959c6-95fb-4ba7-8464-e83d5a04bef5",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "f80c3764-4775-4a1e-906b-aceb485fd9c9",
+            "text": "Europe (London)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "4b429c20-fcff-4fb4-aff2-fd8e65e56049",
+            "text": "Europe (Paris)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "4f5f7a6d-2955-41fa-beb3-6ffd3bd4b038",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "77b8c474-6eb9-4b40-a8b1-de1ed337a095",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "85e5ed41-83ba-4b84-b058-456308f2e4c3",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "15d02c1c-6731-4c2f-b707-dc7ea237789b",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "0eb891eb-122c-4f41-99af-621cbfa33f5f",
+            "text": "US East (Ohio)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "f8733d9d-f3c6-4c91-b43f-76aea509b3ef",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "8c313119-24de-4e47-b7dc-0cbd2a8eba1a",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "529b5c93-4ad1-4231-975f-418dc8cad7d8",
+            "text": "US West (N. California)"
+          },
+          {
+            "rel": "provided-by",
+            "href": "#4d90dae7-c78b-400c-a25e-85132141a815",
+            "resource-fragment": "33be3e8b-fef1-4628-a729-60822266755a",
+            "text": "US West (Oregon)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "4d90dae7-c78b-400c-a25e-85132141a815",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../AWS_Regions_oscal_component-definition.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
