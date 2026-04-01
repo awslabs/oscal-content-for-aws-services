@@ -3,8 +3,8 @@
     "uuid": "76e7338d-2c14-46c4-8cb3-6df033bb644e",
     "metadata": {
       "title": "Amazon Connect Service",
-      "last-modified": "2026-03-31T19:45:48.172730+00:00",
-      "version": "0.2.1",
+      "last-modified": "2026-04-01T16:06:23.455154+00:00",
+      "version": "0.2.3",
       "oscal-version": "1.2.1",
       "links": [
         {
@@ -582,7 +582,7 @@
         "uuid": "4556b4ff-0063-468a-8370-ab9f34c1a487",
         "type": "service",
         "title": "Connect Health",
-        "description": "_Empty_",
+        "description": "Amazon Connect Health provides real-time monitoring and health status visibility into your Amazon Connect contact center infrastructure to help identify and resolve operational issues.",
         "props": [
           {
             "name": "service-id",

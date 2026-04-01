@@ -1,9 +1,9 @@
 {
   "component-definition": {
-    "uuid": "fc0bc211-63b1-48af-b53e-848ab75170cf",
+    "uuid": "1ebc416c-ce51-49bc-9c5c-b2bbd9f07e6a",
     "metadata": {
       "title": "AWS Auto Scaling Plans",
-      "last-modified": "2026-03-31T19:44:45.813283+00:00",
+      "last-modified": "2026-04-01T00:13:31.972033+00:00",
       "version": "0.2.0",
       "oscal-version": "1.2.1",
       "links": [
@@ -61,7 +61,7 @@
     },
     "components": [
       {
-        "uuid": "2a08fb4b-ad86-4737-be3f-a3a59d43c303",
+        "uuid": "b2fc6259-4f69-47bc-a180-583a599934b6",
         "type": "service",
         "title": "AWS Auto Scaling Plans",
         "description": "AWS Auto Scaling Plans helps you configure automatic scaling for your AWS resources by creating scaling plans that define how to optimize for availability, cost, or a balance of both based on your application's needs.",
@@ -120,157 +120,157 @@
         ],
         "links": [
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
             "text": "Africa (Cape Town)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
             "text": "Asia Pacific (Hong Kong)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
             "text": "Asia Pacific (Tokyo)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
             "text": "Asia Pacific (Seoul)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
             "text": "Asia Pacific (Osaka)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
             "text": "Asia Pacific (Mumbai)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
             "text": "Asia Pacific (Singapore)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
             "text": "Asia Pacific (Sydney)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
             "text": "Asia Pacific (Jakarta)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
             "text": "Canada (Central)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
             "text": "China (Beijing)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
             "text": "China (Ningxia)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
             "text": "Europe (Frankfurt)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
             "text": "Europe (Stockholm)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
             "text": "Europe (Milan)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
             "text": "Europe (Ireland)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
             "text": "Europe (London)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
             "text": "Europe (Paris)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
             "text": "Middle East (Bahrain)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
             "text": "South America (Sao Paulo)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
             "text": "US East (N. Virginia)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
             "text": "US East (Ohio)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
             "text": "AWS GovCloud (US-East)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
             "text": "AWS GovCloud (US-West)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
             "text": "US West (N. California)"
           },
           {
-            "href": "#9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+            "href": "#8bef8575-2cf4-4add-8bd2-79517a8e4121",
             "rel": "provided-by",
             "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
             "text": "US West (Oregon)"
@@ -285,7 +285,7 @@
     "back-matter": {
       "resources": [
         {
-          "uuid": "9522a37e-d1d2-4798-a7c6-f3313faf7bd5",
+          "uuid": "8bef8575-2cf4-4add-8bd2-79517a8e4121",
           "title": "AWS Regions Component Definition",
           "rlinks": [
             {

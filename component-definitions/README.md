@@ -2,7 +2,7 @@
 
 OSCAL model type: `component-definition`
 
-This directory contains 233 OSCAL Component Definitions files in JSON format.
+This directory contains 230 OSCAL Component Definitions files in JSON format.
 
 ## Summary
 
@@ -67,7 +67,7 @@ This directory contains 233 OSCAL Component Definitions files in JSON format.
 | [comprehendmedical.oscal.json](comprehendmedical.oscal.json) | AWS Comprehend Medical | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [compute-optimizer.oscal.json](compute-optimizer.oscal.json) | AWS Compute Optimizer | 2 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [config.oscal.json](config.oscal.json) | AWS Config | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
-| [connect.oscal.json](connect.oscal.json) | Amazon Connect Service | 11 | 5 | 0.2.1 | 1.2.1 | 2026-03-31 |
+| [connect.oscal.json](connect.oscal.json) | Amazon Connect Service | 11 | 5 | 0.2.3 | 1.2.1 | 2026-04-01 |
 | [controlcatalog.oscal.json](controlcatalog.oscal.json) | AWS Control Catalog | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [controltower.oscal.json](controltower.oscal.json) | AWS Control Tower | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [databrew.oscal.json](databrew.oscal.json) | AWS Glue DataBrew | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
@@ -93,12 +93,11 @@ This directory contains 233 OSCAL Component Definitions files in JSON format.
 | [ecs.oscal.json](ecs.oscal.json) | Amazon EC2 Container Service | 14 | 14 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [efs.oscal.json](efs.oscal.json) | Amazon Elastic File System | 8 | 8 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [eks.oscal.json](eks.oscal.json) | Amazon Elastic Kubernetes Service | 6 | 5 | 0.2.1 | 1.2.1 | 2026-03-31 |
-| [elastic-inference.oscal.json](elastic-inference.oscal.json) | Amazon Elastic  Inference | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [elasticache.oscal.json](elasticache.oscal.json) | Amazon ElastiCache | 9 | 9 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [elasticbeanstalk.oscal.json](elasticbeanstalk.oscal.json) | AWS Elastic Beanstalk | 4 | 4 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [elb.oscal.json](elb.oscal.json) | Elastic Load Balancing | 19 | 18 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [elemental.oscal.json](elemental.oscal.json) | AWS MediaTailor | 8 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
-| [elementalinference.oscal.json](elementalinference.oscal.json) | AWS Elemental Inference | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
+| [elementalinference.oscal.json](elementalinference.oscal.json) | AWS Elemental Inference | 1 | 0 | 0.2.2 | 1.2.1 | 2026-04-01 |
 | [emr.oscal.json](emr.oscal.json) | Amazon Elastic MapReduce | 7 | 5 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [entityresolution.oscal.json](entityresolution.oscal.json) | AWS EntityResolution | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [eventbridge.oscal.json](eventbridge.oscal.json) | Amazon EventBridge | 6 | 3 | 0.2.1 | 1.2.1 | 2026-03-31 |
@@ -122,7 +121,7 @@ This directory contains 233 OSCAL Component Definitions files in JSON format.
 | [importexport.oscal.json](importexport.oscal.json) | AWS Import/Export | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [inspector.oscal.json](inspector.oscal.json) | Inspector Scan | 6 | 5 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [internetmonitor.oscal.json](internetmonitor.oscal.json) | Amazon CloudWatch Internet Monitor | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
-| [iot.oscal.json](iot.oscal.json) | AWS IoT | 25 | 15 | 0.2.1 | 1.2.1 | 2026-03-31 |
+| [iot.oscal.json](iot.oscal.json) | AWS IoT | 24 | 15 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [ivs.oscal.json](ivs.oscal.json) | Amazon Interactive Video Service | 6 | 4 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [kafka.oscal.json](kafka.oscal.json) | Managed Streaming for Kafka | 3 | 2 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [kendra.oscal.json](kendra.oscal.json) | AWSKendraFrontendService | 2 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
@@ -178,7 +177,6 @@ This directory contains 233 OSCAL Component Definitions files in JSON format.
 | [polly.oscal.json](polly.oscal.json) | Amazon Polly | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [qapps.oscal.json](qapps.oscal.json) | QApps | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [qbusiness.oscal.json](qbusiness.oscal.json) | QBusiness | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
-| [qldb-session.oscal.json](qldb-session.oscal.json) | Amazon QLDB Session | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [quicksight.oscal.json](quicksight.oscal.json) | Amazon QuickSight | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [ram.oscal.json](ram.oscal.json) | AWS Resource Access Manager | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [rbin.oscal.json](rbin.oscal.json) | Amazon Recycle Bin | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
@@ -200,7 +198,7 @@ This directory contains 233 OSCAL Component Definitions files in JSON format.
 | [s3vectors.oscal.json](s3vectors.oscal.json) | Amazon S3 Vectors | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [sagemaker.oscal.json](sagemaker.oscal.json) | Amazon SageMaker Service | 23 | 16 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [schemas.oscal.json](schemas.oscal.json) | Schemas | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
-| [sdb.oscal.json](sdb.oscal.json) | Amazon SimpleDB v2 | 2 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
+| [sdb.oscal.json](sdb.oscal.json) | Amazon SimpleDB v2 | 2 | 0 | 0.2.2 | 1.2.1 | 2026-04-01 |
 | [secretsmanager.oscal.json](secretsmanager.oscal.json) | AWS Secrets Manager | 5 | 5 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [security-ir.oscal.json](security-ir.oscal.json) | Security Incident Response | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [securityhub.oscal.json](securityhub.oscal.json) | AWS SecurityHub | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
@@ -211,7 +209,7 @@ This directory contains 233 OSCAL Component Definitions files in JSON format.
 | [servicediscovery.oscal.json](servicediscovery.oscal.json) | Amazon Route 53 Auto Naming | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [ses.oscal.json](ses.oscal.json) | Amazon Simple Email Service | 4 | 2 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [shield.oscal.json](shield.oscal.json) | AWS Shield | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
-| [signer.oscal.json](signer.oscal.json) | AWS Signer | 2 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
+| [signer.oscal.json](signer.oscal.json) | AWS Signer | 2 | 0 | 0.2.2 | 1.2.1 | 2026-04-01 |
 | [signin.oscal.json](signin.oscal.json) | AWS Sign-In Service | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [snowball.oscal.json](snowball.oscal.json) | Amazon Import/Export Snowball | 2 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [sns.oscal.json](sns.oscal.json) | Amazon Simple Notification Service | 3 | 3 | 0.2.1 | 1.2.1 | 2026-03-31 |
@@ -236,7 +234,7 @@ This directory contains 233 OSCAL Component Definitions files in JSON format.
 | [vpc-lattice.oscal.json](vpc-lattice.oscal.json) | Amazon VPC Lattice | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [waf.oscal.json](waf.oscal.json) | AWS WAF Regional | 11 | 11 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [wellarchitectedtool.oscal.json](wellarchitectedtool.oscal.json) | AWS Well-Architected Tool | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
-| [wickr.oscal.json](wickr.oscal.json) | AWS Wickr Admin API | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
+| [wickr.oscal.json](wickr.oscal.json) | AWS Wickr Admin API | 1 | 0 | 0.2.2 | 1.2.1 | 2026-04-01 |
 | [workmail.oscal.json](workmail.oscal.json) | Amazon WorkMail | 2 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |
 | [workspaces.oscal.json](workspaces.oscal.json) | Amazon WorkSpaces | 6 | 3 | 0.2.1 | 1.2.1 | 2026-03-31 |
 | [xray.oscal.json](xray.oscal.json) | AWS X-Ray | 1 | 0 | 0.2.0 | 1.2.1 | 2026-03-31 |

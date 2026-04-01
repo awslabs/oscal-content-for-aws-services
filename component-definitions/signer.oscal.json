@@ -3,8 +3,8 @@
     "uuid": "4b8426cf-4a82-4975-9317-f182b097ed5e",
     "metadata": {
       "title": "AWS Signer",
-      "last-modified": "2026-03-31T19:44:45.901749+00:00",
-      "version": "0.2.0",
+      "last-modified": "2026-04-01T16:06:23.650944+00:00",
+      "version": "0.2.2",
       "oscal-version": "1.2.1",
       "links": [
         {
@@ -64,7 +64,7 @@
         "uuid": "c5e57095-9dbf-4fb5-aef4-f4b1d361b19c",
         "type": "service",
         "title": "AWS Signer Data Plane",
-        "description": "_Empty_",
+        "description": "AWS Signer Data Plane is a fully managed code-signing service that enables developers to cryptographically sign code to ensure its integrity and authenticity before deployment.",
         "props": [
           {
             "name": "service-id",

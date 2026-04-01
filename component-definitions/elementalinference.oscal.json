@@ -3,8 +3,8 @@
     "uuid": "9dfd67d8-6ce0-468d-b18e-879a5748e4db",
     "metadata": {
       "title": "AWS Elemental Inference",
-      "last-modified": "2026-03-31T19:44:45.849012+00:00",
-      "version": "0.2.0",
+      "last-modified": "2026-04-01T16:06:23.519523+00:00",
+      "version": "0.2.2",
       "oscal-version": "1.2.1",
       "links": [
         {
@@ -64,7 +64,7 @@
         "uuid": "e544b455-d0e2-420d-9a1e-6f9ce5b658c8",
         "type": "service",
         "title": "AWS Elemental Inference",
-        "description": "_Empty_",
+        "description": "AWS Elemental Inference is a machine learning inference service designed to accelerate and optimize video processing workloads for media and entertainment applications.",
         "props": [
           {
             "name": "service-id",

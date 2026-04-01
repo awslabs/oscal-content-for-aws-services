@@ -416,31 +416,6 @@
         ]
       },
       {
-        "uuid": "d7693b7a-f603-464e-b0e8-c608f633f964",
-        "type": "service",
-        "title": "AWS IoT 1-Click Devices Service",
-        "description": "_Empty_",
-        "props": [
-          {
-            "name": "service-id",
-            "ns": "http://aws.amazon.com/ns/oscal",
-            "value": "IoT 1Click Devices Service"
-          },
-          {
-            "name": "label",
-            "value": "AWS IoT 1-Click Devices Service",
-            "class": "marketingName",
-            "group": "marketing"
-          },
-          {
-            "name": "lifecycle-stage",
-            "ns": "http://aws.amazon.com/ns/oscal",
-            "value": "generally-available"
-          }
-        ],
-        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
-      },
-      {
         "uuid": "a209c1d4-7b17-4a83-9957-58f0b6bfd61e",
         "type": "service",
         "title": "AWS IoT Data Plane",

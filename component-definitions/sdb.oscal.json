@@ -3,8 +3,8 @@
     "uuid": "6efdb00d-5523-4e8c-9f0b-a44273ca705b",
     "metadata": {
       "title": "Amazon SimpleDB v2",
-      "last-modified": "2026-03-31T19:44:45.902539+00:00",
-      "version": "0.2.0",
+      "last-modified": "2026-04-01T16:06:23.653254+00:00",
+      "version": "0.2.2",
       "oscal-version": "1.2.1",
       "links": [
         {
@@ -173,7 +173,7 @@
         "uuid": "7a3613d3-fa34-47b3-aaf2-d939a88b5d36",
         "type": "service",
         "title": "Amazon SimpleDB v2",
-        "description": "_Empty_",
+        "description": "Amazon SimpleDB v2 is a non-relational data store that provides core database functions such as data indexing, querying, and storage for structured data in the cloud.",
         "props": [
           {
             "name": "service-id",

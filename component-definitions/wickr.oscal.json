@@ -3,8 +3,8 @@
     "uuid": "d2aedeb2-3f9d-475c-b138-0ec10e64c172",
     "metadata": {
       "title": "AWS Wickr Admin API",
-      "last-modified": "2026-03-31T19:44:45.909916+00:00",
-      "version": "0.2.0",
+      "last-modified": "2026-04-01T16:06:23.670771+00:00",
+      "version": "0.2.2",
       "oscal-version": "1.2.1",
       "links": [
         {
@@ -64,7 +64,7 @@
         "uuid": "1d667a2e-b434-4a70-b200-cd18fffe1c20",
         "type": "service",
         "title": "AWS Wickr Admin API",
-        "description": "_Empty_",
+        "description": "AWS Wickr Admin API enables administrators to programmatically manage and configure their Wickr secure messaging and collaboration network, including users, devices, and data retention settings.",
         "props": [
           {
             "name": "service-id",
