@@ -1,0 +1,117 @@
+{
+  "component-definition": {
+    "uuid": "92483a82-0891-4101-a7d9-d76995e88b4f",
+    "metadata": {
+      "title": "Nova Act Service",
+      "last-modified": "2026-03-31T19:44:45.875873+00:00",
+      "version": "0.2.0",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "6333006f-5c5f-4a14-a4e7-98df22481feb",
+        "type": "service",
+        "title": "Nova Act Service",
+        "description": "Nova Act Service is an AWS service that enables developers to build and run AI agents capable of taking actions within web browsers to automate tasks and workflows.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Nova Act"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Nova Act",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Nova Act Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "nova-act"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "nova-act"
+          }
+        ],
+        "links": [
+          {
+            "href": "https://docs.aws.amazon.com/nova/",
+            "rel": "reference"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      }
+    ]
+  }
+}

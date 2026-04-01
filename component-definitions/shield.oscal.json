@@ -1,0 +1,144 @@
+{
+  "component-definition": {
+    "uuid": "e654fc0a-8ebd-4384-9eb9-c02e696bcc4c",
+    "metadata": {
+      "title": "AWS Shield",
+      "last-modified": "2026-03-31T19:44:45.901381+00:00",
+      "version": "0.2.0",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "81d9f3b6-2b04-4f29-873f-d1d1e5025afc",
+        "type": "service",
+        "title": "AWS Shield",
+        "description": "AWS Shield is a managed distributed denial of service (DDoS) protection service that safeguards applications running on AWS against network and transport layer attacks.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Shield"
+          },
+          {
+            "name": "version",
+            "value": "2016-06-02"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "GLOBAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Shield",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "shield"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "shield"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "shield"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "shield"
+          }
+        ],
+        "links": [
+          {
+            "href": "#e91f03fc-2a67-4497-a2b4-29882fac2f5b",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/waf/",
+            "rel": "reference"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "e91f03fc-2a67-4497-a2b4-29882fac2f5b",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

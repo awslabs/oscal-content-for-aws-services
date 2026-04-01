@@ -1,0 +1,594 @@
+{
+  "component-definition": {
+    "uuid": "67cbf52d-08d2-4d3e-87a7-e5cec55e14d9",
+    "metadata": {
+      "title": "Amazon WorkSpaces",
+      "last-modified": "2026-03-31T19:45:48.279289+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "8f0fa414-925c-41cc-9b76-4be7bc0301b7",
+        "type": "service",
+        "title": "Amazon WorkSpaces",
+        "description": "Amazon WorkSpaces is a fully managed, persistent cloud-based virtual desktop service that enables users to access their desktop environment from anywhere using various devices.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WorkSpaces"
+          },
+          {
+            "name": "version",
+            "value": "2015-04-08"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon WorkSpaces",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces"
+          }
+        ],
+        "links": [
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/workspaces/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "10ac2d53-00d2-433e-b52c-8981aed4a46d",
+            "source": "#6ac84d5c-43a4-4d28-92cd-cc46d68b55da",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "145cfc77-3637-4006-80dd-7bf8def0c0a0",
+                "control-id": "WorkSpaces.1",
+                "description": "Security Hub control WorkSpaces.1"
+              },
+              {
+                "uuid": "8453de90-951a-46e9-9755-65dc6e7d3355",
+                "control-id": "WorkSpaces.2",
+                "description": "Security Hub control WorkSpaces.2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ca0f5a81-4271-4e09-b064-43e5b3994f06",
+        "type": "service",
+        "title": "Amazon WorkSpaces Thin Client",
+        "description": "Amazon WorkSpaces Thin Client is a cost-effective, cloud-based thin client device designed to connect users to virtual desktops and applications powered by AWS end-user computing services such as Amazon WorkSpaces and Amazon AppStream 2.0.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WorkSpaces Thin Client"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon WorkSpaces Thin Client",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "thinclient"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "thinclient"
+          }
+        ],
+        "links": [
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/workspaces-thin-client/",
+            "rel": "reference"
+          }
+        ]
+      },
+      {
+        "uuid": "b47a7e56-62fc-4182-8aa6-927a212eb9a5",
+        "type": "service",
+        "title": "Amazon WorkSpaces Web",
+        "description": "Amazon WorkSpaces Web is a fully managed, low-cost service designed to facilitate secure browser access to internal websites and software-as-a-service (SaaS) applications without the need to manage infrastructure or specialized client software.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WorkSpaces Web"
+          },
+          {
+            "name": "version",
+            "value": "2020-07-08"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon WorkSpaces Secure Browser",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon WorkSpaces Web",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces-web"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces-web"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces-web"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "maintenance"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces-web"
+          }
+        ],
+        "links": [
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/workspaces-web/",
+            "rel": "reference"
+          }
+        ],
+        "remarks": "Customers can't on-board to services and features in the maintenance stage. Customers already using these services and features can continue to do so. AWS will continue to operate and support these services and features but won't enhance or add functionality to them. We recommend that customers learn about and explore the alternatives suggested in the product pages and documentation."
+      },
+      {
+        "uuid": "fd776af2-1c80-4a26-90ac-74c2559d945e",
+        "type": "service",
+        "title": "Amazon Workspaces Instances",
+        "description": "Amazon Workspaces Instances provides fully managed, persistent cloud-based virtual desktops that enable users to access their applications, documents, and resources from any supported device.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Workspaces Instances"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Workspaces Instances",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "workspaces-instances"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "53bb06c1-4706-4f3a-a9b9-05997391e23c",
+        "type": "software",
+        "title": "workspaces-user-volume-encryption-enabled",
+        "description": "Checks if WorkSpaces Workspace is encrypted at rest. The rule is NON_COMPLIANT if WorkSpaces Workspace is not encrypted at rest.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WORKSPACES_USER_VOLUME_ENCRYPTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WorkSpaces::Workspace"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "641ed80e-388f-4755-bd40-47d3288804ce",
+            "source": "#6ac84d5c-43a4-4d28-92cd-cc46d68b55da",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "408c805e-5a31-494d-99a8-e8b68fbf2ee5",
+                "control-id": "WorkSpaces.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e1afbeab-ead4-4dca-928d-db081309fa18",
+        "type": "software",
+        "title": "workspaces-root-volume-encryption-enabled",
+        "description": "Checks if WorkSpaces Workspace is encrypted at rest. The rule is NON_COMPLIANT if WorkSpaces Workspace is not encrypted at rest.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WORKSPACES_ROOT_VOLUME_ENCRYPTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WorkSpaces::Workspace"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "dddce10f-e71f-4110-8587-4cc132fdf058",
+            "source": "#6ac84d5c-43a4-4d28-92cd-cc46d68b55da",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "11846568-2171-4835-bc1b-86a30ac183a7",
+                "control-id": "WorkSpaces.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "f78b9d00-d2b8-43fb-97e8-0ebcd7428485",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "6ac84d5c-43a4-4d28-92cd-cc46d68b55da",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

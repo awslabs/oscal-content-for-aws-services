@@ -1,0 +1,165 @@
+{
+  "component-definition": {
+    "uuid": "aad1ed79-a0a1-4d4b-97e7-1730089f6b64",
+    "metadata": {
+      "title": "Partner Central Account API",
+      "last-modified": "2026-03-31T19:44:45.878845+00:00",
+      "version": "0.2.0",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "523a82d0-53c8-4d43-895e-ba2ef1506217",
+        "type": "service",
+        "title": "Partner Central Account API",
+        "description": "Partner Central Account API enables AWS Partners to programmatically manage their partner relationships, opportunities, and account information within the AWS Partner Network (APN).",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "PartnerCentral Account"
+          },
+          {
+            "name": "label",
+            "value": "Partner Central Account API",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "0eaec73a-5d85-42ed-ade9-3a197b3ae93e",
+        "type": "service",
+        "title": "Partner Central Benefits API",
+        "description": "Partner Central Benefits API enables AWS partners to programmatically access and manage their AWS Partner Network (APN) benefits, including tracking and retrieving benefit entitlements associated with their partnership tier.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "PartnerCentral Benefits"
+          },
+          {
+            "name": "label",
+            "value": "Partner Central Benefits API",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "dc351fbb-c581-4660-bcbb-304e03a4012b",
+        "type": "service",
+        "title": "Partner Central Channel API",
+        "description": "Partner Central Channel API enables AWS Partners to manage their co-selling opportunities, partner relationships, and collaborative sales activities programmatically through the AWS Partner Network.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "PartnerCentral Channel"
+          },
+          {
+            "name": "label",
+            "value": "Partner Central Channel API",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "81174b6d-0c20-426b-9620-08f5538c9356",
+        "type": "service",
+        "title": "Partner Central Selling API",
+        "description": "Partner Central Selling API enables AWS partners to manage and collaborate on customer opportunities, leads, and co-selling activities with AWS through a programmatic interface.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "PartnerCentral Selling"
+          },
+          {
+            "name": "label",
+            "value": "Partner Central Selling API",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      }
+    ]
+  }
+}

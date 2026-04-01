@@ -1,0 +1,541 @@
+{
+  "component-definition": {
+    "uuid": "4b83fb10-1951-4a80-a06f-d97e2fa0119f",
+    "metadata": {
+      "title": "AWS Regions",
+      "last-modified": "2026-03-31T19:44:33.022921+00:00",
+      "version": "0.2.0",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+        "type": "region",
+        "title": "Africa (Cape Town)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "af-south-1"
+          }
+        ]
+      },
+      {
+        "uuid": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+        "type": "region",
+        "title": "Asia Pacific (Hong Kong)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-east-1"
+          }
+        ]
+      },
+      {
+        "uuid": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+        "type": "region",
+        "title": "Asia Pacific (Tokyo)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-northeast-1"
+          }
+        ]
+      },
+      {
+        "uuid": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+        "type": "region",
+        "title": "Asia Pacific (Seoul)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-northeast-2"
+          }
+        ]
+      },
+      {
+        "uuid": "cea84268-a178-4751-9f98-9536c8e6783f",
+        "type": "region",
+        "title": "Asia Pacific (Osaka)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-northeast-3"
+          }
+        ]
+      },
+      {
+        "uuid": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+        "type": "region",
+        "title": "Asia Pacific (Mumbai)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-south-1"
+          }
+        ]
+      },
+      {
+        "uuid": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+        "type": "region",
+        "title": "Asia Pacific (Hyderabad)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-south-2"
+          }
+        ]
+      },
+      {
+        "uuid": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+        "type": "region",
+        "title": "Asia Pacific (Singapore)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-southeast-1"
+          }
+        ]
+      },
+      {
+        "uuid": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+        "type": "region",
+        "title": "Asia Pacific (Sydney)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-southeast-2"
+          }
+        ]
+      },
+      {
+        "uuid": "493e319a-4820-4954-a7f2-ec358b0edb39",
+        "type": "region",
+        "title": "Asia Pacific (Jakarta)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-southeast-3"
+          }
+        ]
+      },
+      {
+        "uuid": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+        "type": "region",
+        "title": "Asia Pacific (Melbourne)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-southeast-4"
+          }
+        ]
+      },
+      {
+        "uuid": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+        "type": "region",
+        "title": "Asia Pacific (Malaysia)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ap-southeast-5"
+          }
+        ]
+      },
+      {
+        "uuid": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+        "type": "region",
+        "title": "Canada (Central)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ca-central-1"
+          }
+        ]
+      },
+      {
+        "uuid": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+        "type": "region",
+        "title": "Canada West (Calgary)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ca-west-1"
+          }
+        ]
+      },
+      {
+        "uuid": "5fb68023-b62a-49d3-b883-382ae8f70308",
+        "type": "region",
+        "title": "China (Beijing)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cn-north-1"
+          }
+        ]
+      },
+      {
+        "uuid": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+        "type": "region",
+        "title": "China (Ningxia)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cn-northwest-1"
+          }
+        ]
+      },
+      {
+        "uuid": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+        "type": "region",
+        "title": "Europe (Frankfurt)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "eu-central-1"
+          }
+        ]
+      },
+      {
+        "uuid": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+        "type": "region",
+        "title": "Europe (Zurich)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "eu-central-2"
+          }
+        ]
+      },
+      {
+        "uuid": "c69905c4-da48-4625-bed3-083867c9fea6",
+        "type": "region",
+        "title": "Europe (Stockholm)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "eu-north-1"
+          }
+        ]
+      },
+      {
+        "uuid": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+        "type": "region",
+        "title": "Europe (Milan)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "eu-south-1"
+          }
+        ]
+      },
+      {
+        "uuid": "1d009971-9229-437f-8168-479a9f101cb1",
+        "type": "region",
+        "title": "Europe (Spain)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "eu-south-2"
+          }
+        ]
+      },
+      {
+        "uuid": "99a41503-4457-44e8-aa60-a3fdda54590c",
+        "type": "region",
+        "title": "Europe (Ireland)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "eu-west-1"
+          }
+        ]
+      },
+      {
+        "uuid": "f7699fa1-729f-437f-b619-d594adbb7d38",
+        "type": "region",
+        "title": "Europe (London)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "eu-west-2"
+          }
+        ]
+      },
+      {
+        "uuid": "df795e11-2925-457d-8459-ac6127725f10",
+        "type": "region",
+        "title": "Europe (Paris)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "eu-west-3"
+          }
+        ]
+      },
+      {
+        "uuid": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+        "type": "region",
+        "title": "Israel (Tel Aviv)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "il-central-1"
+          }
+        ]
+      },
+      {
+        "uuid": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+        "type": "region",
+        "title": "Middle East (UAE)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "me-central-1"
+          }
+        ]
+      },
+      {
+        "uuid": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+        "type": "region",
+        "title": "Middle East (Bahrain)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "me-south-1"
+          }
+        ]
+      },
+      {
+        "uuid": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+        "type": "region",
+        "title": "South America (Sao Paulo)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "sa-east-1"
+          }
+        ]
+      },
+      {
+        "uuid": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+        "type": "region",
+        "title": "US East (N. Virginia)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "us-east-1"
+          }
+        ]
+      },
+      {
+        "uuid": "d515906c-a90f-477d-bd44-009762bc3721",
+        "type": "region",
+        "title": "US East (Ohio)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "us-east-2"
+          }
+        ]
+      },
+      {
+        "uuid": "ccc24de2-9a14-4127-8fef-a873795134b7",
+        "type": "region",
+        "title": "AWS GovCloud (US-East)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "us-gov-east-1"
+          }
+        ]
+      },
+      {
+        "uuid": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+        "type": "region",
+        "title": "AWS GovCloud (US-West)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "us-gov-west-1"
+          }
+        ]
+      },
+      {
+        "uuid": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+        "type": "region",
+        "title": "US West (N. California)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "us-west-1"
+          }
+        ]
+      },
+      {
+        "uuid": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+        "type": "region",
+        "title": "US West (Oregon)",
+        "description": "AWS has the concept of a Region, which is a physical location around the world where we cluster data centers.",
+        "purpose": "To support the AWS global footprint and ensure AWS customers are served across the world.",
+        "props": [
+          {
+            "name": "region-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "us-west-2"
+          }
+        ]
+      }
+    ]
+  }
+}

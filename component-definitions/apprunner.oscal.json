@@ -1,0 +1,315 @@
+{
+  "component-definition": {
+    "uuid": "32654b50-3d92-499a-a663-2d2fdc3c93ae",
+    "metadata": {
+      "title": "AWS App Runner",
+      "last-modified": "2026-03-31T19:45:48.144900+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "b7c5dcf8-9c9c-49bc-9351-0b28a8a7903d",
+        "type": "service",
+        "title": "AWS App Runner",
+        "description": "AWS App Runner is a fully managed service that enables developers to quickly deploy containerized web applications and APIs at scale without managing infrastructure.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AppRunner"
+          },
+          {
+            "name": "version",
+            "value": "2020-05-15"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS App Runner",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "apprunner"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "apprunner"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "apprunner"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "apprunner"
+          }
+        ],
+        "links": [
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/apprunner/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3c0851c6-2b10-41a0-a7b3-c901c304d536",
+            "source": "#aef52af4-032b-40ae-9bb7-96284e2012db",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f4e1f5c7-a5eb-4b55-99a5-7f58fdc18d8d",
+                "control-id": "AppRunner.1",
+                "description": "Security Hub control AppRunner.1"
+              },
+              {
+                "uuid": "5f0c6faf-ff18-464f-a2f5-6ffa47037ea1",
+                "control-id": "AppRunner.2",
+                "description": "Security Hub control AppRunner.2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c0dee5a6-6b48-4ad2-be67-a45cefdee1cf",
+        "type": "software",
+        "title": "apprunner-service-tagged",
+        "description": "Checks if AWS App Runner services have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "APPRUNNER_SERVICE_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AppRunner::Service"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "09b17720-07f8-4b17-8edd-14e662172645",
+            "source": "#aef52af4-032b-40ae-9bb7-96284e2012db",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a4acc7b0-b9fd-4221-a3bb-2ae3f599db9d",
+                "control-id": "AppRunner.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4ed6bdb7-e7e8-4ac3-9973-c94d72fc1ff5",
+        "type": "software",
+        "title": "apprunner-vpc-connector-tagged",
+        "description": "Checks if AWS App Runner VPC connectors have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "APPRUNNER_VPC_CONNECTOR_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AppRunner::VpcConnector"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3bf3ab1f-50ad-413a-845f-84ac36c73968",
+            "source": "#aef52af4-032b-40ae-9bb7-96284e2012db",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e22e8ea6-f50f-4f95-af1a-a727dd75531c",
+                "control-id": "AppRunner.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "ecc5eece-3ff1-4f9f-8dd5-68c79f114551",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "aef52af4-032b-40ae-9bb7-96284e2012db",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

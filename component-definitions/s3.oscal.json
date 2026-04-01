@@ -1,0 +1,1292 @@
+{
+  "component-definition": {
+    "uuid": "2241b1e6-e268-4190-a6c5-0eaa5a9d961a",
+    "metadata": {
+      "title": "Amazon Simple Storage Service",
+      "last-modified": "2026-03-31T19:45:48.254399+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "1ff9b0f8-6142-441f-978b-7eadee006247",
+        "type": "service",
+        "title": "Amazon Simple Storage Service",
+        "description": "Amazon Simple Storage Service (Amazon S3) is an object storage service that provides industry-leading scalability, data availability, security, and performance for storing and retrieving any amount of data from anywhere on the internet.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3"
+          },
+          {
+            "name": "version",
+            "value": "2006-03-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Simple Storage Service (S3)",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Simple Storage Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "s3"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "s3"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "s3"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "s3"
+          }
+        ],
+        "links": [
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/s3/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f4f6f546-e74c-4b09-8cda-1cf1fab87c98",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "23fbd092-9dbc-4836-b67a-ecadbe313a55",
+                "control-id": "S3.1",
+                "description": "Security Hub control S3.1"
+              },
+              {
+                "uuid": "48aef5fd-fb4a-4193-a934-7fa90ea8f25a",
+                "control-id": "S3.10",
+                "description": "Security Hub control S3.10"
+              },
+              {
+                "uuid": "93102a61-3333-406d-88f1-ef287efb93ff",
+                "control-id": "S3.11",
+                "description": "Security Hub control S3.11"
+              },
+              {
+                "uuid": "dd0f6528-a721-4003-9518-6dc2d2272f71",
+                "control-id": "S3.12",
+                "description": "Security Hub control S3.12"
+              },
+              {
+                "uuid": "67997345-e07e-4f25-93e6-9f9ca4ad4367",
+                "control-id": "S3.13",
+                "description": "Security Hub control S3.13"
+              },
+              {
+                "uuid": "8fbbefef-511d-45bb-9b97-c7593c6138b9",
+                "control-id": "S3.14",
+                "description": "Security Hub control S3.14"
+              },
+              {
+                "uuid": "0dc2f914-e9e4-4795-a82e-596e6ec56815",
+                "control-id": "S3.15",
+                "description": "Security Hub control S3.15"
+              },
+              {
+                "uuid": "797139ed-8995-4439-870e-01eb96e1ff27",
+                "control-id": "S3.17",
+                "description": "Security Hub control S3.17"
+              },
+              {
+                "uuid": "bf33f1fa-9636-4ef5-8c82-00ac234ff13f",
+                "control-id": "S3.19",
+                "description": "Security Hub control S3.19"
+              },
+              {
+                "uuid": "b373a782-4790-446c-96e6-8c3a9173d73e",
+                "control-id": "S3.2",
+                "description": "Security Hub control S3.2"
+              },
+              {
+                "uuid": "c3574c96-2f1f-4241-b21d-9fd6d03fcb9e",
+                "control-id": "S3.20",
+                "description": "Security Hub control S3.20"
+              },
+              {
+                "uuid": "750f8aff-082c-43bd-8aad-2f78b29328bb",
+                "control-id": "S3.22",
+                "description": "Security Hub control S3.22"
+              },
+              {
+                "uuid": "6d7c4691-a2eb-40b2-891b-7f707c25bfef",
+                "control-id": "S3.23",
+                "description": "Security Hub control S3.23"
+              },
+              {
+                "uuid": "43bb5da8-fe1c-4248-83d8-7a7a9841deb7",
+                "control-id": "S3.25",
+                "description": "Security Hub control S3.25"
+              },
+              {
+                "uuid": "696a0876-9eb9-4d36-863a-2444d1553245",
+                "control-id": "S3.3",
+                "description": "Security Hub control S3.3"
+              },
+              {
+                "uuid": "d5931939-7ec8-4a1f-9703-095430211dbf",
+                "control-id": "S3.5",
+                "description": "Security Hub control S3.5"
+              },
+              {
+                "uuid": "b7c55d37-ee37-439a-ba99-e8577beb3193",
+                "control-id": "S3.6",
+                "description": "Security Hub control S3.6"
+              },
+              {
+                "uuid": "5ba740db-8546-43c5-89f1-bdd969f1ecf5",
+                "control-id": "S3.7",
+                "description": "Security Hub control S3.7"
+              },
+              {
+                "uuid": "24da9a32-fd6f-4aec-b096-4399e711a66e",
+                "control-id": "S3.8",
+                "description": "Security Hub control S3.8"
+              },
+              {
+                "uuid": "88dbbaa3-f02d-4388-9efc-0788f22fde5b",
+                "control-id": "S3.9",
+                "description": "Security Hub control S3.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "90433814-a291-4579-9e8a-7c4cb04474f4",
+        "type": "software",
+        "title": "s3-account-level-public-access-blocks-periodic",
+        "description": "Checks if the required public access block settings are configured from account level.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_ACCOUNT_LEVEL_PUBLIC_ACCESS_BLOCKS_PERIODIC"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "85c9056a-8237-4300-8a55-2468fbba7796",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5dd1b4e0-81ad-41e0-a008-b48a23f4e618",
+                "control-id": "S3.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "1070cae5-e5c5-4611-8903-b2fa3b110a79",
+        "type": "software",
+        "title": "s3-version-lifecycle-policy-check",
+        "description": "This control checks if Amazon Simple Storage Service (Amazon S3) version enabled buckets have lifecycle policy configured. This rule fails if Amazon S3 lifecycle policy is not enabled",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_VERSION_LIFECYCLE_POLICY_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0d5fc7e5-05c7-4624-82b9-5ad178eae9ce",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "77af476a-c254-4c3a-b498-b9f049ee440e",
+                "control-id": "S3.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "1e3a1a1b-c19f-4713-b2cc-13b93b4e5496",
+        "type": "software",
+        "title": "s3-event-notifications-enabled",
+        "description": "This control checks to ensure that S3 events notifications are enabled on an S3 bucket. This control fails if S3 events notifications are not set on a bucket.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_EVENT_NOTIFICATIONS_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "05c92ef3-35e6-4b6f-acb3-84f6ebc5929a",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "d3c8f82b-5054-48bf-bb27-dfb142d3ef60",
+                "control-id": "S3.11",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4cb1e8b6-0e82-415b-afb0-6e2462fb5803",
+        "type": "software",
+        "title": "s3-bucket-acl-prohibited",
+        "description": "This control checks to ensure that your Amazon S3 buckets does not allow user permissions via access control lists. This control fails if ACLs are configured for user access on S3 Bucket.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_ACL_PROHIBITED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8ccebf33-16fd-40b6-8383-4415b36cb7ea",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "506e7fad-7e9c-487c-a7cb-595bc210d3aa",
+                "control-id": "S3.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ce2b835d-78b4-44b4-abb2-f096effc7012",
+        "type": "software",
+        "title": "s3-lifecycle-policy-check",
+        "description": "This control checks if a lifecycle policy is configured for an Amazon S3 bucket. This control fails if the lifecycle policy is not configured for an Amazon S3 bucket.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_LIFECYCLE_POLICY_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "232e3a6a-9086-45ed-8238-6499c250184e",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4f69fcf0-8584-4d68-b12d-d4ab24192ac1",
+                "control-id": "S3.13",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "65aca15b-1d09-4bb3-b802-f39eef4baf06",
+        "type": "software",
+        "title": "s3-bucket-versioning-enabled",
+        "description": "This control evaluates if versioning is enabled for your S3 buckets.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_VERSIONING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "67ad11b4-e479-40ad-9252-84ed2eb44471",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8e4dd2e3-f5f0-40ea-8501-ff7c5cfd4780",
+                "control-id": "S3.14",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "383fb5b1-137e-47b6-b495-7b7539854402",
+        "type": "software",
+        "title": "s3-bucket-default-lock-enabled",
+        "description": "Checks whether Amazon S3 bucket has lock enabled, by default.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_DEFAULT_LOCK_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7c3b23e1-7021-4197-9630-cce26b73adfd",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9f7f20a9-21ff-4411-9cd1-df55d5559914",
+                "control-id": "S3.15",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "bb20a1e2-7a95-4925-8425-663c99f5594b",
+        "type": "software",
+        "title": "s3-default-encryption-kms",
+        "description": "Checks if the S3 buckets are encrypted with AWS Key Management Service (AWS KMS). The rule is NON_COMPLIANT if the S3 bucket is not encrypted with an AWS KMS key. ",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_DEFAULT_ENCRYPTION_KMS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::KMS::Alias"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::KMS::Key"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b1f3a056-cd85-4468-a2c1-540a9d852b72",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "49bb1147-dbf3-46a0-bc52-cd79c8c972c4",
+                "control-id": "S3.17",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "aca9e95c-66d8-4c21-ae4a-dfcdfb29712b",
+        "type": "software",
+        "title": "s3-access-point-public-access-blocks",
+        "description": "Checks if Amazon S3 access points have block public access settings enabled. The rule is NON_COMPLIANT if block public access settings are not enabled for S3 access points.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_ACCESS_POINT_PUBLIC_ACCESS_BLOCKS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::AccessPoint"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d06aa8e5-e815-4eb7-931c-3b7802ec28ac",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e71e83b4-8ab8-4634-9ebb-bd8454215dc2",
+                "control-id": "S3.19",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "17a2a84e-5cbf-46d9-9970-c18867197a97",
+        "type": "software",
+        "title": "s3-bucket-public-read-prohibited",
+        "description": "Checks to see if S3 buckets are publicly readable.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_PUBLIC_READ_PROHIBITED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::AccountPublicAccessBlock"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c5cba98a-1327-42bd-85e5-42f04bb6ccac",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a512f4a9-be2d-4609-aa02-b208426b8baa",
+                "control-id": "S3.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "536996ee-1210-4d9e-91e5-c24801c0646b",
+        "type": "software",
+        "title": "s3-bucket-mfa-delete-enabled",
+        "description": "Checks if MFA Delete is enabled in the Amazon Simple Storage Service (Amazon S3) bucket versioning configuration. The rule is NON_COMPLIANT if MFA Delete is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_MFA_DELETE_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fa9274a6-f2a0-48f8-bcd3-409be00637c7",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "242ef783-1334-4e82-bb05-632f444dce95",
+                "control-id": "S3.20",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d745575b-4e39-4ede-8538-58612d663790",
+        "type": "software",
+        "title": "cloudtrail-all-write-s3-data-event-check",
+        "description": "Checks if an AWS CloudTrail multi-Region trail is enabled and logs all write S3 data events for your buckets. The rule is NON_COMPLIANT if no multi-Region trail logs all write S3 data event types for all current and future S3 buckets.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDTRAIL_ALL_WRITE_S3_DATA_EVENT_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5e7dea2f-c41e-4153-935e-a9d73770cfed",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a89caf8f-bbb3-437e-94c7-f7e84d761a10",
+                "control-id": "S3.22",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6b5cbc2d-6f84-45dc-85d7-879f52bd00e5",
+        "type": "software",
+        "title": "cloudtrail-all-read-s3-data-event-check",
+        "description": "Checks if an AWS CloudTrail multi-Region trail is enabled and logs all read S3 data events for your buckets. The rule is NON_COMPLIANT if no multi-Region trail logs all read S3 data event types for all current and future S3 buckets.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDTRAIL_ALL_READ_S3_DATA_EVENT_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "85dde365-c2bc-4972-a825-bc03b35f93c5",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6733ce23-62ee-4a03-9129-52ed1d9b2632",
+                "control-id": "S3.23",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9796ab7d-d6e1-4739-9bae-d3a3b066c0bf",
+        "type": "software",
+        "title": "s3express-dir-bucket-lifecycle-rules-check",
+        "description": "Checks if lifecycle rules are configured for an Amazon S3 Express directory bucket. The rule is NON_COMPLIANT if there is no active lifecycle configuration rules or the configuration does not match with the parameter values.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3EXPRESS_DIR_BUCKET_LIFECYCLE_RULES_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3Express::DirectoryBucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3478e5bb-c5ec-4abb-9687-acb9a352e01d",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c4fcd1ec-77c5-4459-8c5d-65ff0d7c6251",
+                "control-id": "S3.25",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a90f2304-8514-488d-b51e-2e290d0d6204",
+        "type": "software",
+        "title": "s3-bucket-public-write-prohibited",
+        "description": "Checks to see if S3 buckets allow public write.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_PUBLIC_WRITE_PROHIBITED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::AccountPublicAccessBlock"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "167c9b1d-26d7-41ce-b77c-966152abd436",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "84bf1911-08ad-4f2e-9895-3261c1924c17",
+                "control-id": "S3.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b7707e79-e835-42b6-bcd0-f5952e35836a",
+        "type": "software",
+        "title": "s3-bucket-ssl-requests-only",
+        "description": "Checks whether S3 buckets have policies that require requests to use Secure Socket Layer (SSL).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_SSL_REQUESTS_ONLY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9e91272d-438d-40e1-96ed-cd8c42cb2a82",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "aeb9c404-51da-404e-a61f-ae030e578777",
+                "control-id": "S3.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2d71232a-561f-4627-a141-e53fd9e497e1",
+        "type": "software",
+        "title": "s3-bucket-blacklisted-actions-prohibited",
+        "description": "Checks that the Amazon Simple Storage Service bucket policy does not allow blacklisted bucket-level and object-level actions on resources in the bucket for principals from other AWS accounts.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_BLACKLISTED_ACTIONS_PROHIBITED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "cb7bcf97-67ce-49a4-8f70-5f24ec9e0925",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a4127520-06df-4124-8470-9353827cf05f",
+                "control-id": "S3.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "075bf6fb-23e2-42aa-bf1b-8b1670e3f3d8",
+        "type": "software",
+        "title": "s3-bucket-cross-region-replication-enabled",
+        "description": "Checks if you have enabled S3 Cross-Region Replication for your Amazon S3 buckets. The rule is NON_COMPLIANT if there are no replication rules enabled for Cross-Region Replication.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_CROSS_REGION_REPLICATION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "34bed0af-5d89-46e1-b997-885971d23aef",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f77f0ccb-aefe-4066-ac8f-340e021bd578",
+                "control-id": "S3.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6d714573-47bd-4eb4-84cc-0b780a3b8295",
+        "type": "software",
+        "title": "s3-bucket-level-public-access-prohibited",
+        "description": "This control checks if Amazon S3 buckets have bucket level public access blocks applied. This control fails if any of the bucket level settings are set to \"false\" public: ignorePublicAcls, blockPublicPolicy, blockPublicAcls, restrictPublicBuckets.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_LEVEL_PUBLIC_ACCESS_PROHIBITED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a158762b-8035-436c-9629-27ad5fbbb812",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "fae06614-5e08-4def-90c6-403e0f324343",
+                "control-id": "S3.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3992348b-1824-4e86-867c-611693ed5e63",
+        "type": "software",
+        "title": "s3-bucket-logging-enabled",
+        "description": "This control checks if an Amazon S3 Bucket has server access logging enabled to a chosen target bucket.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "S3_BUCKET_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::S3::Bucket"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3fc41e18-f88f-4a00-844e-e3189579e3fd",
+            "source": "#48d86ef7-21e5-4fea-9d95-40f85224899f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "cbaad491-c3e8-4d36-a72d-f837bd1f47fc",
+                "control-id": "S3.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "70be52e7-bee1-4454-bf7c-2e95bdb8e91d",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "48d86ef7-21e5-4fea-9d95-40f85224899f",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

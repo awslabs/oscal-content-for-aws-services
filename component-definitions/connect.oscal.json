@@ -1,0 +1,1034 @@
+{
+  "component-definition": {
+    "uuid": "76e7338d-2c14-46c4-8cb3-6df033bb644e",
+    "metadata": {
+      "title": "Amazon Connect Service",
+      "last-modified": "2026-03-31T19:45:48.172730+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "f680dd08-c88f-4c52-8bed-f3dccbe19fe9",
+        "type": "service",
+        "title": "Amazon Connect Service",
+        "description": "Amazon Connect Service is a cloud-based contact center service that enables businesses to set up and manage customer contact centers with capabilities such as voice, chat, and automated interactions.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Connect"
+          },
+          {
+            "name": "version",
+            "value": "2017-08-08"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Connect",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Connect Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect"
+          }
+        ],
+        "links": [
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/connect/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a54a28bf-2937-41a6-9c4e-2ac5255a0e67",
+            "source": "#cfde7f20-f7a5-4466-9938-a6573ce7eb91",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "33b06004-e2ca-4a19-abea-e8a80c3572ff",
+                "control-id": "Connect.2",
+                "description": "Security Hub control Connect.2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c8377626-00d4-4926-85f0-cab6db7dfd30",
+        "type": "service",
+        "title": "Amazon Connect Contact Lens",
+        "description": "Amazon Connect Contact Lens provides analytics and quality management capabilities for Amazon Connect contact centers, enabling supervisors to analyze customer conversations through speech and chat transcription, sentiment analysis, and automated contact categorization.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Connect Contact Lens"
+          },
+          {
+            "name": "version",
+            "value": "2020-08-21"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Connect Contact Lens",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "contact-lens"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "links": [
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "50c3ecaa-01a4-4f83-a7a9-3d3112b86088",
+        "type": "service",
+        "title": "AmazonConnectCampaignServiceV2",
+        "description": "Amazon Connect Campaign Service enables the creation and management of outbound campaigns for automated voice, SMS, and email communications at scale using Amazon Connect.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ConnectCampaigns"
+          },
+          {
+            "name": "version",
+            "value": "2021-01-30"
+          },
+          {
+            "name": "label",
+            "value": "AmazonConnectCampaignServiceV2",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect-campaigns"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect-campaigns"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect-campaigns"
+          },
+          {
+            "name": "label",
+            "value": "AmazonConnectCampaignService",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ccad36b4-a7b0-4c84-bfcd-d19d0d45ad57",
+            "source": "#cfde7f20-f7a5-4466-9938-a6573ce7eb91",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ee2e85a1-cbbf-4da9-b562-7d6914cecb79",
+                "control-id": "Connect.2",
+                "description": "Security Hub control Connect.2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b7b9aa72-eb1c-427e-ab9e-e4031bb9db2a",
+        "type": "service",
+        "title": "AmazonConnectCampaignServiceV2",
+        "description": "Amazon Connect Campaign Service V2 enables businesses to create and manage high-volume outbound campaigns, including automated voice, SMS, and email communications, through Amazon Connect.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ConnectCampaignsV2"
+          },
+          {
+            "name": "label",
+            "value": "AmazonConnectCampaignServiceV2",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "connect-campaigns"
+          },
+          {
+            "name": "label",
+            "value": "AmazonConnectCampaignService",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "3e1cdf84-7209-4b9b-8986-2dcf8e4dc406",
+        "type": "service",
+        "title": "Amazon Connect Cases",
+        "description": "Amazon Connect Cases allows agents to track and manage customer issues that require multiple interactions, follow-up tasks, or team collaboration to resolve within Amazon Connect contact centers.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ConnectCases"
+          },
+          {
+            "name": "version",
+            "value": "2022-10-03"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Connect Cases",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cases"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cases"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cases"
+          }
+        ],
+        "links": [
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "4556b4ff-0063-468a-8370-ab9f34c1a487",
+        "type": "service",
+        "title": "Connect Health",
+        "description": "_Empty_",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ConnectHealth"
+          },
+          {
+            "name": "label",
+            "value": "Connect Health",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "health-agent"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "ffad45d6-ae10-4357-9d01-c316137337a0",
+        "type": "service",
+        "title": "Amazon Connect Customer Profiles",
+        "description": "Amazon Connect Customer Profiles enables contact center agents to create a unified view of customer information by consolidating data from multiple applications into a single customer profile.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Customer Profiles"
+          },
+          {
+            "name": "version",
+            "value": "2020-08-15"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Connect Customer Profiles",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "profile"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "profile"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "profile"
+          }
+        ],
+        "links": [
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9616243f-0d98-44a8-82ed-efa3dfb72e35",
+            "source": "#cfde7f20-f7a5-4466-9938-a6573ce7eb91",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "511267da-38f6-423a-bb84-d53b5827c7c2",
+                "control-id": "Connect.1",
+                "description": "Security Hub control Connect.1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "37826909-b381-47f5-97aa-8ecf42574373",
+        "type": "service",
+        "title": "Amazon Q Connect",
+        "description": "Amazon Q Connect is an AI-powered assistant that helps contact center agents quickly find answers and recommended actions during customer interactions by searching connected knowledge sources in real time.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "QConnect"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Q Connect",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "wisdom"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Connect Wisdom Service",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "a116ac1f-c287-4c61-a4f2-f1e88c4913b9",
+        "type": "service",
+        "title": "Amazon Q Connect",
+        "description": "Amazon Connect Wisdom Service delivers real-time knowledge and information to contact center agents, enabling them to quickly find answers and resolve customer issues during interactions.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Wisdom"
+          },
+          {
+            "name": "version",
+            "value": "2020-10-19"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Q Connect",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "wisdom"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "wisdom"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "wisdom"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Connect Wisdom Service",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#c35d7e91-74c5-4498-bc7f-38b6f059f687",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "74885efd-2d23-4e07-adb6-17e94f7c6a85",
+        "type": "software",
+        "title": "customerprofiles-object-type-tagged",
+        "description": "Checks if Amazon Connect Customer Profiles object types have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CUSTOMERPROFILES_OBJECT_TYPE_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CustomerProfiles::ObjectType"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "dea9e1ea-fff2-4d54-bbd8-4c0a03457738",
+            "source": "#cfde7f20-f7a5-4466-9938-a6573ce7eb91",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4128d47b-d1ac-4f45-b33e-d81ce205e11f",
+                "control-id": "Connect.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "77335106-936e-4e0f-898c-469d1a736e7b",
+        "type": "software",
+        "title": "connect-instance-logging-enabled",
+        "description": "Checks if Amazon Connect instances have flow logs enabled in an Amazon CloudWatch log group. The rule is NON_COMPLIANT if an Amazon Connect instance does not have flow logs enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CONNECT_INSTANCE_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Connect::Instance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d41cdd51-7e6b-4073-8053-2d1db1569313",
+            "source": "#cfde7f20-f7a5-4466-9938-a6573ce7eb91",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "73e80637-16a3-4b14-abed-7c038570b30e",
+                "control-id": "Connect.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "c35d7e91-74c5-4498-bc7f-38b6f059f687",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "cfde7f20-f7a5-4466-9938-a6573ce7eb91",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

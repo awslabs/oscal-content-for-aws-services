@@ -1,0 +1,781 @@
+{
+  "component-definition": {
+    "uuid": "c84566fc-f7e5-4b51-a76a-174d7e2043b9",
+    "metadata": {
+      "title": "AWS Billing and Cost Management Dashboards",
+      "last-modified": "2026-03-31T19:44:45.813772+00:00",
+      "version": "0.2.0",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "fff188d9-a251-4398-afb9-6698fd29e34b",
+        "type": "service",
+        "title": "AWS Billing and Cost Management Dashboards",
+        "description": "AWS Billing and Cost Management Dashboards provides visual, customizable dashboards that allow you to monitor, analyze, and manage your AWS spending and usage data in one centralized view.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "BCM Dashboards"
+          },
+          {
+            "name": "label",
+            "value": "AWS Billing and Cost Management Dashboards",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "bcm-dashboards"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "72e698a0-916c-4102-8178-40af08a240a3",
+        "type": "service",
+        "title": "AWS Billing and Cost Management Data Exports",
+        "description": "AWS Billing and Cost Management Data Exports enables you to create and manage customizable exports of your AWS cost and usage data to Amazon S3 for analysis and reporting.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "BCM Data Exports"
+          },
+          {
+            "name": "label",
+            "value": "AWS Billing and Cost Management Data Exports",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "bcm-data-exports"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      },
+      {
+        "uuid": "d4fbdb58-589f-4a79-a221-6f187256b501",
+        "type": "service",
+        "title": "AWS Billing and Cost Management Pricing Calculator",
+        "description": "AWS Billing and Cost Management Pricing Calculator is a web-based tool that allows users to estimate the cost of AWS services for their specific use cases before committing to a deployment.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "BCM Pricing Calculator"
+          },
+          {
+            "name": "label",
+            "value": "AWS Billing and Cost Management Pricing Calculator",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "bcm-pricing-calculator"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "0447e221-aa9a-43b4-8f0f-3e4969733492",
+        "type": "service",
+        "title": "AWS Billing and Cost Management Recommended Actions",
+        "description": "AWS Billing and Cost Management Recommended Actions provides personalized suggestions to help you optimize your AWS spending and reduce costs based on your usage patterns and account activity.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "BCM Recommended Actions"
+          },
+          {
+            "name": "label",
+            "value": "AWS Billing and Cost Management Recommended Actions",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "bcm-recommended-actions"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "6f3ae852-22e0-42de-a1a7-f5168f0921ee",
+        "type": "service",
+        "title": "AWS Billing",
+        "description": "AWS Billing is a service that enables customers to view, manage, and pay their AWS charges and invoices, providing visibility into costs and usage across their AWS accounts.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Billing"
+          },
+          {
+            "name": "label",
+            "value": "AWS Billing",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "billing"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "95644557-3538-4d25-9bab-aa12f14a4b10",
+        "type": "service",
+        "title": "AWS Budgets",
+        "description": "AWS Budgets enables you to set custom cost and usage budgets for your AWS spending and receive alerts when your costs or usage exceed or are forecasted to exceed your defined thresholds.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Budgets"
+          },
+          {
+            "name": "version",
+            "value": "2016-10-20"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "GLOBAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Budgets",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "budgets"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "budgets"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "budgets"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "budgets"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "52498d2c-c9f0-4c7d-8adf-a7ebed1e3e2d",
+        "type": "service",
+        "title": "AWS Cost Explorer Service",
+        "description": "AWS Cost Explorer Service enables you to visualize, understand, and manage your AWS costs and usage over time through interactive charts and reports.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Cost Explorer"
+          },
+          {
+            "name": "version",
+            "value": "2017-10-25"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "GLOBAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Cost Explorer",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "AWS Cost Explorer Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ce"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ce"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ce"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ce"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      },
+      {
+        "uuid": "2cf16a72-ea12-4259-9120-3ef23dee72e2",
+        "type": "service",
+        "title": "Cost Optimization Hub",
+        "description": "Cost Optimization Hub is an AWS service that helps you identify, consolidate, and prioritize cost optimization recommendations across your AWS accounts and regions to reduce your overall cloud spending.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Cost Optimization Hub"
+          },
+          {
+            "name": "label",
+            "value": "Cost Optimization Hub",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cost-optimization-hub"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      },
+      {
+        "uuid": "0086ffef-a069-4ed8-ad87-e04f387fd133",
+        "type": "service",
+        "title": "AWS Cost and Usage Report Service",
+        "description": "AWS Cost and Usage Report Service enables you to receive detailed reports containing your AWS cost and usage data, including metadata about services, pricing, and reservations, which can be delivered to an Amazon S3 bucket for analysis.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Cost and Usage Report Service"
+          },
+          {
+            "name": "version",
+            "value": "2017-01-06"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Cost and Usage Report",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "AWS Cost and Usage Report Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cur"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cur"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cur"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "maintenance"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cur"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ],
+        "remarks": "Customers can't on-board to services and features in the maintenance stage. Customers already using these services and features can continue to do so. AWS will continue to operate and support these services and features but won't enhance or add functionality to them. We recommend that customers learn about and explore the alternatives suggested in the product pages and documentation."
+      },
+      {
+        "uuid": "9da82786-0825-434f-b7f0-0d89e72986a3",
+        "type": "service",
+        "title": "AWS Free Tier",
+        "description": "AWS Free Tier allows new and existing customers to explore and use certain AWS services at no charge, up to specified usage limits.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "FreeTier"
+          },
+          {
+            "name": "label",
+            "value": "AWS Free Tier",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "freetier"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      },
+      {
+        "uuid": "376eede2-fa04-4c1c-a190-99ba241d6ad7",
+        "type": "service",
+        "title": "AWS Invoicing",
+        "description": "AWS Invoicing is a service that enables customers to view, manage, and customize their AWS invoices and billing documents across their accounts.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Invoicing"
+          },
+          {
+            "name": "label",
+            "value": "AWS Invoicing",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "invoicing"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "147f4ab6-695d-492c-a125-8c92971900c0",
+        "type": "service",
+        "title": "AWS Price List Service",
+        "description": "AWS Price List Service provides programmatic access to AWS pricing information, allowing you to query and retrieve current prices for AWS services and products.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Pricing"
+          },
+          {
+            "name": "version",
+            "value": "2017-10-15"
+          },
+          {
+            "name": "label",
+            "value": "AWS Price List Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "api.pricing"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "pricing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      },
+      {
+        "uuid": "24678fae-7492-44f3-be75-d799b17ff40e",
+        "type": "service",
+        "title": "Tax Settings",
+        "description": "Tax Settings is an AWS service that allows you to manage and configure your tax registration information and tax exemption settings across your AWS accounts.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "TaxSettings"
+          },
+          {
+            "name": "label",
+            "value": "Tax Settings",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "tax"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      },
+      {
+        "uuid": "f4805861-ef4f-44f5-9d95-930f97a44419",
+        "type": "service",
+        "title": "AWSBillingConductor",
+        "description": "AWS Billing Conductor is a service that allows you to customize your AWS billing data by creating pricing rules, grouping accounts, and generating custom cost and usage reports for showback or chargeback purposes.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "billingconductor"
+          },
+          {
+            "name": "version",
+            "value": "2021-07-30"
+          },
+          {
+            "name": "label",
+            "value": "AWSBillingConductor",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "billingconductor"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "billingconductor"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "billingconductor"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      },
+      {
+        "uuid": "af3ea83c-6df7-491c-9d38-b3643aedb1f0",
+        "type": "service",
+        "title": "AWS Savings Plans",
+        "description": "AWS Savings Plans is a flexible pricing model that offers significant savings on AWS compute usage in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a one- or three-year term.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "savingsplans"
+          },
+          {
+            "name": "version",
+            "value": "2019-06-28"
+          },
+          {
+            "name": "label",
+            "value": "AWS Savings Plans",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "savingsplans"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "savingsplans"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "savingsplans"
+          }
+        ],
+        "links": [
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#81f5246b-9a23-452e-b1bf-408f88841d68",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "81f5246b-9a23-452e-b1bf-408f88841d68",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

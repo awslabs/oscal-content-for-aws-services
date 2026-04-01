@@ -1,0 +1,594 @@
+{
+  "component-definition": {
+    "uuid": "f5e585f2-2598-42a9-a729-0443c77a096e",
+    "metadata": {
+      "title": "Amazon Elastic Container Registry",
+      "last-modified": "2026-03-31T19:45:48.194004+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "40308594-b177-4dd2-bfd2-57348b65b860",
+        "type": "service",
+        "title": "Amazon Elastic Container Registry",
+        "description": "Amazon Elastic Container Registry is a fully managed container image registry that makes it easy to store, manage, share, and deploy container images and artifacts securely on AWS.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECR"
+          },
+          {
+            "name": "version",
+            "value": "2015-09-21"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Elastic Container Registry (ECR)",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Elastic Container Registry",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "api.ecr"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ecr"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ecr"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ecr"
+          },
+          {
+            "name": "label",
+            "value": "Amazon EC2 Container Registry",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b4d50cfc-79dc-479b-bf69-40b27cfe0508",
+            "source": "#583970eb-9012-4494-a7f3-01fb7c91df1d",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "90d3571e-e32b-45ea-a2b2-32c2976c3dc6",
+                "control-id": "ECR.1",
+                "description": "Security Hub control ECR.1"
+              },
+              {
+                "uuid": "96cc890f-af2d-4af3-9f9d-ab3365ffa650",
+                "control-id": "ECR.2",
+                "description": "Security Hub control ECR.2"
+              },
+              {
+                "uuid": "12dae419-d6f4-4aff-b30b-30a0a0820b23",
+                "control-id": "ECR.3",
+                "description": "Security Hub control ECR.3"
+              },
+              {
+                "uuid": "a8770bc5-6fc2-41db-9e80-467809ee4dda",
+                "control-id": "ECR.5",
+                "description": "Security Hub control ECR.5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7b8dea5a-40d1-46a5-9032-e0daa89dbaf4",
+        "type": "service",
+        "title": "Amazon Elastic Container Registry Public",
+        "description": "Amazon Elastic Container Registry Public is a fully managed public container registry that allows developers to store, manage, and share container images publicly with anyone on the internet.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECR PUBLIC"
+          },
+          {
+            "name": "version",
+            "value": "2020-10-30"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Elastic Container Registry Public",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "api.ecr-public"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ecr-public"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "links": [
+          {
+            "href": "#750ef36e-85da-467c-af1e-63ab00d18cb1",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ]
+      },
+      {
+        "uuid": "3c4ef391-322b-49e5-9b5b-6351667c5de6",
+        "type": "software",
+        "title": "ecr-private-image-scanning-enabled",
+        "description": "This control checks whether a private ECR repository has image scanning enabled. This control fails if a private ECR repository has image scanning disabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECR_PRIVATE_IMAGE_SCANNING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8da71da0-1f70-4d14-84ec-97524c948739",
+            "source": "#583970eb-9012-4494-a7f3-01fb7c91df1d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b39628ef-0df7-453c-bee7-7ef737f2c19e",
+                "control-id": "ECR.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ea1ed264-7add-4534-b7cc-dec4ab2a1c08",
+        "type": "software",
+        "title": "ecr-private-tag-immutability-enabled",
+        "description": "This control checks whether a private ECR repository has tag immutability enabled. This control fails if a private ECR repository has tag immutability disabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECR_PRIVATE_TAG_IMMUTABILITY_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECR::Repository"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1e2bfaf7-320e-4cbe-93e4-3de70a2167ac",
+            "source": "#583970eb-9012-4494-a7f3-01fb7c91df1d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "cbe870aa-acf7-43f9-a94c-e40fda6ac2ab",
+                "control-id": "ECR.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "93c2ecf9-a323-4a93-995e-19be13b229ce",
+        "type": "software",
+        "title": "ecr-private-lifecycle-policy-configured",
+        "description": "This control checks whether a ECR repository has at least one lifecycle policy configured. This control fails if a ECR repository does not have any lifecycle policies configured.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECR_PRIVATE_LIFECYCLE_POLICY_CONFIGURED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECR::Repository"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "31eb64e7-07d9-440a-9ff3-096a89f58db4",
+            "source": "#583970eb-9012-4494-a7f3-01fb7c91df1d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f8152a8b-9870-41d1-b46d-ccd152ded370",
+                "control-id": "ECR.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "33867033-92b3-4fd0-9850-dd1e16e90236",
+        "type": "software",
+        "title": "ecr-repository-cmk-encryption-enabled",
+        "description": "Checks if ECR repository is encrypted at rest using customer-managed KMS key. This rule is NON_COMPLIANT if the repository is encrypted using AES256 or the default KMS key ('aws/ecr').",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECR_REPOSITORY_CMK_ENCRYPTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECR::Repository"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e0d82aae-8342-4afa-8f2b-ce8fecf6d597",
+            "source": "#583970eb-9012-4494-a7f3-01fb7c91df1d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "dae9884e-c493-432b-9b7a-63bf86a6d9fa",
+                "control-id": "ECR.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "750ef36e-85da-467c-af1e-63ab00d18cb1",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "583970eb-9012-4494-a7f3-01fb7c91df1d",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

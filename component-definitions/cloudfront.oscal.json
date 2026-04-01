@@ -1,0 +1,1018 @@
+{
+  "component-definition": {
+    "uuid": "066bd8da-7edf-485a-a7a6-67d94f6ec75c",
+    "metadata": {
+      "title": "Amazon CloudFront",
+      "last-modified": "2026-03-31T19:45:48.157725+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "a037cf8e-6c9a-400f-acc3-2dc4efc0660e",
+        "type": "service",
+        "title": "Amazon CloudFront",
+        "description": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CloudFront"
+          },
+          {
+            "name": "version",
+            "value": "2020-05-31"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "GLOBAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon CloudFront",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudfront"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudfront"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudfront"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudfront"
+          }
+        ],
+        "links": [
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#4a0ea577-8904-42d2-af65-f6e13d74c91b",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/cloudfront/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "061d8f07-47e6-4c90-99ee-8a9a56ae4635",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9d247726-f0f4-42ba-9ec1-f1af4ac91ca2",
+                "control-id": "CloudFront.1",
+                "description": "Security Hub control CloudFront.1"
+              },
+              {
+                "uuid": "4037da92-caa1-4248-a816-400c499247aa",
+                "control-id": "CloudFront.10",
+                "description": "Security Hub control CloudFront.10"
+              },
+              {
+                "uuid": "c5c0281d-4c4b-4ac2-9dfd-daf181dfc128",
+                "control-id": "CloudFront.12",
+                "description": "Security Hub control CloudFront.12"
+              },
+              {
+                "uuid": "cf378d3e-2c3f-42f5-9459-cf56f380eb3b",
+                "control-id": "CloudFront.13",
+                "description": "Security Hub control CloudFront.13"
+              },
+              {
+                "uuid": "a57b5590-56e7-427b-ac08-31a03685b3d3",
+                "control-id": "CloudFront.15",
+                "description": "Security Hub control CloudFront.15"
+              },
+              {
+                "uuid": "453fc6c3-c9b7-4142-8bd3-f08a8378f059",
+                "control-id": "CloudFront.16",
+                "description": "Security Hub control CloudFront.16"
+              },
+              {
+                "uuid": "d44ab285-eeb2-49e1-a56f-19ddcbddff4c",
+                "control-id": "CloudFront.17",
+                "description": "Security Hub control CloudFront.17"
+              },
+              {
+                "uuid": "dff1b4e7-80b2-4b4d-896d-077e9db90362",
+                "control-id": "CloudFront.3",
+                "description": "Security Hub control CloudFront.3"
+              },
+              {
+                "uuid": "ba2eb3e2-2a5f-4368-aac7-34627aa4262d",
+                "control-id": "CloudFront.4",
+                "description": "Security Hub control CloudFront.4"
+              },
+              {
+                "uuid": "1b172c60-2e4c-4e38-9ca5-1e3a5c37d2da",
+                "control-id": "CloudFront.5",
+                "description": "Security Hub control CloudFront.5"
+              },
+              {
+                "uuid": "ccf83067-85ec-41a4-a30f-85511d613b9c",
+                "control-id": "CloudFront.6",
+                "description": "Security Hub control CloudFront.6"
+              },
+              {
+                "uuid": "89e730d7-eba6-40ee-b9a0-d5329d1fff3e",
+                "control-id": "CloudFront.7",
+                "description": "Security Hub control CloudFront.7"
+              },
+              {
+                "uuid": "29936a62-f8c8-43db-ab99-a89295771dfd",
+                "control-id": "CloudFront.8",
+                "description": "Security Hub control CloudFront.8"
+              },
+              {
+                "uuid": "57514a7e-f54e-4bdf-b3e5-69fc898776d1",
+                "control-id": "CloudFront.9",
+                "description": "Security Hub control CloudFront.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b3badb10-7a95-4c72-9a4e-293c63b86d58",
+        "type": "service",
+        "title": "Amazon CloudFront KeyValueStore",
+        "description": "Amazon CloudFront KeyValueStore is a globally distributed, low-latency key-value data store that allows you to store and retrieve data at CloudFront edge locations for use with CloudFront Functions.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CloudFront KeyValueStore"
+          },
+          {
+            "name": "label",
+            "value": "Amazon CloudFront KeyValueStore",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudfront-keyvaluestore"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "fa326bb8-d873-40f9-946f-2b4627869d54",
+        "type": "software",
+        "title": "cloudfront-default-root-object-configured",
+        "description": "Checks if an Amazon CloudFront distribution is configured to return a specific object that is the default root object. The rule is NON_COMPLIANT if CloudFront distribution does not have a default root object configured.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_DEFAULT_ROOT_OBJECT_CONFIGURED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9cbc9260-335b-46a2-beae-0f0583d1fd83",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "868766c0-e0d0-4996-a61b-55d2e87d21f5",
+                "control-id": "CloudFront.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "75f8a85d-cc4d-4c01-a823-6035e06560af",
+        "type": "software",
+        "title": "cloudfront-no-deprecated-ssl-protocols",
+        "description": "This control checks if CloudFront distributions are using deprecated SSL protocols for HTTPS communication between CloudFront edge locations and custom origins. This control fails for a CloudFront distribution if any `OriginSslProtocols` includes `SSLv3`",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_NO_DEPRECATED_SSL_PROTOCOLS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "bcdcc0be-e264-416d-8ddb-dafb18185c8c",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7758487a-0b76-4ac8-9d7a-1aa767221b3b",
+                "control-id": "CloudFront.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7d6eedd7-f04c-47f2-a358-c00be9a7244b",
+        "type": "software",
+        "title": "cloudfront-s3-origin-non-existent-bucket",
+        "description": "Checks if Amazon CloudFront distributions point to a non-existent S3 bucket. The rule is NON_COMPLIANT if `S3OriginConfig` for a CloudFront distribution points to a non-existent S3 bucket. The rule does not evaluate S3 buckets with static website hosting.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_S3_ORIGIN_NON_EXISTENT_BUCKET"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b260619a-65cd-457b-b4d9-45b2e139cb10",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "32f15c94-cddc-48a9-8b83-567e3af06373",
+                "control-id": "CloudFront.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "f8aba256-bbf4-4f80-a680-3d087ac0b6dc",
+        "type": "software",
+        "title": "cloudfront-s3-origin-access-control-enabled",
+        "description": "Checks if an Amazon CloudFront distribution with an Amazon Simple Storage Service (Amazon S3) Origin type has origin access control (OAC) enabled. The rule is NON_COMPLIANT for CloudFront distributions with Amazon S3 origins that don't have OAC enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_S3_ORIGIN_ACCESS_CONTROL_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ed77903e-f2f9-4db1-9973-67472b5d65a6",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "87fb44ef-ea30-4781-aa3d-4e1bd0acc762",
+                "control-id": "CloudFront.13",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b5c44d7d-e48b-43f1-b53f-dbf4ae1c3096",
+        "type": "software",
+        "title": "cloudfront-ssl-policy-check",
+        "description": "Checks if Amazon CloudFront distributions are configured with the specified security policies. The rule is NON_COMPLIANT if a CloudFront Distribution is not configured with security policies that you specify.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_SSL_POLICY_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b6de3857-9078-43b1-940f-afc0fe7a4ed8",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1dc9e4a3-cb07-42e5-a0da-859c9797c388",
+                "control-id": "CloudFront.15",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b77532a8-d615-4fa3-bfcc-5ef3c010dce5",
+        "type": "software",
+        "title": "cloudfront-origin-lambda-url-oac-enabled",
+        "description": "Checks if Amazon CloudFront distributions with Amazon Lambda Function URL origins have origin access control (OAC) enabled. The rule is NON_COMPLIANT if any Lambda Function URL origin in a CloudFront distribution does not have OAC enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_ORIGIN_LAMBDA_URL_OAC_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "af35d56d-6c70-45de-ac04-8e40bcafe2c0",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6d575bba-4a42-45a6-b74e-10f6f283978d",
+                "control-id": "CloudFront.16",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9a388187-8f1a-4871-b13d-504a7523463a",
+        "type": "software",
+        "title": "cloudfront-distribution-key-group-enabled",
+        "description": "Checks if CloudFront distributions are configured to use only trusted key groups for signed URL or signed cookie authentication for all cache behaviours. The rule is NON_COMPLIANT if any cache behavior in the distribution is using trusted signers",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_DISTRIBUTION_KEY_GROUP_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "24665622-be5b-4245-a8c6-563f62d435fd",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7345eb84-0b8e-4148-a372-69babd850734",
+                "control-id": "CloudFront.17",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "80af10fc-606f-45c7-b5c9-dce2b074f558",
+        "type": "software",
+        "title": "cloudfront-viewer-policy-https",
+        "description": "Checks whether your Amazon CloudFront distributions use HTTPS (directly or via a redirection).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_VIEWER_POLICY_HTTPS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1a420ff1-7508-451b-9f96-39d87ff7cbe5",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "769e7198-1e3c-4806-9367-3c7e18aef8a1",
+                "control-id": "CloudFront.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ecc513bb-0fa6-4776-ab67-beb265eae750",
+        "type": "software",
+        "title": "cloudfront-origin-failover-enabled",
+        "description": "Checks whether an origin group is configured for the distribution of at least 2 origins in the origin group for Amazon CloudFront. This rule is NON_COMPLIANT if there are no origin groups for the distribution.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_ORIGIN_FAILOVER_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a7084461-684f-49ee-8292-0a240fa191e1",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "743b879e-c58a-4805-8130-c4cfbad37761",
+                "control-id": "CloudFront.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "75d64b2c-0a37-46e6-8d72-cde7324f8488",
+        "type": "software",
+        "title": "cloudfront-accesslogs-enabled",
+        "description": "This control checks to see if server access logging is enabled on CloudFront Distributions. The control will fail if access logging is not enabled for the distribution.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_ACCESSLOGS_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8fb0d6fb-62f9-4402-84c0-709f47e82e35",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b2ce9efb-2928-4f30-9d60-7d803b653b87",
+                "control-id": "CloudFront.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c4f14ca5-8fe0-4a44-aa39-df0da3111ec0",
+        "type": "software",
+        "title": "cloudfront-associated-with-waf",
+        "description": "This control checks to see if Cloudfront distributions are associated with either WAF or WAFv2 web ACLs. The control will fail if the distribution is not associated with a web ACL.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_ASSOCIATED_WITH_WAF"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "43abecfe-edc4-4e0f-b961-3e43d810e65b",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3b103e62-3e6a-4399-88ce-f93ac137c6d2",
+                "control-id": "CloudFront.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5ea5f80e-812d-4a14-a1da-dc9567340f73",
+        "type": "software",
+        "title": "cloudfront-custom-ssl-certificate",
+        "description": "This control checks if CloudFront distributions are using the default SSL/TLS certificate CloudFront provides instead of a custom one. This control fails for a CloudFront distribution if it uses the default SSL/TLS certificate.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_CUSTOM_SSL_CERTIFICATE"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "29248c3b-07da-48be-874c-008cce06d51a",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a130b267-4023-408a-9726-29492e550374",
+                "control-id": "CloudFront.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b959090e-e48d-4739-83a2-6d8eb8df86ac",
+        "type": "software",
+        "title": "cloudfront-sni-enabled",
+        "description": "This control checks if Amazon CloudFront distributions are using a custom SSL/TLS certificate and are configured to use SNI to serve HTTPS requests as opposed to dedicated IP address.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_SNI_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "cacbd9e2-b340-4b6b-81b5-ebd71460b32a",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0d274b08-909f-47ce-af96-c1e1b565fa4b",
+                "control-id": "CloudFront.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e5e23094-44ae-409d-a9cb-bc7e9a938ede",
+        "type": "software",
+        "title": "cloudfront-traffic-to-origin-encrypted",
+        "description": "This control checks if CloudFront distributions are encrypting traffic to custom origins. This control fails if `OriginProtocolPolicy` is `http-only` or if `OriginProtocolPolicy` is `match-viewer` and `ViewerProtocolPolicy` is `allow-all`.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUDFRONT_TRAFFIC_TO_ORIGIN_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CloudFront::Distribution"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9c38d501-f42b-4269-973b-de522c3e626e",
+            "source": "#96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1f38826a-89cc-4f92-b54d-8b7802d5584d",
+                "control-id": "CloudFront.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "4a0ea577-8904-42d2-af65-f6e13d74c91b",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "96b84758-6f14-4c9d-9a7e-7cfa5157ee19",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

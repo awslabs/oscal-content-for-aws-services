@@ -1,0 +1,270 @@
+{
+  "component-definition": {
+    "uuid": "0b905a0d-1414-437c-a7c9-8143e457cf56",
+    "metadata": {
+      "title": "Amazon Polly",
+      "last-modified": "2026-03-31T19:44:45.881810+00:00",
+      "version": "0.2.0",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "36234098-358f-4dbc-8601-4f6d9e88f314",
+        "type": "service",
+        "title": "Amazon Polly",
+        "description": "Amazon Polly is a text-to-speech service that converts written text into lifelike spoken audio using deep learning technologies.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Polly"
+          },
+          {
+            "name": "version",
+            "value": "2016-06-10"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Polly",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "polly"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "polly"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "polly"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "polly"
+          }
+        ],
+        "links": [
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#95a5bcd4-e647-41b4-8302-c082401178ae",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/polly/",
+            "rel": "reference"
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "95a5bcd4-e647-41b4-8302-c082401178ae",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

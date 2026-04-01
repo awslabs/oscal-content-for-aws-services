@@ -1,0 +1,521 @@
+{
+  "component-definition": {
+    "uuid": "a174425a-7f48-45f5-a734-7990ae50515e",
+    "metadata": {
+      "title": "AWS AppSync",
+      "last-modified": "2026-03-31T19:45:48.146399+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "8eb2ef5c-3101-4f82-b15c-4836f720e2a4",
+        "type": "service",
+        "title": "AWS AppSync",
+        "description": "AWS AppSync is a fully managed service that enables developers to build scalable GraphQL and Pub/Sub APIs that securely connect applications to data sources such as databases, Lambda functions, and HTTP APIs.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AppSync"
+          },
+          {
+            "name": "version",
+            "value": "2017-07-25"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS AppSync",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "appsync"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "appsync"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "appsync"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "appsync"
+          }
+        ],
+        "links": [
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/appsync/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "48e18e73-9fc4-42b3-be7f-ddf62d18402f",
+            "source": "#e280817c-11c7-4219-b8bf-3271cc682075",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "01c04192-7f8b-47e8-93ee-4735169afbad",
+                "control-id": "AppSync.1",
+                "description": "Security Hub control AppSync.1"
+              },
+              {
+                "uuid": "d751c3f0-c32a-4fce-91bb-abf0758b35f1",
+                "control-id": "AppSync.2",
+                "description": "Security Hub control AppSync.2"
+              },
+              {
+                "uuid": "957c7260-bda4-4860-b059-58745ba02f78",
+                "control-id": "AppSync.5",
+                "description": "Security Hub control AppSync.5"
+              },
+              {
+                "uuid": "cc33ac14-1351-43d1-80f6-436ae499e146",
+                "control-id": "AppSync.6",
+                "description": "Security Hub control AppSync.6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6202ba20-6ca3-428c-8f54-726c36afe3a3",
+        "type": "software",
+        "title": "appsync-cache-ct-encryption-at-rest",
+        "description": "Checks if an AWS AppSync API cache has encryption at rest enabled. This rule is NON_COMPLIANT if 'AtRestEncryptionEnabled' is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "APPSYNC_CACHE_CT_ENCRYPTION_AT_REST"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AppSync::ApiCache"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8a9ba5df-8c87-430d-afdf-3489fa0f587b",
+            "source": "#e280817c-11c7-4219-b8bf-3271cc682075",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4a5754b5-a453-465b-beca-028ad1ecc103",
+                "control-id": "AppSync.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "18fb45d4-8f36-42fb-a9b0-1fc08fbdbec6",
+        "type": "software",
+        "title": "appsync-logging-enabled",
+        "description": "Checks if an AWS AppSync API has logging enabled. The rule is NON_COMPLIANT if logging is not enabled, or 'fieldLogLevel' is neither ERROR nor ALL.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "APPSYNC_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AppSync::GraphQLApi"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "dbfe3b24-0666-4464-9a87-bf9556842cb8",
+            "source": "#e280817c-11c7-4219-b8bf-3271cc682075",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "56b7575f-80e8-49bd-90d3-b4707ddcbb47",
+                "control-id": "AppSync.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9a726254-a156-4c7e-986b-869445cabfa1",
+        "type": "software",
+        "title": "appsync-authorization-check",
+        "description": "Checks if an AWS AppSync API is using allowed authorization mechanisms. The rule is NON_COMPLIANT if an unapproved authorization mechanism is being used.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "APPSYNC_AUTHORIZATION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AppSync::GraphQLApi"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5a6e0f3a-ef15-4ad9-9b7a-24e1cf6027bb",
+            "source": "#e280817c-11c7-4219-b8bf-3271cc682075",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a326dd7d-bcdc-4133-996d-dd8fb025b18a",
+                "control-id": "AppSync.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5147e361-7944-438f-b869-f8ef6c334593",
+        "type": "software",
+        "title": "appsync-cache-ct-encryption-in-transit",
+        "description": "Checks if an AWS AppSync API cache has encryption in transit enabled. The rule is NON_COMPLIANT if 'TransitEncryptionEnabled' is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "APPSYNC_CACHE_CT_ENCRYPTION_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AppSync::ApiCache"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c1f3d202-1c52-405e-b1ea-85e1ce5d1b2b",
+            "source": "#e280817c-11c7-4219-b8bf-3271cc682075",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "718e05eb-1136-46a0-878f-2a59f6ad6c44",
+                "control-id": "AppSync.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "ed87de2c-d7c5-47a5-9e66-d5e98767a237",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "e280817c-11c7-4219-b8bf-3271cc682075",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

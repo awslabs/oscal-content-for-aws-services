@@ -1,0 +1,3336 @@
+{
+  "component-definition": {
+    "uuid": "b00e6b44-6d8b-41c4-99a6-827ebf6e6998",
+    "metadata": {
+      "title": "Amazon Relational Database Service",
+      "last-modified": "2026-03-31T19:45:48.182391+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "ab1fc81f-977d-4e42-8367-deaeb90d8186",
+        "type": "service",
+        "title": "Amazon Relational Database Service",
+        "description": "Amazon DocumentDB with MongoDB compatibility is a fully managed document database service that supports MongoDB workloads and allows developers to store, query, and index JSON data using the same MongoDB application code, drivers, and tools.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DocDB"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SUBZONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Relational Database Service (RDS)",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Relational Database Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Neptune",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon DocumentDB with MongoDB compatibility",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/rds/",
+            "rel": "reference"
+          }
+        ]
+      },
+      {
+        "uuid": "da9ebd05-731f-4e34-9470-09bc4439807f",
+        "type": "service",
+        "title": "Amazon Relational Database Service",
+        "description": "Amazon Neptune is a fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets using popular graph query languages such as Gremlin and SPARQL.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Neptune"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SUBZONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Relational Database Service (RDS)",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Relational Database Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Neptune",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon DocumentDB with MongoDB compatibility",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/rds/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a252e55a-8bf5-4297-82e9-72b0c47077ad",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "d7aafc6e-bb98-4070-9152-8c47dd761c7d",
+                "control-id": "Neptune.1",
+                "description": "Security Hub control Neptune.1"
+              },
+              {
+                "uuid": "73ff5cd1-197c-41fe-b889-b422e3da4767",
+                "control-id": "Neptune.2",
+                "description": "Security Hub control Neptune.2"
+              },
+              {
+                "uuid": "f9ae0865-65ba-406c-8b96-976175972c90",
+                "control-id": "Neptune.3",
+                "description": "Security Hub control Neptune.3"
+              },
+              {
+                "uuid": "01d922a6-adcb-497b-9452-b56479b7307a",
+                "control-id": "Neptune.4",
+                "description": "Security Hub control Neptune.4"
+              },
+              {
+                "uuid": "5f087b22-5720-4262-9762-bf6a59cd4247",
+                "control-id": "Neptune.5",
+                "description": "Security Hub control Neptune.5"
+              },
+              {
+                "uuid": "490963f4-a546-402a-b71d-b884a5eafd08",
+                "control-id": "Neptune.6",
+                "description": "Security Hub control Neptune.6"
+              },
+              {
+                "uuid": "da147ee2-ce6b-4df7-92a5-a0417feb3407",
+                "control-id": "Neptune.7",
+                "description": "Security Hub control Neptune.7"
+              },
+              {
+                "uuid": "4b4f2509-f197-4e6a-8d8b-b5f714fca429",
+                "control-id": "Neptune.8",
+                "description": "Security Hub control Neptune.8"
+              },
+              {
+                "uuid": "55d0375f-a76e-4da4-bbdc-546edcdc2aba",
+                "control-id": "Neptune.9",
+                "description": "Security Hub control Neptune.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "443cdaea-2177-43e0-95c2-a8eb4adcb118",
+        "type": "service",
+        "title": "Amazon Relational Database Service",
+        "description": "Amazon Relational Database Service (Amazon RDS) is a managed cloud service that makes it easy to set up, operate, and scale relational databases such as MySQL, PostgreSQL, MariaDB, Oracle, and Microsoft SQL Server.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS"
+          },
+          {
+            "name": "version",
+            "value": "2014-10-31"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SUBZONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Relational Database Service (RDS)",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Relational Database Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Neptune",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon DocumentDB with MongoDB compatibility",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/rds/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e75ca9b9-2361-4662-964d-cdff47e07404",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a3a849ee-a80c-43c5-966b-c24b06eb4abb",
+                "control-id": "DocumentDB.1",
+                "description": "Security Hub control DocumentDB.1"
+              },
+              {
+                "uuid": "fe8667f2-8c69-4757-b1f7-2ae11a03a0b2",
+                "control-id": "DocumentDB.2",
+                "description": "Security Hub control DocumentDB.2"
+              },
+              {
+                "uuid": "3424ba78-df54-4dd5-9427-092dae5cc9eb",
+                "control-id": "DocumentDB.4",
+                "description": "Security Hub control DocumentDB.4"
+              },
+              {
+                "uuid": "42584c00-125e-4936-8fb5-7ca2a601fd38",
+                "control-id": "DocumentDB.5",
+                "description": "Security Hub control DocumentDB.5"
+              },
+              {
+                "uuid": "d1cc5b25-ba47-424f-af79-ad8b23d56368",
+                "control-id": "DocumentDB.6",
+                "description": "Security Hub control DocumentDB.6"
+              },
+              {
+                "uuid": "51134253-534d-46dc-9c6e-720052e52cfe",
+                "control-id": "Neptune.1",
+                "description": "Security Hub control Neptune.1"
+              },
+              {
+                "uuid": "a029d07c-c0f1-4cad-8c3f-bf11dd3b4c56",
+                "control-id": "Neptune.2",
+                "description": "Security Hub control Neptune.2"
+              },
+              {
+                "uuid": "60133093-283d-4587-9919-6c5d176c069b",
+                "control-id": "Neptune.4",
+                "description": "Security Hub control Neptune.4"
+              },
+              {
+                "uuid": "e67f3c12-c2a0-4c17-bca6-d50282944c55",
+                "control-id": "Neptune.5",
+                "description": "Security Hub control Neptune.5"
+              },
+              {
+                "uuid": "100dc124-3952-4d68-8ea7-683ce95dd5d4",
+                "control-id": "Neptune.7",
+                "description": "Security Hub control Neptune.7"
+              },
+              {
+                "uuid": "ec033a64-cb24-469d-b72f-b933b5831f9b",
+                "control-id": "Neptune.8",
+                "description": "Security Hub control Neptune.8"
+              },
+              {
+                "uuid": "9c0a22ac-7d05-43b3-8695-3d3bb90996e6",
+                "control-id": "Neptune.9",
+                "description": "Security Hub control Neptune.9"
+              },
+              {
+                "uuid": "2488ab7b-fdd4-4dbc-85d3-d6ca2899ded6",
+                "control-id": "RDS.1",
+                "description": "Security Hub control RDS.1"
+              },
+              {
+                "uuid": "16690cf4-6160-4a33-8473-770af7b8ada7",
+                "control-id": "RDS.10",
+                "description": "Security Hub control RDS.10"
+              },
+              {
+                "uuid": "4124a01b-892a-4bae-9af3-d7ddbb13ebdd",
+                "control-id": "RDS.11",
+                "description": "Security Hub control RDS.11"
+              },
+              {
+                "uuid": "aaad8aa0-151b-47c1-964b-e9141d122118",
+                "control-id": "RDS.12",
+                "description": "Security Hub control RDS.12"
+              },
+              {
+                "uuid": "032f84ad-b2a5-4456-b534-71f97d1af204",
+                "control-id": "RDS.13",
+                "description": "Security Hub control RDS.13"
+              },
+              {
+                "uuid": "05877ce8-5840-4e9a-87fc-a72b15d21833",
+                "control-id": "RDS.14",
+                "description": "Security Hub control RDS.14"
+              },
+              {
+                "uuid": "e91c23db-0640-4603-b4ee-9673644d2435",
+                "control-id": "RDS.15",
+                "description": "Security Hub control RDS.15"
+              },
+              {
+                "uuid": "79745eba-e8be-4ddc-a1ec-911dde9702f6",
+                "control-id": "RDS.2",
+                "description": "Security Hub control RDS.2"
+              },
+              {
+                "uuid": "e1b4f07c-119d-4ad0-9aae-46e66e68a309",
+                "control-id": "RDS.24",
+                "description": "Security Hub control RDS.24"
+              },
+              {
+                "uuid": "5aed5703-30e9-4f68-98e3-a09975eb0d8d",
+                "control-id": "RDS.25",
+                "description": "Security Hub control RDS.25"
+              },
+              {
+                "uuid": "f0a1c6cf-492f-434c-a1f2-da3bded52455",
+                "control-id": "RDS.26",
+                "description": "Security Hub control RDS.26"
+              },
+              {
+                "uuid": "c121eec6-dd0b-47e0-9de6-026e02a9dad8",
+                "control-id": "RDS.27",
+                "description": "Security Hub control RDS.27"
+              },
+              {
+                "uuid": "c0c07cab-0a9c-4bba-a69b-29672f2cd738",
+                "control-id": "RDS.3",
+                "description": "Security Hub control RDS.3"
+              },
+              {
+                "uuid": "3ddf952e-1c0d-4319-ad18-c978baaf542d",
+                "control-id": "RDS.34",
+                "description": "Security Hub control RDS.34"
+              },
+              {
+                "uuid": "403c0d69-190a-458f-a4af-e4e269dcb1f3",
+                "control-id": "RDS.35",
+                "description": "Security Hub control RDS.35"
+              },
+              {
+                "uuid": "e49fdb5d-2118-40ff-b9d0-9b1f5d1a1755",
+                "control-id": "RDS.36",
+                "description": "Security Hub control RDS.36"
+              },
+              {
+                "uuid": "03f7bac4-e362-4084-953a-436e4b30bc6f",
+                "control-id": "RDS.37",
+                "description": "Security Hub control RDS.37"
+              },
+              {
+                "uuid": "61e2fae7-80a7-4f18-8197-2f27a01f0ea9",
+                "control-id": "RDS.38",
+                "description": "Security Hub control RDS.38"
+              },
+              {
+                "uuid": "f11c21fd-4209-4445-9d11-494990e883b6",
+                "control-id": "RDS.39",
+                "description": "Security Hub control RDS.39"
+              },
+              {
+                "uuid": "3939b0ce-c034-4462-aa38-f0df750fca76",
+                "control-id": "RDS.4",
+                "description": "Security Hub control RDS.4"
+              },
+              {
+                "uuid": "d5e4c4d5-d26e-4abd-8d3f-2cfa90fc8a35",
+                "control-id": "RDS.40",
+                "description": "Security Hub control RDS.40"
+              },
+              {
+                "uuid": "e4fa37ac-b967-4627-b885-60dbdc33ab86",
+                "control-id": "RDS.41",
+                "description": "Security Hub control RDS.41"
+              },
+              {
+                "uuid": "65053cc8-b55f-4826-8a5e-7d3570039ed0",
+                "control-id": "RDS.42",
+                "description": "Security Hub control RDS.42"
+              },
+              {
+                "uuid": "767653de-4c94-4a97-aa28-a3bf99078479",
+                "control-id": "RDS.43",
+                "description": "Security Hub control RDS.43"
+              },
+              {
+                "uuid": "d4cc3e2c-2be9-4bdc-b881-10389a5b4c99",
+                "control-id": "RDS.44",
+                "description": "Security Hub control RDS.44"
+              },
+              {
+                "uuid": "8238ca6d-7957-491e-85d2-2cdd4d943370",
+                "control-id": "RDS.45",
+                "description": "Security Hub control RDS.45"
+              },
+              {
+                "uuid": "2a4bdcb5-fe4e-4d3e-a65c-a9d96ad40d40",
+                "control-id": "RDS.46",
+                "description": "Security Hub control RDS.46"
+              },
+              {
+                "uuid": "16a7ca19-4e0f-403f-a7bf-630e76852183",
+                "control-id": "RDS.47",
+                "description": "Security Hub control RDS.47"
+              },
+              {
+                "uuid": "abb42649-6562-4f8b-83cd-ee2e401bc65f",
+                "control-id": "RDS.48",
+                "description": "Security Hub control RDS.48"
+              },
+              {
+                "uuid": "cf37842b-716f-4e4c-ab8b-1329e2837cdf",
+                "control-id": "RDS.5",
+                "description": "Security Hub control RDS.5"
+              },
+              {
+                "uuid": "13b23f5c-9bdb-421c-8487-429d91513a40",
+                "control-id": "RDS.50",
+                "description": "Security Hub control RDS.50"
+              },
+              {
+                "uuid": "80f93ead-1f4d-4595-a09e-ac532c7d4f0d",
+                "control-id": "RDS.6",
+                "description": "Security Hub control RDS.6"
+              },
+              {
+                "uuid": "9c8aa1eb-a61d-4dcb-aa7f-825af1e5c813",
+                "control-id": "RDS.7",
+                "description": "Security Hub control RDS.7"
+              },
+              {
+                "uuid": "d0e59aa2-fc99-4e73-994a-22e1b9be2554",
+                "control-id": "RDS.8",
+                "description": "Security Hub control RDS.8"
+              },
+              {
+                "uuid": "e1de6cda-a062-4d96-b032-06d06d1f0753",
+                "control-id": "RDS.9",
+                "description": "Security Hub control RDS.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "828693a5-4bf1-4ef6-ac5c-b6ad4c93741e",
+        "type": "service",
+        "title": "AWS RDS DataService",
+        "description": "AWS RDS DataService enables applications to interact with Amazon RDS databases using an HTTP-based API, allowing you to run SQL queries without managing persistent database connections.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS Data"
+          },
+          {
+            "name": "version",
+            "value": "2018-08-01"
+          },
+          {
+            "name": "label",
+            "value": "AWS RDS DataService",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds-data"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds-data"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "rds-data"
+          }
+        ],
+        "links": [
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#fdfadbf6-05d0-4279-8526-073d06100041",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "e0305283-2832-4dab-a037-bad5dd002a00",
+        "type": "software",
+        "title": "docdb-cluster-encrypted",
+        "description": "Checks if storage encryption is enabled for your Amazon DocumentDB DB clusters. The rule is NON_COMPLIANT if storage encryption is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DOCDB_CLUSTER_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f3d014e6-d30a-4e58-803d-463a588a137f",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8045b680-7a09-4111-b91c-3f816cf59b24",
+                "control-id": "DocumentDB.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "58ea29a4-647a-433e-bc26-b2f9da4b09f6",
+        "type": "software",
+        "title": "docdb-cluster-backup-retention-check",
+        "description": "Checks if an Amazon Document DB cluster retention period is set to a specific number of days. The rule is NON_COMPLIANT if the retention period is less than the value specified by the parameter.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DOCDB_CLUSTER_BACKUP_RETENTION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1afc3b2a-3861-4206-bc8e-c04ededce7ab",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "740b3f5a-af8e-4a7d-8de6-715b9cb062e3",
+                "control-id": "DocumentDB.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e53c7407-62b7-48e1-a2fc-72ddb8d6e497",
+        "type": "software",
+        "title": "docdb-cluster-audit-logging-enabled",
+        "description": "Checks if an Amazon DocumentDB (with MongoDB compatibility) instance cluster has CloudWatch log export enabled for audit logs. The rule is NON_COMPLIANT if an Amazon DocumentDB instance cluster does not have CloudWatch log export enabled for audit logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DOCDB_CLUSTER_AUDIT_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1e88e0a3-2029-4cad-bdf9-fa94a492c130",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "55065413-8a58-441d-882f-25fc305953eb",
+                "control-id": "DocumentDB.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2448282a-1d07-4fc8-9a2f-44f5a2e7bd48",
+        "type": "software",
+        "title": "docdb-cluster-deletion-protection-enabled",
+        "description": "Checks if an Amazon DocumentDB (with MongoDB compatibility) cluster has deletion protection enabled. The rule is NON_COMPLIANT if an Amazon DocumentDB cluster has the deletionProtection field set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DOCDB_CLUSTER_DELETION_PROTECTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f96feabf-79be-4d69-b915-815f998ae59e",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e69a4a50-0897-4cec-a147-5d11d0e44890",
+                "control-id": "DocumentDB.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d0ccefc6-aa39-4fc8-96e5-7f9aecc6ee37",
+        "type": "software",
+        "title": "docdb-cluster-encrypted-in-transit",
+        "description": "Checks if connections to Amazon DocumentDB clusters are configured to use encryption in transit. The rule is NON_COMPLIANT if the parameter group is not \"in-sync\", or the TLS parameter is set to either \"disabled\" or a value in excludeTlsParameters.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DOCDB_CLUSTER_ENCRYPTED_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d5f2801a-e35e-4bf6-a8cf-660fb497656b",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9dc77564-eab5-4937-8f84-eb7343afded3",
+                "control-id": "DocumentDB.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7e7dda79-0c4d-4a4c-95b7-b6976bf19199",
+        "type": "software",
+        "title": "neptune-cluster-encrypted",
+        "description": "Checks if storage encryption is enabled for your Amazon Neptune DB clusters. The rule is NON_COMPLIANT if storage encryption is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "40992a56-79a8-47f2-ae0a-6509d6c0ca15",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "50e0c7ca-79cb-44ba-9b2d-79bed58a9fd1",
+                "control-id": "Neptune.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9b213b52-6459-48db-993e-9a5e85efb97b",
+        "type": "software",
+        "title": "neptune-cluster-cloudwatch-log-export-enabled",
+        "description": "Checks if an Amazon Neptune cluster has CloudWatch Logs export enabled for audit logs. The rule is NON_COMPLIANT if a Neptune cluster does not have CloudWatch Logs export enabled for audit logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_CLOUDWATCH_LOG_EXPORT_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a39aa788-6c0c-4b5b-a498-b916bfda703b",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "dee4fa41-7a3e-4d58-9294-791db30b06dc",
+                "control-id": "Neptune.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e9df1514-e280-4fb3-821e-397b170a8a5e",
+        "type": "software",
+        "title": "neptune-cluster-snapshot-public-prohibited",
+        "description": "Checks if an Amazon Neptune manual DB cluster snapshot is public. The rule is NON_COMPLIANT if any existing or new Neptune cluster snapshot is public.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_SNAPSHOT_PUBLIC_PROHIBITED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBClusterSnapshot"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "11c6a30b-8607-471d-889a-88d942b7af3c",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "04878961-08fb-4346-b65b-ddb8a4541e34",
+                "control-id": "Neptune.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "cedfed24-1882-42af-83e6-c32d5b1df8dc",
+        "type": "software",
+        "title": "neptune-cluster-deletion-protection-enabled",
+        "description": "Checks if an Amazon Neptune DB cluster has deletion protection enabled. The rule is NON_COMPLIANT if an Amazon Neptune DB cluster has the 'deletionProtection' field set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_DELETION_PROTECTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "39110337-8687-4f4d-9158-5c1c5f20040c",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "13705ffc-6ded-495a-b115-f7711571b6e4",
+                "control-id": "Neptune.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "37995dd9-f099-4f00-8b69-f492fd77db89",
+        "type": "software",
+        "title": "neptune-cluster-backup-retention-check",
+        "description": "Checks if an Amazon Neptune DB cluster retention period is set to a specific number of days. The rule is NON_COMPLIANT if the retention period is less than the value specified by the parameter.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_BACKUP_RETENTION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0016bfa7-9898-4d39-917c-15b3bc36cfc9",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "055b3e6f-923a-4fa8-a928-dbf135ece9d2",
+                "control-id": "Neptune.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b25cc3dc-dd5c-4927-b297-8fc4752f8ca8",
+        "type": "software",
+        "title": "neptune-cluster-snapshot-encrypted",
+        "description": "Checks if an Amazon Neptune DB cluster has snapshots encrypted. The rule is NON_COMPLIANT if a Neptune cluster does not have snapshots encrypted.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_SNAPSHOT_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBClusterSnapshot"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b9abeca8-2814-4c24-8945-a6e8747a5fe0",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ca3d3674-5357-4bac-9538-a8bb29c47b94",
+                "control-id": "Neptune.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "fa56aae4-ec56-4ec2-80b7-496899c0c7f8",
+        "type": "software",
+        "title": "neptune-cluster-iam-database-authentication",
+        "description": "Checks if an Amazon Neptune DB cluster has AWS Identity and Access Management (IAM) database authentication enabled. The rule is NON_COMPLIANT if an Amazon Neptune DB cluster does not have IAM database authentication enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_IAM_DATABASE_AUTHENTICATION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7f69a5e0-623c-45e8-b6fb-fa68a080cd63",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "27df4017-864b-429a-ae93-b740f1026571",
+                "control-id": "Neptune.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b65932a2-c0e1-4259-a51b-c548f8c7be8c",
+        "type": "software",
+        "title": "neptune-cluster-copy-tags-to-snapshot-enabled",
+        "description": "Checks if an Amazon Neptune cluster is configured to copy all tags to snapshots when the snapshots are created. The rule is NON_COMPLIANT if 'copyTagsToSnapshot' is set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_COPY_TAGS_TO_SNAPSHOT_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1d4a4a4c-be01-44ef-a581-db2d344785ac",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c35e038f-6aab-4820-99f0-b4b29882cfae",
+                "control-id": "Neptune.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5be677b4-b7af-4eca-8f32-1d24805a8ea5",
+        "type": "software",
+        "title": "neptune-cluster-multi-az-enabled",
+        "description": "Checks if an Amazon Neptune cluster is configured with Amazon RDS Multi-AZ replication. The rule is NON_COMPLIANT if Multi-AZ replication is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NEPTUNE_CLUSTER_MULTI_AZ_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "50e57b5a-7a5f-40af-9902-f916aed53731",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "83f7e562-8fa5-4214-9d4a-e467014cb6ac",
+                "control-id": "Neptune.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "834e4834-888a-41d1-8119-5bd6f3cee45d",
+        "type": "software",
+        "title": "rds-snapshots-public-prohibited",
+        "description": "Checks if Amazon Relational Database Service (Amazon RDS) snapshots are public.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_SNAPSHOTS_PUBLIC_PROHIBITED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBSnapshot"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBClusterSnapshot"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "544e7092-4c70-4824-b877-42b87e05cd55",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f533629e-6621-42ca-8f7f-e92dc2b1cb5b",
+                "control-id": "RDS.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ad99ab76-becc-4e7a-a60d-a1f3ac114903",
+        "type": "software",
+        "title": "rds-instance-iam-authentication-enabled",
+        "description": "Checks if an Amazon Relational Database Service (Amazon RDS) instance has AWS Identity and Access Management (IAM) authentication enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_INSTANCE_IAM_AUTHENTICATION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ff878861-7f5e-493d-af5f-b3005292444e",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7bd37d7f-cd0f-4611-9b99-57b7a30f0d9b",
+                "control-id": "RDS.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "73887762-4c7f-46e8-b115-f23c9c54af7d",
+        "type": "software",
+        "title": "db-instance-backup-enabled",
+        "description": "Checks whether RDS DB instances have backups enabled. Optionally, the rule checks the backup retention period and the backup window.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DB_INSTANCE_BACKUP_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "48c98e02-989e-4d77-9fbe-b17e9fc5432c",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "10e829ca-f091-49a7-a20a-fd9556c7cc19",
+                "control-id": "RDS.11",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "320e8059-07d8-4275-a704-031bc2c262c5",
+        "type": "software",
+        "title": "rds-cluster-iam-authentication-enabled",
+        "description": "Checks if an Amazon RDS Cluster has AWS Identity and Access Management (IAM) authentication enabled. The rule is NON_COMPLIANT if an RDS Cluster does not have IAM authentication enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_CLUSTER_IAM_AUTHENTICATION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3f5fc603-df22-418d-b31d-5475b533beb2",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ab8d46c7-1bde-463b-b6fe-fbcf8bdcaa51",
+                "control-id": "RDS.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4c0010e7-fff5-4d25-a8bf-06a450e073e4",
+        "type": "software",
+        "title": "rds-automatic-minor-version-upgrade-enabled",
+        "description": "This control checks if automatic minor version upgrades are enabled for the Amazon RDS database instance.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_AUTOMATIC_MINOR_VERSION_UPGRADE_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d3bc2d7d-ea92-4593-937d-ce9b14def5ef",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f81aa654-7a14-4b0d-9d9b-e20747e7463b",
+                "control-id": "RDS.13",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c42e4e55-61f7-4f21-b5dd-42f91f39439a",
+        "type": "software",
+        "title": "aurora-mysql-backtracking-enabled",
+        "description": "This control checks if Amazon Aurora clusters have backtracking enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AURORA_MYSQL_BACKTRACKING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "bdcaaf66-226b-49e2-8056-029b41f08df8",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "53b1a72a-76bb-4a51-aac4-e463ac2ae710",
+                "control-id": "RDS.14",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "47f8a0e4-1818-47a5-ba4d-874f98a6b84a",
+        "type": "software",
+        "title": "rds-cluster-multi-az-enabled",
+        "description": "This control checks if RDS DB clusters are configured with multi-az.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_CLUSTER_MULTI_AZ_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5d078d63-01e8-4ada-8ad7-b66df4a6f41a",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c7073e2f-3744-417b-9e88-b1b6fb77fee9",
+                "control-id": "RDS.15",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "376f996c-8ead-4207-b82d-1bd61c3f59a1",
+        "type": "software",
+        "title": "rds-instance-public-access-check",
+        "description": "Check whether the Amazon Relational Database Service instances are not publicly accessible.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_INSTANCE_PUBLIC_ACCESS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "079ac8ae-08c8-4cf6-a627-a0ac3d6a1f5d",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c6201781-87ef-40a1-ba56-8e3ca0ba6192",
+                "control-id": "RDS.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c5d10728-2303-4875-8dfd-932e77d3baee",
+        "type": "software",
+        "title": "rds-cluster-default-admin-check",
+        "description": "This control checks whether an RDS database cluster has changed the admin username from its default value. This rule will fail if the admin username is set to the default value.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_CLUSTER_DEFAULT_ADMIN_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d72813cd-6dc7-4a96-aa96-3bfe9cb420a1",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "93a1ba2c-67e9-49e4-9d87-19aa28195771",
+                "control-id": "RDS.24",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b43737c6-3135-4602-8b36-65e297565be1",
+        "type": "software",
+        "title": "rds-instance-default-admin-check",
+        "description": "This control checks whether an Amazon RDS database instance has changed the admin username from its default value. This rule will only run on RDS database instances. The rule will fail if the admin username is set to the default value.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_INSTANCE_DEFAULT_ADMIN_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c78d7669-be43-4185-9c60-610d73e4c114",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "589ed6ad-a4c0-40d0-8b99-134d9d26f7aa",
+                "control-id": "RDS.25",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b0925c1e-d0f4-43f9-bcac-e5c7cea134f5",
+        "type": "software",
+        "title": "rds-resources-protected-by-backup-plan",
+        "description": "This control evaluates if Amazon RDS DB instances are protected by a backup plan.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_RESOURCES_PROTECTED_BY_BACKUP_PLAN"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3e7a5966-0a8a-4131-88bd-d14a25f79056",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1e37c102-57d5-4d21-81df-ff855aad0cc8",
+                "control-id": "RDS.26",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "f52b179f-66c5-4824-bdd1-65552563979b",
+        "type": "software",
+        "title": "rds-cluster-encrypted-at-rest",
+        "description": "Checks if an Amazon Relational Database Service (Amazon RDS) cluster is encrypted at rest. The rule is NON_COMPLIANT if an Amazon RDS cluster is not encrypted at rest.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_CLUSTER_ENCRYPTED_AT_REST"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "95704fca-cd3d-4e04-8675-ec0b066f95f3",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7b2d9c98-baf3-44f3-9ae0-9a7e4414a835",
+                "control-id": "RDS.27",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c05e8253-55c2-4302-a1ec-e57f35558421",
+        "type": "software",
+        "title": "rds-storage-encrypted",
+        "description": "Checks whether storage encryption is enabled for your RDS DB instances.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_STORAGE_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0c29d907-fcfd-42bc-bfa1-609347298829",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a86d60e0-f1a9-45c0-b9f1-7c97b461f243",
+                "control-id": "RDS.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "091e1642-e34b-4266-82e2-914fee8a6ae5",
+        "type": "software",
+        "title": "rds-aurora-mysql-audit-logging-enabled",
+        "description": "Checks if Amazon Aurora MySQL-Compatible Edition clusters are configured to publish audit logs to Amazon CloudWatch Logs. The rule is NON_COMPLIANT if Aurora MySQL-Compatible Edition clusters do not have audit log publishing configured.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_AURORA_MYSQL_AUDIT_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "066d7ffe-6e4b-422f-80a2-c0314867a9f6",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ec1e8e0c-9202-42c7-bbd5-a15b13a0c8c8",
+                "control-id": "RDS.34",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3f0223a1-da50-4573-8c0d-179d23a36680",
+        "type": "software",
+        "title": "rds-cluster-auto-minor-version-upgrade-enable",
+        "description": "Checks if automatic minor version upgrades are enabled for Amazon RDS Multi-AZ cluster deployments. The rule is NON_COMPLIANT if autoMinorVersionUpgrade is set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_CLUSTER_AUTO_MINOR_VERSION_UPGRADE_ENABLE"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "cae35d42-20ea-4621-a4b2-d80681e934b4",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ad2f0d59-8d7d-4bf3-b815-2378d65b9884",
+                "control-id": "RDS.35",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "722c865d-9c40-4943-84ef-de450d0ac62f",
+        "type": "software",
+        "title": "rds-postgresql-logs-to-cloudwatch",
+        "description": "Checks if an Amazon PostgreSQL DB instance is configured to publish logs to Amazon CloudWatch Logs. The rule is NON_COMPLIANT if the DB instance is not configured to publish logs to Amazon CloudWatch Logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_POSTGRESQL_LOGS_TO_CLOUDWATCH"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3dee4bb0-ea6a-438d-abe1-d6ce4afdccbd",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c4373225-972b-4b56-a263-a26a3ac7fc03",
+                "control-id": "RDS.36",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "508d5c51-a07a-4114-8b94-7d987c0361e2",
+        "type": "software",
+        "title": "rds-aurora-postgresql-logs-to-cloudwatch",
+        "description": "Checks if an Amazon Aurora PostgreSQL DB cluster is configured to publish PostgreSQL logs to Amazon CloudWatch Logs. This rule is NON_COMPLIANT if the DB cluster is not configured to publish PostgreSQL logs to Amazon CloudWatch Logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_AURORA_POSTGRESQL_LOGS_TO_CLOUDWATCH"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ff7ff311-3b3e-4686-9d57-abce904f2017",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "775619f6-31db-4018-85fe-d49374425dce",
+                "control-id": "RDS.37",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6a70c119-f01a-4a7d-9f76-a3446719a723",
+        "type": "software",
+        "title": "rds-postgres-instance-encrypted-in-transit",
+        "description": "Checks if connections to Amazon RDS PostgreSQL database instances are configured to use encryption in transit. The rule is NON_COMPLIANT if the associated database parameter group is not in-sync or if the rds.force_ssl parameter is not set to ON.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_POSTGRES_INSTANCE_ENCRYPTED_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "20aa5cfc-d2ec-4231-8799-048666a997a3",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9079874c-2a87-42b0-88bd-0dd5174ea0f7",
+                "control-id": "RDS.38",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a1e24b86-3eff-447f-9ac2-8b42bf565e28",
+        "type": "software",
+        "title": "rds-mysql-instance-encrypted-in-transit",
+        "description": "Checks if connections to Amazon RDS for MySQL database instances are configured to use encryption in transit. The rule is NON_COMPLIANT if the associated database parameter group is not in-sync or if the require_secure_transport parameter is not set to ON",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_MYSQL_INSTANCE_ENCRYPTED_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "dfbee01f-da13-43fb-9ed8-4c5849b19a9a",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4804d7ea-5764-45a4-9fde-b8e6ee229e44",
+                "control-id": "RDS.39",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9c1327cf-91e8-4667-9517-63a8f5500821",
+        "type": "software",
+        "title": "rds-snapshot-encrypted",
+        "description": "Checks whether Amazon Relational Database Service (Amazon RDS) DB snapshots are encrypted. The rule is NON_COMPLIANT, if Amazon RDS DB snapshots are not encrypted.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_SNAPSHOT_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBClusterSnapshot"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBSnapshot"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3e0f9698-c946-4c93-94fb-b671dbe434e9",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "051f9fc5-6dcb-4a28-8a57-cec558393049",
+                "control-id": "RDS.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2b40251d-29e2-42f3-94bc-937de26bb612",
+        "type": "software",
+        "title": "rds-sql-server-logs-to-cloudwatch",
+        "description": "Checks if an Amazon SQL Server DB instance is configured to publish logs to Amazon CloudWatch Logs. This rule is NON_COMPLIANT if the DB instance is not configured to publish logs to Amazon CloudWatch Logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_SQL_SERVER_LOGS_TO_CLOUDWATCH"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7a1da476-d6b9-4e3f-9139-d28a5977fd52",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "99944797-8d1e-4c75-ad47-d0a6dd6253b2",
+                "control-id": "RDS.40",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4a94d278-8baf-4f9c-b11f-2b719a374c87",
+        "type": "software",
+        "title": "rds-sqlserver-encrypted-in-transit",
+        "description": "Checks if connections to Amazon RDS SQL server database instances are configured to use encryption in transit. The rule is NON_COMPLIANT if the DB parameter force_ssl for the parameter group is not set to 1 or the ApplyStatus parameter is not 'in-sync'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_SQLSERVER_ENCRYPTED_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0204f208-c6af-4c86-9c55-c2fcd5c9038e",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5dcd3e0c-a870-43e8-a796-f2d7c54ee0fc",
+                "control-id": "RDS.41",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "cf3ecfb2-2d2d-420c-a5cc-33046cf33a09",
+        "type": "software",
+        "title": "mariadb-publish-logs-to-cloudwatch-logs",
+        "description": "Checks if Amazon MariaDB database instances are configured to publish logs to Amazon CloudWatch Logs. The rule is NON_COMPLIANT if a database instance is not configured to publish logs to CloudWatch Logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "MARIADB_PUBLISH_LOGS_TO_CLOUDWATCH_LOGS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "420b7a71-c20d-4059-9882-efd29f335a7f",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "59cc22ef-29d9-44b7-b70f-3798081a4685",
+                "control-id": "RDS.42",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "266551f1-1162-4182-b743-2581e552d573",
+        "type": "software",
+        "title": "rds-proxy-tls-encryption",
+        "description": "Checks if Amazon RDS proxies enforce TLS for all connections. The rule is NON_COMPLIANT if an Amazon RDS proxy does not have TLS enforced for all connections.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_PROXY_TLS_ENCRYPTION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ef0d1d7a-e46e-409a-8dc6-cb16c374816c",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1d42d956-1aac-4fa6-89a6-dda294458471",
+                "control-id": "RDS.43",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3f29bdba-7861-4476-9fee-f1c742e4a35d",
+        "type": "software",
+        "title": "rds-mariadb-instance-encrypted-in-transit",
+        "description": "Checks if connections to Amazon RDS for MariaDB DB instances with engine version greater than or equal to 10.5 use encryption in transit. The rule is NON_COMPLIANT if the DB parameter group is not in-sync or if require_secure_transport is not set to ON.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_MARIADB_INSTANCE_ENCRYPTED_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "35b29a19-7447-46be-b402-10960f37af0e",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "d1b8550c-7efc-4ac5-bde8-98ea0b66690a",
+                "control-id": "RDS.44",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "26f29339-d451-4a5d-a8fb-6215114166ba",
+        "type": "software",
+        "title": "aurora-mysql-cluster-audit-logging",
+        "description": "Checks if Amazon Aurora MySQL DB clusters have audit logging enabled. The rule is NON_COMPLIANT if a DB cluster does not have audit logging enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AURORA_MYSQL_CLUSTER_AUDIT_LOGGING"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1e6a1091-9551-4665-a1ab-80ddc9ea9587",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3af90072-d317-400e-9863-afb1500099e0",
+                "control-id": "RDS.45",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "308bd967-aa14-4a4a-b651-e6ed5f03f840",
+        "type": "software",
+        "title": "rds-instance-subnet-igw-check",
+        "description": "Checks if RDS DB instances are deployed in a public subnet with a route to the internet gateway. The rule is NON_COMPLIANT if RDS DB instances is deployed in a public subnet",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_INSTANCE_SUBNET_IGW_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "88652769-0678-462b-90fa-cb5b2ee9f982",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f81b8f11-6734-4d10-a410-db5c49d6aed1",
+                "control-id": "RDS.46",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "eefd95bd-53e8-4936-922f-02a0e87baa59",
+        "type": "software",
+        "title": "rds-pgsql-cluster-copy-tags-to-snapshot-check",
+        "description": "Checks if Amazon Relational Database Service (Amazon RDS) PostgreSQL DB clusters are configured to copy tags to snapshots. The rule is NON_COMPLIANT if an RDS PostgreSQL DB cluster's CopyTagsToSnapshot property is set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_PGSQL_CLUSTER_COPY_TAGS_TO_SNAPSHOT_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3bc5b924-5983-4b11-b68e-9c1a5b4bf27f",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e4caf819-50f6-43f9-8fd0-badf16c5c477",
+                "control-id": "RDS.47",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3cd9ebd1-f2d5-4ffe-a137-c83430863d30",
+        "type": "software",
+        "title": "rds-mysql-cluster-copy-tags-to-snapshot-check",
+        "description": "Checks if Amazon Relational Database Service (Amazon RDS) MySQL DB clusters are configured to copy tags to snapshots. The rule is NON_COMPLIANT if an Amazon RDS MySQL DB cluster is not configured to copy tags to snapshots.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_MYSQL_CLUSTER_COPY_TAGS_TO_SNAPSHOT_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a807c7b6-f3ad-4941-9d94-8b307f19e747",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b4d91d5b-3197-43c3-917d-f20f01fa1776",
+                "control-id": "RDS.48",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "fcff3c5f-4658-4854-ab69-63dc0a3c7521",
+        "type": "software",
+        "title": "rds-multi-az-support",
+        "description": "Checks whether high availability is enabled for your RDS DB instances.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_MULTI_AZ_SUPPORT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "07e52b65-af5c-4e96-acf5-947f6735d451",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1260132d-0367-4b23-b204-a8ac749fada5",
+                "control-id": "RDS.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "472d2abe-2b89-4854-8f09-17f810e213ba",
+        "type": "software",
+        "title": "rds-cluster-backup-retention-check",
+        "description": "Checks if Amazon RDS DB clusters have a backup retention period of at least 7 days (or parameter value). The rule is NON_COMPLIANT if the backup retention period is less than the specified value.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_CLUSTER_BACKUP_RETENTION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3c20188e-e508-45f4-bd86-04e5cdb766ca",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "2a3ec1b4-41b6-40c2-81f6-38ffa4169c6c",
+                "control-id": "RDS.50",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2802d208-59c1-4f17-a545-5f17abf1aa05",
+        "type": "software",
+        "title": "rds-enhanced-monitoring-enabled",
+        "description": "Checks whether enhanced monitoring is enabled for Amazon Relational Database Service (Amazon RDS) instances.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_ENHANCED_MONITORING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "594f1826-d7c2-4949-87a9-7d7e9f4c6978",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "285aee70-f1d1-4b2f-8d27-bb74f810a210",
+                "control-id": "RDS.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "812679cc-1c8f-40f7-9562-25a3a1d7eae6",
+        "type": "software",
+        "title": "rds-cluster-deletion-protection-enabled",
+        "description": "Checks if an Amazon Relational Database Service (Amazon RDS) cluster has deletion protection enabled. This rule is NON_COMPLIANT if an RDS cluster does not have deletion protection enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_CLUSTER_DELETION_PROTECTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBCluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a8fb7f33-d4b9-4bd7-8f80-cc26ebef6289",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "00e16b2f-cb73-4133-b76e-0ff140b613af",
+                "control-id": "RDS.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "986a120e-90f8-4470-a9bb-1f8c55ff48c2",
+        "type": "software",
+        "title": "rds-instance-deletion-protection-enabled",
+        "description": "Checks if an Amazon Relational Database Service (Amazon RDS) instance has deletion protection enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_INSTANCE_DELETION_PROTECTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "12f4b557-da2f-4c07-a88c-10092d276fcf",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "83a03dc3-fcd8-4c93-8d11-dbb70c439270",
+                "control-id": "RDS.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ce318a96-c2e4-43bf-9857-d392c1b5a2a9",
+        "type": "software",
+        "title": "rds-logging-enabled",
+        "description": "Checks that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled. The rule is NON_COMPLIANT if any log types are not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RDS_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::RDS::DBInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "191ba8b5-ceb0-4492-974d-a268e659d75a",
+            "source": "#81030814-9a7f-4138-8db3-87ccc3d4475e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ca26cffd-fcc3-473a-9f8e-4f950d22c511",
+                "control-id": "RDS.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "fdfadbf6-05d0-4279-8526-073d06100041",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "81030814-9a7f-4138-8db3-87ccc3d4475e",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

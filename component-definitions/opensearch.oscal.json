@@ -1,0 +1,1539 @@
+{
+  "component-definition": {
+    "uuid": "0ecde780-b320-4f8d-b48f-769a54e4f621",
+    "metadata": {
+      "title": "Amazon OpenSearch Service",
+      "last-modified": "2026-03-31T19:45:48.209165+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "5eff1a8e-bca0-4626-afef-b3bf1417379c",
+        "type": "service",
+        "title": "Amazon OpenSearch Service",
+        "description": "Amazon Elasticsearch Service is a managed service that makes it easy to deploy, operate, and scale Elasticsearch clusters in the AWS Cloud for log analytics, full-text search, and real-time application monitoring.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Elasticsearch Service"
+          },
+          {
+            "name": "version",
+            "value": "2015-01-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon OpenSearch Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "es"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "es"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "es"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "es"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Elasticsearch Service",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7c54a922-acc0-48c9-b7dd-b07aa992e6ba",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "49894b51-cabe-45bc-8b8d-fa694ce257fc",
+                "control-id": "ES.1",
+                "description": "Security Hub control ES.1"
+              },
+              {
+                "uuid": "d224057b-8939-4eea-b37f-49f1f9dd8cf5",
+                "control-id": "ES.2",
+                "description": "Security Hub control ES.2"
+              },
+              {
+                "uuid": "6c50de0e-e649-4a15-a1cc-d038100b79b0",
+                "control-id": "ES.3",
+                "description": "Security Hub control ES.3"
+              },
+              {
+                "uuid": "0dc8040e-791d-46f8-9f90-fd4dde267961",
+                "control-id": "ES.4",
+                "description": "Security Hub control ES.4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "12f5aa42-a0ff-4eb1-8e1d-b71cbfee94d4",
+        "type": "service",
+        "title": "Amazon OpenSearch Ingestion",
+        "description": "Amazon OpenSearch Ingestion is a fully managed, serverless data collector that enables you to ingest, filter, transform, and route data to Amazon OpenSearch Service domains and OpenSearch Serverless collections.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OSIS"
+          },
+          {
+            "name": "version",
+            "value": "2022-01-01"
+          },
+          {
+            "name": "label",
+            "value": "Amazon OpenSearch Ingestion",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "osis"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "osis"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "osis"
+          }
+        ],
+        "links": [
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "9a5459ed-b303-4265-a772-4a0c3fc3c588",
+        "type": "service",
+        "title": "Amazon OpenSearch Service",
+        "description": "Amazon OpenSearch Service is a managed service that makes it easy to deploy, operate, and scale OpenSearch and Elasticsearch clusters in the AWS Cloud for search, log analytics, and real-time application monitoring.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OpenSearch"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon OpenSearch Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "es"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "es"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Elasticsearch Service",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ad6ad900-f256-4954-8764-a7a8ebc6bdc6",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "80e3c4ff-7712-4f23-8226-7c2c026fd45e",
+                "control-id": "Opensearch.1",
+                "description": "Security Hub control Opensearch.1"
+              },
+              {
+                "uuid": "c0463039-971e-4c53-bd6c-42433e069259",
+                "control-id": "Opensearch.10",
+                "description": "Security Hub control Opensearch.10"
+              },
+              {
+                "uuid": "cdc9dcfe-949f-4a53-8b3c-a6573780bc26",
+                "control-id": "Opensearch.11",
+                "description": "Security Hub control Opensearch.11"
+              },
+              {
+                "uuid": "26f157ed-24d1-4360-aa4e-c5cd2fb19ec4",
+                "control-id": "Opensearch.2",
+                "description": "Security Hub control Opensearch.2"
+              },
+              {
+                "uuid": "3ab3f256-e3c6-4bd7-847e-a9ceb7e2b67e",
+                "control-id": "Opensearch.3",
+                "description": "Security Hub control Opensearch.3"
+              },
+              {
+                "uuid": "add72bd3-bdf9-4d3e-86a4-02de606b568f",
+                "control-id": "Opensearch.4",
+                "description": "Security Hub control Opensearch.4"
+              },
+              {
+                "uuid": "f9fe76ad-c834-4595-9c0a-7ef38338c6af",
+                "control-id": "Opensearch.5",
+                "description": "Security Hub control Opensearch.5"
+              },
+              {
+                "uuid": "9489d4c2-d566-4a39-a546-5f8e8f12edb6",
+                "control-id": "Opensearch.6",
+                "description": "Security Hub control Opensearch.6"
+              },
+              {
+                "uuid": "5fd11db0-5818-4951-9747-53470aa6cc42",
+                "control-id": "Opensearch.7",
+                "description": "Security Hub control Opensearch.7"
+              },
+              {
+                "uuid": "98b26f9c-932e-44e8-a537-2702dce7dfc9",
+                "control-id": "Opensearch.8",
+                "description": "Security Hub control Opensearch.8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b28ded3e-8be1-4459-abe8-5842787a8ca0",
+        "type": "service",
+        "title": "OpenSearch Service Serverless",
+        "description": "Amazon OpenSearch Service Serverless is a serverless deployment option for Amazon OpenSearch Service that automatically provisions and scales the underlying resources needed to run your OpenSearch workloads, eliminating the need to manage cluster infrastructure.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OpenSearchServerless"
+          },
+          {
+            "name": "version",
+            "value": "2021-11-01"
+          },
+          {
+            "name": "label",
+            "value": "OpenSearch Service Serverless",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "aoss"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "aoss"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "aoss"
+          }
+        ],
+        "links": [
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#0613a6a9-c0ec-4b70-9938-9c22025d8389",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "52dd32fa-9aa9-4b1d-98db-cf9cdb173c3f",
+        "type": "software",
+        "title": "elasticsearch-encrypted-at-rest",
+        "description": "Checks whether Elasticsearch domains have encryption at rest configuration enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELASTICSEARCH_ENCRYPTED_AT_REST"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6a4eb69b-1d31-4d51-b2b8-1c53904286a1",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8c1b922f-e98c-4e38-bc43-5450ffcdb397",
+                "control-id": "ES.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "17f666b6-1acf-4d69-abae-96bdbaa6ca2e",
+        "type": "software",
+        "title": "elasticsearch-in-vpc-only",
+        "description": "Checks whether Elasticsearch domains are in Amazon Virtual Private Cloud (Amazon VPC).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELASTICSEARCH_IN_VPC_ONLY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "972bacbf-5a39-42c1-988d-ec72ecb7225a",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ab8e0bca-5f28-4e0d-9338-e40b8beb806b",
+                "control-id": "ES.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a9348e5c-1cdd-40f6-934d-57f5c06e7cab",
+        "type": "software",
+        "title": "elasticsearch-node-to-node-encryption-check",
+        "description": "Check that Elasticsearch nodes are encrypted end to end. The rule is NON_COMPLIANT if the node-to-node encryption is disabled on the domain.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELASTICSEARCH_NODE_TO_NODE_ENCRYPTION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Elasticsearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8e5aba5a-8564-4075-ae5f-7b6e4899d3f5",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b2c8156f-92f1-4401-a973-90406e61b435",
+                "control-id": "ES.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "bedceef1-956e-49bb-b551-64cc0bf89c19",
+        "type": "software",
+        "title": "elasticsearch-logs-to-cloudwatch",
+        "description": "This control checks whether Elasticsearch domains are configured to send error logs to CloudWatch Logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELASTICSEARCH_LOGS_TO_CLOUDWATCH"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Elasticsearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7470bc01-ab81-445c-b0ef-7f421d1ea788",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "16718c18-618a-4106-8ba3-aa85fc0a540a",
+                "control-id": "ES.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9bf70b8f-7917-4786-aa4d-612c33ceee62",
+        "type": "software",
+        "title": "opensearch-encrypted-at-rest",
+        "description": "This control checks whether Amazon OpenSearch domains have encryption-at-rest configuration enabled. The check fails if encryption at rest is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_ENCRYPTED_AT_REST"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c5d5e652-ace6-476a-9872-17a324071a8f",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "67d3a5b3-9a2d-43c4-9a8c-7198c0362c79",
+                "control-id": "Opensearch.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "216e1f99-f66a-4fe7-a439-5a83dcc084b0",
+        "type": "software",
+        "title": "opensearch-update-check",
+        "description": "Checks if Amazon OpenSearch Service version updates are available but not installed. The rule is NON_COMPLIANT for an OpenSearch domain if the latest software updates are not installed.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_UPDATE_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9f23496a-cbfe-45a5-a078-da784848f338",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "673ab68d-c87e-471f-af1d-a3aa2eb81915",
+                "control-id": "Opensearch.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "75bb867b-e590-4fc4-af3b-a62cd49f31f4",
+        "type": "software",
+        "title": "opensearch-primary-node-fault-tolerance",
+        "description": "Checks if Amazon OpenSearch Service domains are configured with at least three dedicated primary nodes. The rule is NON_COMPLIANT for an OpenSearch Service domain if 'DedicatedMasterEnabled' is set to 'false', or 'DedicatedMasterCount' is less than 3.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_PRIMARY_NODE_FAULT_TOLERANCE"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "476c8fbb-1bc4-45df-93d5-3e6c27285ada",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7e75870c-92a8-4986-a232-1192603d5edf",
+                "control-id": "Opensearch.11",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "fea97081-4fa9-48fd-9be9-fd39f3094729",
+        "type": "software",
+        "title": "opensearch-in-vpc-only",
+        "description": "This control checks Amazon OpenSearch Service domains are in an Amazon Virtual Private Cloud (VPC).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_IN_VPC_ONLY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0c793dbb-4825-4d46-a5b8-c93cf293f9ef",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6cb6b06a-b337-438a-89d0-fb2f8c5f7fe4",
+                "control-id": "Opensearch.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "92232d22-5aae-432f-8893-070d07a69191",
+        "type": "software",
+        "title": "opensearch-node-to-node-encryption-check",
+        "description": "This control checks whether Amazon OpenSearch domains have node-to-node encryption enabled. This control fails if node-to-node encryption is disabled on the domain.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_NODE_TO_NODE_ENCRYPTION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d042970a-416b-49a6-94d3-26464d13aeff",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "58497cb5-858f-4468-8a2d-de67ea455932",
+                "control-id": "Opensearch.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2a22f99e-c444-47cc-969a-61aed647f5e6",
+        "type": "software",
+        "title": "opensearch-logs-to-cloudwatch",
+        "description": "This control checks whether Amazon OpenSearch domains are configured to send error logs to CloudWatch Logs. This control fails if error logging to CloudWatch is not enabled for a domain.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_LOGS_TO_CLOUDWATCH"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "25fc3844-c676-42ad-b356-5e91359bb7db",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f798bd18-67ca-4b59-95be-ab09eca40ff0",
+                "control-id": "Opensearch.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "afcca08b-b03e-4841-bcbc-bc097fd28d91",
+        "type": "software",
+        "title": "opensearch-audit-logging-enabled",
+        "description": "This control checks whether Amazon OpenSearch Service domains have audit logging enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_AUDIT_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "4d34e8c9-1b53-42ec-8a85-92d07b3199f0",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7dcdbd73-e485-42f9-a666-ec2889ec9799",
+                "control-id": "Opensearch.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a22d1f1e-89d3-4844-963d-a0796d8658bd",
+        "type": "software",
+        "title": "opensearch-data-node-fault-tolerance",
+        "description": "This control checks whether Amazon OpenSearch Service domains are configured with at least three data nodes and \"zoneAwarenessEnabled\" is true.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_DATA_NODE_FAULT_TOLERANCE"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e43c3165-6760-400c-bd60-7bdd6acf98d1",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "02d7b28e-b483-443b-a4a9-b184740f18e2",
+                "control-id": "Opensearch.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9db5c70a-9d71-41ce-987a-7c0c432eec1b",
+        "type": "software",
+        "title": "opensearch-access-control-enabled",
+        "description": "This control checks whether Amazon OpenSearch Service domains have fine-grained access control enabled. This control fails if AdvancedSecurityOptions is not enabled for the OpenSearch Service domain.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_ACCESS_CONTROL_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "411f0e7c-1326-46d1-a190-983ddab7105e",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0f7a657f-b7cb-41f4-bc50-e328b2a75da6",
+                "control-id": "Opensearch.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "08144ee2-5018-45b9-b7d5-4fb63ea5b5c2",
+        "type": "software",
+        "title": "opensearch-https-required",
+        "description": "Checks whether connections to OpenSearch domains are using HTTPS. The rule is NON_COMPLIANT if the Amazon OpenSearch domain 'EnforceHTTPS' is not 'true' or is 'true' and 'TLSSecurityPolicy' is not in 'tlsPolicies'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "OPENSEARCH_HTTPS_REQUIRED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::OpenSearch::Domain"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "30146b01-a9c6-4e81-b020-19c084bb6f50",
+            "source": "#9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "db50acad-cbfb-4466-9125-cfa6792d4636",
+                "control-id": "Opensearch.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "0613a6a9-c0ec-4b70-9938-9c22025d8389",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9cb5b2fa-c4e7-4b0e-a8cb-6ed57f85c25f",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

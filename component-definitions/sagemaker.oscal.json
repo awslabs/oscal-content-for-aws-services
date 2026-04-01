@@ -1,0 +1,1281 @@
+{
+  "component-definition": {
+    "uuid": "e00867ac-2a6a-4466-b7f6-98fa4a3616a3",
+    "metadata": {
+      "title": "Amazon SageMaker Service",
+      "last-modified": "2026-03-31T19:45:48.266758+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "623bd5dc-3c0c-4fb7-aca3-ef0d970ec064",
+        "type": "service",
+        "title": "Amazon SageMaker Service",
+        "description": "Amazon SageMaker Service is a fully managed machine learning platform that enables developers and data scientists to build, train, and deploy machine learning models at scale.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SageMaker"
+          },
+          {
+            "name": "version",
+            "value": "2017-07-24"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "api.sagemaker"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "sagemaker"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "sagemaker"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "sagemaker"
+          }
+        ],
+        "links": [
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/sagemaker/",
+            "rel": "reference"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/next-generation-sagemaker/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "da66bb34-8578-414e-8276-abaf58cad5b0",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0ee2f182-938b-4bdd-b9a4-27f3d4016808",
+                "control-id": "SageMaker.1",
+                "description": "Security Hub control SageMaker.1"
+              },
+              {
+                "uuid": "9a213515-8edf-4a34-b344-00c0d3941320",
+                "control-id": "SageMaker.10",
+                "description": "Security Hub control SageMaker.10"
+              },
+              {
+                "uuid": "2f830040-b422-4d72-99be-389409bb17aa",
+                "control-id": "SageMaker.11",
+                "description": "Security Hub control SageMaker.11"
+              },
+              {
+                "uuid": "1db4ab8a-8ea1-4dc0-98e5-f5518fdf8dcc",
+                "control-id": "SageMaker.12",
+                "description": "Security Hub control SageMaker.12"
+              },
+              {
+                "uuid": "c651fc9f-a064-4b1a-abeb-bbdb72d672e3",
+                "control-id": "SageMaker.13",
+                "description": "Security Hub control SageMaker.13"
+              },
+              {
+                "uuid": "df9bdc2a-b134-43b8-9435-304ea62022a3",
+                "control-id": "SageMaker.14",
+                "description": "Security Hub control SageMaker.14"
+              },
+              {
+                "uuid": "ae1be43d-1350-42bd-b718-355f911e612d",
+                "control-id": "SageMaker.15",
+                "description": "Security Hub control SageMaker.15"
+              },
+              {
+                "uuid": "83b5e659-e11d-4bde-9db2-1ee243d02a75",
+                "control-id": "SageMaker.2",
+                "description": "Security Hub control SageMaker.2"
+              },
+              {
+                "uuid": "2c306c55-f107-44af-afe0-1cb4d52098bd",
+                "control-id": "SageMaker.3",
+                "description": "Security Hub control SageMaker.3"
+              },
+              {
+                "uuid": "445aba1a-21b4-4c36-bc75-3be307aa96e9",
+                "control-id": "SageMaker.4",
+                "description": "Security Hub control SageMaker.4"
+              },
+              {
+                "uuid": "782878f4-dc5f-4b90-bb09-4f5a7de632a5",
+                "control-id": "SageMaker.5",
+                "description": "Security Hub control SageMaker.5"
+              },
+              {
+                "uuid": "fc2e7eab-9a4f-4415-be56-5b01c089b592",
+                "control-id": "SageMaker.6",
+                "description": "Security Hub control SageMaker.6"
+              },
+              {
+                "uuid": "9b89baaf-f29a-4514-8e30-04afb4f57d2b",
+                "control-id": "SageMaker.7",
+                "description": "Security Hub control SageMaker.7"
+              },
+              {
+                "uuid": "7dd67d57-c67b-4a7a-b489-ad66045818b2",
+                "control-id": "SageMaker.8",
+                "description": "Security Hub control SageMaker.8"
+              },
+              {
+                "uuid": "1bdb3754-ff5d-41f2-a888-704de8b52182",
+                "control-id": "SageMaker.9",
+                "description": "Security Hub control SageMaker.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b288dd2c-f4c5-4526-8d5e-a5525fa8fdbf",
+        "type": "service",
+        "title": "Amazon Augmented AI Runtime",
+        "description": "Amazon Augmented AI Runtime enables you to add human review workflows to machine learning predictions by routing low-confidence predictions to human reviewers for evaluation and labeling.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SageMaker A2I Runtime"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Augmented AI Runtime",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "87518329-3771-4719-9641-3ce962ccd00f",
+        "type": "service",
+        "title": "Amazon SageMaker Feature Store Runtime",
+        "description": "Amazon SageMaker Feature Store Runtime is a fully managed service that enables machine learning teams to store, retrieve, and serve curated features for model training and real-time inference from a centralized feature repository.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SageMaker FeatureStore Runtime"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker Feature Store Runtime",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "d1d851b8-9c77-43cc-bab5-7ccbeb75bfa8",
+        "type": "service",
+        "title": "Amazon SageMaker geospatial capabilities",
+        "description": "Amazon SageMaker geospatial capabilities enables data scientists and machine learning engineers to build, train, and deploy models using geospatial data by providing access to readily available geospatial datasets, purpose-built processing operations, and visualization tools.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SageMaker Geospatial"
+          },
+          {
+            "name": "version",
+            "value": "2020-05-27"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker geospatial capabilities",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "sagemaker-geospatial"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "sagemaker-geospatial"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "sagemaker-geospatial"
+          }
+        ],
+        "links": [
+          {
+            "href": "#4b7fbe1c-ac53-471d-858f-78b833c81f29",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "f46e521b-79ff-48d5-9fd8-9dc0e6d426a2",
+        "type": "service",
+        "title": "Amazon SageMaker Metrics Service",
+        "description": "Amazon SageMaker Metrics Service enables machine learning practitioners to ingest, query, and visualize training job metrics in real time during model development on Amazon SageMaker.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SageMaker Metrics"
+          },
+          {
+            "name": "version",
+            "value": "2022-09-30"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker Metrics Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "metrics.sagemaker"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "0f547cf7-d5a5-45a1-9f76-25954c3caca3",
+        "type": "service",
+        "title": "Amazon SageMaker Runtime HTTP2",
+        "description": "Amazon SageMaker Runtime is a service that enables you to invoke machine learning models deployed on Amazon SageMaker endpoints to get real-time predictions from your applications.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SageMaker Runtime"
+          },
+          {
+            "name": "version",
+            "value": "2017-05-13"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker Runtime HTTP2",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "runtime.sagemaker"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "sagemaker"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker Runtime",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "21ddc843-85f1-40f3-84a0-6e024a470b41",
+        "type": "service",
+        "title": "Amazon SageMaker Runtime HTTP2",
+        "description": "Amazon SageMaker Runtime HTTP2 is a service that enables low-latency, bidirectional streaming inference requests to Amazon SageMaker endpoints using the HTTP/2 protocol.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SageMaker Runtime HTTP2"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker Runtime HTTP2",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "label",
+            "value": "Amazon SageMaker Runtime",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "48ee4b3b-2829-43c8-99a1-1dcf9116fd56",
+        "type": "service",
+        "title": "Amazon Sagemaker Edge Manager",
+        "description": "Amazon SageMaker Edge Manager helps you optimize, secure, monitor, and maintain machine learning models deployed on edge devices.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Sagemaker Edge"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Sagemaker Edge Manager",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "337f9b58-efa3-4ec6-8a6c-aea5a10d0c3b",
+        "type": "software",
+        "title": "sagemaker-notebook-no-direct-internet-access",
+        "description": "Checks whether direct internet access is disabled for an Amazon SageMaker notebook instance. The rule is NON_COMPLIANT if Amazon SageMaker notebook instances are internet-enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_NOTEBOOK_NO_DIRECT_INTERNET_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fa45d334-518a-40a7-a64b-db1707bded9e",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "958b0f1d-e0cf-4f48-8430-befcd06cc152",
+                "control-id": "SageMaker.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2c2841ed-0f05-442a-a7f7-3042aa0a37e8",
+        "type": "software",
+        "title": "sagemaker-model-explainability-job-encrypt-in-transit",
+        "description": "Checks if Amazon SageMaker model explainability job definitions have inter-container traffic encryption enabled when the instance count is 2 or greater. The rule is NON_COMPLIANT if NetworkConfig.EnableInterContainerTrafficEncryption is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_MODEL_EXPLAINABILITY_JOB_ENCRYPT_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::ModelExplainabilityJobDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1d0dc735-ed88-49cf-b67b-303cf5e1d6b9",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ce8bab79-a748-448c-ab35-19bbc7f6ffe5",
+                "control-id": "SageMaker.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "728027a2-dd4e-4138-a907-300576695b1d",
+        "type": "software",
+        "title": "sagemaker-data-quality-job-isolation",
+        "description": "Checks if Amazon SageMaker data quality job definitions have network isolation enabled. The rule is NON_COMPLIANT if NetworkConfig.EnableNetworkIsolation is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_DATA_QUALITY_JOB_ISOLATION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::DataQualityJobDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b4232493-b9b4-4911-be16-ec186917a505",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "bb960118-50de-47ef-9d37-9ad7783a9c5e",
+                "control-id": "SageMaker.11",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "f22172e5-fcb4-4d71-9c8a-6c61fb20731c",
+        "type": "software",
+        "title": "sagemaker-model-bias-job-isolation",
+        "description": "Checks if Amazon SageMaker model bias job definitions have network isolation enabled. The rule is NON_COMPLIANT if NetworkConfig.EnableNetworkIsolation is set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_MODEL_BIAS_JOB_ISOLATION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::ModelBiasJobDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "58d5d331-48a4-4897-9e30-32020a01e108",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "518724d6-0fbe-4368-bf89-d10967a02975",
+                "control-id": "SageMaker.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "256454a4-17bd-4238-83ae-0de8c4092938",
+        "type": "software",
+        "title": "sagemaker-model-quality-job-encrypt-in-transit",
+        "description": "Checks if Amazon SageMaker model quality job definitions have inter-container traffic encryption enabled when the instance count is 2 or greater. The rule is NON_COMPLIANT if configuration.NetworkConfig.EnableInterContainerTrafficEncryption is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_MODEL_QUALITY_JOB_ENCRYPT_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::ModelQualityJobDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "eaa7f457-ed20-4722-a35c-fcd271f51aeb",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0f7ea550-1a97-4fd2-8b39-417740e545e3",
+                "control-id": "SageMaker.13",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ecf358ed-bca2-48b5-bf0b-c1f90657b5ca",
+        "type": "software",
+        "title": "sagemaker-monitoring-schedule-isolation",
+        "description": "Checks if Amazon SageMaker monitoring schedules have network isolation enabled. The rule is NON_COMPLIANT if MonitoringScheduleConfig.MonitoringJobDefinition.NetworkConfig.EnableNetworkIsolation is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_MONITORING_SCHEDULE_ISOLATION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::MonitoringSchedule"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f58d20fb-45e6-4dc5-920e-a9733214e3c2",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "897672d8-470d-4fd6-85ff-f2e0c063ce80",
+                "control-id": "SageMaker.14",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2891de05-aa2e-4f51-9662-eeb71b6770b9",
+        "type": "software",
+        "title": "sagemaker-model-bias-job-encrypt-in-transit",
+        "description": "Checks if Amazon SageMaker model bias job definitions have inter-container traffic encryption enabled when the instance count is 2 or greater. The rule is NON_COMPLIANT if NetworkConfig.EnableInterContainerTrafficEncryption is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_MODEL_BIAS_JOB_ENCRYPT_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::ModelBiasJobDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "4294920e-b9cf-4408-9bf7-6a6a57103050",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6c25454e-0e8b-4b50-87f3-6e5857a33c44",
+                "control-id": "SageMaker.15",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "02c65e72-85e8-4f3f-8c34-db2b1ca9fd03",
+        "type": "software",
+        "title": "sagemaker-notebook-instance-inside-vpc",
+        "description": "Checks if an Amazon SageMaker notebook instance is launched within a VPC or within a list of approved subnets. The rule is NON_COMPLIANT if a notebook instance is not launched within a VPC or if its subnet ID is not included in the parameter list.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_NOTEBOOK_INSTANCE_INSIDE_VPC"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::NotebookInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ff96c645-108c-48f1-b41a-e82350ab39af",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "d9f38ea7-4a1a-4252-8f57-5c2a6eb28886",
+                "control-id": "SageMaker.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b66227bb-f239-423a-bffd-64f197f7e99a",
+        "type": "software",
+        "title": "sagemaker-notebook-instance-root-access-check",
+        "description": "Checks if the Amazon SageMaker RootAccess setting is enabled for Amazon SageMaker notebook instances. The rule is NON_COMPLIANT if the RootAccess setting is set to `Enabled` for an Amazon SageMaker notebook instance.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_NOTEBOOK_INSTANCE_ROOT_ACCESS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::NotebookInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b70b25a1-7e7a-466b-8ea2-c75397198aed",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e9376613-017d-4e95-a229-f3d566ad15b6",
+                "control-id": "SageMaker.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e7c66d96-fb8d-40dc-91a5-2a2d8ff3df31",
+        "type": "software",
+        "title": "sagemaker-endpoint-config-prod-instance-count",
+        "description": "Checks if Amazon SageMaker endpoint configurations have production variants `InitialInstanceCount` set to a value greater than 1. The rule is NON_COMPLIANT if production variants `InitialInstanceCount` is equal to 1.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_ENDPOINT_CONFIG_PROD_INSTANCE_COUNT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7b2e1eb2-6f4c-4db7-b8aa-8d8ada782cee",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "645a6502-8545-4cbe-ad28-ee532d643c08",
+                "control-id": "SageMaker.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3cb2e853-08a8-4496-9331-45e733ab6ff3",
+        "type": "software",
+        "title": "sagemaker-model-isolation-enabled",
+        "description": "Checks if SageMaker Model does not allow inbound connection to the resource. The rule is NON_COMPLIANT if SageMaker Model allows inbound connection to the resource.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_MODEL_ISOLATION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::Model"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6a121edf-1d13-4226-afd2-d1288b2a036f",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e7aabadc-de7a-46e9-ab1d-69f5bb2d3e25",
+                "control-id": "SageMaker.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "66a60f51-84c2-4281-8bad-dcb116d0e1bd",
+        "type": "software",
+        "title": "sagemaker-app-image-config-tagged",
+        "description": "Checks if Amazon SageMaker app image configs have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_APP_IMAGE_CONFIG_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::AppImageConfig"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "4d414330-5a96-4600-8295-37c2a2ae97a3",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7acc9217-b2ed-46fd-9fe4-99f762679bc0",
+                "control-id": "SageMaker.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6881e8d6-6a6b-442e-8fcc-3a83ddb3d176",
+        "type": "software",
+        "title": "sagemaker-image-tagged",
+        "description": "Checks if Amazon SageMaker images have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_IMAGE_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::Image"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b6feee7c-6727-4004-866d-158995db58a4",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "cb5c65ed-f69e-46f3-a106-94514e72125c",
+                "control-id": "SageMaker.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "cf4141bc-4cca-4a18-9204-b6fdb0f48e9e",
+        "type": "software",
+        "title": "sagemaker-notebook-instance-platform-version",
+        "description": "Checks if a Sagemaker Notebook Instance is configured to use a supported platform identifier version. The rule is NON_COMPLIANT if a Notebook Instance is not using the specified supported platform identifier version as specified in the parameter.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_NOTEBOOK_INSTANCE_PLATFORM_VERSION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9a87eb8c-2c57-43a2-8889-2936e7c26a69",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "2b81983c-15c0-46b1-b454-b62d54e2850a",
+                "control-id": "SageMaker.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b214a906-749e-4dbe-b9b0-6c3ab6959a06",
+        "type": "software",
+        "title": "sagemaker-data-quality-job-encrypt-in-transit",
+        "description": "Checks if Amazon SageMaker data quality job definitions have inter-container traffic encryption enabled when the instance count is 2 or greater. The rule is NON_COMPLIANT if NetworkConfig.EnableInterContainerTrafficEncryption is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SAGEMAKER_DATA_QUALITY_JOB_ENCRYPT_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SageMaker::DataQualityJobDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c660eab9-f9b1-4fb1-b3c2-058f64c43356",
+            "source": "#ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "bca777d4-96fe-44c8-99d4-0c53acd5b26e",
+                "control-id": "SageMaker.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "4b7fbe1c-ac53-471d-858f-78b833c81f29",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "ff38d293-b1d9-4abc-ad37-5db074d00ef3",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

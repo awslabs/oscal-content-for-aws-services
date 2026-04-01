@@ -1,0 +1,453 @@
+{
+  "component-definition": {
+    "uuid": "d210bd10-6b0f-46a8-b928-e3a5e9aab3c7",
+    "metadata": {
+      "title": "AWS Elastic Beanstalk",
+      "last-modified": "2026-03-31T19:45:48.213473+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "d4a3caa9-5f86-456f-a34f-413307801ced",
+        "type": "service",
+        "title": "AWS Elastic Beanstalk",
+        "description": "AWS Elastic Beanstalk is a fully managed service that automatically handles the deployment, capacity provisioning, load balancing, and scaling of web applications and services so developers can focus on writing code.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Elastic Beanstalk"
+          },
+          {
+            "name": "version",
+            "value": "2010-12-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Elastic Beanstalk",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticbeanstalk"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticbeanstalk"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticbeanstalk"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticbeanstalk"
+          }
+        ],
+        "links": [
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#e11e860f-f1ca-421f-8c9d-91c5a932e312",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "507dce57-d949-4f3a-a2f8-9c7942f04472",
+            "source": "#3a647f30-aff7-422d-a4a0-288230f9b440",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "740e8bc6-c69e-47b0-9ad6-c72967d67ae0",
+                "control-id": "ElasticBeanstalk.1",
+                "description": "Security Hub control ElasticBeanstalk.1"
+              },
+              {
+                "uuid": "4a804dd2-fef1-442c-931b-cd2006004c4f",
+                "control-id": "ElasticBeanstalk.2",
+                "description": "Security Hub control ElasticBeanstalk.2"
+              },
+              {
+                "uuid": "01015f16-eaff-43c9-b1b0-7afbfb72cb09",
+                "control-id": "ElasticBeanstalk.3",
+                "description": "Security Hub control ElasticBeanstalk.3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "aa131b47-90f0-49a2-ad2a-bc4bb53ff0b3",
+        "type": "software",
+        "title": "beanstalk-enhanced-health-reporting-enabled",
+        "description": "Checks for Elastic Beanstalk environment is configured for 'enhanced' health reporting and NON_COMPLIANT if configured for 'basic' health reporting.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "BEANSTALK_ENHANCED_HEALTH_REPORTING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticBeanstalk::Environment"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3dfe4116-19bf-4150-9238-7e205b9b1967",
+            "source": "#3a647f30-aff7-422d-a4a0-288230f9b440",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c8a9da0e-280b-489d-828f-fa7870e04c74",
+                "control-id": "ElasticBeanstalk.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "fa9f992e-9668-4b83-959b-ea4659a2a9aa",
+        "type": "software",
+        "title": "elastic-beanstalk-managed-updates-enabled",
+        "description": "Checks if managed platform updates in an AWS Elastic Beanstalk environment is enabled. The rule is NON_COMPLIANT if the value for `ManagedActionsEnabled` is set to false or if a parameter is provided whose value does not match the existing configurations.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELASTIC_BEANSTALK_MANAGED_UPDATES_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticBeanstalk::Environment"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0fd7c42b-bafe-494a-bad2-c71e93eed128",
+            "source": "#3a647f30-aff7-422d-a4a0-288230f9b440",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a0fcb2cf-e9b2-4d2d-886e-deab48238967",
+                "control-id": "ElasticBeanstalk.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5b90d4c9-45e3-4b10-900b-2b43befb6a3d",
+        "type": "software",
+        "title": "elastic-beanstalk-logs-to-cloudwatch",
+        "description": "Checks if AWS Elastic Beanstalk environments are configured to send logs to Amazon CloudWatch Logs. The rule is NON_COMPLIANT if the value of `StreamLogs` is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELASTIC_BEANSTALK_LOGS_TO_CLOUDWATCH"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticBeanstalk::Environment"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0618de15-de7b-4c32-9202-505b4af3d4f6",
+            "source": "#3a647f30-aff7-422d-a4a0-288230f9b440",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c3e42d79-63ef-446b-8c1a-ef3981f29029",
+                "control-id": "ElasticBeanstalk.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "e11e860f-f1ca-421f-8c9d-91c5a932e312",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "3a647f30-aff7-422d-a4a0-288230f9b440",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

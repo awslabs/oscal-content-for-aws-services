@@ -1,0 +1,772 @@
+{
+  "component-definition": {
+    "uuid": "d052330f-e50a-4f24-aa41-829851f3ad11",
+    "metadata": {
+      "title": "AWS CloudTrail",
+      "last-modified": "2026-03-31T19:45:48.160179+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "a16eca9f-54a2-465a-adbe-52dfd2ea6bcb",
+        "type": "service",
+        "title": "AWS CloudTrail",
+        "description": "AWS CloudTrail is a service that enables governance, compliance, and operational and risk auditing of your AWS account by recording and logging API calls and account activity across your AWS infrastructure.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CloudTrail"
+          },
+          {
+            "name": "version",
+            "value": "2013-11-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS CloudTrail",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudtrail"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudtrail"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudtrail"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudtrail"
+          }
+        ],
+        "links": [
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "cc813b0b-dbcb-48f8-9826-496935b1f735",
+            "source": "#c7bd9a35-7754-4028-a66f-54a266f5884e",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "275655aa-05f3-4f7d-aa92-ebda29f62fac",
+                "control-id": "CloudTrail.1",
+                "description": "Security Hub control CloudTrail.1"
+              },
+              {
+                "uuid": "fde8207e-c333-492c-9973-0122943f4ea9",
+                "control-id": "CloudTrail.10",
+                "description": "Security Hub control CloudTrail.10"
+              },
+              {
+                "uuid": "b3b18b56-d27f-4c7a-8cc1-1012f7bf0340",
+                "control-id": "CloudTrail.2",
+                "description": "Security Hub control CloudTrail.2"
+              },
+              {
+                "uuid": "c2539197-7e77-4814-bc7d-eec328f9ba02",
+                "control-id": "CloudTrail.3",
+                "description": "Security Hub control CloudTrail.3"
+              },
+              {
+                "uuid": "3f785eb7-29f7-40fe-8687-5e9bb57b712a",
+                "control-id": "CloudTrail.4",
+                "description": "Security Hub control CloudTrail.4"
+              },
+              {
+                "uuid": "b80524d0-aaa8-4ab9-b9eb-d8dfe11830d1",
+                "control-id": "CloudTrail.5",
+                "description": "Security Hub control CloudTrail.5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c718c459-4fff-4a13-b97a-54fd75e5c358",
+        "type": "service",
+        "title": "AWS CloudTrail Data Service",
+        "description": "AWS CloudTrail Data Service enables you to ingest activity events from your own applications and services and publish them to AWS CloudTrail for unified visibility alongside AWS service events.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CloudTrail Data"
+          },
+          {
+            "name": "label",
+            "value": "AWS CloudTrail Data Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cloudtrail-data"
+          }
+        ],
+        "links": [
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#404e0d8d-bd79-455a-bbfa-63111e0073e9",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "bee5e018-7036-4be7-a874-9883067f17f9",
+        "type": "software",
+        "title": "multi-region-cloud-trail-enabled",
+        "description": "Checks whether AWS CloudTrail is enabled in your AWS account. Optionally, you can specify which S3 bucket, SNS topic, and Amazon CloudWatch Logs ARN to use.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "MULTI_REGION_CLOUD_TRAIL_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f65944a3-6170-4aeb-a994-2c06bb82627c",
+            "source": "#c7bd9a35-7754-4028-a66f-54a266f5884e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "343e1c2d-e3b4-40b3-ae67-a058fb730794",
+                "control-id": "CloudTrail.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4bd93ef6-0117-4ef9-8492-f0db3069e87d",
+        "type": "software",
+        "title": "event-data-store-cmk-encryption-enabled",
+        "description": "Checks if AWS Cloud Trail event data stores have customer managed AWS KMS keys enabled. The rule is NON_COMPLIANT if an event data store has disabled customer managed KMS keys. Optionally, you can specify a list of KMS keys for the rule to check.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EVENT_DATA_STORE_CMK_ENCRYPTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6053863e-1f8f-4c31-b06a-a9c8e561e9ae",
+            "source": "#c7bd9a35-7754-4028-a66f-54a266f5884e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "15228b0d-c237-444a-b46a-9ffe166198a2",
+                "control-id": "CloudTrail.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c717f9bf-3ced-422f-9279-681e1817d41d",
+        "type": "software",
+        "title": "cloud-trail-encryption-enabled",
+        "description": "Ensure CloudTrail logs are encrypted at rest using KMS CMKs",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUD_TRAIL_ENCRYPTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d3bb9a10-dafd-4dc7-ba86-8ead4f0f52a6",
+            "source": "#c7bd9a35-7754-4028-a66f-54a266f5884e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "60daf8fc-9524-40e3-817c-79e3f8c535e1",
+                "control-id": "CloudTrail.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6923a1d3-edde-456a-899a-8ea1111ef8d2",
+        "type": "software",
+        "title": "cloudtrail-enabled",
+        "description": "Checks whether AWS CloudTrail is enabled in your AWS account.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUD_TRAIL_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "942a2eb9-3c45-43c1-857c-b50f9b40ee42",
+            "source": "#c7bd9a35-7754-4028-a66f-54a266f5884e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "016bf03c-af28-4ebf-9a92-cfa48234f448",
+                "control-id": "CloudTrail.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "889fe488-c7fe-44f6-9384-8eedd6c06ac8",
+        "type": "software",
+        "title": "cloud-trail-log-file-validation-enabled",
+        "description": "Checks whether AWS CloudTrail creates a signed digest file with logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUD_TRAIL_LOG_FILE_VALIDATION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d247e9c0-4653-4c2c-9e96-a0e67f820149",
+            "source": "#c7bd9a35-7754-4028-a66f-54a266f5884e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6b0e8b04-bfe6-42e9-b92c-a7552107c548",
+                "control-id": "CloudTrail.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e9379419-36cc-43a8-84ea-fe47e47cabb2",
+        "type": "software",
+        "title": "cloud-trail-cloud-watch-logs-enabled",
+        "description": "Checks whether AWS CloudTrail trails are configured to send logs to Amazon CloudWatch logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLOUD_TRAIL_CLOUD_WATCH_LOGS_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c178696d-aa03-4499-aa06-04c32ea60560",
+            "source": "#c7bd9a35-7754-4028-a66f-54a266f5884e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5e60a9ae-ef77-4e7e-8190-ff8a8748f787",
+                "control-id": "CloudTrail.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "404e0d8d-bd79-455a-bbfa-63111e0073e9",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c7bd9a35-7754-4028-a66f-54a266f5884e",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

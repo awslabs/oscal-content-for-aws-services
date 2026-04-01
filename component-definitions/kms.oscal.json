@@ -1,0 +1,555 @@
+{
+  "component-definition": {
+    "uuid": "726b320a-cbc1-4c0c-a41f-3adb8dbee353",
+    "metadata": {
+      "title": "AWS Key Management Service",
+      "last-modified": "2026-03-31T19:45:48.234743+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "4f340dda-968e-43f7-ad15-f02fc369e344",
+        "type": "service",
+        "title": "AWS Key Management Service",
+        "description": "AWS Key Management Service (AWS KMS) is a managed service that enables you to create, manage, and control cryptographic keys used to protect your data across AWS services and applications.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "KMS"
+          },
+          {
+            "name": "version",
+            "value": "2014-11-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Key Management Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "kms"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "kms"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "kms"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "kms"
+          }
+        ],
+        "links": [
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/kms/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0f1ee4eb-5fc5-4fa4-a857-d29814a2153d",
+            "source": "#b48028f9-5d68-4c64-8bbf-23dc97cde80f",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "2ed1e74c-acb1-41e7-b3f5-1c50bf421cd8",
+                "control-id": "KMS.1",
+                "description": "Security Hub control KMS.1"
+              },
+              {
+                "uuid": "d137ff81-7621-4105-87b5-fafa5b258d4c",
+                "control-id": "KMS.2",
+                "description": "Security Hub control KMS.2"
+              },
+              {
+                "uuid": "65e29396-33ee-45a8-972f-f6d9a0c452f8",
+                "control-id": "KMS.4",
+                "description": "Security Hub control KMS.4"
+              },
+              {
+                "uuid": "0caa6661-8fbb-4a1b-a97e-e6f97b1158cc",
+                "control-id": "KMS.5",
+                "description": "Security Hub control KMS.5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a9ee4121-7036-4a1b-83ee-a9177c9cf15c",
+        "type": "software",
+        "title": "iam-customer-policy-blocked-kms-actions",
+        "description": "Checks that the managed AWS Identity and Access Management (IAM) policies that you create do not allow blocked actions on all AWS KMS keys. The rule is NON_COMPLIANT if any blocked action is allowed on all AWS KMS keys by the managed IAM policy.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_CUSTOMER_POLICY_BLOCKED_KMS_ACTIONS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Policy"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "705cee2b-5886-4c66-b4c9-f37358faa1a9",
+            "source": "#b48028f9-5d68-4c64-8bbf-23dc97cde80f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1c8636f3-880d-4470-ab32-4c60d7c8e88b",
+                "control-id": "KMS.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "09bd80a0-cac0-4383-8dfb-9957e4c12554",
+        "type": "software",
+        "title": "iam-inline-policy-blocked-kms-actions",
+        "description": "Checks that the inline policies attached to your IAM users, roles, and groups do not allow blocked actions on all AWS Key Management Service (KMS) keys. The rule is NON_COMPLIANT if any blocked action is allowed on all KMS keys in an inline policy.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_INLINE_POLICY_BLOCKED_KMS_ACTIONS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Role"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Group"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::User"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c49acd47-08ca-4fed-9d48-43ec6b918a82",
+            "source": "#b48028f9-5d68-4c64-8bbf-23dc97cde80f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "aea7b3e9-baee-46ce-b1e8-1c971c837f60",
+                "control-id": "KMS.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "48565dee-16c0-4a6a-b4b7-88fd32be0662",
+        "type": "software",
+        "title": "cmk-backing-key-rotation-enabled",
+        "description": "Checks that key rotation is enabled for customer created customer master key (CMK)",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CMK_BACKING_KEY_ROTATION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c3ea6bb0-3e75-4aef-97b2-2100b3f41d7e",
+            "source": "#b48028f9-5d68-4c64-8bbf-23dc97cde80f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "44742a41-b4fc-451a-bf24-fdb7eb16c9cd",
+                "control-id": "KMS.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ccdbc9ae-cb30-4aa6-9117-5a2a4cc5fa64",
+        "type": "software",
+        "title": "kms-key-policy-no-public-access",
+        "description": "Checks if the AWS KMS key policy allows public access. The rule is NON_COMPLIANT if the KMS key policy allows public access to the KMS key.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "KMS_KEY_POLICY_NO_PUBLIC_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::KMS::Key"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ce3a4781-6aa4-4bea-acfd-792846ac5235",
+            "source": "#b48028f9-5d68-4c64-8bbf-23dc97cde80f",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "32e92644-b87b-4cd5-aa9e-67e108108588",
+                "control-id": "KMS.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "300f2c07-4024-4ca9-bf14-7cb3ecd73999",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "b48028f9-5d68-4c64-8bbf-23dc97cde80f",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

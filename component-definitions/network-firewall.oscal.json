@@ -1,0 +1,727 @@
+{
+  "component-definition": {
+    "uuid": "5e08cc25-1bdc-4f3f-8444-7326247da645",
+    "metadata": {
+      "title": "AWS Network Firewall",
+      "last-modified": "2026-03-31T19:45:48.246240+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "24b103e0-f6e2-44b9-b56c-a3d3a58de67d",
+        "type": "service",
+        "title": "AWS Network Firewall",
+        "description": "AWS Network Firewall is a managed firewall service that provides stateful inspection, intrusion prevention, and web filtering to protect Amazon VPCs from network threats.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Network Firewall"
+          },
+          {
+            "name": "version",
+            "value": "2020-11-12"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Network Firewall",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "network-firewall"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "network-firewall"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "network-firewall"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "network-firewall"
+          }
+        ],
+        "links": [
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#f3255927-222b-43a9-9f52-108b2ef65385",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/network-firewall/",
+            "rel": "reference"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/AWSCloudFormation/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3f6e07e0-b114-4c05-b03a-240f4ab57197",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "21cee9d9-bf6d-4aa2-8fae-3da5fe96b158",
+                "control-id": "NetworkFirewall.1",
+                "description": "Security Hub control NetworkFirewall.1"
+              },
+              {
+                "uuid": "39e13de5-a8a8-4ade-8dcc-798c06b23907",
+                "control-id": "NetworkFirewall.10",
+                "description": "Security Hub control NetworkFirewall.10"
+              },
+              {
+                "uuid": "49c45a2b-3299-4b1d-851c-bc687dc080f4",
+                "control-id": "NetworkFirewall.2",
+                "description": "Security Hub control NetworkFirewall.2"
+              },
+              {
+                "uuid": "1550549f-f625-4ee9-8a32-1df4ee2e9cac",
+                "control-id": "NetworkFirewall.3",
+                "description": "Security Hub control NetworkFirewall.3"
+              },
+              {
+                "uuid": "99ac1a71-4f6b-4f8e-8a3a-6a5c00296d55",
+                "control-id": "NetworkFirewall.4",
+                "description": "Security Hub control NetworkFirewall.4"
+              },
+              {
+                "uuid": "9c1b594c-4c55-4e15-b657-d5e2bace4e7c",
+                "control-id": "NetworkFirewall.5",
+                "description": "Security Hub control NetworkFirewall.5"
+              },
+              {
+                "uuid": "00ed573d-757e-439c-bcba-b87155a895c3",
+                "control-id": "NetworkFirewall.6",
+                "description": "Security Hub control NetworkFirewall.6"
+              },
+              {
+                "uuid": "2f4cb8f0-5553-48d4-84f0-be3d7bf53b61",
+                "control-id": "NetworkFirewall.9",
+                "description": "Security Hub control NetworkFirewall.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "75c8bb66-ebc4-4227-b75a-2af421dab0cc",
+        "type": "software",
+        "title": "netfw-multi-az-enabled",
+        "description": "Checks if AWS Network Firewall firewalls are deployed across multiple Availability Zones. The rule is NON_COMPLIANT if firewalls are deployed in only one Availability Zone or in fewer zones than the number listed in the optional parameter.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NETFW_MULTI_AZ_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::NetworkFirewall::Firewall"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fcd43774-0a0e-4949-80bb-2f00de1112bd",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1cb9a3c2-003b-4e39-aafc-7cf1bd13db24",
+                "control-id": "NetworkFirewall.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "124dc386-b3a4-4309-bdf9-e5b08ef65727",
+        "type": "software",
+        "title": "netfw-subnet-change-protection-enabled",
+        "description": "Checks if AWS Network Firewall has subnet change protection enabled. The rule is NON_COMPLIANT if subnet change protection is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NETFW_SUBNET_CHANGE_PROTECTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::NetworkFirewall::Firewall"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c9416c69-f90f-401e-88ce-d2fab2b5d1b1",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5c395d97-2520-484f-836a-1dd5d3a424db",
+                "control-id": "NetworkFirewall.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "25714f5d-6123-4d2a-a978-8d6b1c1f958d",
+        "type": "software",
+        "title": "netfw-logging-enabled",
+        "description": "Checks if AWS Network Firewall firewalls have logging enabled. The rule is NON_COMPLIANT if a logging type is not configured. You can specify which logging type you want the rule to check.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NETFW_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b5c2baa4-bca4-4c73-9676-208a58da9944",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "fed1bf80-515f-46c3-a77e-abb7c9c497da",
+                "control-id": "NetworkFirewall.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "45a1a31a-00fe-4b1a-9e10-4eb2f938d1a5",
+        "type": "software",
+        "title": "netfw-policy-rule-group-associated",
+        "description": "This control checks whether there are any stateful or stateless rule groups associated with a given firewall policy. The control fails if no stateful or stateless rule groups are assigned.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NETFW_POLICY_RULE_GROUP_ASSOCIATED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::NetworkFirewall::FirewallPolicy"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "08da3ddb-0f71-44ed-9f59-313379f02a26",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b2936f9c-384f-4d4f-8e58-367433c6adcc",
+                "control-id": "NetworkFirewall.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "f85b79a5-0ba6-4673-ae14-3c63e9c42d3d",
+        "type": "software",
+        "title": "netfw-policy-default-action-full-packets",
+        "description": "This control checks whether the default stateless action for full packets for a Network Firewall policy is DROP or FORWARD. This control fails if DROP or FORWARD is not selected.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NETFW_POLICY_DEFAULT_ACTION_FULL_PACKETS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::NetworkFirewall::FirewallPolicy"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b82647c7-2f89-4b10-ba55-1ed18fd17212",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4d4a46d9-4a25-4a29-a8d0-e397d1d4514a",
+                "control-id": "NetworkFirewall.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9ae6b664-03b5-4901-9d53-0f1766ee71e2",
+        "type": "software",
+        "title": "netfw-policy-default-action-fragment-packets",
+        "description": "This control checks whether the default stateless action for fragmented packets for a Network Firewall policy is DROP or FORWARD. The control fails if PASS is selected.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NETFW_POLICY_DEFAULT_ACTION_FRAGMENT_PACKETS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::NetworkFirewall::FirewallPolicy"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "97ad5d6d-cd89-4569-9fae-2d62a4ae2c13",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e9f7be14-eaf3-4151-b1d8-01ffbe530946",
+                "control-id": "NetworkFirewall.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d62f706f-68db-4083-b74e-35a4499894ab",
+        "type": "software",
+        "title": "netfw-stateless-rule-group-not-empty",
+        "description": "This control checks if a Stateless Network Firewall Rule Group contains rules. The rule will fail if there are no rules in a Stateless Network Firewall Rule Group.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NETFW_STATELESS_RULE_GROUP_NOT_EMPTY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::NetworkFirewall::RuleGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "01ff014a-9508-486c-afc1-bf39d635030a",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b4ba0e30-cac0-4e55-8be2-d003c05c3364",
+                "control-id": "NetworkFirewall.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a8fd2e69-e9dc-43f6-8f5f-6188da2af6bb",
+        "type": "software",
+        "title": "netfw-deletion-protection-enabled",
+        "description": "Checks if AWS Network Firewall has deletion protection enabled. The rule is NON_COMPLIANT if Network Firewall does not have deletion protection enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NETFW_DELETION_PROTECTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::NetworkFirewall::Firewall"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ea065272-72f1-46d5-a3a3-467c290b954f",
+            "source": "#bc6c282a-3191-4430-9eba-cce6252f514d",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ab95dcec-d7b1-48c4-997a-a37675ff2c84",
+                "control-id": "NetworkFirewall.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "f3255927-222b-43a9-9f52-108b2ef65385",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "bc6c282a-3191-4430-9eba-cce6252f514d",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
