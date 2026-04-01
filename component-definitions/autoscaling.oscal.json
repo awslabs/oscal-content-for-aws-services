@@ -1,0 +1,643 @@
+{
+  "component-definition": {
+    "uuid": "e6f11a02-e9f4-4fa3-a85d-05e3613b89e2",
+    "metadata": {
+      "title": "Auto Scaling",
+      "last-modified": "2026-03-31T19:45:48.149630+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "343dd1ff-df78-4ca3-84ee-96771ccc1813",
+        "type": "service",
+        "title": "Auto Scaling",
+        "description": "Auto Scaling automatically adjusts the capacity of your AWS resources, such as Amazon EC2 instances, to maintain performance and optimize costs based on defined conditions or schedules.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Auto Scaling"
+          },
+          {
+            "name": "version",
+            "value": "2011-01-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon EC2 Auto Scaling",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Auto Scaling",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "autoscaling"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "autoscaling"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "autoscaling"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "autoscaling"
+          }
+        ],
+        "links": [
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#5431495f-d085-4383-9784-530cec7451f9",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/autoscaling/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8d19f453-1d2a-4140-9b4c-1e2667656acd",
+            "source": "#a28a17e7-b2cb-42f5-a38a-4e03438f6d20",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "119d3974-c358-4563-b623-ea658158ff08",
+                "control-id": "AutoScaling.1",
+                "description": "Security Hub control AutoScaling.1"
+              },
+              {
+                "uuid": "ec78e7ae-eac0-4069-8a62-1f5c357d544e",
+                "control-id": "AutoScaling.2",
+                "description": "Security Hub control AutoScaling.2"
+              },
+              {
+                "uuid": "4dc8d5f0-e32c-4648-9afb-d63039e75429",
+                "control-id": "AutoScaling.3",
+                "description": "Security Hub control AutoScaling.3"
+              },
+              {
+                "uuid": "99abad77-0984-4868-8805-462fbcc51cd1",
+                "control-id": "AutoScaling.6",
+                "description": "Security Hub control AutoScaling.6"
+              },
+              {
+                "uuid": "d03f4818-9a95-4c31-95fd-cf795af56312",
+                "control-id": "AutoScaling.9",
+                "description": "Security Hub control AutoScaling.9"
+              },
+              {
+                "uuid": "b9d90520-c7aa-410f-817f-b8479032fa79",
+                "control-id": "Autoscaling.5",
+                "description": "Security Hub control Autoscaling.5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6389ffa8-8598-437c-bc6a-307e0ee82965",
+        "type": "software",
+        "title": "autoscaling-group-elb-healthcheck-required",
+        "description": "Checks whether your Auto Scaling groups that are associated with a Classic Load Balancer are using Elastic Load Balancing health checks.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AUTOSCALING_GROUP_ELB_HEALTHCHECK_REQUIRED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AutoScaling::AutoScalingGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "720fe65a-9ae0-43c8-accd-1125265b3a01",
+            "source": "#a28a17e7-b2cb-42f5-a38a-4e03438f6d20",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6b354891-8310-4a3c-9193-246a73d6bb87",
+                "control-id": "AutoScaling.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "137bca8b-8141-4455-8fd0-bdf1aa322a26",
+        "type": "software",
+        "title": "autoscaling-multiple-az",
+        "description": "This control checks whether an Auto Scaling group spans multiple Availability Zones. The control fails if an Auto Scaling group does not span multiple availability zones.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AUTOSCALING_MULTIPLE_AZ"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AutoScaling::AutoScalingGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "25e04f57-7124-4cde-9e75-099333a85d56",
+            "source": "#a28a17e7-b2cb-42f5-a38a-4e03438f6d20",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6f20119e-f7cd-4de2-b367-ae95183ca298",
+                "control-id": "AutoScaling.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "1a105a75-4e72-48ea-84eb-c1bf316c4fae",
+        "type": "software",
+        "title": "autoscaling-launchconfig-requires-imdsv2",
+        "description": "This control checks whether only IMDSv2 is enabled. This control fails if the Metadata version is not included in the launch configuration or if both Metadata V1 and V2 are enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AUTOSCALING_LAUNCHCONFIG_REQUIRES_IMDSV2"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AutoScaling::LaunchConfiguration"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d0c16f81-b25e-4548-9ec9-a84fd51f3e0b",
+            "source": "#a28a17e7-b2cb-42f5-a38a-4e03438f6d20",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "cd485b99-2833-4bfd-a123-6d006d231a88",
+                "control-id": "AutoScaling.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "20396c15-1ab3-486d-813a-db8f3aedd39f",
+        "type": "software",
+        "title": "autoscaling-multiple-instance-types",
+        "description": "This control checks whether an Amazon EC2 AutoScaling group uses multiple instance types. This control fails if the Amazon EC2 AutoScaling group has only one instance type defined.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AUTOSCALING_MULTIPLE_INSTANCE_TYPES"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AutoScaling::AutoScalingGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "57efd16f-402b-4cb6-8edd-946e719946e6",
+            "source": "#a28a17e7-b2cb-42f5-a38a-4e03438f6d20",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f8734071-6e00-42c3-9b52-70ea3181274f",
+                "control-id": "AutoScaling.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b30837be-081d-4357-9fb1-11bb3f4e9cf3",
+        "type": "software",
+        "title": "autoscaling-launch-template",
+        "description": "This control checks whether an Amazon EC2 Auto Scaling group is created from an EC2 launch template.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AUTOSCALING_LAUNCH_TEMPLATE"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AutoScaling::AutoScalingGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ad51d756-edba-4448-b690-6329dd718d24",
+            "source": "#a28a17e7-b2cb-42f5-a38a-4e03438f6d20",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "79f52807-063c-4ede-9562-c4148a502ff2",
+                "control-id": "AutoScaling.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "70f919f9-b287-4cf6-92bb-f6fa8c9db0cf",
+        "type": "software",
+        "title": "autoscaling-launch-config-public-ip-disabled",
+        "description": "This control checks whether Amazon EC2 Auto Scaling groups have public IP addresses enabled using launch configurations.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AUTOSCALING_LAUNCH_CONFIG_PUBLIC_IP_DISABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::AutoScaling::LaunchConfiguration"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e659f99f-71fb-4038-9741-11031692c1c1",
+            "source": "#a28a17e7-b2cb-42f5-a38a-4e03438f6d20",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b0a30d20-d4cc-4fc5-b87c-cd43bfa61657",
+                "control-id": "Autoscaling.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "5431495f-d085-4383-9784-530cec7451f9",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "a28a17e7-b2cb-42f5-a38a-4e03438f6d20",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

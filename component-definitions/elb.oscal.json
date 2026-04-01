@@ -1,0 +1,1431 @@
+{
+  "component-definition": {
+    "uuid": "a2868b8c-6d1d-4f27-b843-543a5bbeb973",
+    "metadata": {
+      "title": "Elastic Load Balancing",
+      "last-modified": "2026-03-31T19:45:48.202648+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "5d0e8ab0-0467-47fb-82b0-0712367fe159",
+        "type": "service",
+        "title": "Elastic Load Balancing",
+        "description": "Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses, to ensure high availability and fault tolerance.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Elastic Load Balancing"
+          },
+          {
+            "name": "version",
+            "value": "2012-06-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SUBZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Elastic Load Balancing",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticloadbalancing"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticloadbalancing"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticloadbalancing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticloadbalancing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/elasticloadbalancing/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "064a01c0-c630-4141-9a78-faf812fb17ec",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "701b3be8-2970-48a2-b565-884f688e3565",
+                "control-id": "ELB.1",
+                "description": "Security Hub control ELB.1"
+              },
+              {
+                "uuid": "19e7c182-d04c-4906-87e1-4b1512cc4750",
+                "control-id": "ELB.10",
+                "description": "Security Hub control ELB.10"
+              },
+              {
+                "uuid": "29e3784b-673f-414f-bbf2-85df23f6f969",
+                "control-id": "ELB.12",
+                "description": "Security Hub control ELB.12"
+              },
+              {
+                "uuid": "ee3374db-a5cb-40cf-ae35-081e144424a7",
+                "control-id": "ELB.13",
+                "description": "Security Hub control ELB.13"
+              },
+              {
+                "uuid": "819a7b69-f455-4b64-b5fe-81110aba6130",
+                "control-id": "ELB.14",
+                "description": "Security Hub control ELB.14"
+              },
+              {
+                "uuid": "bdf33e11-b6e9-4557-b859-ab56230e5428",
+                "control-id": "ELB.16",
+                "description": "Security Hub control ELB.16"
+              },
+              {
+                "uuid": "a33c4429-a769-4892-80ed-9703fe0209cf",
+                "control-id": "ELB.17",
+                "description": "Security Hub control ELB.17"
+              },
+              {
+                "uuid": "50a0f188-7eee-47e8-a7c5-cf70457934cd",
+                "control-id": "ELB.18",
+                "description": "Security Hub control ELB.18"
+              },
+              {
+                "uuid": "05754748-97fb-4da8-9f4e-cd5b3321e2ae",
+                "control-id": "ELB.2",
+                "description": "Security Hub control ELB.2"
+              },
+              {
+                "uuid": "1fd5a732-7557-4cb9-9c26-267939e3aa2c",
+                "control-id": "ELB.21",
+                "description": "Security Hub control ELB.21"
+              },
+              {
+                "uuid": "1dbe5a91-5781-49dc-8d68-a4909381993c",
+                "control-id": "ELB.22",
+                "description": "Security Hub control ELB.22"
+              },
+              {
+                "uuid": "37d86ee1-08da-4ee8-94d0-e600fc774738",
+                "control-id": "ELB.3",
+                "description": "Security Hub control ELB.3"
+              },
+              {
+                "uuid": "d2450018-ac7a-4e37-9231-3912a443c0d4",
+                "control-id": "ELB.4",
+                "description": "Security Hub control ELB.4"
+              },
+              {
+                "uuid": "1e162666-d1be-4003-8645-007efeb489a6",
+                "control-id": "ELB.5",
+                "description": "Security Hub control ELB.5"
+              },
+              {
+                "uuid": "149c18f2-795f-4175-910e-da7f2593a79a",
+                "control-id": "ELB.6",
+                "description": "Security Hub control ELB.6"
+              },
+              {
+                "uuid": "17f42693-9441-44be-8caa-24fa08deec6a",
+                "control-id": "ELB.8",
+                "description": "Security Hub control ELB.8"
+              },
+              {
+                "uuid": "042694e1-3c1d-4267-ac70-d216bcc04344",
+                "control-id": "ELB.9",
+                "description": "Security Hub control ELB.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "fdfb3f74-81de-42b7-8dcf-cd649a858e7a",
+        "type": "service",
+        "title": "Elastic Load Balancing",
+        "description": "Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses, to ensure high availability and fault tolerance.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Elastic Load Balancing v2"
+          },
+          {
+            "name": "version",
+            "value": "2015-12-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SUBZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Elastic Load Balancing",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticloadbalancing"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticloadbalancing"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticloadbalancing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "elasticloadbalancing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#8389483d-aa45-4e04-8344-26b4473f8521",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/elasticloadbalancing/",
+            "rel": "reference"
+          }
+        ]
+      },
+      {
+        "uuid": "cb3eb4ad-9bf0-4e08-8fb9-a159ca21c9c1",
+        "type": "software",
+        "title": "alb-http-to-https-redirection-check",
+        "description": "Checks whether HTTP to HTTPS redirection is configured on all HTTP listeners of Application Load Balancers. The rule is NON_COMPLIANT if one or more HTTP listeners of Application Load Balancers do not have HTTP to HTTPS redirection configured.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ALB_HTTP_TO_HTTPS_REDIRECTION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ee04adf6-72a5-460d-b695-68539c5c8067",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a3bfb27f-4fac-4404-bedb-9c788a40c28a",
+                "control-id": "ELB.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "82984347-edb9-420e-a007-f34798e6def5",
+        "type": "software",
+        "title": "clb-multiple-az",
+        "description": "This control checks whether a Classic Load Balancer has been configured to span multiple Availability Zones. The control fails if the Classic Load Balancer does not span multiple availability zones.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLB_MULTIPLE_AZ"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancing::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "21b64ac8-a901-4718-a3dd-7f30faec394e",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "36b8a1af-dea7-4eb0-a119-d689a6350133",
+                "control-id": "ELB.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "84f312ea-ffe8-4253-9764-91fac40f98fa",
+        "type": "software",
+        "title": "alb-desync-mode-check",
+        "description": "This control checks whether the Application Load Balancer is configured defensive or strictest de-sync mitigation mode. This control fails if the Application Load Balancer is not configured with defensive or strictest desync mitigation mode.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ALB_DESYNC_MODE_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d07ac873-d259-4e0f-862a-2e9e8da4462b",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "22cfdef4-fd55-4126-9a5a-fc82e631f6ee",
+                "control-id": "ELB.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "52746122-6633-41ab-a376-5e311c177cea",
+        "type": "software",
+        "title": "elbv2-multiple-az",
+        "description": "This control checks if an Elastic Load Balancer V2 has registered instances from multiple Availability Zones (AZ's). This control fails if an Elastic Load Balancer V2 has instances registered in less than 2 AZ's.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELBV2_MULTIPLE_AZ"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6ba602a4-5fce-4cb1-92b7-010e69d5fd00",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "17414a70-c324-43ba-9979-94cf17541834",
+                "control-id": "ELB.13",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "464767e4-f5be-47e1-9c54-0ae478e5329f",
+        "type": "software",
+        "title": "clb-desync-mode-check",
+        "description": "This control checks if Classic Load Balancers (CLB) are configured with a user defined Desync mitigation mode. This control fails if CLB Desync mitigation mode does not match with user defined Desync mitigation mode.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CLB_DESYNC_MODE_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancing::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1e40f7ab-e628-457a-adbf-643f3366e0c8",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4ad32831-8af7-4062-8632-103ab22e39a1",
+                "control-id": "ELB.14",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "bf28b04c-bc5c-4a44-9387-9988172d6a16",
+        "type": "software",
+        "title": "alb-waf-enabled",
+        "description": "Checks if Web Application Firewall (WAF) is enabled on Application Load Balancers (ALBs).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ALB_WAF_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "69fbee63-4108-4175-99c3-737d58e20495",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "cbd80c19-7510-4ef3-9902-8ba9b6fd3a72",
+                "control-id": "ELB.16",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "537685c8-154c-4af5-a985-44e88334d795",
+        "type": "software",
+        "title": "elbv2-predefined-security-policy-ssl-check",
+        "description": "Checks if listeners for Application Load Balancers (ALBs) or Network Load Balancers (NLBs) use certain security policies. The rule is NON_COMPLIANT if an HTTPS listener for an ALB or a TLS listener for a NLB does not use the security policies you specify.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELBV2_PREDEFINED_SECURITY_POLICY_SSL_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::Listener"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7efd0a1b-7fe7-497b-b0b7-4f9a2870b01f",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9fe17b0f-7d3e-426e-a308-84be8136a224",
+                "control-id": "ELB.17",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "87470059-ed64-4087-a8d1-912207a56c5b",
+        "type": "software",
+        "title": "elbv2-listener-encryption-in-transit",
+        "description": "Checks if listeners for the load balancers are configured with HTTPS or TLS termination. The rule is NON_COMPLIANT if listeners are not configured with HTTPS or TLS termination.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELBV2_LISTENER_ENCRYPTION_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::Listener"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "bd62ac43-bae6-4797-93f9-43241869b027",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0abc04dd-e769-495a-b7b8-1f6d9706af2a",
+                "control-id": "ELB.18",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "8f722dbc-d015-4eb7-92b1-4f1161009c8c",
+        "type": "software",
+        "title": "elb-acm-certificate-required",
+        "description": "This control checks whether a Classic Load Balancer uses HTTPS/SSL certificates provided by AWS Certificate Manager.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELB_ACM_CERTIFICATE_REQUIRED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancing::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6c1b4ccf-f281-4291-a53e-e6a2cf4e27db",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8c672c78-8577-4a9b-ae5f-6fbf30901491",
+                "control-id": "ELB.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c4901c2d-6ced-41d6-b8c8-92fb308c455c",
+        "type": "software",
+        "title": "elbv2-targetgroup-healthcheck-protocol-encrypted",
+        "description": "Checks if Elastic Load Balancing target group health checks use an encrypted protocol (HTTPS). The rule is NON_COMPLIANT if the health check protocol is HTTP or TCP.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELBV2_TARGETGROUP_HEALTHCHECK_PROTOCOL_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::TargetGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5a1f8b5f-ebf3-45a9-86dc-437b968694ec",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "91afa47b-ec0b-4f49-81d1-1d2656ac8f5e",
+                "control-id": "ELB.21",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "0ba2be69-8d84-4b44-909b-cb5171ebb10a",
+        "type": "software",
+        "title": "elbv2-targetgroup-protocol-encrypted",
+        "description": "Checks the target groups for application and network load balancers use an encrypted transport protocol. The rule is NON_COMPLIANT if configuration.protocol is not HTTPS, TLS, or QUIC. Lambda and ALB target types are not applicable.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELBV2_TARGETGROUP_PROTOCOL_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::TargetGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "2fef1b1b-b248-4421-b4d0-f11e6288e1ce",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a6467020-4f02-40ee-beef-8307ff990c87",
+                "control-id": "ELB.22",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "1c9b396d-916d-4656-aa45-0c5d3a62c1dd",
+        "type": "software",
+        "title": "elb-tls-https-listeners-only",
+        "description": "Check whether your Classic Load Balancer listeners are configured with HTTPS or SSL protocol for front-end (client to load balancer).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELB_TLS_HTTPS_LISTENERS_ONLY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancing::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "63b9b402-8f2b-4bca-8e67-e93462a48850",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "cc5a796b-0b72-44c0-86ff-8c6ed388bcbd",
+                "control-id": "ELB.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "1b9d0527-f4b1-4e8c-8dac-a8426a9c9fd1",
+        "type": "software",
+        "title": "alb-http-drop-invalid-header-enabled",
+        "description": "Checks if rule evaluates Application Load Balancers (ALBs) to ensure they are configured to drop http headers. The rule is NON_COMPLIANT if the value of routing.http.drop_invalid_header_fields.enabled is set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ALB_HTTP_DROP_INVALID_HEADER_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c8c1d93e-0a6c-4ce8-b8e6-b67edec24c16",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "d0aca61d-aef8-450f-9c84-7128ff5c4f67",
+                "control-id": "ELB.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e5887511-88ce-4b66-b469-10ef81f6bc9e",
+        "type": "software",
+        "title": "elb-logging-enabled",
+        "description": "Checks whether the Application Load Balancer and the Classic Load Balancer have logging enabled. The rule is NON_COMPLIANT if the access_logs.s3.enabled is false or access_logs.S3.bucket is not equal to the s3BucketName that you provided.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELB_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancing::LoadBalancer"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9be96cff-36c7-46bf-9e6b-d89f944471bd",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "2d7cb98e-e198-4c7e-9e3d-1a54b2484491",
+                "control-id": "ELB.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "18926329-2e1d-42c7-8671-e61ff6e4f1f5",
+        "type": "software",
+        "title": "elb-deletion-protection-enabled",
+        "description": "Checks whether Elastic Load Balancing has deletion protection enabled. The rule is NON_COMPLIANT if deletion_protection.enabled is false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELB_DELETION_PROTECTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "043160c6-5004-49ee-a080-1a3cc5404e30",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "146ac9dc-def6-4f29-8b8b-67c9db3152ce",
+                "control-id": "ELB.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "66e08e92-e2f7-4b16-95c8-2089d7cdd98f",
+        "type": "software",
+        "title": "elb-predefined-security-policy-ssl-check",
+        "description": "This control checks whether your Classic Load Balancer SSL listeners use the predefined policy ELBSecurityPolicy-TLS-1-2-2017-01.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELB_PREDEFINED_SECURITY_POLICY_SSL_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancing::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "172c4941-c118-4215-b7e8-2388486bb3ce",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "83f56f0a-1483-4f53-8aa3-8f658f9163f3",
+                "control-id": "ELB.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d7757b4d-80ce-4459-b767-6c3902c8014e",
+        "type": "software",
+        "title": "elb-cross-zone-load-balancing-enabled",
+        "description": "This control checks whether cross-zone load balancing is enabled for Classic Load Balancers. This control fails if cross-zone load balancing is not enabled for a Classic Load Balancer.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ELB_CROSS_ZONE_LOAD_BALANCING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ElasticLoadBalancing::LoadBalancer"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0b896f7a-926c-49f8-81b3-04c3cc3119d8",
+            "source": "#ead58e00-e115-4111-8a41-40002693b17e",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "65ec04fb-cd14-43b0-8c6b-1b8a76988fbc",
+                "control-id": "ELB.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "8389483d-aa45-4e04-8344-26b4473f8521",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "ead58e00-e115-4111-8a41-40002693b17e",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

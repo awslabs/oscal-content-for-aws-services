@@ -1,0 +1,517 @@
+{
+  "component-definition": {
+    "uuid": "cde56ab5-df31-4b05-890d-929e96c74f17",
+    "metadata": {
+      "title": "Amazon Interactive Video Service",
+      "last-modified": "2026-03-31T19:45:48.226154+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "2e5143d4-4f89-44e7-9ed0-71b179961a7e",
+        "type": "service",
+        "title": "Amazon Interactive Video Service RealTime",
+        "description": "Amazon Interactive Video Service RealTime enables developers to build interactive, low-latency live video experiences with real-time audience participation capabilities.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IVS RealTime"
+          },
+          {
+            "name": "version",
+            "value": "2020-07-14"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Interactive Video Service RealTime",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivsrealtime"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivs"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "links": [
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "ad326a27-c3a5-4201-af19-6bc7136958df",
+        "type": "service",
+        "title": "Amazon Interactive Video Service",
+        "description": "Amazon Interactive Video Service (Amazon IVS) is a managed live streaming solution that enables developers to quickly build interactive, low-latency video experiences for their applications.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivs"
+          },
+          {
+            "name": "version",
+            "value": "2020-07-14"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "PARTITIONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon IVS",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Interactive Video Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivs"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivs"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivs"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivs"
+          }
+        ],
+        "links": [
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/ivs/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "435d5c15-714b-4c2c-b14c-04d5a13df79b",
+            "source": "#246cd7fa-9fbe-4ef4-999c-b58d35046372",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c87500d2-4a14-44ef-85dc-ab0476b36dc4",
+                "control-id": "IVS.1",
+                "description": "Security Hub control IVS.1"
+              },
+              {
+                "uuid": "f7d26a2d-e0e5-4ccb-8f9b-c3a3b44177f2",
+                "control-id": "IVS.2",
+                "description": "Security Hub control IVS.2"
+              },
+              {
+                "uuid": "2d3302d3-9804-4b51-9f7a-ee7cbc6faa57",
+                "control-id": "IVS.3",
+                "description": "Security Hub control IVS.3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "34929f36-9d02-41e9-a715-3ad1881a918a",
+        "type": "service",
+        "title": "Amazon Interactive Video Service Chat",
+        "description": "Amazon Interactive Video Service Chat is a managed messaging service that enables developers to add real-time chat functionality to their interactive live-streaming applications.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivschat"
+          },
+          {
+            "name": "version",
+            "value": "2020-07-14"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Interactive Video Service Chat",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivschat"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivschat"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ivschat"
+          }
+        ],
+        "links": [
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "e121edc0-15c4-41dc-b35d-606f9301f713",
+        "type": "software",
+        "title": "ivs-playback-key-pair-tagged",
+        "description": "Checks if Amazon IVS playback key pairs have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IVS_PLAYBACK_KEY_PAIR_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IVS::PlaybackKeyPair"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "125b1ddd-06c5-45b1-9d39-c687a78e9c94",
+            "source": "#246cd7fa-9fbe-4ef4-999c-b58d35046372",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6ab725a7-f339-4b04-84bc-4ac2bec956a6",
+                "control-id": "IVS.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b27473f2-3c95-4842-a527-42e1d2cd6bbb",
+        "type": "software",
+        "title": "ivs-recording-configuration-tagged",
+        "description": "Checks if Amazon IVS recording configurations have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IVS_RECORDING_CONFIGURATION_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IVS::RecordingConfiguration"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "99073471-c432-47d9-87a1-ff4127c54bdc",
+            "source": "#246cd7fa-9fbe-4ef4-999c-b58d35046372",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "582ba598-ca05-4298-935d-7c18a5fbe01c",
+                "control-id": "IVS.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "194efa85-0a24-4781-9cd8-3d0194952924",
+        "type": "software",
+        "title": "ivs-channel-tagged",
+        "description": "Checks if Amazon IVS channels have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IVS_CHANNEL_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IVS::Channel"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0aa59cbe-44f1-439e-86e7-8e03b4035519",
+            "source": "#246cd7fa-9fbe-4ef4-999c-b58d35046372",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "eec0fe95-a183-4f67-99fc-2b709189d0f8",
+                "control-id": "IVS.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "ce496883-2ff8-4bca-83d1-77f3a7d34c17",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "246cd7fa-9fbe-4ef4-999c-b58d35046372",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

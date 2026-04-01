@@ -1,0 +1,965 @@
+{
+  "component-definition": {
+    "uuid": "52124c8b-2200-443e-92df-ce8f0f6a12d1",
+    "metadata": {
+      "title": "Amazon EC2 Container Service",
+      "last-modified": "2026-03-31T19:45:48.195797+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "ae216b2c-3e56-4578-8336-6443786a09a4",
+        "type": "service",
+        "title": "Amazon EC2 Container Service",
+        "description": "Amazon EC2 Container Service is a highly scalable, high-performance container orchestration service that enables you to run, stop, and manage Docker containers on a cluster of Amazon EC2 instances.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS"
+          },
+          {
+            "name": "version",
+            "value": "2014-11-13"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Elastic Container Service (ECS)",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon EC2 Container Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ecs"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ecs"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ecs"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ecs"
+          }
+        ],
+        "links": [
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/ecs/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ee3066bb-1c6e-4f20-a8d6-6fabd1efa812",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "d071128c-4c6a-476d-8904-25191777c578",
+                "control-id": "ECS.1",
+                "description": "Security Hub control ECS.1"
+              },
+              {
+                "uuid": "e0b272b0-49dd-4f48-b114-1245a4284819",
+                "control-id": "ECS.10",
+                "description": "Security Hub control ECS.10"
+              },
+              {
+                "uuid": "04638e0a-1e65-47b1-b541-d28ecf857079",
+                "control-id": "ECS.12",
+                "description": "Security Hub control ECS.12"
+              },
+              {
+                "uuid": "dd24f01a-9201-44d0-b03a-eda6305bbf27",
+                "control-id": "ECS.17",
+                "description": "Security Hub control ECS.17"
+              },
+              {
+                "uuid": "9f091fb2-eaed-4f67-b83c-f35dd4afd40a",
+                "control-id": "ECS.18",
+                "description": "Security Hub control ECS.18"
+              },
+              {
+                "uuid": "e3f85740-2dc2-4e98-a1f5-47ad728d9da4",
+                "control-id": "ECS.19",
+                "description": "Security Hub control ECS.19"
+              },
+              {
+                "uuid": "3caed00d-3e77-4a88-8ccd-b3543a1ffc1d",
+                "control-id": "ECS.20",
+                "description": "Security Hub control ECS.20"
+              },
+              {
+                "uuid": "b646c0e6-2084-4e76-8572-81bff2e6d4ae",
+                "control-id": "ECS.21",
+                "description": "Security Hub control ECS.21"
+              },
+              {
+                "uuid": "fde6a86e-fbc2-4d6e-9689-52c9b7a00a71",
+                "control-id": "ECS.3",
+                "description": "Security Hub control ECS.3"
+              },
+              {
+                "uuid": "14e2404c-ced5-4ed2-8dbf-c2eee821de0c",
+                "control-id": "ECS.4",
+                "description": "Security Hub control ECS.4"
+              },
+              {
+                "uuid": "02ba7625-4ca7-441a-916f-85361cf737cc",
+                "control-id": "ECS.5",
+                "description": "Security Hub control ECS.5"
+              },
+              {
+                "uuid": "d20a6b64-8fbd-4fb4-b093-41b3cc74e7b2",
+                "control-id": "ECS.8",
+                "description": "Security Hub control ECS.8"
+              },
+              {
+                "uuid": "cd83d7ba-6844-4380-b120-5d4796b1f37c",
+                "control-id": "ECS.9",
+                "description": "Security Hub control ECS.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "644901da-f3ea-42d7-ac4d-62d02cbd40fe",
+        "type": "software",
+        "title": "ecs-task-definition-user-for-host-mode-check",
+        "description": "This control checks if an Amazon ECS Task Definition with host networking mode has \"privileged\" or \"user\" container definitions. The control fails with host network mode and container definitions are privileged=false or empty and user=root or empty.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_TASK_DEFINITION_USER_FOR_HOST_MODE_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0258e949-f23a-47df-afdd-5854f69dea1a",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e3424110-e80d-4002-a2ee-58b46428d43e",
+                "control-id": "ECS.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5422b46b-eaea-41f8-adcc-ec8e9309ddbf",
+        "type": "software",
+        "title": "ecs-fargate-latest-platform-version",
+        "description": "This control checks if ECS Fargate Services is running on the latest Fargate platform version. This control fails if \"PlatformVersion\" is not set to \"LATEST\" ",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_FARGATE_LATEST_PLATFORM_VERSION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::Service"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "90bd0925-1f21-4a82-9da1-e359b85421f7",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c97dcf49-ff94-4f0c-9043-a603ae269aae",
+                "control-id": "ECS.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "fa7ab13b-54d7-47b9-87ba-ffe6753a9017",
+        "type": "software",
+        "title": "ecs-container-insights-enabled",
+        "description": "This control checks if ECS clusters have container insights enabled. This control fails if container insights are disabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_CONTAINER_INSIGHTS_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fd3ba9af-83be-4837-b6b7-52a4f1a19258",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "cf3b57a4-e538-4fc7-ba94-073886e96613",
+                "control-id": "ECS.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "44e53a91-d375-4c96-bd3a-0260bc424809",
+        "type": "software",
+        "title": "ecs-task-definition-network-mode-not-host",
+        "description": "Checks if the latest active revision of Amazon ECS task definitions use host network mode. The rule is NON_COMPLIANT if the latest active revision of the ECS task definition uses host network mode.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_TASK_DEFINITION_NETWORK_MODE_NOT_HOST"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "34f70d02-5102-4dfa-9f3d-682ce246a5c2",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "fd1f0845-1941-4934-a44d-52ac1710b30e",
+                "control-id": "ECS.17",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "9894151a-06ab-413d-bd32-d680c905af55",
+        "type": "software",
+        "title": "ecs-task-definition-efs-encryption-enabled",
+        "description": "Checks if Amazon ECS Task Definitions with EFS volumes have in-transit encryption enabled. The rule is NON_COMPLIANT if an ECS Task Definition contains an EFS volume without transit encryption enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_TASK_DEFINITION_EFS_ENCRYPTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9f696f55-1404-4ad6-85c0-4315ba90dd59",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4dbea9fa-771f-4f6e-83e9-8e4864e05e1c",
+                "control-id": "ECS.18",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c0a6a9eb-93c3-4aa2-ac8e-6834c7fa07c6",
+        "type": "software",
+        "title": "ecs-capacity-provider-termination-check",
+        "description": "Checks if an Amazon ECS Capacity provider has managed termination protection enabled. This rule is NON_COMPLIANT if managed termination protection is disabled on the ECS Capacity Provider.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_CAPACITY_PROVIDER_TERMINATION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::CapacityProvider"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6b479b91-b790-4faf-85c7-f5884544f87b",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "871c438e-9b93-48ee-819b-fd5a67f301a8",
+                "control-id": "ECS.19",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "23c3e330-678c-4a54-b05a-664ab2cfed58",
+        "type": "software",
+        "title": "ecs-task-definition-linux-user-non-root",
+        "description": "Checks if the latest active revision of an Amazon ECS task definition configures Linux containers to run as non-root users.The rule is NON_COMPLIANT if root user is specified or user configuration is absent for any container.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_TASK_DEFINITION_LINUX_USER_NON_ROOT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6c2c7b26-fe11-4739-ad97-ef7b56b6b97f",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1f1e0903-6709-406d-a5e7-b22d918af780",
+                "control-id": "ECS.20",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d7890922-93b5-4f28-b67e-70eaff56a984",
+        "type": "software",
+        "title": "ecs-task-definition-windows-user-non-admin",
+        "description": "Checks if the latest active revision of an Amazon ECS task definition configures Windows containers to run as non-administrator users. The rule is NON_COMPLIANT if default administrator user is specified or user configuration is absent for any container.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_TASK_DEFINITION_WINDOWS_USER_NON_ADMIN"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fa938e9f-4e13-4e66-bed5-1cd1359be68c",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "81db98a3-2a82-4d6d-b9fb-0ed00f7b2721",
+                "control-id": "ECS.21",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "41fb9685-eb92-484e-9587-6d5fba0ab0ed",
+        "type": "software",
+        "title": "ecs-task-definition-pid-mode-check",
+        "description": "This control checks if Amazon ECS Task Definitions are configured to share a host's process namespace with its containers. This control fails if the pidMode parameter is set to 'host'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_TASK_DEFINITION_PID_MODE_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "720edfe6-8238-48f9-8d98-c5802786f1af",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "d82f48f7-4ed1-4cff-b1bf-256fa9923645",
+                "control-id": "ECS.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "be1885a3-e478-456b-8a67-2d4fa66aaa98",
+        "type": "software",
+        "title": "ecs-containers-nonprivileged",
+        "description": "This control checks if the Privileged parameter in the container definition of Amazon ECS Task Definitions is set to 'true'. This control fails if the Privileged parameter is 'true'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_CONTAINERS_NONPRIVILEGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d025a994-37a8-4322-b0d7-f257b00a8f3a",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "15bc1ce2-b37f-4437-8a84-368bdf2368b2",
+                "control-id": "ECS.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "8cf946ac-7db0-452a-9b7a-5e967a8dbce8",
+        "type": "software",
+        "title": "ecs-containers-readonly-access",
+        "description": "This control checks if ECS Containers are limited to read-only access to its mounted root filesystems. This control fails if the readonlyRootFilesystem parameter in the container definition of ECSTaskDefinitions is set to 'false'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_CONTAINERS_READONLY_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b15acfe0-e87b-47f6-a19d-b1cc72985d5e",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8f7d9d92-654a-4666-a407-90931b1ec5e7",
+                "control-id": "ECS.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "1576168e-cfee-476c-9aa0-856c00e58b61",
+        "type": "software",
+        "title": "ecs-no-environment-secrets",
+        "description": "This control checks if the key value of any variables in the 'environment' parameter of container definitions includes AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, or ECS_ENGINE_AUTH_DATA.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_NO_ENVIRONMENT_SECRETS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "68cb1bbb-2e70-459f-a5da-ee55f5c3105b",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "48a7dc6f-a362-43de-a649-45cd953db94c",
+                "control-id": "ECS.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "59d026fe-7e0d-4818-adb7-121d6ca3a85c",
+        "type": "software",
+        "title": "ecs-task-definition-log-configuration",
+        "description": "This control checks if active Amazon ECS task definitions have a logging configuration specified.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ECS_TASK_DEFINITION_LOG_CONFIGURATION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::ECS::TaskDefinition"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d90a3b36-3dea-48f3-82ea-319048e6187b",
+            "source": "#780e09ff-33be-4d66-9e07-5003cb62d1cc",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5bd52b99-8cac-4d38-bf9c-19673b61bcc6",
+                "control-id": "ECS.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "7b273f81-b8bf-4288-85c3-8d92ed0435cb",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "780e09ff-33be-4d66-9e07-5003cb62d1cc",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

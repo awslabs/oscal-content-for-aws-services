@@ -1,0 +1,596 @@
+{
+  "component-definition": {
+    "uuid": "51d6067e-703f-4785-a741-08e892160718",
+    "metadata": {
+      "title": "AWS Lambda",
+      "last-modified": "2026-03-31T19:45:48.239507+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "e961b17f-0b7b-4faf-be56-d92c05166d98",
+        "type": "service",
+        "title": "AWS Lambda",
+        "description": "AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, automatically scaling in response to incoming requests or events.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Lambda"
+          },
+          {
+            "name": "version",
+            "value": "2015-03-31"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Lambda",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "lambda"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "lambda"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "lambda"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "lambda"
+          }
+        ],
+        "links": [
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#e76e6443-013a-4875-9d7f-537fdf08b398",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/lambda/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9c7f3f65-4be0-4540-ad2d-599b414ea1dd",
+            "source": "#698201a3-7713-490f-8802-debe5a02ffda",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "18c2d51e-e383-408e-92c6-183e53474225",
+                "control-id": "Lambda.1",
+                "description": "Security Hub control Lambda.1"
+              },
+              {
+                "uuid": "9d02e642-a01b-4373-b2e5-e0da0a28ccff",
+                "control-id": "Lambda.2",
+                "description": "Security Hub control Lambda.2"
+              },
+              {
+                "uuid": "db4758e8-3138-4d6e-bc7e-49091de99d89",
+                "control-id": "Lambda.3",
+                "description": "Security Hub control Lambda.3"
+              },
+              {
+                "uuid": "de84e97e-881e-468d-8b88-8714427e1107",
+                "control-id": "Lambda.5",
+                "description": "Security Hub control Lambda.5"
+              },
+              {
+                "uuid": "1f6430c5-f50a-402c-bb2c-bf79bc19428f",
+                "control-id": "Lambda.7",
+                "description": "Security Hub control Lambda.7"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "06425181-836a-4459-a491-0698118c8104",
+        "type": "software",
+        "title": "lambda-function-public-access-prohibited",
+        "description": "Checks whether the AWS Lambda function policy attached to the Lambda resource prohibits public access.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "LAMBDA_FUNCTION_PUBLIC_ACCESS_PROHIBITED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Lambda::Function"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3e68565d-03ba-4905-b971-2a66abd0f4f3",
+            "source": "#698201a3-7713-490f-8802-debe5a02ffda",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "18740e82-eac3-45ed-9f85-48e6b63b377c",
+                "control-id": "Lambda.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d4f18566-6d72-4e0f-a1d3-ec622548b04a",
+        "type": "software",
+        "title": "lambda-function-settings-check",
+        "description": "Checks that the AWS Lambda function settings for runtime, role, timeout, and memory size match the expected values.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "LAMBDA_FUNCTION_SETTINGS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Lambda::Function"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0ea7fb6d-2fe1-470c-b68e-b5d25fff3f39",
+            "source": "#698201a3-7713-490f-8802-debe5a02ffda",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0dcddcc1-b7e8-4d8b-bd27-e0dc9ebd643c",
+                "control-id": "Lambda.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3ca182cd-658e-40f1-9de9-2642fc2302a1",
+        "type": "software",
+        "title": "lambda-inside-vpc",
+        "description": "Checks whether an AWS Lambda function is in an Amazon Virtual Private Cloud.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "LAMBDA_INSIDE_VPC"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Lambda::Function"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d10ef265-248f-46e3-be12-00b0f9920962",
+            "source": "#698201a3-7713-490f-8802-debe5a02ffda",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f7874183-834f-4404-be0c-2907db41f2be",
+                "control-id": "Lambda.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4b7b0136-921d-4151-83fc-0658505e69e2",
+        "type": "software",
+        "title": "lambda-vpc-multi-az-check",
+        "description": "This control checks if Lambda has more than one Availability Zone (AZ) associated. The rule fails if only one AZ is associated with the Lambda or the number of availability zones associated is less than number specified in the optional parameter.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "LAMBDA_VPC_MULTI_AZ_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Lambda::Function"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c0a1db74-5106-4200-a475-52876fa83ae8",
+            "source": "#698201a3-7713-490f-8802-debe5a02ffda",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "2c461c06-6238-4f82-94d1-dd913931e04c",
+                "control-id": "Lambda.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3e156e79-30e6-4dff-a475-940df60dfd49",
+        "type": "software",
+        "title": "lambda-function-xray-enabled",
+        "description": "Checks if AWS X-Ray is enabled on AWS Lambda functions. The rule is NON_COMPLIANT if X-Ray tracing is disabled for a Lambda function.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "LAMBDA_FUNCTION_XRAY_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Lambda::Function"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "266eff05-5a5b-4cb2-8292-de5204b1be32",
+            "source": "#698201a3-7713-490f-8802-debe5a02ffda",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c84d6324-4eae-4f87-b1ed-f33eeaa8ea16",
+                "control-id": "Lambda.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "e76e6443-013a-4875-9d7f-537fdf08b398",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "698201a3-7713-490f-8802-debe5a02ffda",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

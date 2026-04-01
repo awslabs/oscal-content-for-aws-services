@@ -1,0 +1,460 @@
+{
+  "component-definition": {
+    "uuid": "b1c1c295-3124-41b7-8afe-e2fd5f1248b4",
+    "metadata": {
+      "title": "Amazon CodeGuru Reviewer",
+      "last-modified": "2026-03-31T19:45:48.167055+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "5d333352-7acf-432c-8dcb-27d66b7bff86",
+        "type": "service",
+        "title": "Amazon CodeGuru Reviewer",
+        "description": "Amazon CodeGuru Reviewer is a developer tool that uses machine learning to automatically analyze code and provide intelligent recommendations to improve code quality and identify potential defects.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CodeGuru Reviewer"
+          },
+          {
+            "name": "version",
+            "value": "2019-09-19"
+          },
+          {
+            "name": "label",
+            "value": "Amazon CodeGuru Reviewer",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codeguru-reviewer"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codeguru-reviewer"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "maintenance"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codeguru-reviewer"
+          }
+        ],
+        "links": [
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3cae724f-9497-46ec-a80c-16af8e8573d9",
+            "source": "#917b135a-cd99-4543-a4bb-5fea6fbe161b",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "2f781906-ee17-4ca0-92b5-df1b98500bc9",
+                "control-id": "CodeGuruReviewer.1",
+                "description": "Security Hub control CodeGuruReviewer.1"
+              }
+            ]
+          }
+        ],
+        "remarks": "Customers can't on-board to services and features in the maintenance stage. Customers already using these services and features can continue to do so. AWS will continue to operate and support these services and features but won't enhance or add functionality to them. We recommend that customers learn about and explore the alternatives suggested in the product pages and documentation."
+      },
+      {
+        "uuid": "0d27d62a-b242-4664-8619-50b75963ec19",
+        "type": "service",
+        "title": "Amazon CodeGuru Security",
+        "description": "Amazon CodeGuru Security is a static application security testing tool that uses machine learning to detect security vulnerabilities in your code and provides recommendations for remediation.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CodeGuru Security"
+          },
+          {
+            "name": "label",
+            "value": "Amazon CodeGuru Security",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codeguru-security"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "050dd45b-f350-49cd-b942-f13df5b58748",
+        "type": "service",
+        "title": "Amazon CodeGuru Profiler",
+        "description": "Amazon CodeGuru Profiler continuously analyzes application runtime performance to identify the most expensive lines of code and provides recommendations to help optimize CPU and memory usage.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CodeGuruProfiler"
+          },
+          {
+            "name": "version",
+            "value": "2019-07-18"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon CodeGuru",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon CodeGuru Profiler",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codeguru-profiler"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codeguru-profiler"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codeguru-profiler"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codeguru-profiler"
+          }
+        ],
+        "links": [
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#75a3a157-28a7-47f8-9b8d-6259b3761efe",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/codeguru/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ef712d37-a40b-4999-9d65-273b364f00cc",
+            "source": "#917b135a-cd99-4543-a4bb-5fea6fbe161b",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e43a8d9e-4828-4ce5-aa45-f4ea5e8e30b6",
+                "control-id": "CodeGuruProfiler.1",
+                "description": "Security Hub control CodeGuruProfiler.1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "aadf4e10-f50e-4f18-b905-0b58d6952110",
+        "type": "software",
+        "title": "codeguruprofiler-profiling-group-tagged",
+        "description": "Checks if Amazon CodeGuru Profiler profiling groups have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CODEGURUPROFILER_PROFILING_GROUP_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CodeGuruProfiler::ProfilingGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "42dd14c4-cff6-4eee-80b3-757c5c8b4a1f",
+            "source": "#917b135a-cd99-4543-a4bb-5fea6fbe161b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6b57b86e-567e-407e-bb1f-0492a63fcee5",
+                "control-id": "CodeGuruProfiler.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5defc6d6-1086-416d-b001-02d61e53f93b",
+        "type": "software",
+        "title": "codegurureviewer-repository-association-tagged",
+        "description": "Checks if Amazon CodeGuru Reviewer repository associations have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CODEGURUREVIEWER_REPOSITORY_ASSOCIATION_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CodeGuruReviewer::RepositoryAssociation"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6acde7f0-a7a0-44fc-b4b4-b6a0d18d9ddd",
+            "source": "#917b135a-cd99-4543-a4bb-5fea6fbe161b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "64dea776-2dbd-432b-8ab0-8236c60f6abb",
+                "control-id": "CodeGuruReviewer.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "75a3a157-28a7-47f8-9b8d-6259b3761efe",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "917b135a-cd99-4543-a4bb-5fea6fbe161b",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

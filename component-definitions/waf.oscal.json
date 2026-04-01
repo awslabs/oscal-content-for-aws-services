@@ -1,0 +1,1032 @@
+{
+  "component-definition": {
+    "uuid": "5b9eb261-af44-409f-9f51-a35f5031ac95",
+    "metadata": {
+      "title": "AWS WAF Regional",
+      "last-modified": "2026-03-31T19:45:48.276798+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "2c6f0621-8d93-4edd-8b6d-2987c7c1da86",
+        "type": "service",
+        "title": "AWS WAF Regional",
+        "description": "AWS WAF Regional is a web application firewall service that allows you to protect your regional AWS resources, such as Application Load Balancers and API Gateway REST APIs, from common web exploits and bots by defining customizable security rules.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAF Regional"
+          },
+          {
+            "name": "version",
+            "value": "2016-11-28"
+          },
+          {
+            "name": "label",
+            "value": "AWS WAF Regional",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "waf-regional"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "waf-regional"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "waf-regional"
+          }
+        ],
+        "links": [
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "af197234-fefa-4402-a323-4a79dfd194f8",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "54a02c2c-01aa-42a5-a940-1c5e544979bc",
+                "control-id": "WAF.2",
+                "description": "Security Hub control WAF.2"
+              },
+              {
+                "uuid": "16ea83f9-fa16-414a-b4f4-e44e29d06b7e",
+                "control-id": "WAF.4",
+                "description": "Security Hub control WAF.4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4aa5c8df-fef9-4573-b278-cc5c1a09d265",
+        "type": "service",
+        "title": "AWS WAFV2",
+        "description": "AWS WAFV2 is a web application firewall service that helps protect your web applications and APIs against common web exploits and bots that may affect availability, compromise security, or consume excessive resources.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAFV2"
+          },
+          {
+            "name": "version",
+            "value": "2019-07-29"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS WAF",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "AWS WAFV2",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "wafv2"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "wafv2"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "wafv2"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "wafv2"
+          }
+        ],
+        "links": [
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/waf/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "453d7528-db00-4251-8e29-587af6ba8c70",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "bf386c77-87bf-4501-a22d-424b50d070fe",
+                "control-id": "WAF.1",
+                "description": "Security Hub control WAF.1"
+              },
+              {
+                "uuid": "575c97d5-cb81-44cc-999b-c049a1439847",
+                "control-id": "WAF.10",
+                "description": "Security Hub control WAF.10"
+              },
+              {
+                "uuid": "8aaa0558-1784-46d3-9262-7d547d91fc26",
+                "control-id": "WAF.11",
+                "description": "Security Hub control WAF.11"
+              },
+              {
+                "uuid": "e86d99b2-0e97-4738-8ec1-bcc33aae006b",
+                "control-id": "WAF.12",
+                "description": "Security Hub control WAF.12"
+              },
+              {
+                "uuid": "e9880a7c-5f2c-4791-a255-d09a20b5e421",
+                "control-id": "WAF.6",
+                "description": "Security Hub control WAF.6"
+              },
+              {
+                "uuid": "f1b52fb6-1a15-47c0-9d20-025d7df888fd",
+                "control-id": "WAF.7",
+                "description": "Security Hub control WAF.7"
+              },
+              {
+                "uuid": "92210951-50a2-4e12-b942-f20362c3789b",
+                "control-id": "WAF.8",
+                "description": "Security Hub control WAF.8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "aa2a7fb3-525a-4483-ba4d-c8ba5929d8a1",
+        "type": "software",
+        "title": "waf-classic-logging-enabled",
+        "description": "This control checks whether logging is enabled for a WAF global Web ACL. This control fails if logging is not enabled for the Web ACL.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAF_CLASSIC_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAF::WebACL"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3afadeda-86ed-4f1a-b4d8-86135e749cdc",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7f14cc77-1367-4076-8692-f61ae364c454",
+                "control-id": "WAF.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "bc03038e-689d-4fd7-904e-5b7dfa16bd04",
+        "type": "software",
+        "title": "wafv2-webacl-not-empty",
+        "description": "Checks if a WAFv2 Web ACL contains any WAF rules or WAF rule groups. This rule is NON_COMPLIANT if a Web ACL does not contain any WAF rules or WAF rule groups.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAFV2_WEBACL_NOT_EMPTY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAFv2::WebACL"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9e85fc50-86ee-4f7f-8bdd-94dc72502d47",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "689d89ac-3e79-45b7-84ac-ca8b52739deb",
+                "control-id": "WAF.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "99c0ff2d-58e6-49c5-b34a-112b14f9735c",
+        "type": "software",
+        "title": "wafv2-logging-enabled",
+        "description": "This control checks whether logging is enabled for an AWS WAFV2 web ACL.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAFV2_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAFv2::WebACL"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a4ac4d0e-05c4-4b36-8146-229e6d79888b",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "76147a23-574d-4e3b-9b2f-70c3d47982ad",
+                "control-id": "WAF.11",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "0a69535b-e61d-4789-8735-6bb5c7ed5d1d",
+        "type": "software",
+        "title": "wafv2-rulegroup-logging-enabled",
+        "description": "Checks if Amazon CloudWatch security metrics collection on AWS WAFv2 rule groups is enabled. The rule is NON_COMPLIANT if the 'VisibilityConfig.CloudWatchMetricsEnabled' field is set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAFV2_RULEGROUP_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAFv2::RuleGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d602c77c-e22e-42c2-b55a-8f66ddc42688",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "70f7a5e3-ff23-4e56-89d3-c54262047f73",
+                "control-id": "WAF.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "dff51d14-f4a0-4fc8-8680-22b9394bbe11",
+        "type": "software",
+        "title": "waf-regional-rule-not-empty",
+        "description": "This control checks if WAF regional rule contains conditions. This control fails if the regional rule does not contain atleast one condition.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAF_REGIONAL_RULE_NOT_EMPTY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAFRegional::Rule"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "83cb9dab-e968-4962-93d8-7d926d5456aa",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "58afdba3-021e-49ad-a6a6-c5017cb1adcb",
+                "control-id": "WAF.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ff963a85-4795-49dd-8d83-23436db607a2",
+        "type": "software",
+        "title": "waf-regional-webacl-not-empty",
+        "description": "This control checks whether WAF regional Web ACL contains any WAF rules or rule groups. This control fails if if there are no WAF rules or rule groups present within a Web ACL.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAF_REGIONAL_WEBACL_NOT_EMPTY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAFRegional::WebACL"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "509e4a7b-c00d-443e-a10a-71c934773fb8",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "50117300-b4b4-43f9-85a2-42b1795e981b",
+                "control-id": "WAF.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "908da6f7-8ab1-47c8-8d03-af178420ded7",
+        "type": "software",
+        "title": "waf-global-rule-not-empty",
+        "description": "This control checks if an AWS WAF global rule contains any conditions. This control fails if no conditions are present within the WAF global rule.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAF_GLOBAL_RULE_NOT_EMPTY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAF::Rule"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "133e7190-9fe9-478f-a6b3-77c9c0033b4b",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "51c461d2-a349-44c9-8701-eca9037e6ae5",
+                "control-id": "WAF.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3a297012-1e77-495f-9ea4-373d6723d7b4",
+        "type": "software",
+        "title": "waf-global-rulegroup-not-empty",
+        "description": "This control checks if an AWS WAF Classic rule group contains any rules. This control fails if there are no rules present within a rule group.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAF_GLOBAL_RULEGROUP_NOT_EMPTY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAF::RuleGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d227b564-4622-4c5e-a13e-b49da15d6050",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "74a07d86-6b28-4d20-b467-39444791a9c8",
+                "control-id": "WAF.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "48e8f7d2-4ff5-4eb5-8950-e62b9300187e",
+        "type": "software",
+        "title": "waf-global-webacl-not-empty",
+        "description": "This control checks if WAF Global Web ACL contains any WAF rules or rule groups. This control fails if a Web ACL does not contain any WAF rule or rule group.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "WAF_GLOBAL_WEBACL_NOT_EMPTY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::WAF::WebACL"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8afabe93-c1db-4341-b805-4060c5b469b1",
+            "source": "#9416bce3-d83c-4891-a2ab-90765b4cce0b",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "344f5da8-b326-48b1-891d-168348372d6d",
+                "control-id": "WAF.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "d2f36569-f22e-4a42-b65d-aa70bb62ffa5",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "9416bce3-d83c-4891-a2ab-90765b4cce0b",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

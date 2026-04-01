@@ -1,0 +1,961 @@
+{
+  "component-definition": {
+    "uuid": "89467152-89a3-42ef-a141-07bcf280013d",
+    "metadata": {
+      "title": "Amazon Cognito Identity",
+      "last-modified": "2026-03-31T19:45:48.169354+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "15c06ca8-d9b7-4109-85e5-d39797d41b80",
+        "type": "service",
+        "title": "Amazon Cognito Identity",
+        "description": "Amazon Cognito Identity provides temporary AWS credentials to users, allowing them to securely access AWS services and resources directly from mobile and web applications.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Cognito Identity"
+          },
+          {
+            "name": "version",
+            "value": "2014-06-30"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Cognito",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Cognito Identity",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-identity"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-identity"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-identity"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-identity"
+          }
+        ],
+        "links": [
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/cognito/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d5fa018e-4a57-42d8-a8d6-c70a9913f360",
+            "source": "#d0c12612-f113-4637-8381-c7430f73dfc9",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "aef1e7ee-bb6f-4a3a-8088-6cd07264f59b",
+                "control-id": "Cognito.1",
+                "description": "Security Hub control Cognito.1"
+              },
+              {
+                "uuid": "b07de757-4d25-4890-8fb7-c7eb72791e50",
+                "control-id": "Cognito.2",
+                "description": "Security Hub control Cognito.2"
+              },
+              {
+                "uuid": "67042aeb-e48b-48e9-9374-c248511c925d",
+                "control-id": "Cognito.3",
+                "description": "Security Hub control Cognito.3"
+              },
+              {
+                "uuid": "c18c9872-2fba-4e97-be70-8de119ca7f2f",
+                "control-id": "Cognito.4",
+                "description": "Security Hub control Cognito.4"
+              },
+              {
+                "uuid": "ec12dfab-4998-4221-9cfb-db750585dd7a",
+                "control-id": "Cognito.5",
+                "description": "Security Hub control Cognito.5"
+              },
+              {
+                "uuid": "18c24f7b-7ed5-4e8b-9bf9-daf78edb65e8",
+                "control-id": "Cognito.6",
+                "description": "Security Hub control Cognito.6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6cdde3bf-dcc0-4220-b16a-ed4ebc66d30e",
+        "type": "service",
+        "title": "Amazon Cognito Identity Provider",
+        "description": "Amazon Cognito Identity Provider enables you to add user sign-up, sign-in, and access control functionality to your web and mobile applications.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Cognito Identity Provider"
+          },
+          {
+            "name": "version",
+            "value": "2016-04-18"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Cognito Identity Provider",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-idp"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-idp"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-idp"
+          }
+        ],
+        "links": [
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "a8b8b873-ed3f-4f04-814b-d41e77b74e14",
+        "type": "service",
+        "title": "Amazon Cognito Sync",
+        "description": "Amazon Cognito Sync is an AWS service that enables synchronization of application-related user data, such as app preferences and game state, across multiple devices and platforms.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Cognito Sync"
+          },
+          {
+            "name": "version",
+            "value": "2014-06-30"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Cognito Sync",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-sync"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-sync"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "cognito-sync"
+          }
+        ],
+        "links": [
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#0f82353b-4e01-48f0-a41e-d31258a019eb",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "313e4346-8b76-40bb-b109-fb5e7d37a666",
+        "type": "software",
+        "title": "cognito-user-pool-advanced-security-enabled",
+        "description": "Checks if an Amazon Cognito user pool has Advanced security enabled. This rule is NON_COMPLIANT if Advanced security is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "COGNITO_USER_POOL_ADVANCED_SECURITY_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Cognito::UserPool"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "99e0e9c5-49fa-4875-b9a1-b91427398e11",
+            "source": "#d0c12612-f113-4637-8381-c7430f73dfc9",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "90568cea-c4c6-4149-a9f3-535e80c23dc5",
+                "control-id": "Cognito.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "f7612d6e-17d3-41c9-ab9a-67f8e0358159",
+        "type": "software",
+        "title": "cognito-identity-pool-unauth-access-check",
+        "description": "Checks if Amazon Cognito Identity Pool allows unauthenticated identities. The rule is NON_COMPLIANT if the Identity Pool is configured to allow unauthenticated identities.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "COGNITO_IDENTITY_POOL_UNAUTH_ACCESS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Cognito::IdentityPool"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "47a2008c-9d61-49a1-bf2a-25ce551d13c9",
+            "source": "#d0c12612-f113-4637-8381-c7430f73dfc9",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "39b07081-8539-4c78-9a2c-7ca55eaae2ca",
+                "control-id": "Cognito.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "35e5d34d-9435-4939-9b82-bce62d0a9b3d",
+        "type": "software",
+        "title": "cognito-user-pool-password-policy-check",
+        "description": "Checks if the password policy for Amazon cognito user pool meets the specified requirements indicated in the parameters. The rule is NON_COMPLIANT if the user pool password policy does not meet the specified requirements.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "COGNITO_USER_POOL_PASSWORD_POLICY_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Cognito::UserPool"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "26b687b8-7656-44ce-bf25-40861f82b715",
+            "source": "#d0c12612-f113-4637-8381-c7430f73dfc9",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "26dd2577-743a-4d81-9fdb-bc1c264c9524",
+                "control-id": "Cognito.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7c80f209-dab0-4187-89f6-5ef353d3df0f",
+        "type": "software",
+        "title": "cognito-userpool-cust-auth-threat-full-check",
+        "description": "Checks if Amazon Cognito user pools have threat protection enabled with full-function enforcement mode for custom authentication. This rule is NON_COMPLIANT if threat protection for custom authentication is not set to full-function enforcement mode.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "COGNITO_USERPOOL_CUST_AUTH_THREAT_FULL_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Cognito::UserPool"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "792bd3ac-a7b3-4991-8029-f30b0b013ee0",
+            "source": "#d0c12612-f113-4637-8381-c7430f73dfc9",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a7654d39-ba05-4bff-a012-ba7cb1b2eb02",
+                "control-id": "Cognito.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a8943069-ec58-4e98-bcff-acbb613af2e2",
+        "type": "software",
+        "title": "cognito-user-pool-mfa-enabled",
+        "description": "Checks whether Cognito user pool configured with PASSWORD only sign in policy has MFA enabled. This rule is NON_COMPLIANT if the Cognito user pool configured with PASSWORD only sign in policy does not have MFA enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "COGNITO_USER_POOL_MFA_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Cognito::UserPool"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "06bbcf2a-eb83-4cd1-8a53-a4e846581a6d",
+            "source": "#d0c12612-f113-4637-8381-c7430f73dfc9",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e82ee722-0023-410e-bc27-0d77c09f6e8f",
+                "control-id": "Cognito.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3cb48515-d09a-4cf6-b421-a2807b5658dd",
+        "type": "software",
+        "title": "cognito-user-pool-deletion-protection-enabled",
+        "description": "Checks whether Amazon Cognito user pools deletion protection enabled.This rule is NON_COMPLIANT if a user pool has deletion protection disabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "COGNITO_USER_POOL_DELETION_PROTECTION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Cognito::UserPool"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "24ca8e91-c1fa-4aaf-b486-143afc8fea3b",
+            "source": "#d0c12612-f113-4637-8381-c7430f73dfc9",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9da77684-5d5d-4cbc-a559-2eec45fed3db",
+                "control-id": "Cognito.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "0f82353b-4e01-48f0-a41e-d31258a019eb",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d0c12612-f113-4637-8381-c7430f73dfc9",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

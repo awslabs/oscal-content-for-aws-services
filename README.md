@@ -4,9 +4,23 @@ Amazon Web Services (AWS) is offering _experimental_ Open Security Controls Asse
 
 ## Available Content
 
-This repository contains OSCAL component-definition files in JSON format describing AWS regions and services. See the [AWS Component Definitions](docs/COMPONENTS.md) document for details.
+This repository contains OSCAL content in JSON format conforming to OSCAL version 1.2.1. The content is organized into the following directories:
 
-Additional detail about each service will be added to these files. Please [open an issue](/issues/new) to let us know what content is most beneficial to you.     
+### Catalogs
+
+The [`catalogs/`](catalogs/) directory contains OSCAL catalog files. Currently this includes the AWS Security Hub Controls catalog with 77 groups and 452 controls. See the [Catalogs README](catalogs/README.md) for details.
+
+### Component Definitions
+
+The [`component-definitions/`](component-definitions/) directory contains 230 OSCAL component definition files describing AWS regions and services. Each AWS service is modeled as a _component_ within a file. Service components with Security Hub controls include references to the [catalog](catalogs/aws_security-hub.oscal.json) and associated Config rules. 
+
+See the [Component Definitions README](component-definitions/README.md) for a full inventory, or the [AWS Component Definitions](docs/COMPONENTS.md) document for details on the OSCAL representation.
+
+### Tools
+
+See the [Tools](docs/TOOLS.md) document for information on converting OSCAL content between formats.
+
+## Additional Resources
 
 You may also want to try the [OSCAL MCP Server](https://github.com/awslabs/mcp-server-for-oscal/), which can help you understand the content in this project, how to use it, and OSCAL in general. 
 
@@ -22,4 +36,3 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This project is licensed under the [Apache-2.0 License](LICENSE).
-

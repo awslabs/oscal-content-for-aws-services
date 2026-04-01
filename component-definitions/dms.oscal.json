@@ -1,0 +1,775 @@
+{
+  "component-definition": {
+    "uuid": "944f579f-3223-4020-a00a-20ba9a92fadb",
+    "metadata": {
+      "title": "AWS Database Migration Service",
+      "last-modified": "2026-03-31T19:45:48.175668+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "40aac073-a3f4-453c-962c-e1121d212199",
+        "type": "service",
+        "title": "AWS Database Migration Service",
+        "description": "AWS Database Migration Service helps you migrate databases to AWS quickly and securely, supporting homogeneous and heterogeneous migrations while keeping the source database fully operational during the migration process.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Database Migration Service"
+          },
+          {
+            "name": "version",
+            "value": "2016-01-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Database Migration Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "dms"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "dms"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "dms"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "dms"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#bb872d65-b108-4e12-8d92-bd06a1f82a11",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/dms/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9b2e2d3a-59aa-4773-a633-9e0388f8c721",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e7dd70a7-dfb0-4048-8572-b700693091dc",
+                "control-id": "DMS.1",
+                "description": "Security Hub control DMS.1"
+              },
+              {
+                "uuid": "00a34b34-eeaf-40b3-99e7-32c5ecbcafe0",
+                "control-id": "DMS.10",
+                "description": "Security Hub control DMS.10"
+              },
+              {
+                "uuid": "ad9dda3c-c9f9-41f7-a9cc-81061b30fc8f",
+                "control-id": "DMS.11",
+                "description": "Security Hub control DMS.11"
+              },
+              {
+                "uuid": "9ab45c42-897a-4cfd-a8ba-2a13968aca0d",
+                "control-id": "DMS.12",
+                "description": "Security Hub control DMS.12"
+              },
+              {
+                "uuid": "2a48ee8d-af34-44db-b297-d8029193ac91",
+                "control-id": "DMS.13",
+                "description": "Security Hub control DMS.13"
+              },
+              {
+                "uuid": "f2405e09-1ac9-473b-8547-fdf6a1de4937",
+                "control-id": "DMS.6",
+                "description": "Security Hub control DMS.6"
+              },
+              {
+                "uuid": "ed0bfe47-8f96-4def-93c0-ea36113796dd",
+                "control-id": "DMS.7",
+                "description": "Security Hub control DMS.7"
+              },
+              {
+                "uuid": "d463586a-45a1-4c92-8dc1-4a9d8136482c",
+                "control-id": "DMS.8",
+                "description": "Security Hub control DMS.8"
+              },
+              {
+                "uuid": "b225ef77-e60a-4d34-8334-b9a4c7365f97",
+                "control-id": "DMS.9",
+                "description": "Security Hub control DMS.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3a89a1be-797d-4c05-b13d-d5cb93dc17be",
+        "type": "software",
+        "title": "dms-replication-not-public",
+        "description": "Checks whether AWS Database Migration Service replication instances are public. The rule is NON_COMPLIANT if PubliclyAccessible field is true.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_REPLICATION_NOT_PUBLIC"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c955f481-f5ed-4f31-8672-2e176d39cc2c",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8d334a86-d06a-4b53-a17c-a8c3249bbfce",
+                "control-id": "DMS.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2c09a463-7a6f-432c-8ac7-4e4cf800fc37",
+        "type": "software",
+        "title": "dms-neptune-iam-authorization-enabled",
+        "description": "Checks if an AWS Database Migration Service (AWS DMS) endpoint for Amazon Neptune databases is configured with IAM authorization. The rule is NON_COMPLIANT if an AWS DMS endpoint where Neptune is the target has IamAuthEnabled set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_NEPTUNE_IAM_AUTHORIZATION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::DMS::Endpoint"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "4c5b4f0e-30d7-4a1e-9e01-d2a923aa62b3",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "476e8dc2-0f17-4a07-b2bc-e751c26aa906",
+                "control-id": "DMS.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "96479058-5132-43e6-99d8-a3a0f84612fc",
+        "type": "software",
+        "title": "dms-mongo-db-authentication-enabled",
+        "description": "Checks if AWS Database Migration Service (AWS DMS) endpoints for MongoDb data stores are enabled for password-based authentication and access control. The rule is NON_COMPLIANT if password-based authentication and access control is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_MONGO_DB_AUTHENTICATION_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::DMS::Endpoint"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "bcb63727-32b9-41f9-9e3e-505706abf30c",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5b89e0ff-c106-4645-9e49-4eddc0dbeb90",
+                "control-id": "DMS.11",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "91d4d678-034f-4653-afe9-4a5b86b123db",
+        "type": "software",
+        "title": "dms-redis-tls-enabled",
+        "description": "Checks if AWS Database Migration Service (AWS DMS) endpoints for Redis data stores are enabled for TLS/SSL encryption of data communicated with other endpoints. The rule is NON_COMPLIANT if TLS/SSL encryption is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_REDIS_TLS_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::DMS::Endpoint"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b331021b-b034-4d18-8dae-932253f773d4",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f11c4bd2-3ff6-4b6d-8263-b70077d455e0",
+                "control-id": "DMS.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ddea8ad3-720d-4a73-851d-2d5533bd055f",
+        "type": "software",
+        "title": "dms-replication-instance-multi-az-enabled",
+        "description": "Checks if AWS Database Migration Service (DMS) replication instances are configured with multiple Availability Zones. The rule is NON_COMPLIANT if a DMS replication instance is not configured to use multiple Availability Zones.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_REPLICATION_INSTANCE_MULTI_AZ_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::DMS::ReplicationInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0923d8d5-68f2-4cff-9a44-73acd2cfad9e",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6363e643-e0d1-4458-b789-ddcbf611ac3a",
+                "control-id": "DMS.13",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5fcfa4f6-07b6-48f3-8684-3085a0cec90d",
+        "type": "software",
+        "title": "dms-auto-minor-version-upgrade-check",
+        "description": "Checks if an AWS Database Migration Service (AWS DMS) replication instance has automatic minor version upgrades enabled. The rule is NON_COMPLIANT if an AWS DMS replication instance is not configured with automatic minor version upgrades.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_AUTO_MINOR_VERSION_UPGRADE_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::DMS::ReplicationInstance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8f98fa44-92f1-4cd8-bcc0-52cb22a2b8b6",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "be050d0d-bccd-46f7-a0cf-c311113b42a2",
+                "control-id": "DMS.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c1222ff8-5d22-49b1-9053-1c9b115ff305",
+        "type": "software",
+        "title": "dms-replication-task-targetdb-logging",
+        "description": "Checks if logging is enabled with a valid severity level for AWS DMS replication task events of a target database. The rule is NON_COMPLIANT if logging is not enabled or replication task logging of a target database has a severity level that is invalid.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_REPLICATION_TASK_TARGETDB_LOGGING"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::DMS::ReplicationTask"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "2e2829e9-b230-4cdc-8c42-f2eafbffd26e",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "acec3ddc-db54-41f8-b2cf-7ae3131c7f5e",
+                "control-id": "DMS.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2d3a8075-68c4-4e2a-ae9f-473956e9db92",
+        "type": "software",
+        "title": "dms-replication-task-sourcedb-logging",
+        "description": "Checks if logging is enabled with a valid severity level for AWS DMS replication tasks of a source database. The rule is NON_COMPLIANT if logging is not enabled or logs for DMS replication tasks of a source database have a severity level that invalid.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_REPLICATION_TASK_SOURCEDB_LOGGING"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::DMS::ReplicationTask"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fb42e2e3-5c51-4f28-beec-071b624da20a",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f7fe780e-d525-4ff7-8c4a-5e43947ebdef",
+                "control-id": "DMS.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b61f975c-7555-4a47-903d-942e4f1c3c98",
+        "type": "software",
+        "title": "dms-endpoint-ssl-configured",
+        "description": "Checks if AWS Database Migration Service (AWS DMS) endpoints are configured with an SSL connection. The rule is NON_COMPLIANT if AWS DMS does not have an SSL connection configured.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "DMS_ENDPOINT_SSL_CONFIGURED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::DMS::Endpoint"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1919f53b-2a09-465d-95d0-ae708fd33401",
+            "source": "#8c945ad7-7750-4604-b9d6-686a404930b5",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "339c5ae8-687b-41a2-a350-5962dbcbf056",
+                "control-id": "DMS.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "bb872d65-b108-4e12-8d92-bd06a1f82a11",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "8c945ad7-7750-4604-b9d6-686a404930b5",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

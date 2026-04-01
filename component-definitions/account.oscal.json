@@ -1,0 +1,237 @@
+{
+  "component-definition": {
+    "uuid": "c9642e11-29c6-4118-b68c-828f8c318f08",
+    "metadata": {
+      "title": "AWS Account",
+      "last-modified": "2026-03-31T19:45:48.138252+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "a6aa2e84-1f48-4676-8122-289cd2bd552b",
+        "type": "service",
+        "title": "AWS Account",
+        "description": "AWS Account is the fundamental container that holds all AWS resources, services, and configurations, providing a secure and isolated environment for managing and accessing AWS cloud services.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Account"
+          },
+          {
+            "name": "version",
+            "value": "2021-02-01"
+          },
+          {
+            "name": "label",
+            "value": "AWS Account",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "account"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "account"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "account"
+          }
+        ],
+        "links": [
+          {
+            "href": "#91a4fbae-a549-4445-bde9-1a4ef7f3b2d4",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#91a4fbae-a549-4445-bde9-1a4ef7f3b2d4",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d29d6bfa-6d97-455b-b1c9-aebc34479008",
+            "source": "#7b87c6a9-1238-4adf-8338-3c9bb58a6009",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f15f0336-8f96-41ed-82fd-57e25c3ebd9b",
+                "control-id": "Account.1",
+                "description": "Security Hub control Account.1"
+              },
+              {
+                "uuid": "60c948d9-9599-4c5f-aa92-3a077ef86e1b",
+                "control-id": "Account.2",
+                "description": "Security Hub control Account.2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "aa7aca9c-b2ac-4820-99ca-f6e9c7bb5a94",
+        "type": "software",
+        "title": "security-account-information-provided",
+        "description": "Checks if customer has provided security contact information within the account contacts. This rule is NON_COMPLIANT if security contact information within the account is not provided.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SECURITY_ACCOUNT_INFORMATION_PROVIDED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "97cb468a-5cdd-42f7-8aae-d9ba9d755f01",
+            "source": "#7b87c6a9-1238-4adf-8338-3c9bb58a6009",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3d10bfec-a7fc-40d2-a68f-4753465676c4",
+                "control-id": "Account.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "32c4f715-2329-4dc7-8333-6fc19640a0ff",
+        "type": "software",
+        "title": "account-part-of-organizations",
+        "description": "This control checks if an AWS account is part of an AWS Organizations organization.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ACCOUNT_PART_OF_ORGANIZATIONS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "93c15f75-2a8a-4521-a07a-4abbff2da347",
+            "source": "#7b87c6a9-1238-4adf-8338-3c9bb58a6009",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "aef3e33a-3adb-49bf-bfd4-42d5ff2b15e3",
+                "control-id": "Account.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "91a4fbae-a549-4445-bde9-1a4ef7f3b2d4",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "7b87c6a9-1238-4adf-8338-3c9bb58a6009",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

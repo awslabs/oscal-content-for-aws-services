@@ -1,0 +1,1604 @@
+{
+  "component-definition": {
+    "uuid": "7946a282-75fc-4cdf-9e3f-f1704244e59b",
+    "metadata": {
+      "title": "Amazon Redshift",
+      "last-modified": "2026-03-31T19:45:48.251759+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "498c4312-f6c7-47f2-b5ff-cdca659ed767",
+        "type": "service",
+        "title": "Amazon Redshift",
+        "description": "Amazon Redshift is a fully managed, petabyte-scale cloud data warehouse service that enables fast querying and analysis of large datasets using SQL.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Redshift"
+          },
+          {
+            "name": "version",
+            "value": "2012-12-01"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Redshift",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "redshift"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "redshift"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "redshift"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "redshift"
+          }
+        ],
+        "links": [
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/redshift/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fe51f96d-4b8b-409f-8b8f-1f1f41a20872",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "dfa396b4-c063-4705-b680-b6f52277ae12",
+                "control-id": "Redshift.1",
+                "description": "Security Hub control Redshift.1"
+              },
+              {
+                "uuid": "fbc45865-2a10-4012-875b-54525458770f",
+                "control-id": "Redshift.10",
+                "description": "Security Hub control Redshift.10"
+              },
+              {
+                "uuid": "c44beb0b-61e8-47bd-a9f7-e698a9db0d12",
+                "control-id": "Redshift.15",
+                "description": "Security Hub control Redshift.15"
+              },
+              {
+                "uuid": "59c9919c-ad95-4a8d-9dd0-c55f458b50d4",
+                "control-id": "Redshift.16",
+                "description": "Security Hub control Redshift.16"
+              },
+              {
+                "uuid": "5ad7659a-48b8-41b6-b21e-07c3b91b9845",
+                "control-id": "Redshift.17",
+                "description": "Security Hub control Redshift.17"
+              },
+              {
+                "uuid": "88a00375-770f-4a94-aa8e-b5c7a2963b7a",
+                "control-id": "Redshift.18",
+                "description": "Security Hub control Redshift.18"
+              },
+              {
+                "uuid": "867e338f-b56f-4e25-ad10-fd050bd7c306",
+                "control-id": "Redshift.2",
+                "description": "Security Hub control Redshift.2"
+              },
+              {
+                "uuid": "941ee779-286a-47a0-8fa3-b72f83a3533a",
+                "control-id": "Redshift.3",
+                "description": "Security Hub control Redshift.3"
+              },
+              {
+                "uuid": "9aa068a7-a9ef-4db3-94df-7fd703fb13a2",
+                "control-id": "Redshift.6",
+                "description": "Security Hub control Redshift.6"
+              },
+              {
+                "uuid": "189d1285-231d-4682-8884-b1c346610f99",
+                "control-id": "Redshift.7",
+                "description": "Security Hub control Redshift.7"
+              },
+              {
+                "uuid": "a612f4c9-c1c5-42f7-b4c9-56cfa60007d2",
+                "control-id": "Redshift.8",
+                "description": "Security Hub control Redshift.8"
+              },
+              {
+                "uuid": "b25b317d-7a58-4e5f-950b-136aa50559f0",
+                "control-id": "Redshift.9",
+                "description": "Security Hub control Redshift.9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "53fa94c9-71fe-46ac-8b51-227b472d93bc",
+        "type": "service",
+        "title": "Redshift Data API Service",
+        "description": "The Redshift Data API Service enables you to run SQL queries on Amazon Redshift clusters and serverless workgroups without managing persistent database connections, using an HTTP-based API instead.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Redshift Data"
+          },
+          {
+            "name": "label",
+            "value": "Redshift Data API Service",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "redshift-data"
+          }
+        ],
+        "links": [
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "8a3b7d3b-b1e1-4ce1-a860-bf970f533daa",
+        "type": "service",
+        "title": "Redshift Serverless",
+        "description": "Amazon Redshift Serverless automatically provisions and scales data warehouse capacity, enabling you to run and scale analytics without managing data warehouse infrastructure.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "Redshift Serverless"
+          },
+          {
+            "name": "version",
+            "value": "2021-04-21"
+          },
+          {
+            "name": "label",
+            "value": "Redshift Serverless",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "redshift-serverless"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "redshift-serverless"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "redshift-serverless"
+          }
+        ],
+        "links": [
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#e104a9ec-9491-4a81-a7bf-e009918da670",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ca1a9b7e-d897-475f-9e3b-6eb12abfec33",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "2c8608dc-f12c-41e7-90a5-74c916a83112",
+                "control-id": "RedshiftServerless.1",
+                "description": "Security Hub control RedshiftServerless.1"
+              },
+              {
+                "uuid": "4411f737-b218-429e-97ff-b71f1a7933be",
+                "control-id": "RedshiftServerless.2",
+                "description": "Security Hub control RedshiftServerless.2"
+              },
+              {
+                "uuid": "297ed1ba-8547-4bfc-a655-6cccbf11c0ba",
+                "control-id": "RedshiftServerless.3",
+                "description": "Security Hub control RedshiftServerless.3"
+              },
+              {
+                "uuid": "831fcac1-b554-4ea9-b999-4e00b0178506",
+                "control-id": "RedshiftServerless.4",
+                "description": "Security Hub control RedshiftServerless.4"
+              },
+              {
+                "uuid": "73d5372e-c171-4526-bdb6-df97937f7652",
+                "control-id": "RedshiftServerless.5",
+                "description": "Security Hub control RedshiftServerless.5"
+              },
+              {
+                "uuid": "d7685d57-84e5-4052-9b9a-3c55dd7d5a96",
+                "control-id": "RedshiftServerless.6",
+                "description": "Security Hub control RedshiftServerless.6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "83802545-c81c-4456-9d6e-7500327c1e6e",
+        "type": "software",
+        "title": "redshift-cluster-public-access-check",
+        "description": "Checks whether Amazon Redshift clusters are not publicly accessible.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_CLUSTER_PUBLIC_ACCESS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "74cd9851-cc17-4c13-9a9d-dc70bbed3449",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3a28fb76-30b4-4d6c-a6ec-1d9a1ac6b2f9",
+                "control-id": "Redshift.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "cf55a9f1-74d3-4b6a-ad1f-c94beb9b4731",
+        "type": "software",
+        "title": "redshift-cluster-kms-enabled",
+        "description": "Checks if Amazon Redshift clusters are using a specified AWS Key Management Service (AWS KMS) key for encryption.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_CLUSTER_KMS_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d10eae7b-e877-4adc-bdef-2e317c99483a",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "73bc58ba-dacd-456d-b538-81f2d03c5560",
+                "control-id": "Redshift.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2fd2af17-60b0-40cc-95b0-371c58e20dcd",
+        "type": "software",
+        "title": "redshift-unrestricted-port-access",
+        "description": "Checks if security groups associated with an Amazon Redshift cluster have inbound rules that allow unrestricted incoming traffic. The rule is NON_COMPLIANT if there are inbound rules that allow unrestricted incoming traffic to the Redshift cluster port.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_UNRESTRICTED_PORT_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "06071219-5828-4f85-8531-8997ccb97739",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "fa35c4a5-23f2-402b-83af-9e6a31ad1e3b",
+                "control-id": "Redshift.15",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5dccc082-a140-43cd-a2b9-39959c772a9e",
+        "type": "software",
+        "title": "redshift-cluster-subnet-group-multi-az",
+        "description": "Checks If Amazon Redshift subnet groups contain subnets from more than one Availability Zone. The rule is NON_COMPLIANT if an Amazon Redshift subnet group does not contain subnets from at least two different Availability Zones.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_CLUSTER_SUBNET_GROUP_MULTI_AZ"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::ClusterSubnetGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "bc1e6dd3-fb6a-4abc-b35e-aa4afebad12f",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "53e66418-85de-4067-af11-ae12ed95ed61",
+                "control-id": "Redshift.16",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6a94e221-0506-41bb-90ab-f252266e0be5",
+        "type": "software",
+        "title": "redshift-cluster-parameter-group-tagged",
+        "description": "Checks if Amazon Redshift cluster parameter groups have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_CLUSTER_PARAMETER_GROUP_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::ClusterParameterGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "bda508b3-0898-4743-b67c-65dadf7102bb",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3f2c91f2-7fc0-47d8-9bb6-4f3c516bb5c2",
+                "control-id": "Redshift.17",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "0f317848-8f93-475f-91c1-596945256aaa",
+        "type": "software",
+        "title": "redshift-cluster-multi-az-enabled",
+        "description": "Checks if an Amazon Redshift cluster has multiple Availability Zones deployments enabled. This rule is NON_COMPLIANT if Amazon Redshift cluster does not have multiple Availability Zones deployments enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_CLUSTER_MULTI_AZ_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1e077709-4e2d-4b6f-9406-dcfef1ad9010",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "580c496c-46a9-4ad0-bfea-39fb94b6ccd4",
+                "control-id": "Redshift.18",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "587089d1-4190-4334-8ae3-a2980310062e",
+        "type": "software",
+        "title": "redshift-require-tls-ssl",
+        "description": "Checks whether Amazon Redshift clusters require TLS/SSL encryption to connect to SQL clients. The rule is NON_COMPLIANT if any Amazon Redshift cluster has parameter require_SSL not set to true.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_REQUIRE_TLS_SSL"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::ClusterParameterGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8d88afa9-17c9-4b98-ac50-427923798959",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3f6eb95c-e466-4f2b-b0dd-b187eacdce53",
+                "control-id": "Redshift.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "1577c93d-f99e-4b9a-bdf9-54a02f3b4369",
+        "type": "software",
+        "title": "redshift-backup-enabled",
+        "description": "Checks that Amazon Redshift automated snapshots are enabled for clusters. The rule is NON_COMPLIANT if the value for automatedSnapshotRetentionPeriod is greater than MaxRetentionPeriod or less than MinRetentionPeriod or the value is 0.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_BACKUP_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "119bc3c1-c560-40de-bdb3-4283eba19e69",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f6138385-e59e-40cd-9b40-0fff2bf2fc95",
+                "control-id": "Redshift.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "617c17ac-9e01-4876-80b1-c29f2f32a2d8",
+        "type": "software",
+        "title": "redshift-cluster-maintenancesettings-check",
+        "description": "Checks whether Amazon Redshift clusters have the specified maintenance settings.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_CLUSTER_MAINTENANCESETTINGS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "069c6b94-a17b-4b56-a205-af78bd87d991",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ccd6fb88-924a-4391-8740-1f1d028a923e",
+                "control-id": "Redshift.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "cf1f67ee-464d-4843-8fdc-ede22f5527fd",
+        "type": "software",
+        "title": "redshift-enhanced-vpc-routing-enabled",
+        "description": "This control checks whether a Redshift cluster has EnhancedVpcRouting enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_ENHANCED_VPC_ROUTING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8238832f-8148-40ac-9ce6-23508224c427",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0d751af6-aa93-4860-8dcf-c00cdfdfd6ac",
+                "control-id": "Redshift.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c49a0d6d-c56f-457f-bd0e-61aa65f6a3ce",
+        "type": "software",
+        "title": "redshift-default-admin-check",
+        "description": "This control checks whether a Redshift cluster has changed the Admin username from its default value. This control will fail if the admin username for a Redshift cluster is set to 'awsuser', or if the username does not match the provided parameter(s).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_DEFAULT_ADMIN_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c50c84cb-1bc8-4299-81d8-7ead0923591b",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4f375a1d-d822-480b-b6db-13f92a670ec5",
+                "control-id": "Redshift.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "46be054e-b552-4e00-9f42-f4403897c2d8",
+        "type": "software",
+        "title": "redshift-default-db-name-check",
+        "description": "This control checks if a Redshift cluster has changed its database name from the default value. This control fails if the database name for a Redshift cluster is set to \"dev\", or if the optional parameter is provided and the database name does not match.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_DEFAULT_DB_NAME_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Redshift::Cluster"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b80d89ca-99a8-488d-aac3-7a8cb6848f11",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7c313629-6021-45cf-a87a-6aedd4e23460",
+                "control-id": "Redshift.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "fba7d51c-b482-40da-ad0d-f63d8b1405b9",
+        "type": "software",
+        "title": "redshift-serverless-workgroup-routes-within-vpc",
+        "description": "Checks if Amazon Redshift Serverless Workgroups does not route the network traffic through a VPC. This rule is NON_COMPLIANT if Workgroups have \"Turn on Enhanced VPC routing\" disabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_SERVERLESS_WORKGROUP_ROUTES_WITHIN_VPC"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "64bac3d6-0620-4159-989f-26787dc77915",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1a1a6ae6-e73d-46bc-ad1e-3f84fc506381",
+                "control-id": "RedshiftServerless.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2a5029f1-b0b0-47ac-99d8-c09cf16ea7f4",
+        "type": "software",
+        "title": "redshift-serverless-workgroup-encrypted-in-transit",
+        "description": "Checks if AWS Redshift Serverless workgroups have the require_ssl config parameter set to true. The rule is NON_COMPLIANT if require_ssl is set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_SERVERLESS_WORKGROUP_ENCRYPTED_IN_TRANSIT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5fcd9561-d7ff-40a3-a7b9-484290de8abd",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0dfde111-abf1-4274-a109-671751fdd010",
+                "control-id": "RedshiftServerless.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "60b69fb1-3b4c-48ec-9185-418b876e7207",
+        "type": "software",
+        "title": "redshift-serverless-workgroup-no-public-access",
+        "description": "Checks if Amazon Redshift Serverless workgroups do not allow public access. The rule is NON_COMPLIANT if a workgroup has 'Turn on Public Accessible' enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_SERVERLESS_WORKGROUP_NO_PUBLIC_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6632d909-5aa1-4c02-a663-5daffa4b43e1",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e95acbe0-05bb-4227-ae1a-8704de111cd8",
+                "control-id": "RedshiftServerless.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ba7cdb3c-162d-4dda-a6b4-5ae20760d3b1",
+        "type": "software",
+        "title": "redshift-serverless-namespace-cmk-encryption",
+        "description": "Checks if Amazon Redshift Serverless namespaces are encrypted by customer managed AWS KMS keys. The rule is NON_COMPLIANT if a namespace is not encrypted by a customer managed key. Optionally, you can specify a list of KMS keys for rule to check.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_SERVERLESS_NAMESPACE_CMK_ENCRYPTION"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "32671474-24cb-47e1-93f8-6a87f5ec56e0",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "82454c11-d6fa-4fda-9c7e-a1b34fd20930",
+                "control-id": "RedshiftServerless.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d1b19c9d-a1a1-477c-a48a-8bd9bbac3d78",
+        "type": "software",
+        "title": "redshift-serverless-default-admin-check",
+        "description": "Checks if an Amazon Redshift Serverless Namespace has changed the admin username from its default value. The rule is NON_COMPLIANT if the admin username for a Redshift Serverless Namespace is set to 'admin'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_SERVERLESS_DEFAULT_ADMIN_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f515c2d8-7c5d-4869-9b48-c573f2822e07",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ddc6ba2b-b574-453c-8b4a-373308491e9a",
+                "control-id": "RedshiftServerless.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7836b478-485c-4ec5-a442-ebaa649c40bc",
+        "type": "software",
+        "title": "redshift-serverless-publish-logs-to-cloudwatch",
+        "description": "Checks if Amazon Redshift Serverless Namespace is configured to publish the following logs to Amazon CloudWatch Logs. This rule is NON_COMPLIANT if the Namespace is not configured to publish the following logs to Amazon CloudWatch Logs.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REDSHIFT_SERVERLESS_PUBLISH_LOGS_TO_CLOUDWATCH"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fe921d1c-6543-4a29-8cfc-780072f8f5db",
+            "source": "#07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ec81fb6d-f343-4150-a938-2620c2df3208",
+                "control-id": "RedshiftServerless.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "e104a9ec-9491-4a81-a7bf-e009918da670",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "07a81b1b-dcf8-4c8e-beac-2f3682a675cb",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

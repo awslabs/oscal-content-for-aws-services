@@ -1,0 +1,1255 @@
+{
+  "component-definition": {
+    "uuid": "a5e0db55-eb48-40ff-b929-aef8b200d38b",
+    "metadata": {
+      "title": "AWS Identity and Access Management",
+      "last-modified": "2026-03-31T19:45:48.223692+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "e356a687-3174-47cf-ad6f-8adf7565aecb",
+        "type": "service",
+        "title": "AWS Identity and Access Management",
+        "description": "AWS Identity and Access Management (IAM) enables you to securely control access to AWS services and resources by managing users, groups, roles, and permissions within your AWS account.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM"
+          },
+          {
+            "name": "version",
+            "value": "2010-05-08"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "GLOBAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS Identity and Access Management (IAM)",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "AWS Identity and Access Management",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iam"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iam"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iam"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iam"
+          }
+        ],
+        "links": [
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#a159f939-7a8b-47fa-8f88-901e3ed59899",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/iam/",
+            "rel": "reference"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/service-authorization/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6bc763bd-0e58-45e1-b2d3-90c63ef11f1f",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "63c87aad-5b78-4411-9641-6bb12999af3b",
+                "control-id": "IAM.1",
+                "description": "Security Hub control IAM.1"
+              },
+              {
+                "uuid": "c595a357-d5d1-4d9c-aad7-b7987f1ffe75",
+                "control-id": "IAM.10",
+                "description": "Security Hub control IAM.10"
+              },
+              {
+                "uuid": "6e19a02d-e7dc-438a-8f76-1c337d1498bf",
+                "control-id": "IAM.11",
+                "description": "Security Hub control IAM.11"
+              },
+              {
+                "uuid": "5d4fbfb1-a8e0-4767-9d4c-91be5b1a318a",
+                "control-id": "IAM.12",
+                "description": "Security Hub control IAM.12"
+              },
+              {
+                "uuid": "0d61e5ec-6299-4ed2-ad76-b41f29574aac",
+                "control-id": "IAM.13",
+                "description": "Security Hub control IAM.13"
+              },
+              {
+                "uuid": "0bc490f5-4941-4583-8753-0927026f3ae1",
+                "control-id": "IAM.14",
+                "description": "Security Hub control IAM.14"
+              },
+              {
+                "uuid": "b3d3c93e-c455-4185-9ca0-4793759442f6",
+                "control-id": "IAM.15",
+                "description": "Security Hub control IAM.15"
+              },
+              {
+                "uuid": "26a7cf49-1b76-4638-9ad1-739923b34edc",
+                "control-id": "IAM.16",
+                "description": "Security Hub control IAM.16"
+              },
+              {
+                "uuid": "598f834c-0d62-42be-a6f6-2f00768ac1a5",
+                "control-id": "IAM.17",
+                "description": "Security Hub control IAM.17"
+              },
+              {
+                "uuid": "676b24cd-6cdc-4878-9568-4d230a790410",
+                "control-id": "IAM.18",
+                "description": "Security Hub control IAM.18"
+              },
+              {
+                "uuid": "07a68b3f-ec18-4f5d-9232-8cfe23417d20",
+                "control-id": "IAM.19",
+                "description": "Security Hub control IAM.19"
+              },
+              {
+                "uuid": "b3f3d4c8-01ec-4171-9531-185db2dfb967",
+                "control-id": "IAM.2",
+                "description": "Security Hub control IAM.2"
+              },
+              {
+                "uuid": "01d83ca1-d806-44d5-8b2d-9a864221983d",
+                "control-id": "IAM.21",
+                "description": "Security Hub control IAM.21"
+              },
+              {
+                "uuid": "42f39a8e-9de3-4de5-8199-73e2f7ef2ba1",
+                "control-id": "IAM.22",
+                "description": "Security Hub control IAM.22"
+              },
+              {
+                "uuid": "0ef0dd01-8263-4049-a415-f75cc2782838",
+                "control-id": "IAM.26",
+                "description": "Security Hub control IAM.26"
+              },
+              {
+                "uuid": "22090be3-5961-4ff7-ae2d-20dd037172ea",
+                "control-id": "IAM.27",
+                "description": "Security Hub control IAM.27"
+              },
+              {
+                "uuid": "62de41b7-5e49-48a0-a6ae-75da2626b349",
+                "control-id": "IAM.28",
+                "description": "Security Hub control IAM.28"
+              },
+              {
+                "uuid": "92fdce98-7b92-4114-9a79-594aefb7d0c1",
+                "control-id": "IAM.3",
+                "description": "Security Hub control IAM.3"
+              },
+              {
+                "uuid": "5bb38699-5d1f-476f-ac17-1998488c76c3",
+                "control-id": "IAM.4",
+                "description": "Security Hub control IAM.4"
+              },
+              {
+                "uuid": "5f9c5040-8ff1-4971-bdcf-02ebdaf18b51",
+                "control-id": "IAM.5",
+                "description": "Security Hub control IAM.5"
+              },
+              {
+                "uuid": "5688637d-7dba-46a9-a439-a9e2ea60f471",
+                "control-id": "IAM.6",
+                "description": "Security Hub control IAM.6"
+              },
+              {
+                "uuid": "85337fa0-7da2-459d-b41b-508356170879",
+                "control-id": "IAM.7",
+                "description": "Security Hub control IAM.7"
+              },
+              {
+                "uuid": "3e436c7c-4c23-4cac-ba3e-1157c6a19601",
+                "control-id": "IAM.8",
+                "description": "Security Hub control IAM.8"
+              },
+              {
+                "uuid": "041141a3-17d3-4004-a489-01c26d02724c",
+                "control-id": "IAM.9",
+                "description": "Security Hub control IAM.9"
+              },
+              {
+                "uuid": "57ae7299-82fd-446e-8f08-656c4ea89334",
+                "control-id": "KMS.1",
+                "description": "Security Hub control KMS.1"
+              },
+              {
+                "uuid": "28046eff-9e44-47d0-bd16-e724c22a05a1",
+                "control-id": "KMS.2",
+                "description": "Security Hub control KMS.2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e62807a7-18e7-4c87-8b98-9bab880d4c81",
+        "type": "software",
+        "title": "iam-policy-no-statements-with-admin-access",
+        "description": "Checks whether the default version of IAM policies have administrator access",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_POLICY_NO_STATEMENTS_WITH_ADMIN_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Policy"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5bedaa84-205a-4a5e-812e-14db51c2babc",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c6335a63-a310-4253-94fa-c7c3af464ab5",
+                "control-id": "IAM.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "07795fcd-ff30-41a6-a893-f2c08c61b470",
+        "type": "software",
+        "title": "iam-password-policy-recommended-defaults",
+        "description": "Checks whether the account password policy for IAM users meets the specified requirements.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_PASSWORD_POLICY"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "MaxPasswordAge",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "90",
+            "class": "InputParameter"
+          },
+          {
+            "name": "PasswordReusePrevention",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "24",
+            "class": "InputParameter"
+          },
+          {
+            "name": "MinimumPasswordLength",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "14",
+            "class": "InputParameter"
+          },
+          {
+            "name": "RequireNumbers",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "true",
+            "class": "InputParameter"
+          },
+          {
+            "name": "RequireSymbols",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "true",
+            "class": "InputParameter"
+          },
+          {
+            "name": "RequireLowercaseCharacters",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "true",
+            "class": "InputParameter"
+          },
+          {
+            "name": "RequireUppercaseCharacters",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "true",
+            "class": "InputParameter"
+          },
+          {
+            "name": "MinimumPasswordLength",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "7",
+            "class": "InputParameter"
+          },
+          {
+            "name": "PasswordReusePrevention",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "4",
+            "class": "InputParameter"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "93824f4a-50b6-45c3-8614-9a7f7716ce89",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3c11de9f-fa5e-4a26-b2bf-7c097774fff5",
+                "control-id": "IAM.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4a12e7f1-bbe1-4966-8319-3a08e0ab90ec",
+        "type": "software",
+        "title": "iam-support-policy-in-use",
+        "description": "Checks that the 'AWSSupportAccess' managed policy is attached to any IAM user, group, or role.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_POLICY_IN_USE"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f8adc541-db9f-4acf-9e7a-e46874ba0fcf",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3d292e18-fefc-40f8-88da-6752da168ea4",
+                "control-id": "IAM.18",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d85592eb-f98d-45ae-a6be-4d631c36a03f",
+        "type": "software",
+        "title": "iam-user-mfa-enabled",
+        "description": "Checks whether the AWS Identity and Access Management users have multi-factor authentication (MFA) enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_USER_MFA_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::User"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0a2bd5f4-3db0-4eca-a696-856b5983c574",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "69c58026-922e-4242-8da2-d2b2cb155b90",
+                "control-id": "IAM.19",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3b3e65f9-194d-45bc-9165-4a5b26d8d391",
+        "type": "software",
+        "title": "iam-user-no-policies-check",
+        "description": "Checks that none of your IAM users have policies attached. IAM users must inherit permissions from IAM groups or roles.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_USER_NO_POLICIES_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::User"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6176f0d5-474b-42cd-990d-9a099020e253",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c9a9abc7-6d89-4bce-8c80-3dd19265c8c4",
+                "control-id": "IAM.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "8a93b8ff-a8e3-40ae-b5b3-ce41cb0bcb89",
+        "type": "software",
+        "title": "iam-policy-no-statements-with-full-access",
+        "description": "This control checks whether the IAM identity-based custom policies have Allow statements that grant permissions for all actions on a service. The control fails if any policy statement includes \"Effect\": \"Allow\" with \"Action\": \"Service:*\".",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_POLICY_NO_STATEMENTS_WITH_FULL_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Policy"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "dac9ec7e-1231-46e5-b68d-a50b3e32449c",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "526eb11a-f325-49b3-b85f-a4670bac43ee",
+                "control-id": "IAM.21",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "db6ff45b-6332-4b18-8ac3-37d768269471",
+        "type": "software",
+        "title": "iam-user-unused-credentials-check",
+        "description": "This control checks whether your IAM users have passwords or active access keys that were not used within the previous 90 days.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_USER_UNUSED_CREDENTIALS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::User"
+          },
+          {
+            "name": "maxCredentialUsageAge",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "90",
+            "class": "InputParameter"
+          },
+          {
+            "name": "maxCredentialUsageAge",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "45",
+            "class": "InputParameter"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "cd909e7d-b3cb-4700-a271-ef62f23b8f9f",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5ef435be-7376-4044-940d-ac31f8b2426a",
+                "control-id": "IAM.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "fbb5fca0-41f2-49a1-bc64-0b6cd96bbfca",
+        "type": "software",
+        "title": "iam-server-certificate-expiration-check",
+        "description": "Checks whether the AWS IAM SSL/TLS server certificates stored in IAM are expired. The rule is NON_COMPLIANT if an IAM server certificate is expired.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_SERVER_CERTIFICATE_EXPIRATION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "85d74ea2-6564-49c9-bbf3-b4ff0f48540a",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "925736e5-5aa1-4a43-b135-87318e213c3a",
+                "control-id": "IAM.26",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "26aacf70-306c-4031-9a02-eb53fdacbe75",
+        "type": "software",
+        "title": "iam-policy-blacklisted-check",
+        "description": "Checks in each AWS Identity and Access Management (IAM) resource, if a policy Amazon Resource Name (ARN) in the input parameter is attached to the IAM resource. The rule is NON_COMPLIANT if the policy ARN is attached to the IAM resource.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_POLICY_BLACKLISTED_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Role"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::User"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Group"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5a518760-4f69-4eea-be5c-b3011f7eaae8",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8441ce34-2e92-4bad-9fad-9a530dc3053a",
+                "control-id": "IAM.27",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2eabfa56-1994-49e5-808b-fc1f120c982a",
+        "type": "software",
+        "title": "iam-external-access-analyzer-enabled",
+        "description": "Checks if an IAM Access Analyzer for external access is activated in your account per region. The rule is NON_COMPLIANT if there are no analyzers for external access in the region or if the 'status' attribute is not set to 'ACTIVE'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_EXTERNAL_ACCESS_ANALYZER_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e0b0ddd1-c4f4-407e-9ebd-60ff3406663e",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9264a8fb-77ee-4f35-b465-0f7320ee6bfa",
+                "control-id": "IAM.28",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7f72430e-ebd0-48fd-8280-38fcc42d0231",
+        "type": "software",
+        "title": "access-keys-rotated",
+        "description": "Checks whether the active access keys are rotated within the number of days specified in maxAccessKeyAge",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ACCESS_KEYS_ROTATED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::User"
+          },
+          {
+            "name": "maxAccessKeyAge",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "90",
+            "class": "InputParameter"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7bafc638-ea6e-4b9a-a18c-55039c7f7c3a",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6ba39b10-cd57-4a8b-8870-4212cea0aa12",
+                "control-id": "IAM.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "0ca8d861-456d-400e-9245-201af1ec3a85",
+        "type": "software",
+        "title": "iam-root-access-key-check",
+        "description": "Checks whether the root user access key is available.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_ROOT_ACCESS_KEY_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b4f518d6-1918-406d-88fd-e8ddb2529281",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "cd61d23b-4c35-475a-aa07-f032985feb3b",
+                "control-id": "IAM.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3a1fa859-f2d3-4d2a-9e26-8cb2a26e0d98",
+        "type": "software",
+        "title": "mfa-enabled-for-iam-console-access",
+        "description": "Checks whether AWS Multi-Factor Authentication (MFA) is enabled for all AWS Identity and Access Management (IAM) users that use a console password.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "MFA_ENABLED_FOR_IAM_CONSOLE_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::User"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "0fd33fef-5382-4cef-ad9a-9f9ef28ef207",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "00fc0966-1532-4e90-aa05-d9192da3d8a0",
+                "control-id": "IAM.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c2c2eb4c-c69a-45b3-b6e8-fad7db0130cf",
+        "type": "software",
+        "title": "root-account-hardware-mfa-enabled",
+        "description": "Checks whether users of your AWS account require a hardware multi-factor authentication (MFA) device to sign in with root credentials.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ROOT_ACCOUNT_HARDWARE_MFA_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "2bde5fb4-2b45-4230-b446-6c8c12e6f5ee",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c7e4e0a0-4379-4522-862f-00a5eb938e0e",
+                "control-id": "IAM.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "036a4fa3-b833-479a-821c-7cead79e95d7",
+        "type": "software",
+        "title": "root-account-mfa-enabled",
+        "description": "Checks whether users of your AWS account require a multi-factor authentication (MFA) device to sign in with root credentials.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ROOT_ACCOUNT_MFA_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b411d999-c96e-40e8-a915-24c5a706cb08",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9c9504bc-e6ad-47f1-83d4-c0c385b79c92",
+                "control-id": "IAM.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "572ae48e-c5fd-45b3-ad4e-1170d7153b80",
+        "type": "software",
+        "title": "iam-customer-policy-blocked-kms-actions",
+        "description": "Checks that the managed AWS Identity and Access Management (IAM) policies that you create do not allow blocked actions on all AWS KMS keys. The rule is NON_COMPLIANT if any blocked action is allowed on all AWS KMS keys by the managed IAM policy.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_CUSTOMER_POLICY_BLOCKED_KMS_ACTIONS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Policy"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8580d9dc-7dc7-49d6-8c9a-511757030868",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7557c67c-13d5-4a95-8d21-3868e100df26",
+                "control-id": "KMS.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "f116b1aa-7f05-45bb-8674-15126ecf366e",
+        "type": "software",
+        "title": "iam-inline-policy-blocked-kms-actions",
+        "description": "Checks that the inline policies attached to your IAM users, roles, and groups do not allow blocked actions on all AWS Key Management Service (KMS) keys. The rule is NON_COMPLIANT if any blocked action is allowed on all KMS keys in an inline policy.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IAM_INLINE_POLICY_BLOCKED_KMS_ACTIONS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Role"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::Group"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IAM::User"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c404b03e-63b4-49f3-91a3-9342931c5496",
+            "source": "#c3219708-f42c-4ceb-aa31-880f9feb87fa",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "fe57e89d-f8eb-4807-8e88-65b6e9b532be",
+                "control-id": "KMS.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "a159f939-7a8b-47fa-8f88-901e3ed59899",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "c3219708-f42c-4ceb-aa31-880f9feb87fa",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

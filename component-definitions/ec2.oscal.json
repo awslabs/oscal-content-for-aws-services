@@ -1,0 +1,2559 @@
+{
+  "component-definition": {
+    "uuid": "068a6423-7c5d-4d12-929f-e2eda78ce997",
+    "metadata": {
+      "title": "Amazon Elastic Compute Cloud",
+      "last-modified": "2026-03-31T19:45:48.190447+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "9548dcd4-43c0-42bb-afa0-bd66659f6702",
+        "type": "service",
+        "title": "Amazon Elastic Compute Cloud",
+        "description": "Amazon Elastic Compute Cloud (Amazon EC2) provides scalable virtual computing capacity in the cloud, allowing users to launch and manage virtual server instances to run applications.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2"
+          },
+          {
+            "name": "version",
+            "value": "2016-11-15"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SUBZONAL"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Elastic Compute Cloud (EC2)",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "Amazon Elastic Compute Cloud",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ec2"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ec2"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ec2"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ec2"
+          }
+        ],
+        "links": [
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/ec2/",
+            "rel": "reference"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/AWSCloudFormation/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a9aa824a-b837-4647-ab0c-e0c4d7afe851",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b628b835-3827-4bdb-b2b0-a07fbaf2e682",
+                "control-id": "EC2.1",
+                "description": "Security Hub control EC2.1"
+              },
+              {
+                "uuid": "7ba631b1-c90c-42c7-b3a4-41e49ba5141a",
+                "control-id": "EC2.10",
+                "description": "Security Hub control EC2.10"
+              },
+              {
+                "uuid": "77f35885-55e5-4d3a-a2b1-afd50df041f1",
+                "control-id": "EC2.12",
+                "description": "Security Hub control EC2.12"
+              },
+              {
+                "uuid": "b2fa6457-3d9d-415c-8479-51e4d63e043a",
+                "control-id": "EC2.13",
+                "description": "Security Hub control EC2.13"
+              },
+              {
+                "uuid": "9cb4d5d5-7707-4fe7-bd28-6200b0904ef8",
+                "control-id": "EC2.14",
+                "description": "Security Hub control EC2.14"
+              },
+              {
+                "uuid": "5296df2e-4ee0-4883-b5e2-78e8888d0970",
+                "control-id": "EC2.15",
+                "description": "Security Hub control EC2.15"
+              },
+              {
+                "uuid": "62719b62-40b7-4d2d-a317-f11fdf27a5c7",
+                "control-id": "EC2.16",
+                "description": "Security Hub control EC2.16"
+              },
+              {
+                "uuid": "030f1dff-92ba-42c7-a2b6-cfc92b2e852e",
+                "control-id": "EC2.17",
+                "description": "Security Hub control EC2.17"
+              },
+              {
+                "uuid": "3d8b7a4e-f465-41a4-ab25-83ef6e16d38e",
+                "control-id": "EC2.170",
+                "description": "Security Hub control EC2.170"
+              },
+              {
+                "uuid": "01f45b9c-49cb-4102-91cb-8ae777e1c4cf",
+                "control-id": "EC2.171",
+                "description": "Security Hub control EC2.171"
+              },
+              {
+                "uuid": "ec1b0e5b-467e-4c02-a695-b734e695dd40",
+                "control-id": "EC2.173",
+                "description": "Security Hub control EC2.173"
+              },
+              {
+                "uuid": "a1be24da-151d-43be-813b-e88739f42f6b",
+                "control-id": "EC2.174",
+                "description": "Security Hub control EC2.174"
+              },
+              {
+                "uuid": "7870ed61-2a43-45ac-877d-6c7c0886d710",
+                "control-id": "EC2.175",
+                "description": "Security Hub control EC2.175"
+              },
+              {
+                "uuid": "0c99050d-a685-4910-b3e8-bcddac51b495",
+                "control-id": "EC2.176",
+                "description": "Security Hub control EC2.176"
+              },
+              {
+                "uuid": "7cd35755-219a-44ba-9b3b-6e52b51fc84a",
+                "control-id": "EC2.177",
+                "description": "Security Hub control EC2.177"
+              },
+              {
+                "uuid": "3bc7520c-1159-4e04-a7e3-35d14e38d923",
+                "control-id": "EC2.178",
+                "description": "Security Hub control EC2.178"
+              },
+              {
+                "uuid": "2c44ef9b-7963-48a4-a5cd-1472af022d7c",
+                "control-id": "EC2.179",
+                "description": "Security Hub control EC2.179"
+              },
+              {
+                "uuid": "00f05f4a-3d56-4af3-baf3-47a00af21813",
+                "control-id": "EC2.18",
+                "description": "Security Hub control EC2.18"
+              },
+              {
+                "uuid": "8a406c6a-1454-4e94-85d0-1dfd40a52baf",
+                "control-id": "EC2.180",
+                "description": "Security Hub control EC2.180"
+              },
+              {
+                "uuid": "8e5069ad-5b40-4f3f-8a72-506423c360c2",
+                "control-id": "EC2.181",
+                "description": "Security Hub control EC2.181"
+              },
+              {
+                "uuid": "8196206f-8ec9-4bec-bd72-f22f82b6bc9e",
+                "control-id": "EC2.182",
+                "description": "Security Hub control EC2.182"
+              },
+              {
+                "uuid": "0b3675f1-2bfb-4e5f-a320-da0981f46c1b",
+                "control-id": "EC2.19",
+                "description": "Security Hub control EC2.19"
+              },
+              {
+                "uuid": "3a78b58b-1890-4814-ab95-7a2eeefaca32",
+                "control-id": "EC2.2",
+                "description": "Security Hub control EC2.2"
+              },
+              {
+                "uuid": "217874b3-796c-444a-b2b7-25474b435be1",
+                "control-id": "EC2.20",
+                "description": "Security Hub control EC2.20"
+              },
+              {
+                "uuid": "1c4393eb-4c5e-4ea9-8b2e-e807f78c8599",
+                "control-id": "EC2.21",
+                "description": "Security Hub control EC2.21"
+              },
+              {
+                "uuid": "d76c7ea1-4e6a-4450-aa8b-e4ab7871a288",
+                "control-id": "EC2.22",
+                "description": "Security Hub control EC2.22"
+              },
+              {
+                "uuid": "9efccce1-aec8-4342-a6f2-7893f972d912",
+                "control-id": "EC2.23",
+                "description": "Security Hub control EC2.23"
+              },
+              {
+                "uuid": "eeea9ce2-4c96-498e-94f3-89521ddb5862",
+                "control-id": "EC2.24",
+                "description": "Security Hub control EC2.24"
+              },
+              {
+                "uuid": "bd1984f4-a9d8-47f5-9d55-64aed5d11521",
+                "control-id": "EC2.25",
+                "description": "Security Hub control EC2.25"
+              },
+              {
+                "uuid": "29757248-74d1-4e48-aea8-92e1fde062f3",
+                "control-id": "EC2.28",
+                "description": "Security Hub control EC2.28"
+              },
+              {
+                "uuid": "c3cbf198-500e-4ba6-a9f8-2f8bdaa36bde",
+                "control-id": "EC2.3",
+                "description": "Security Hub control EC2.3"
+              },
+              {
+                "uuid": "48816058-e313-4163-9feb-a10a1664d313",
+                "control-id": "EC2.4",
+                "description": "Security Hub control EC2.4"
+              },
+              {
+                "uuid": "12ffeec3-82fe-4893-af65-e8fee1a3f517",
+                "control-id": "EC2.51",
+                "description": "Security Hub control EC2.51"
+              },
+              {
+                "uuid": "cb9e4fd5-b37a-44a2-9ef8-498777dd1d63",
+                "control-id": "EC2.53",
+                "description": "Security Hub control EC2.53"
+              },
+              {
+                "uuid": "7b952c99-963f-4746-a989-a9e84367d306",
+                "control-id": "EC2.54",
+                "description": "Security Hub control EC2.54"
+              },
+              {
+                "uuid": "4384917d-75f7-401f-896c-a2496cca7e39",
+                "control-id": "EC2.55",
+                "description": "Security Hub control EC2.55"
+              },
+              {
+                "uuid": "2b46b2b6-ccef-4b25-a2da-f6fee916020a",
+                "control-id": "EC2.56",
+                "description": "Security Hub control EC2.56"
+              },
+              {
+                "uuid": "07f255bf-607e-4609-8fc6-adf7040668a7",
+                "control-id": "EC2.57",
+                "description": "Security Hub control EC2.57"
+              },
+              {
+                "uuid": "6ec45689-f578-4a3a-95f8-9dd47eff6d49",
+                "control-id": "EC2.58",
+                "description": "Security Hub control EC2.58"
+              },
+              {
+                "uuid": "bb15bbab-1039-4ed6-bdff-90dfc50b6ef9",
+                "control-id": "EC2.6",
+                "description": "Security Hub control EC2.6"
+              },
+              {
+                "uuid": "975fec75-0862-4ac4-a2c6-68b8f93a23e0",
+                "control-id": "EC2.60",
+                "description": "Security Hub control EC2.60"
+              },
+              {
+                "uuid": "472d8962-aacb-4423-8dbe-610c0b190717",
+                "control-id": "EC2.7",
+                "description": "Security Hub control EC2.7"
+              },
+              {
+                "uuid": "ef7c93e8-f43d-475f-875e-45a49b110e03",
+                "control-id": "EC2.8",
+                "description": "Security Hub control EC2.8"
+              },
+              {
+                "uuid": "07aed5e1-8dac-4899-a976-ff4eaa7c7f95",
+                "control-id": "EC2.9",
+                "description": "Security Hub control EC2.9"
+              },
+              {
+                "uuid": "368acab3-6438-4256-b4a1-2b0f6844054f",
+                "control-id": "Kinesis.1",
+                "description": "Security Hub control Kinesis.1"
+              },
+              {
+                "uuid": "f773109d-e019-4108-a060-eed502717f31",
+                "control-id": "SSM.1",
+                "description": "Security Hub control SSM.1"
+              },
+              {
+                "uuid": "1c605897-0b5d-4681-9f8c-0f699cb67d96",
+                "control-id": "SSM.2",
+                "description": "Security Hub control SSM.2"
+              },
+              {
+                "uuid": "f40d8aaf-5e3f-4f70-9cec-31f33025379c",
+                "control-id": "SSM.3",
+                "description": "Security Hub control SSM.3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d66bf575-80e6-47cd-9a49-a6b0d3219264",
+        "type": "service",
+        "title": "AWS EC2 Instance Connect",
+        "description": "AWS EC2 Instance Connect provides a simple and secure way to connect to your Amazon EC2 instances using Secure Shell (SSH) without needing to manage SSH keys.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2 Instance Connect"
+          },
+          {
+            "name": "label",
+            "value": "AWS EC2 Instance Connect",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ec2-instance-connect"
+          }
+        ],
+        "links": [
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "8d3e075c-ef94-4bf2-b39f-19a3672d2e05",
+            "text": "Asia Pacific (Malaysia)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "5f11f19b-2c27-4f7a-b716-25a676636aab",
+            "text": "Canada West (Calgary)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#f299e1dc-30a4-43de-a304-0d9c26c1f875",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "e5966f5a-1ad2-4986-a0b2-e69fd1b9fe7e",
+        "type": "software",
+        "title": "ebs-snapshot-public-restorable-check",
+        "description": "Checks whether Amazon Elastic Block Store snapshots are not publicly restorable.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "76da3d4d-7cb3-41b8-8270-0c0410fbd7fe",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0e5aebec-c89e-483b-8c72-2eedad895939",
+                "control-id": "EC2.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3d5979b1-9464-4b11-8ed4-1440372eff08",
+        "type": "software",
+        "title": "service-vpc-endpoint-enabled",
+        "description": "Checks whether Service Endpoint for the service provided in rule parameter is created for each Amazon VPC. The rule returns NON_COMPLIANT if an Amazon VPC doesn't have a VPC endpoint created for the service.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SERVICE_VPC_ENDPOINT_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ba2f779c-57f2-4bd9-8c57-cf2884669658",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "755915c2-825b-4748-a037-cffcb6fb9ee0",
+                "control-id": "EC2.10",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "36eab750-ae80-4030-84fd-c7db393653ea",
+        "type": "software",
+        "title": "eip-attached",
+        "description": "Checks whether all Elastic IP addresses that are allocated to a VPC are attached to EC2 instances or in-use elastic network interfaces (ENIs).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EIP_ATTACHED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::EIP"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8d10ce6e-e270-4b46-adf9-6768e34a6e60",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "351138e7-995b-4660-9c4b-53af14281b6a",
+                "control-id": "EC2.12",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "687977e3-6e71-431c-af57-170e1e0fca85",
+        "type": "software",
+        "title": "restricted-ssh",
+        "description": "Checks whether the incoming SSH traffic for the security groups is accessible. The rule is compliant when the IP addresses of the incoming SSH traffic in the security groups are restricted. This rule applies only to IPv4.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "INCOMING_SSH_DISABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::SecurityGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "17657c7b-b889-4811-9412-0d5df287e787",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "37162048-58d2-4a06-b201-6769aee99313",
+                "control-id": "EC2.13",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "52289bb9-cfbf-4cbd-8821-fd640755a992",
+        "type": "software",
+        "title": "vpc-sg-restricted-common-ports",
+        "description": "Checks whether the security groups in use do not allow unrestricted incoming TCP traffic to the specified ports. The rule is NON_COMPLIANT if a security group allows inbound traffic from 0.0.0.0/0 or ::/0 to the specified ports.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "RESTRICTED_INCOMING_TRAFFIC"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::SecurityGroup"
+          },
+          {
+            "name": "blockedPort1",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "3389",
+            "class": "InputParameter"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8c8e609f-18c7-477d-bc82-a02892592d5a",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b6fd3bd0-8e2e-4865-a784-737e58e119f6",
+                "control-id": "EC2.19",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "bb69d224-34e3-4007-982a-a05c044d26e9",
+        "type": "software",
+        "title": "subnet-auto-assign-public-ip-disabled",
+        "description": "Checks if Amazon Virtual Private Cloud (Amazon VPC) subnets are assigned a public IP address. This rule is NON_COMPLIANT if Amazon VPC has subnets that are assigned a public IP address.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "SUBNET_AUTO_ASSIGN_PUBLIC_IP_DISABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::Subnet"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "ca2c2695-0436-44f6-b452-d095df0de748",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5785071d-66cb-4017-aa92-135ce1e98a9a",
+                "control-id": "EC2.15",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "177cf669-81b1-4c6c-9459-8ada486f9e65",
+        "type": "software",
+        "title": "vpc-network-acl-unused-check",
+        "description": "Checks if there are unused Network Access Control Lists (NACLs). The rule is NON_COMPLIANT if an NACL is not associated with a subnet.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "VPC_NETWORK_ACL_UNUSED_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::NetworkAcl"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "76756d29-955f-48e8-8156-3306e66b89bf",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "117818d2-881c-4af6-882d-ab2914070790",
+                "control-id": "EC2.16",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b8570b3a-9784-46f8-80ab-361cf2f82b9a",
+        "type": "software",
+        "title": "ec2-instance-multiple-eni-check",
+        "description": "This control checks to see if Amazon EC2 instance uses multiple ENI/EFA. This control will pass if single network adapters is used.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_INSTANCE_MULTIPLE_ENI_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::Instance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "061bb3f9-916c-41a6-8eed-f58daea9850f",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "50819ed6-215c-41df-89bb-9c6394b48736",
+                "control-id": "EC2.17",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "64db6f21-5b7f-4f32-90a4-38c79e899a2f",
+        "type": "software",
+        "title": "ec2-launch-template-imdsv2-check",
+        "description": "Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2). The rule is NON_COMPLIANT if 'Metadata version' is not specified as V2 (IMDSv2).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_LAUNCH_TEMPLATE_IMDSV2_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::LaunchTemplate"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "32f5e633-5d74-422a-99a9-51065bedff17",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6847c680-c3d1-4b94-8c89-f89dab6896e2",
+                "control-id": "EC2.170",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "cebe4e27-844d-49bb-96db-5b12e6d0fd0d",
+        "type": "software",
+        "title": "ec2-vpn-connection-logging-enabled",
+        "description": "Checks if AWS Site-to-Site VPN connections have Amazon CloudWatch logging enabled for both tunnels. The rule is NON_COMPLIANT if a Site-to-Site VPN connection does not have CloudWatch logging enabled for either or both tunnels.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_VPN_CONNECTION_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::VPNConnection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5c3bbbe3-b724-42ab-bfe3-f0862c16072b",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "41ba8033-7659-4ff7-a7da-5d7b565f17fa",
+                "control-id": "EC2.171",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "0e74e444-abab-4b51-a1b0-128b20dbb16f",
+        "type": "software",
+        "title": "ec2-spot-fleet-request-ct-encryption-at-rest",
+        "description": "Checks if Amazon EC2 Spot Fleet requests have encrypted Amazon Elastic Block Store (Amazon EBS) volumes for all launched EC2 instances. The rule is NON_COMPLIANT if any of the EBS volumes are not encrypted at rest.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_SPOT_FLEET_REQUEST_CT_ENCRYPTION_AT_REST"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::SpotFleet"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "2e6dc212-f3ee-4b66-87c3-8f2403b7f400",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "75852ffa-2b97-4547-a33c-aa40fe66933f",
+                "control-id": "EC2.173",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "085db102-6444-4af9-b590-4e2488598d8f",
+        "type": "software",
+        "title": "ec2-dhcp-options-tagged",
+        "description": "Checks if Amazon EC2 DHCP options have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_DHCP_OPTIONS_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::DHCPOptions"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6f91ac45-c99e-4c1d-a02a-17f2c1029a20",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3eca0070-25e9-412c-8b76-de33e136fb3b",
+                "control-id": "EC2.174",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "37ed9c96-9470-44ed-b163-3eab320bf5fc",
+        "type": "software",
+        "title": "ec2-launch-template-tagged",
+        "description": "Checks if Amazon EC2 launch templates have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_LAUNCH_TEMPLATE_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::LaunchTemplate"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "66e849b9-d1d6-4c58-900a-9c62f0d2c4c7",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "af7924e5-ba5f-4742-a6b5-0d862fe62888",
+                "control-id": "EC2.175",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a5054fe2-8781-452c-a4fc-0768cac0c89c",
+        "type": "software",
+        "title": "ec2-prefix-list-tagged",
+        "description": "Checks if Amazon EC2 managed prefix lists have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_PREFIX_LIST_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::PrefixList"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "002f397e-5050-4193-b40e-4a67a65f7246",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e9770cce-aeb7-4383-8349-9cdba2b95c98",
+                "control-id": "EC2.176",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3eb93545-be67-4539-bbbb-13b3df35deba",
+        "type": "software",
+        "title": "ec2-traffic-mirror-session-tagged",
+        "description": "Checks if Amazon EC2 traffic mirror sessions have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_TRAFFIC_MIRROR_SESSION_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::TrafficMirrorSession"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "04ac5a30-b0ae-4176-be62-c245e760294c",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "fab779e3-4e09-47c0-b6c3-427dd685c41e",
+                "control-id": "EC2.177",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6aaf339a-4afd-4e0e-93a4-99a0dcb2bd98",
+        "type": "software",
+        "title": "ec2-traffic-mirror-filter-tagged",
+        "description": "Checks if Amazon EC2 traffic mirror filters have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_TRAFFIC_MIRROR_FILTER_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::TrafficMirrorFilter"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "bda2fa42-949c-4865-9e25-e73162274fa6",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7b7b7789-72f6-4cad-bdc4-0d24d8d51945",
+                "control-id": "EC2.178",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "947e4039-e4f8-4650-b90a-a913d6d7a5cf",
+        "type": "software",
+        "title": "ec2-traffic-mirror-target-tagged",
+        "description": "Checks if Amazon EC2 traffic mirror targets have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_TRAFFIC_MIRROR_TARGET_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::TrafficMirrorTarget"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d3b3381d-f312-486e-ab7a-d737f49f3a7f",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "677c96b4-58a8-46dc-bdd9-e713eb8142ca",
+                "control-id": "EC2.179",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "33e053a7-f73c-462f-8705-2fcf91e8b26a",
+        "type": "software",
+        "title": "vpc-sg-open-only-to-authorized-ports",
+        "description": "This control checks whether the security groups allow unrestricted incoming traffic. The control fails if ports allow unrestricted traffic on ports other than 80 and 443, which are default values for parameter authorizedTcpPorts.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "VPC_SG_OPEN_ONLY_TO_AUTHORIZED_PORTS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::SecurityGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a2d88214-976b-4a3a-be4e-be1861554da0",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8ffca727-c4e3-4d15-838b-7ce3a3acdc9e",
+                "control-id": "EC2.18",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2da838a4-2a43-4c1a-991d-eee8f68f85e8",
+        "type": "software",
+        "title": "ec2-enis-source-destination-check-enabled",
+        "description": "Checks if EC2 ENIs managed by users have source/destination check enabled. The rule is NON_COMPLIANT if source/destination check is disabled on these ENIs for 'lambda', 'aws_codestar_connections_managed', 'branch', 'efa', 'interface', and 'quicksight'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_ENIS_SOURCE_DESTINATION_CHECK_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::NetworkInterface"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f50f30fe-2b36-4701-a072-91fafad49060",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ab11d04a-8532-40d2-a7de-ccfd4e6bb2ef",
+                "control-id": "EC2.180",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7401e0b6-b5e0-4ca0-86d8-3c3386fb06ba",
+        "type": "software",
+        "title": "ec2-launch-templates-ebs-volume-encrypted",
+        "description": "Checks whether Amazon EC2 launch templates have encryption enabled for all attached EBS volumes.The rule is NON_COMPLIANT if encryption is set to False for any EBS volume configured in the launch template.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_LAUNCH_TEMPLATES_EBS_VOLUME_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::LaunchTemplate"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "99717527-c5d8-4329-9b64-9691583e423c",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "25d79aee-fa87-4fb6-878a-fb5f8d6ee27d",
+                "control-id": "EC2.181",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c86ed704-a84c-44ac-9ef9-5755e1ed5081",
+        "type": "software",
+        "title": "ebs-snapshot-block-public-access",
+        "description": "Checks if the public access is blocked for Amazon EBS snapshots in an AWS Region. The rule is NON_COMPLIANT if public access for EBS snapshots in an AWS Region is not blocked.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EBS_SNAPSHOT_BLOCK_PUBLIC_ACCESS"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::SnapshotBlockPublicAccess"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "1db5965c-3361-4fad-954e-e43c419f7048",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "3a558fa3-db9d-4c81-ab05-21475902c298",
+                "control-id": "EC2.182",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "e56e14a0-1ed0-4005-9b06-198979bd22f9",
+        "type": "software",
+        "title": "vpc-default-security-group-closed",
+        "description": "Checks whether the default security group for VPC is closed.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "VPC_DEFAULT_SECURITY_GROUP_CLOSED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::SecurityGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "b973d78f-cff9-4fcd-a029-0cb5295c2f00",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "6a878954-b135-4737-ab28-20fc45adbe6f",
+                "control-id": "EC2.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a67ccceb-6011-4f6d-bc50-8460b48e6273",
+        "type": "software",
+        "title": "vpc-vpn-2-tunnels-up",
+        "description": "This control checks that both VPN tunnels provided by AWS Site-to-Site VPN are in UP status. The control fails if one or both tunnels are in DOWN status.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "VPC_VPN_2_TUNNELS_UP"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::VPNConnection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e01a6414-22ca-409c-be6b-54181458c3cd",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "01fd5f19-3b0b-415e-9de6-9b774200ad2a",
+                "control-id": "EC2.20",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7f81f0b5-feae-4f96-bd0f-370abce3bb28",
+        "type": "software",
+        "title": "nacl-no-unrestricted-ssh-rdp",
+        "description": "This control checks if default ports for SSH/RDP ingress traffic for network access control lists (NACLs) is unrestricted. The rule fails if a NACL inbound entry allows a source CIDR block of '0.0.0.0/0' or '::/0' for ports 22 or 3389",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "NACL_NO_UNRESTRICTED_SSH_RDP"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::NetworkAcl"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "feffd3dc-6a2b-4de2-8615-38c97c8eaf91",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "36bb83b7-1c42-4a73-955e-399cf3ebc0ff",
+                "control-id": "EC2.21",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "52ec257a-8c0f-4969-9b43-a8ee215364a4",
+        "type": "software",
+        "title": "ec2-security-group-attached-to-eni-periodic",
+        "description": "This AWS control checks that security groups are attached to Amazon EC2 instances or to an elastic network interface. The control will fail the security group is not associated with an Amazon EC2 instance or an elastic network interface.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_SECURITY_GROUP_ATTACHED_TO_ENI_PERIODIC"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::NetworkInterface"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3ae3ab57-fa4b-4ba3-8081-6000c0ec6dd9",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "958ec94e-9342-47bf-aba0-56d1e6244c49",
+                "control-id": "EC2.22",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "88e0082f-0653-4d40-9a1e-69f82ae97362",
+        "type": "software",
+        "title": "ec2-transit-gateway-auto-vpc-attach-disabled",
+        "description": "This control checks if EC2 Transit Gateways are automatically accepting shared VPC attachments requests. This control will fail for a Transit Gateway that automatically accept shared VPC attachment requests.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_TRANSIT_GATEWAY_AUTO_VPC_ATTACH_DISABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::TransitGateway"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "41ef9ed0-8fb8-4cdc-b5ba-7269fdbd9689",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "5e8ddfd6-7613-4fd5-914c-89f844b6df0c",
+                "control-id": "EC2.23",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "43a9df67-442f-465c-877a-3f8306ab9ef7",
+        "type": "software",
+        "title": "ec2-paravirtual-instance-check",
+        "description": "This control checks if the virtualization type of an EC2 instance is paravirtual. This control fails if for an EC2 instance if 'virtualizationType' is set to 'paravirtual'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_PARAVIRTUAL_INSTANCE_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::Instance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9aca7c87-e59f-46e8-abd3-ac38b3d2a2a9",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "31606d9a-abce-435c-99a8-c780f5b3bcaa",
+                "control-id": "EC2.24",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "78d55525-d101-4651-ba80-a2cdfd8d2f38",
+        "type": "software",
+        "title": "ec2-launch-template-public-ip-disabled",
+        "description": "Checks if Amazon EC2 Launch Templates are set to assign public IP addresses to Network Interfaces. The rule is NON_COMPLIANT if the default version of an EC2 Launch Template has at least 1 Network Interface with  'AssociatePublicIpAddress' set to 'true'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_LAUNCH_TEMPLATE_PUBLIC_IP_DISABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::LaunchTemplate"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "11116eef-a5d6-4cf4-8574-4292e8ba24a9",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "8bdcf935-707e-42ed-ab42-b2af3c3921f8",
+                "control-id": "EC2.25",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c63cc7b4-2f2a-40b0-99ef-7e65131e6239",
+        "type": "software",
+        "title": "ebs-resources-protected-by-backup-plan",
+        "description": "This control evaluates if Amazon EBS volumes are in backup plans.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EBS_RESOURCES_PROTECTED_BY_BACKUP_PLAN"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e97f28d4-8ade-4bc8-b9ef-43a94ada8114",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "170a782e-41b6-4b51-8616-96e662e78840",
+                "control-id": "EC2.28",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7a677ac9-6572-4efb-9283-4b1b38c4ebe4",
+        "type": "software",
+        "title": "encrypted-volumes",
+        "description": "Checks whether the EBS volumes that are in an attached state are encrypted. If you specify the ID of a KMS key for encryption using the kmsId parameter, the rule checks if the EBS volumes in an attached state are encrypted with that KMS key.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ENCRYPTED_VOLUMES"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::Volume"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6b75c4b3-9ab2-4ed4-97aa-830f9527e702",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "28961a6a-f74b-4c09-8eba-5b31cb7c8b9f",
+                "control-id": "EC2.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "4e787f20-d41d-4f52-9170-c329d6668190",
+        "type": "software",
+        "title": "ec2-stopped-instance",
+        "description": "Checks whether there are instances stopped for more than the allowed number of days.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_STOPPED_INSTANCE"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::Instance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "55ad1a87-6e4e-4c0c-a76b-61fa0c9aac4d",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "a5f3be43-1073-44a1-9cc7-d7e154ddf57f",
+                "control-id": "EC2.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "3182d965-1769-4abf-aa8f-4824cb6833ab",
+        "type": "software",
+        "title": "ec2-client-vpn-connection-log-enabled",
+        "description": "Checks if AWS Client VPN endpoint has client connection logging enabled. The rule is NON_COMPLIANT if 'Configuration.ConnectionLogOptions.Enabled' is set to false.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_CLIENT_VPN_CONNECTION_LOG_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::ClientVpnEndpoint"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "49975e8a-bb66-483a-8fb4-4aa53a5d9248",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4f14f49f-c0d9-4c4c-bf1f-8d857827202b",
+                "control-id": "EC2.51",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "03c2fbe8-b39f-4807-9990-e2e99f7733cd",
+        "type": "software",
+        "title": "vpc-sg-port-restriction-check",
+        "description": "Checks if security groups restrict incoming TCP or UDP traffic from IPv4 (0.0.0.0/0) or IPv6 (::/0) to specified ports. The rule is NON_COMPLIANT if security groups allow incoming traffic over the full IP range from specified protocols to specified ports.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "VPC_SG_PORT_RESTRICTION_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9c0381d9-354a-40c6-88f3-feb79ec75539",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f65136a2-5eaf-489c-8238-2ae3877dd5e2",
+                "control-id": "EC2.54",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "eee8807b-7aaa-4548-b63c-1be6907655ea",
+        "type": "software",
+        "title": "vpc-endpoint-enabled-ssm-incidents",
+        "description": "Checks if each service specified in the parameter has an Amazon VPC endpoint. The rule is NON_COMPLIANT if Amazon VPC does not have a VPC endpoint created for each specified service. Optionally, you can specify certain VPCs for the rule to check.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "VPC_ENDPOINT_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "eb612e32-d354-473c-be27-cd5d64d50774",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "03860c41-a3e5-482d-85a3-f86aa250804c",
+                "control-id": "EC2.60",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "06a77287-c4e4-4c30-a28f-0aace7931c6f",
+        "type": "software",
+        "title": "vpc-flow-logs-enabled",
+        "description": "Checks whether Amazon Virtual Private Cloud flow logs are found and enabled for Amazon VPC.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "VPC_FLOW_LOGS_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::VPC"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "c6edb830-43eb-4f70-aacf-dcc39521d6f3",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7d515672-21c6-411f-a1cb-bbd2f55f3201",
+                "control-id": "EC2.6",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "854091ce-2db1-46f2-aee8-66f35ed10c02",
+        "type": "software",
+        "title": "ec2-ebs-encryption-by-default",
+        "description": "Checks that Amazon Elastic Block Store (EBS) encryption is enabled by default. The rule is NON_COMPLIANT if the encryption is not enabled.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_EBS_ENCRYPTION_BY_DEFAULT"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d1f93aab-acea-406e-b968-28939fd06f91",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "1ff01ad5-6b7e-41c0-b1db-16f858d1727c",
+                "control-id": "EC2.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a55942c4-5481-4e2d-81af-cffbef07d0fd",
+        "type": "software",
+        "title": "ec2-imdsv2-check",
+        "description": "Checks whether your Amazon Elastic Compute Cloud (Amazon EC2) instance metadata version is configured with Instance Metadata Service Version 2 (IMDSv2).",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_IMDSV2_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::Instance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "038e50b6-02e4-41e3-8f78-5ba2f7009d5f",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "58a7981e-8697-41cd-8a38-4f0a31398d98",
+                "control-id": "EC2.8",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "df78b895-63f4-4fa5-92bb-1182f850a37b",
+        "type": "software",
+        "title": "ec2-instance-no-public-ip",
+        "description": "Checks whether Amazon Elastic Compute Cloud (Amazon EC2) instances have a public IP association. The rule is NON_COMPLIANT if the publicIp field is present in the Amazon EC2 instance configuration item. This rule applies only to IPv4.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_INSTANCE_NO_PUBLIC_IP"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::Instance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "326ec0c8-c0a9-465d-a4c6-2020f7bec98f",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "314aa466-6417-4c67-b93a-f35589ac1aa0",
+                "control-id": "EC2.9",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5fe17378-46b1-4018-a085-ce101498cb9a",
+        "type": "software",
+        "title": "kinesis-stream-encrypted",
+        "description": "This control checks if Amazon Kinesis streams are encrypted at rest with server-side encryption. This control fails for a Kinesis stream if 'StreamEncryption' is not present.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "KINESIS_STREAM_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::Kinesis::Stream"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a7bf2003-5319-4eda-a05d-452500695d7c",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f9c2f818-4b0a-4376-ba95-0521c13a7cff",
+                "control-id": "Kinesis.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "838146cb-7c1f-4b6f-952f-1d9590423027",
+        "type": "software",
+        "title": "ec2-instance-managed-by-ssm",
+        "description": "Checks whether the Amazon EC2 instances in your account are managed by AWS Systems Manager.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_INSTANCE_MANAGED_BY_SSM"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SSM::ManagedInstanceInventory"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::EC2::Instance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "4b9a8f91-8623-4aaa-9c53-959948016446",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e3f10a15-d763-4f46-a4ed-a445d25f7a82",
+                "control-id": "SSM.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "5e7fb171-27dd-47b1-8019-d342ecd5b5e3",
+        "type": "software",
+        "title": "ec2-managedinstance-patch-compliance",
+        "description": "Checks whether the compliance status of the Amazon EC2 Systems Manager patch compliance is COMPLIANT or NON_COMPLIANT after the patch installation on the instance.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_MANAGEDINSTANCE_PATCH_COMPLIANCE_STATUS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SSM::PatchCompliance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f0e43b81-89d6-4875-894c-2ffda6f67f7b",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "eae00037-e86b-4d16-998c-9eea399f0d4f",
+                "control-id": "SSM.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "2fba6ad3-abed-440d-b7af-1cb69d9a9618",
+        "type": "software",
+        "title": "ec2-managedinstance-association-compliance-status-check",
+        "description": "Checks whether the compliance status of the Amazon EC2 Systems Manager association compliance is COMPLIANT or NON_COMPLIANT after the association execution on the instance. The rule is COMPLIANT if the field status is COMPLIANT.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "EC2_MANAGEDINSTANCE_ASSOCIATION_COMPLIANCE_STATUS_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::SSM::AssociationCompliance"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "9ddc96f0-6cd5-4aeb-a6fa-d6d4a5e385c8",
+            "source": "#eced4894-6165-46f9-bdd0-748ef5b41f30",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "880138d1-6d11-447c-ae8a-3d17d78bd120",
+                "control-id": "SSM.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "f299e1dc-30a4-43de-a304-0d9c26c1f875",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "eced4894-6165-46f9-bdd0-748ef5b41f30",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "component-definition": {
+    "uuid": "ecc4afaf-97bf-4328-928c-cf92c7d4346c",
+    "metadata": {
+      "title": "AWS CodeBuild",
+      "last-modified": "2026-03-31T19:45:48.165250+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "df4b4be2-e31c-4bab-82fe-a2a7ebe57027",
+        "type": "service",
+        "title": "AWS CodeBuild",
+        "description": "AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces ready-to-deploy software packages without requiring you to provision or manage your own build servers.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CodeBuild"
+          },
+          {
+            "name": "version",
+            "value": "2016-10-06"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS CodeBuild",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codebuild"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codebuild"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codebuild"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "codebuild"
+          }
+        ],
+        "links": [
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "78d3924d-3f59-4d27-86d6-49dcfd7fdb92",
+            "text": "Africa (Cape Town)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "cea84268-a178-4751-9f98-9536c8e6783f",
+            "text": "Asia Pacific (Osaka)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "ff81523a-386d-4a0a-808d-72a37ac0844e",
+            "text": "Asia Pacific (Hyderabad)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "493e319a-4820-4954-a7f2-ec358b0edb39",
+            "text": "Asia Pacific (Jakarta)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "6714ac0f-e41d-4ad2-8e37-a6a23d4b831f",
+            "text": "Asia Pacific (Melbourne)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "91770b66-a2ea-4ccd-a9e8-81b6b4c6e01f",
+            "text": "Europe (Zurich)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "9792ff54-ee9e-475a-8a51-ad6b05b52302",
+            "text": "Europe (Milan)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "1d009971-9229-437f-8168-479a9f101cb1",
+            "text": "Europe (Spain)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "c2d15d55-5240-4fa3-9f8a-3f01c0e68641",
+            "text": "Israel (Tel Aviv)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#819ef637-d057-40bd-8c09-b81fc6c10e93",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/codebuild/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "36de73ec-a519-4959-8cf2-b5d59f7d3230",
+            "source": "#fd0fcbb7-a9c7-485b-b9f7-e1c31fa5d201",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "b8d5b5a3-aa7e-4ac2-9db7-36270dd662a1",
+                "control-id": "CodeBuild.1",
+                "description": "Security Hub control CodeBuild.1"
+              },
+              {
+                "uuid": "b8e31c90-2c9d-4bd5-b0d2-d723c5b5ba2a",
+                "control-id": "CodeBuild.2",
+                "description": "Security Hub control CodeBuild.2"
+              },
+              {
+                "uuid": "f756b39c-40fd-4df7-9bef-71fa04cd4a40",
+                "control-id": "CodeBuild.3",
+                "description": "Security Hub control CodeBuild.3"
+              },
+              {
+                "uuid": "eca73c34-4ff6-4a73-8dac-afc982d37504",
+                "control-id": "CodeBuild.4",
+                "description": "Security Hub control CodeBuild.4"
+              },
+              {
+                "uuid": "fa829e1f-b2e0-4c54-9b62-20b6bda308c3",
+                "control-id": "CodeBuild.7",
+                "description": "Security Hub control CodeBuild.7"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d10207a6-febd-485e-a120-49d6beeeabee",
+        "type": "software",
+        "title": "codebuild-project-source-repo-url-check",
+        "description": "Checks whether the GitHub or Bitbucket source repository URL contains either personal access tokens or user name and password.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CODEBUILD_PROJECT_SOURCE_REPO_URL_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CodeBuild::Project"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e19730ec-088a-4063-bcda-b04e34137ad6",
+            "source": "#fd0fcbb7-a9c7-485b-b9f7-e1c31fa5d201",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "30233299-b90a-476b-9ea8-68d382904410",
+                "control-id": "CodeBuild.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "f93d8755-a949-4b13-b7bf-5fa84ad5614e",
+        "type": "software",
+        "title": "codebuild-project-envvar-awscred-check",
+        "description": "Checks whether the project contains environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CODEBUILD_PROJECT_ENVVAR_AWSCRED_CHECK"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CodeBuild::Project"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fa3b72b4-fcff-4abe-a9eb-da5a5490c999",
+            "source": "#fd0fcbb7-a9c7-485b-b9f7-e1c31fa5d201",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ea64a497-4455-4716-b3be-806cf1e2c31a",
+                "control-id": "CodeBuild.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "572c5659-63d6-4c9b-a195-620b7f2edce2",
+        "type": "software",
+        "title": "codebuild-project-s3-logs-encrypted",
+        "description": "Checks if a AWS CodeBuild project configured with Amazon S3 Logs has encryption enabled for its logs. The rule is NON_COMPLIANT if `encryptionDisabled` is set to `true` in a S3LogsConfig of a CodeBuild project. ",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CODEBUILD_PROJECT_S3_LOGS_ENCRYPTED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CodeBuild::Project"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a92c293a-4062-4ca5-af8f-2eb36c756c10",
+            "source": "#fd0fcbb7-a9c7-485b-b9f7-e1c31fa5d201",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "4e43d259-ca61-4354-bef2-c7e8665415c3",
+                "control-id": "CodeBuild.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6fa38b7c-3785-4bd7-8e88-fea39c948f34",
+        "type": "software",
+        "title": "codebuild-project-logging-enabled",
+        "description": "This control checks whether a CodeBuild project environment has at least one log option enabled. This control fails if s3 or CloudWatch logs aren't present or in DISABLED status. The control passes if the status of either logs is ENABLED.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CODEBUILD_PROJECT_LOGGING_ENABLED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CodeBuild::Project"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8cfa1b29-e5b4-4aa4-9e8c-34713917a5c0",
+            "source": "#fd0fcbb7-a9c7-485b-b9f7-e1c31fa5d201",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "daa953fe-37b0-4818-8e35-bc20192c7a2b",
+                "control-id": "CodeBuild.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "8b79049a-6bd4-475f-8593-6f58e6f5a5e9",
+        "type": "software",
+        "title": "codebuild-report-group-encrypted-at-rest",
+        "description": "Checks if CodeBuild ReportGroup is encrypted at rest, The rule is NON_COMPLIANT if CodeBuild ReportGroup is not encrypted at rest",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "CODEBUILD_REPORT_GROUP_ENCRYPTED_AT_REST"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::CodeBuild::ReportGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7448cd3d-9918-4923-88eb-82855c1d9457",
+            "source": "#fd0fcbb7-a9c7-485b-b9f7-e1c31fa5d201",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "87b361db-1bff-4d51-9a0b-1d63aa1ca148",
+                "control-id": "CodeBuild.7",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "819ef637-d057-40bd-8c09-b81fc6c10e93",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "fd0fcbb7-a9c7-485b-b9f7-e1c31fa5d201",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

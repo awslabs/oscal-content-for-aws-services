@@ -1,0 +1,1808 @@
+{
+  "component-definition": {
+    "uuid": "7004f392-9f6b-489c-8bbc-b27f15e99e6c",
+    "metadata": {
+      "title": "AWS IoT",
+      "last-modified": "2026-03-31T19:45:48.231962+00:00",
+      "version": "0.2.1",
+      "oscal-version": "1.2.1",
+      "links": [
+        {
+          "href": "https://github.com/awslabs/oscal-content-for-aws-services",
+          "rel": "GitHub",
+          "text": "Public source of this content"
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "OSCAL Content Author"
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "bbf0a5df-46fc-4797-b3be-5abbea8a9520",
+          "address": {
+            "type": "work",
+            "city": "Seattle",
+            "country": "US"
+          },
+          "props": [
+            {
+              "name": "type",
+              "ns": "http://aws.amazon.com/ns/oscal",
+              "value": "head-quarters"
+            }
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "b0cc9acb-9b8e-4514-a597-82f21aed487a",
+          "type": "organization",
+          "name": "Amazon Web Services",
+          "short-name": "AWS",
+          "links": [
+            {
+              "href": "https://aws.amazon.com"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "b0cc9acb-9b8e-4514-a597-82f21aed487a"
+          ]
+        }
+      ],
+      "remarks": "EXPERIMENTAL USE ONLY. This Open Security Controls Assessment Language (OSCAL) content has been prepared by AWS for informational purposes only. This OSCAL package is experimental and may contain errors or inconsistencies with the authoritative version of published information. Future versions of this OSCAL content, if any, may not be backwards compatible. Our goals for this experiment are to understand customer interest and use-cases for machine-readable compliance artifacts. To that end, AWS needs your [feedback](https://github.com/awslabs/oscal-content-for-aws-services/issues/new) about the quality and usefulness of this content."
+    },
+    "components": [
+      {
+        "uuid": "e58fad70-79ea-4a42-8c28-fba89c91df19",
+        "type": "service",
+        "title": "AWS IoT Greengrass V2",
+        "description": "AWS IoT Greengrass V2 is an open-source edge runtime and cloud service that enables you to build, deploy, and manage intelligent device software on local devices, allowing them to act locally on the data they generate while using the cloud for management, analytics, and storage.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "GreengrassV2"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "ZONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Greengrass",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Greengrass V2",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "greengrass"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "greengrass"
+          },
+          {
+            "name": "label",
+            "value": "AWS Greengrass",
+            "class": "marketingName",
+            "group": "marketing"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/greengrass/",
+            "rel": "reference"
+          }
+        ]
+      },
+      {
+        "uuid": "885b0776-0203-495d-8a48-5fbb430b59af",
+        "type": "service",
+        "title": "AWS IoT",
+        "description": "AWS IoT is a managed cloud platform that enables connected devices to securely interact with cloud applications and other devices.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoT"
+          },
+          {
+            "name": "version",
+            "value": "2015-05-28"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Core",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iot"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iot"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iot"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iot"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/iot/",
+            "rel": "reference"
+          }
+        ]
+      },
+      {
+        "uuid": "a209c1d4-7b17-4a83-9957-58f0b6bfd61e",
+        "type": "service",
+        "title": "AWS IoT Data Plane",
+        "description": "AWS IoT Data Plane enables connected devices to publish and subscribe to MQTT messages, update device shadows, and interact with the AWS IoT message broker in real time.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoT Data Plane"
+          },
+          {
+            "name": "version",
+            "value": "2015-05-28"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Data Plane",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "data-ats.iot"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "data-ats.iot"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "3c2ef1c9-5f44-4cc4-9cb8-f4d8a0af7e4f",
+        "type": "service",
+        "title": "AWS IoT Events Data",
+        "description": "AWS IoT Events Data is a service that enables you to send inputs to and read the state of detectors created in AWS IoT Events.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoT Events Data"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Events Data",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "768c79c0-57e6-48ff-bb20-0d487dc50b3a",
+        "type": "service",
+        "title": "AWS IoT Jobs Data Plane",
+        "description": "AWS IoT Jobs Data Plane enables IoT devices to securely query, update, and manage the execution status of jobs assigned to them through the AWS IoT Jobs service.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoT Jobs Data Plane"
+          },
+          {
+            "name": "version",
+            "value": "2017-09-29"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Jobs Data Plane",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "data.jobs.iot"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iot-jobs-data"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "0a7daacb-d4ef-4b83-8079-025c7adaa412",
+        "type": "service",
+        "title": "Managed integrations for AWS IoT Device Management",
+        "description": "Managed integrations for AWS IoT Device Management is a feature that simplifies the process of connecting and managing IoT devices from multiple third-party manufacturers by providing pre-built integrations that enable seamless device onboarding, control, and interoperability within the AWS IoT ecosystem.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoT Managed Integrations"
+          },
+          {
+            "name": "label",
+            "value": "Managed integrations for AWS IoT Device Management",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "remarks": "NOTICE: this service Component is missing region information due to known limitation that should be resolved in next release."
+      },
+      {
+        "uuid": "d056a866-f9f2-49bc-812c-1c67ba0aea3b",
+        "type": "service",
+        "title": "AWS IoT Wireless",
+        "description": "AWS IoT Wireless is a managed service that enables customers to connect and manage wireless devices using low-power wide area network (LoRaWAN) and Sidewalk connectivity to the AWS Cloud.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoT Wireless"
+          },
+          {
+            "name": "version",
+            "value": "2020-11-22"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Wireless",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "api.iotwireless"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotwireless"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3ba20364-c980-4f86-baa3-6e1a190dd141",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c7918416-9f1d-4650-bbef-ef3d1282e47e",
+                "control-id": "IoTWireless.1",
+                "description": "Security Hub control IoTWireless.1"
+              },
+              {
+                "uuid": "a0edbc05-9fd2-41a4-b720-291f142eb80a",
+                "control-id": "IoTWireless.2",
+                "description": "Security Hub control IoTWireless.2"
+              },
+              {
+                "uuid": "3a244220-3688-4ea9-a375-50bdbdfe8147",
+                "control-id": "IoTWireless.3",
+                "description": "Security Hub control IoTWireless.3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "220fa9d2-9d62-4fc8-abb4-da6a80755631",
+        "type": "service",
+        "title": "AWS IoT FleetWise",
+        "description": "AWS IoT FleetWise is a fully managed service that enables automakers and fleet operators to collect, transform, and transfer vehicle data to the cloud in near-real time for analysis and monitoring.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoTFleetWise"
+          },
+          {
+            "name": "version",
+            "value": "2021-06-17"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT FleetWise",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotfleetwise"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotfleetwise"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotfleetwise"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotfleetwise"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/iot-fleetwise/",
+            "rel": "reference"
+          }
+        ]
+      },
+      {
+        "uuid": "b0993758-d5d7-46b9-887f-8514ffe960b5",
+        "type": "service",
+        "title": "AWS IoT Secure Tunneling",
+        "description": "AWS IoT Secure Tunneling enables secure remote access to IoT devices behind firewalls or NAT gateways without requiring inbound ports to be opened, allowing users to troubleshoot, configure, and manage devices remotely.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoTSecureTunneling"
+          },
+          {
+            "name": "version",
+            "value": "2018-10-05"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Secure Tunneling",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "api.tunneling.iot"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotsecuredtunneling"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e6df7bc4-ca53-4d5f-a074-769e03f23c17",
+            "text": "Asia Pacific (Hong Kong)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e5f83820-113b-4ae0-8781-6f416ea710ac",
+            "text": "China (Ningxia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c69905c4-da48-4625-bed3-083867c9fea6",
+            "text": "Europe (Stockholm)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "f7699fa1-729f-437f-b619-d594adbb7d38",
+            "text": "Europe (London)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "df795e11-2925-457d-8459-ac6127725f10",
+            "text": "Europe (Paris)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "2ed3b2ca-b8ea-46c6-995e-b1c67231c602",
+            "text": "Middle East (UAE)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c50fafd0-4dcd-44d4-b5fa-b463ed4f6a7f",
+            "text": "Middle East (Bahrain)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "116764d1-fdb6-4c22-9c45-eaa9af930e87",
+            "text": "South America (Sao Paulo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "ccc24de2-9a14-4127-8fef-a873795134b7",
+            "text": "AWS GovCloud (US-East)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "14c4c9e1-e810-4b94-8676-d5f3ea6e3603",
+            "text": "US West (N. California)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "1727fb76-5bac-459d-aede-0a7e9dd604cc",
+        "type": "service",
+        "title": "AWS IoT SiteWise",
+        "description": "AWS IoT SiteWise is a managed service that collects, organizes, and analyzes data from industrial equipment and processes at scale.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoTSiteWise"
+          },
+          {
+            "name": "version",
+            "value": "2019-12-02"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT SiteWise",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotsitewise"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotsitewise"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotsitewise"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotsitewise"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "47de8425-ac3e-41af-91d3-d5af3badab5d",
+            "text": "Canada (Central)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "d515906c-a90f-477d-bd44-009762bc3721",
+            "text": "US East (Ohio)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/iot-sitewise/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d61deda5-572d-4915-88b7-e5ea91d5eedd",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "eca274ee-3b28-4b60-bd5c-c7da474c670c",
+                "control-id": "IoTSiteWise.1",
+                "description": "Security Hub control IoTSiteWise.1"
+              },
+              {
+                "uuid": "ccaab1b6-87c7-4c44-8741-d1c6cbb1838c",
+                "control-id": "IoTSiteWise.2",
+                "description": "Security Hub control IoTSiteWise.2"
+              },
+              {
+                "uuid": "139b544a-ea89-46e2-a119-7abae0d2e38f",
+                "control-id": "IoTSiteWise.3",
+                "description": "Security Hub control IoTSiteWise.3"
+              },
+              {
+                "uuid": "6f4803f4-df5e-458a-80fb-eacb0ab92826",
+                "control-id": "IoTSiteWise.4",
+                "description": "Security Hub control IoTSiteWise.4"
+              },
+              {
+                "uuid": "a5380cac-0e82-41b5-a52a-a6aac024c988",
+                "control-id": "IoTSiteWise.5",
+                "description": "Security Hub control IoTSiteWise.5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "80b375a3-658c-4b73-82fd-ea718fb55ebf",
+        "type": "service",
+        "title": "AWS IoT TwinMaker",
+        "description": "AWS IoT TwinMaker is a service that enables developers to create digital twins of real-world systems, such as buildings, factories, and industrial equipment, by integrating data from multiple sources to monitor, simulate, and optimize operations.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IoTTwinMaker"
+          },
+          {
+            "name": "version",
+            "value": "2021-11-29"
+          },
+          {
+            "name": "availability",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "REGIONAL"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT TwinMaker",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iottwinmaker"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iottwinmaker"
+          },
+          {
+            "name": "cloudTrailEventSource",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iottwinmaker"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          },
+          {
+            "name": "iamServicePrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iottwinmaker"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "aa9927c9-6380-4244-b22a-322c281e4d4c",
+            "text": "Asia Pacific (Seoul)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "70fa7b7d-17fb-4518-8716-3cd7c390b5ae",
+            "text": "Asia Pacific (Mumbai)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bb70e675-95bf-49f5-b694-e3407eadcfe4",
+            "text": "Asia Pacific (Singapore)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "46cab444-569e-4113-b0fd-118c30e2f9f2",
+            "text": "Asia Pacific (Sydney)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "5fb68023-b62a-49d3-b883-382ae8f70308",
+            "text": "China (Beijing)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "e2cda7a1-a067-4a0e-bd50-98d885f6c0f2",
+            "text": "Europe (Frankfurt)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "03aeb999-c7b9-44bc-b0d6-39015f9f384e",
+            "text": "AWS GovCloud (US-West)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          },
+          {
+            "href": "https://docs.aws.amazon.com/iot-twinmaker/",
+            "rel": "reference"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "08d43b15-8a09-4042-8399-5f8f2cf48e14",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "AWS Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0acab047-9a5e-4fd5-bb79-580782e55d02",
+                "control-id": "IoTTwinMaker.1",
+                "description": "Security Hub control IoTTwinMaker.1"
+              },
+              {
+                "uuid": "17060eee-d3bf-4940-8a3a-9c997c0b4238",
+                "control-id": "IoTTwinMaker.2",
+                "description": "Security Hub control IoTTwinMaker.2"
+              },
+              {
+                "uuid": "0b565591-e384-418c-921a-9187a3504cb7",
+                "control-id": "IoTTwinMaker.3",
+                "description": "Security Hub control IoTTwinMaker.3"
+              },
+              {
+                "uuid": "bc651122-5668-48e8-8da7-09cadfbec91e",
+                "control-id": "IoTTwinMaker.4",
+                "description": "Security Hub control IoTTwinMaker.4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "28f7dc9b-8197-4b3b-8626-37b015cdd87d",
+        "type": "service",
+        "title": "AWS IoT Core Device Advisor",
+        "description": "AWS IoT Core Device Advisor is a cloud-based, fully managed testing capability that enables developers to validate IoT devices for reliable and secure connectivity with AWS IoT Core before deploying them to production.",
+        "props": [
+          {
+            "name": "service-id",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IotDeviceAdvisor"
+          },
+          {
+            "name": "version",
+            "value": "2020-09-18"
+          },
+          {
+            "name": "label",
+            "value": "AWS IoT Core Device Advisor",
+            "class": "marketingName",
+            "group": "marketing"
+          },
+          {
+            "name": "apiEndpointPrefix",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "api.iotdeviceadvisor"
+          },
+          {
+            "name": "arnNamespace",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "iotdeviceadvisor"
+          },
+          {
+            "name": "lifecycle-stage",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "generally-available"
+          }
+        ],
+        "links": [
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "8fd95175-ca81-4d0d-a793-b3f5ac8bd5ac",
+            "text": "Asia Pacific (Tokyo)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "99a41503-4457-44e8-aa60-a3fdda54590c",
+            "text": "Europe (Ireland)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "bfc13333-2208-4cf5-ba7d-65e6e6c6cbec",
+            "text": "US East (N. Virginia)"
+          },
+          {
+            "href": "#bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+            "rel": "provided-by",
+            "resource-fragment": "c4ce59a5-2c0b-4cc2-8968-0621a3190533",
+            "text": "US West (Oregon)"
+          }
+        ]
+      },
+      {
+        "uuid": "710cb6a2-0435-4f34-b75c-fd0ba749f435",
+        "type": "software",
+        "title": "iotsitewise-asset-model-tagged",
+        "description": "Checks if AWS IoT SiteWise asset models have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTSITEWISE_ASSET_MODEL_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTSiteWise::AssetModel"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "37cccff6-a30c-46dd-a570-92a5228fe0a3",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "ef99b6a2-7b89-4ea8-a160-c56206afd85f",
+                "control-id": "IoTSiteWise.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "07afb58b-7db7-42d2-b056-b41c6f6e8e24",
+        "type": "software",
+        "title": "iotsitewise-dashboard-tagged",
+        "description": "Checks if AWS IoT SiteWise dashboards have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTSITEWISE_DASHBOARD_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTSiteWise::Dashboard"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "336ba19b-db0d-42e8-8a0d-7043e316dd82",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e4796ebd-7f9f-445a-bcab-360de5299a49",
+                "control-id": "IoTSiteWise.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b2242ff8-cee6-4cc3-a51d-3c42bc4422bc",
+        "type": "software",
+        "title": "iotsitewise-gateway-tagged",
+        "description": "Checks if AWS IoT SiteWise gateways have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTSITEWISE_GATEWAY_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTSiteWise::Gateway"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "6c10df56-a25e-4909-a730-7dbc06b2ca8d",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "7f1113d4-9bd4-4f0a-ae76-576ba5adbb87",
+                "control-id": "IoTSiteWise.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c0836840-2ff5-4565-a266-b07246d2190d",
+        "type": "software",
+        "title": "iotsitewise-portal-tagged",
+        "description": "Checks if AWS IoT SiteWise portals have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTSITEWISE_PORTAL_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTSiteWise::Portal"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "203bf5f6-5eb4-4f53-899b-fbeb4f38788a",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "90ef2ece-969c-4e0b-9aa4-15227d0d89a8",
+                "control-id": "IoTSiteWise.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "bfda8ca8-5bc9-45e6-b904-19b081aed4c1",
+        "type": "software",
+        "title": "iotsitewise-project-tagged",
+        "description": "Checks if AWS IoT SiteWise projects have tags. Optionally, you can specify tag keys for the rule. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTSITEWISE_PROJECT_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTSiteWise::Project"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "7d09d93c-1d5e-4ef0-b197-3d0d5a6d980e",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "f67b72c5-5407-4286-a17d-686b0c75e367",
+                "control-id": "IoTSiteWise.5",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "ee1ea7e6-3c61-4ebf-be2f-6f33af7c233b",
+        "type": "software",
+        "title": "iottwinmaker-sync-job-tagged",
+        "description": "Checks if AWS IoT TwinMaker sync jobs have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTTWINMAKER_SYNC_JOB_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTTwinMaker::SyncJob"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "3ef3e3b6-def9-4b50-87cd-28506612ffa0",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "c80eaecc-e44c-4a73-b78e-e48ce795a635",
+                "control-id": "IoTTwinMaker.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "699642f8-76e0-4cc8-a207-7d3f260363b1",
+        "type": "software",
+        "title": "iottwinmaker-workspace-tagged",
+        "description": "Checks if AWS IoT TwinMaker workspaces have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTTWINMAKER_WORKSPACE_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTTwinMaker::Workspace"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8a821332-1a22-4ae5-8b6b-2f811d220e9d",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "0da470ff-6f03-4b5f-a325-5cd608d72e1d",
+                "control-id": "IoTTwinMaker.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "7e9a5622-71c5-4886-ba54-819e9ac15a4b",
+        "type": "software",
+        "title": "iottwinmaker-scene-tagged",
+        "description": "Checks if AWS IoT TwinMaker scenes have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTTWINMAKER_SCENE_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTTwinMaker::Scene"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "e250d211-6fe1-4a97-b953-d24a356550be",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e63579c7-bb8d-40bb-9dd8-541c74447406",
+                "control-id": "IoTTwinMaker.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "62f30d08-71c0-4262-9d74-4cbbde23dade",
+        "type": "software",
+        "title": "iottwinmaker-entity-tagged",
+        "description": "Checks if AWS IoT TwinMaker entities have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTTWINMAKER_ENTITY_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTTwinMaker::Entity"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fcf7f974-6c3c-4f9f-b202-3a12ac4313a3",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "eebc29b5-759d-4f67-b4cb-fe86304967b1",
+                "control-id": "IoTTwinMaker.4",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "10236858-e00a-4eef-98d0-6d29f9ab2e3f",
+        "type": "software",
+        "title": "iotwireless-multicast-group-tagged",
+        "description": "Checks if AWS IoT Wireless multicast groups have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTWIRELESS_MULTICAST_GROUP_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTWireless::MulticastGroup"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "bd5450ec-aa03-4fb3-ae40-d800cf3fcfbd",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "240b3383-3567-4997-a1d0-1c0c16f2cb5b",
+                "control-id": "IoTWireless.1",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b8956b4b-4e57-44ab-a640-d623ae83ee65",
+        "type": "software",
+        "title": "iotwireless-service-profile-tagged",
+        "description": "Checks if AWS IoT Wireless service profiles have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTWIRELESS_SERVICE_PROFILE_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTWireless::ServiceProfile"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "a28d370d-b985-45ed-a8b7-f65fb4b01aa8",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "e44fb113-8370-4dd6-ade6-4563f680860c",
+                "control-id": "IoTWireless.2",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "6c2aaaf4-cdc6-40e3-801d-bf53a9d73cee",
+        "type": "software",
+        "title": "iotwireless-fuota-task-tagged",
+        "description": "Checks if AWS IoT Wireless FUOTA tasks have tags. Optionally, you can specify tag keys. The rule is NON_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.",
+        "props": [
+          {
+            "name": "ConfigRuleId",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "IOTWIRELESS_FUOTA_TASK_TAGGED"
+          },
+          {
+            "name": "asset-type",
+            "value": "automated-inspection"
+          },
+          {
+            "name": "ResourceType",
+            "ns": "http://aws.amazon.com/ns/oscal",
+            "value": "AWS::IoTWireless::FuotaTask"
+          }
+        ],
+        "responsible-roles": [
+          {
+            "role-id": "owner"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "107d23df-c622-4f1d-88a4-b4138fb43431",
+            "source": "#d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+            "description": "Security Hub control implementation",
+            "implemented-requirements": [
+              {
+                "uuid": "9510de34-5725-4f2d-9b6d-2d266006abcc",
+                "control-id": "IoTWireless.3",
+                "description": "Implemented via AWS Config Rule"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "bd7dfc08-0013-4e70-9a9c-0df61fd189bf",
+          "title": "AWS Regions Component Definition",
+          "rlinks": [
+            {
+              "href": "../aws_regions.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "d532499d-ffc7-4710-8df3-75ed2ce3ebac",
+          "title": "AWS Security Hub Controls",
+          "rlinks": [
+            {
+              "href": "../catalogs/aws_security-hub.oscal.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
