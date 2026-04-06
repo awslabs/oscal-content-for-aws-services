@@ -21,9 +21,14 @@ NOTES:
 - An optional `--overwrite` flag is used in scripts that perform the conversion. Otherwise, the tool will report an error if `<oscal_target_file>` already exists.
 
 
-### Example
+### Examples
 
-To convert an AWS component definition file named `AWS-component_definition.json` from JSON to XML: 
+To convert an AWS component definition from JSON to XML:
 ```
-oscal-cli convert --to=XML --overwrite AWS_component_definition.json AWS_component_definition.xml
+oscal-cli convert --to=XML --overwrite component-definitions/ec2.oscal.json ec2.oscal.xml
+```
+
+To convert the AWS Security Hub catalog from JSON to YAML:
+```
+oscal-cli convert --to=YAML --overwrite catalogs/aws_security-hub.oscal.json aws_security-hub.oscal.yaml
 ```
